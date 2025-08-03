@@ -2,7 +2,7 @@ CREATE SEQUENCE spell_seq start 1;
 
 CREATE TABLE spells (
                         id bigint NOT NULL DEFAULT nextval('spell_seq'),
-                        spell_name varchar(999) NOT NULL UNIQUE ,
+                        spell_name varchar(255) NOT NULL UNIQUE ,
                         spell_level varchar(255) NOT NULL,
                         spell_casting_time varchar(255),
                         spell_range_area varchar(255),

@@ -4,8 +4,8 @@ CREATE TABLE sources (
                       id bigint NOT NULL DEFAULT nextval('source_seq'),
                       source_name varchar(50) NOT NULL UNIQUE,
                       source_publish_date date,
-                      source_publisher varchar(250),
-                      source_ttrpg varchar(250),
+                      source_publisher varchar(255),
+                      source_ttrpg varchar(255),
 
                       PRIMARY KEY (id)
 );
