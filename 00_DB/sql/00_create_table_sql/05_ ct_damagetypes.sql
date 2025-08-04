@@ -8,6 +8,5 @@ CREATE TABLE damagetypes (
 );
 
 ALTER SEQUENCE damagetype_seq OWNED BY damagetypes.id;
-
-ALTER SEQUENCE damagetype_seq RESTART WITH 1;
+TER SEQUENCE damagetype_seq RESTART WITH 1;
 

@@ -10,6 +10,5 @@ CREATE TABLE conditions (
 );
 
 ALTER SEQUENCE condition_seq OWNED BY conditions.id;
-
 ALTER SEQUENCE condition_seq RESTART WITH 1;
 

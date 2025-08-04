@@ -9,5 +9,4 @@ CREATE TABLE types (
 );
 
 ALTER SEQUENCE type_seq OWNED BY types.id;
-
 ALTER SEQUENCE type_seq RESTART WITH 1;

@@ -11,5 +11,4 @@ CREATE TABLE notes (
 );
 
 ALTER SEQUENCE note_seq OWNED BY notes.id;
-
 ALTER SEQUENCE note_seq RESTART WITH 1;

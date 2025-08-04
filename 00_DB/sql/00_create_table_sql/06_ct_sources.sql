@@ -11,5 +11,4 @@ CREATE TABLE sources (
 );
 
 ALTER SEQUENCE source_seq OWNED BY sources.id;
-
 ALTER SEQUENCE source_seq RESTART WITH 1;

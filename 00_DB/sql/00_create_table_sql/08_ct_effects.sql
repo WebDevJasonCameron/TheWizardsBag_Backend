@@ -9,6 +9,5 @@ CREATE TABLE effects (
 );
 
 ALTER SEQUENCE effect_seq OWNED BY effects.id;
-
 ALTER SEQUENCE effect_seq RESTART WITH 1;
 

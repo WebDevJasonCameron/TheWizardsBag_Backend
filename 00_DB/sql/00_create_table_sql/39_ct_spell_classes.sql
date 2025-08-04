@@ -5,7 +5,9 @@ CREATE TABLE spell_classes (
                                   spells_spell_id bigint,
                                   classes_class_id bigint,
                                   FOREIGN KEY (spells_spell_id) REFERENCES spells(id),
-                                  FOREIGN KEY (classes_class_id) REFERENCES rpg_classes(id)
+                                  FOREIGN KEY (classes_class_id) REFERENCES rpg_classes(id),
+
+                                  PRIMARY KEY (id)
 );
 
 ALTER SEQUENCE spell_class_seq OWNED BY spell_classes.id;

@@ -9,7 +9,6 @@ CREATE TABLE tags (
 );
 
 ALTER SEQUENCE tag_seq OWNED BY tags.id;
-
 ALTER SEQUENCE tag_seq RESTART WITH 1;
 
 

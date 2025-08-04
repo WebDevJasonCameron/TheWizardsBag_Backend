@@ -10,6 +10,5 @@ CREATE TABLE rpg_classes (
 );
 
 ALTER SEQUENCE class_seq OWNED BY rpg_classes.id;
-
 ALTER SEQUENCE class_seq RESTART WITH 1;
 

@@ -1,15 +1,17 @@
+CREATE SEQUENCE user_seq start 1;
+
 CREATE TABLE users (
                id SERIAL PRIMARY KEY,
-               user_name bigint NOT NULL,
-               item_id VARCHAR(255),
-               user_level VARCHAR(20),          -- standard, seller, admin
+               user_name VARCHAR(255) NOT NULL,
+               user_email VARCHAR(255),
+               user_verification_code VARCHAR(20),
+               user_race VARCHAR(20),
                user_class VARCHAR(20),
-               user_species VARCHAR(20),
                user_background VARCHAR(20),
-               user_color VARCHAR(20),
-               user_shape VARCHAR(20)
-
---     start date
---     ???
-
+               user_avatar_url VARCHAR(20),
+               user_date DATE
 );
+
+ALTER SEQUENCE user_seq OWNED BY users.id;
+
+ALTER SEQUENCE user_seq RESTART WITH 1;
