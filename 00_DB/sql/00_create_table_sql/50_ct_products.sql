@@ -10,5 +10,4 @@ CREATE TABLE products (
 );
 
 ALTER SEQUENCE product_seq OWNED BY products.id;
-
 ALTER SEQUENCE product_seq RESTART WITH 1;

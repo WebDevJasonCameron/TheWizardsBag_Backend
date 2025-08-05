@@ -11,5 +11,4 @@ CREATE TABLE likes (
 );
 
 ALTER SEQUENCE like_seq OWNED BY likes.id;
-
 ALTER SEQUENCE like_seq RESTART WITH 1;
