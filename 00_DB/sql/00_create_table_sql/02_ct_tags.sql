@@ -1,4 +1,4 @@
-CREATE SEQUENCE tag_seq start with 1;
+CREATE SEQUENCE IF NOT EXISTS tag_seq start with 1;
 
 CREATE TABLE tags (
                              id bigint NOT NULL DEFAULT nextval('tag_seq'),

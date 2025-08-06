@@ -2,6 +2,8 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "items")
 public class Item {
@@ -63,6 +65,13 @@ public class Item {
 
     @Column(name = "item_source_id")
     private Long sourceId;
+
+    List<Spell> spells;
+    List<Type> types;
+    List<Tag> tags;
+    List<Note> notes;
+    List<Condition> conditions;
+    List<Effect> effects;
 
 
     // CONs
@@ -279,6 +288,48 @@ public class Item {
     }
     public void setSourceId(Long sourceId) {
         this.sourceId = sourceId;
+    }
+
+    public List<Spell> getSpells() {
+        return spells;
+    }
+    public void setSpells(List<Spell> spells) {
+        this.spells = spells;
+    }
+
+    public List<Type> getTypes() {
+        return types;
+    }
+    public void setTypes(List<Type> types) {
+        this.types = types;
+    }
+
+    public List<Tag> getTags() {
+        return tags;
+    }
+    public void setTags(List<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public List<Note> getNotes() {
+        return notes;
+    }
+    public void setNotes(List<Note> notes) {
+        this.notes = notes;
+    }
+
+    public List<Condition> getConditions() {
+        return conditions;
+    }
+    public void setConditions(List<Condition> conditions) {
+        this.conditions = conditions;
+    }
+
+    public List<Effect> getEffects() {
+        return effects;
+    }
+    public void setEffects(List<Effect> effects) {
+        this.effects = effects;
     }
 
     // OVRs

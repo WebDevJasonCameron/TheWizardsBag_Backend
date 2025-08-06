@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "item_effects")
-public class ItemEffects {
+public class ItemEffect {
 
     // ATTs
     @Id
@@ -21,10 +21,10 @@ public class ItemEffects {
     private Tag effect;
 
     // CONs
-    public ItemEffects() {
+    public ItemEffect() {
     }
 
-    public ItemEffects(Spell item, Tag effect) {
+    public ItemEffect(Spell item, Tag effect) {
         this.item = item;
         this.effect = effect;
     }
@@ -54,7 +54,7 @@ public class ItemEffects {
     // OVRs
     @Override
     public String toString() {
-        return "ItemEffects{" +
+        return "ItemEffect{" +
                 "id=" + id +
                 ", item=" + item +
                 ", effect=" + effect +

@@ -1,4 +1,4 @@
-CREATE SEQUENCE spell_condition_seq start 1;
+CREATE SEQUENCE IF NOT EXISTS spell_condition_seq start 1;
 
 CREATE TABLE spell_conditions (
                             id bigint NOT NULL DEFAULT nextval('spell_condition_seq'),

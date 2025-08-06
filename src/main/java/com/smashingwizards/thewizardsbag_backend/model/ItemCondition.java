@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "item_conditions")
-public class ItemCondition {
+public class  ItemCondition {
 
     // ATTs
     @Id
@@ -13,17 +13,16 @@ public class ItemCondition {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "items_item_id", nullable = false)
-    private Spell item;
+    private Item item;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "conditions_condition_id", nullable = false)
-    private Tag condition;
+    private Condition condition;
 
     // CONs
     public ItemCondition() {
     }
-
-    public ItemCondition(Spell item, Tag condition) {
+    public ItemCondition(Item item, Condition condition) {
         this.item = item;
         this.condition = condition;
     }
@@ -36,17 +35,17 @@ public class ItemCondition {
         this.id = id;
     }
 
-    public Spell getItem() {
+    public Item getItem() {
         return item;
     }
-    public void setItem(Spell item) {
+    public void setItem(Item item) {
         this.item = item;
     }
 
-    public Tag getCondition() {
+    public Condition getCondition() {
         return condition;
     }
-    public void setCondition(Tag condition) {
+    public void setCondition(Condition condition) {
         this.condition = condition;
     }
 

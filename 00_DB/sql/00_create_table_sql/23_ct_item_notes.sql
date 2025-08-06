@@ -1,4 +1,4 @@
-CREATE SEQUENCE item_note_seq start 1;
+CREATE SEQUENCE IF NOT EXISTS item_note_seq start 1;
 
 CREATE TABLE item_notes (
                            id bigint NOT NULL DEFAULT nextval('item_note_seq'),

@@ -2,7 +2,6 @@ package com.smashingwizards.thewizardsbag_backend.controller;
 
 import com.smashingwizards.thewizardsbag_backend.model.Product;
 import com.smashingwizards.thewizardsbag_backend.service.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

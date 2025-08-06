@@ -12,15 +12,15 @@ public class Wishlist {
     private Long id;
     @Column(name = "users_user_id")
     private Long userId;
-    @Column(name = "spells_spell_id")
-    private Long spellId;
+    @Column(name = "items_item_id")
+    private Long itemId;
 
     // CONs
     public Wishlist() {
     }
     public Wishlist(Long userId, Long spellId) {
         this.userId = userId;
-        this.spellId = spellId;
+        this.itemId = spellId;
     }
 
     // GETs & SETs
@@ -39,10 +39,10 @@ public class Wishlist {
     }
 
     public Long getSpellId() {
-        return spellId;
+        return itemId;
     }
     public void setSpellId(Long spellId) {
-        this.spellId = spellId;
+        this.itemId = spellId;
     }
 
     // OVRs
@@ -51,7 +51,7 @@ public class Wishlist {
         return "Wishlist{" +
                 "id=" + id +
                 ", userId=" + userId +
-                ", spellId=" + spellId +
+                ", spellId=" + itemId +
                 '}';
     }
 }

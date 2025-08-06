@@ -10,17 +10,19 @@ public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "users_user_id")
-    private Long userId;
-    @Column(name = "products_product_id")
-    private Long productId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "users_user_id")
+    private User User;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "products_product_id")
+    private Product Product;
 
     // CONs
     public Like() {
     }
-    public Like(Long userId, Long productId) {
-        this.userId = userId;
-        this.productId = productId;
+    public Like(User user, Product product) {
+        User = user;
+        Product = product;
     }
 
     // GETs & SETs
@@ -31,18 +33,18 @@ public class Like {
         this.id = id;
     }
 
-    public Long getUserId() {
-        return userId;
+    public User getUser() {
+        return User;
     }
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        User = user;
     }
 
-    public Long getProductId() {
-        return productId;
+    public Product getProduct() {
+        return Product;
     }
-    public void setProductId(Long productId) {
-        this.productId = productId;
+    public void setProduct(Product product) {
+        Product = product;
     }
 
     // OVRs
@@ -50,8 +52,8 @@ public class Like {
     public String toString() {
         return "Like{" +
                 "id=" + id +
-                ", userId=" + userId +
-                ", productId=" + productId +
+                ", User=" + User +
+                ", Product=" + Product +
                 '}';
     }
 }

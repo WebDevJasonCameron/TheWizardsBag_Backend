@@ -1,4 +1,4 @@
-CREATE SEQUENCE user_seq start 1;
+CREATE SEQUENCE IF NOT EXISTS user_seq start 1;
 
 CREATE TABLE users (
                id SERIAL PRIMARY KEY,
@@ -9,9 +9,11 @@ CREATE TABLE users (
                user_class VARCHAR(20),
                user_background VARCHAR(20),
                user_avatar_url VARCHAR(20),
-               user_date DATE
+               user_date DATE,
+               account_id bigint NOT NULL,
+
+               FOREIGN KEY (account_id) REFERENCES accounts(id)
 );
 
 ALTER SEQUENCE user_seq OWNED BY users.id;
-
 ALTER SEQUENCE user_seq RESTART WITH 1;

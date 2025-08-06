@@ -1,4 +1,4 @@
-CREATE SEQUENCE type_seq start with 1;
+CREATE SEQUENCE IF NOT EXISTS type_seq start with 1;
 
 CREATE TABLE types (
                        id bigint NOT NULL DEFAULT nextval('type_seq'),

@@ -3,7 +3,6 @@ package com.smashingwizards.thewizardsbag_backend.service;
 
 import com.smashingwizards.thewizardsbag_backend.model.Product;
 import com.smashingwizards.thewizardsbag_backend.repository.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

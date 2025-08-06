@@ -2,6 +2,8 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "spells")
 public class Spell {
@@ -40,6 +42,12 @@ public class Spell {
     private String imageUrl;
     @Column(name = "spell_source_id")
     private Long sourceId;
+
+    List<Tag> tags;
+    List<Condition> conditions;
+    List<RpgClass> rpgClasses;
+    List<DamageType> damageTypes;
+
 
     // CONs
     public Spell() {
@@ -174,6 +182,34 @@ public class Spell {
     }
     public void setSourceId(Long sourceId) {
         this.sourceId = sourceId;
+    }
+
+    public List<Tag> getTags() {
+        return tags;
+    }
+    public void setTags(List<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public List<Condition> getConditions() {
+        return conditions;
+    }
+    public void setConditions(List<Condition> conditions) {
+        this.conditions = conditions;
+    }
+
+    public List<RpgClass> getRpgClasses() {
+        return rpgClasses;
+    }
+    public void setRpgClasses(List<RpgClass> rpgClasses) {
+        this.rpgClasses = rpgClasses;
+    }
+
+    public List<DamageType> getDamageTypes() {
+        return damageTypes;
+    }
+    public void setDamageTypes(List<DamageType> damageTypes) {
+        this.damageTypes = damageTypes;
     }
 
     // OVRs

@@ -1,4 +1,4 @@
-CREATE SEQUENCE condition_seq start 1;
+CREATE SEQUENCE IF NOT EXISTS condition_seq start 1;
 
 
 CREATE TABLE conditions (

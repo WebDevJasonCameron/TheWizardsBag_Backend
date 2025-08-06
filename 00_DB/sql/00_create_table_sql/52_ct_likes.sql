@@ -1,4 +1,4 @@
-CREATE SEQUENCE like_seq start 1;
+CREATE SEQUENCE IF NOT EXISTS like_seq start 1;
 
 CREATE TABLE likes (
               id bigint NOT NULL DEFAULT nextval('like_seq'),

@@ -1,24 +1,16 @@
-package com.smashingwizards.thewizardsbag_backend.model;
+package com.smashingwizards.thewizardsbag_backend.dto;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "product_images")
-public class ProductImage {
+public class ImageUrlDTO {
 
     // ATTs
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "product_id")
     private Long productId;
-    @Column(name = "product_image_url")
     private String imageUrl;
 
     // CONs
-    public ProductImage() {
+    public ImageUrlDTO() {
     }
-    public ProductImage(Long productId, String imageUrl) {
+    public ImageUrlDTO(Long productId, String imageUrl) {
         this.productId = productId;
         this.imageUrl = imageUrl;
     }
@@ -43,15 +35,5 @@ public class ProductImage {
     }
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
-    }
-
-    // OVRs
-    @Override
-    public String toString() {
-        return "ProductImage{" +
-                "id=" + id +
-                ", productId=" + productId +
-                ", imageUrl='" + imageUrl + '\'' +
-                '}';
     }
 }

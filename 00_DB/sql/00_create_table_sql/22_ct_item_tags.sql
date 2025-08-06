@@ -1,4 +1,4 @@
-CREATE SEQUENCE item_tag_seq start 1;
+CREATE SEQUENCE IF NOT EXISTS item_tag_seq start 1;
 
 CREATE TABLE item_tags (
                             id bigint NOT NULL DEFAULT nextval('item_tag_seq'),

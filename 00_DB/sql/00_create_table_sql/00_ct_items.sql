@@ -1,4 +1,4 @@
-CREATE SEQUENCE item_seq start 1;
+CREATE SEQUENCE IF NOT EXISTS item_seq start 1;
 
 CREATE TABLE items (
                      id SERIAL PRIMARY KEY,

@@ -1,0 +1,39 @@
+package com.smashingwizards.thewizardsbag_backend.dto;
+
+public class ItemEffectDTO {
+
+    // ATTs
+    private Long id;
+    private Long spellId;
+    private Long effectId;
+
+    // CONs
+    public ItemEffectDTO() {
+    }
+    public ItemEffectDTO(Long spellId, Long effectId) {
+        this.spellId = spellId;
+        this.effectId = effectId;
+    }
+
+    // GETs & SETs
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getSpellId() {
+        return spellId;
+    }
+    public void setSpellId(Long spellId) {
+        this.spellId = spellId;
+    }
+
+    public Long getEffectId() {
+        return effectId;
+    }
+    public void setEffectId(Long effectId) {
+        this.effectId = effectId;
+    }
+}

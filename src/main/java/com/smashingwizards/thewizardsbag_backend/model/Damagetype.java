@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "damagetypes")
-public class DamageType {
+public class Damagetype {
 
     // ATTs
     @Id
@@ -14,10 +14,10 @@ public class DamageType {
     private String name;
 
     // CONs
-    public DamageType() {
+    public Damagetype() {
     }
 
-    public DamageType(String name) {
+    public Damagetype(String name) {
         this.name = name;
     }
 
