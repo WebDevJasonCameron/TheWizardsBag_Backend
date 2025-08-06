@@ -32,8 +32,11 @@ public class User {
     @Column(name = "account_id")
     private String accountId;
 
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Like> likes;
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Wishlist> wishlists;
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Product> products;
 
     // CONs

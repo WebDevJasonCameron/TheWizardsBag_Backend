@@ -13,17 +13,16 @@ public class ItemType {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "items_item_id", nullable = false)
-    private Spell item;
+    private Item item;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "types_type_id", nullable = false)
-    private Tag type;
+    private Type type;
 
     // CONs
     public ItemType() {
     }
-
-    public ItemType(Spell item, Tag type) {
+    public ItemType(Item item, Type type) {
         this.item = item;
         this.type = type;
     }
@@ -36,19 +35,20 @@ public class ItemType {
         this.id = id;
     }
 
-    public Spell getItem() {
+    public Item getItem() {
         return item;
     }
-    public void setItem(Spell item) {
+    public void setItem(Item item) {
         this.item = item;
     }
 
-    public Tag getType() {
+    public Type getType() {
         return type;
     }
-    public void setType(Tag type) {
+    public void setType(Type type) {
         this.type = type;
     }
+
 
     // OVRs
     @Override

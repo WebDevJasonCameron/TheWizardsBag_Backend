@@ -17,13 +17,12 @@ public class SpellDamagetype {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "damagetypes_damagetype_id", nullable = false)
-    private DamageType damagetype;
+    private Damagetype damagetype;
 
     // CONs
     public SpellDamagetype() {
     }
-
-    public SpellDamagetype(DamageType damagetype, Spell spell) {
+    public SpellDamagetype(Damagetype damagetype, Spell spell) {
         this.damagetype = damagetype;
         this.spell = spell;
     }
@@ -43,10 +42,10 @@ public class SpellDamagetype {
         this.spell = spell;
     }
 
-    public DamageType getDamagetype() {
+    public Damagetype getDamagetype() {
         return damagetype;
     }
-    public void setDamagetype(DamageType damagetype) {
+    public void setDamagetype(Damagetype damagetype) {
         this.damagetype = damagetype;
     }
 

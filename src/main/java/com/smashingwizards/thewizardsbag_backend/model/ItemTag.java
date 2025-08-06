@@ -13,7 +13,7 @@ public class ItemTag {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "items_item_id", nullable = false)
-    private Spell item;
+    private Item item;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "tags_tag_id", nullable = false)
@@ -22,8 +22,7 @@ public class ItemTag {
     // CONs
     public ItemTag() {
     }
-
-    public ItemTag(Spell item, Tag tag) {
+    public ItemTag(Item item, Tag tag) {
         this.item = item;
         this.tag = tag;
     }
@@ -36,10 +35,10 @@ public class ItemTag {
         this.id = id;
     }
 
-    public Spell getItem() {
+    public Item getItem() {
         return item;
     }
-    public void setItem(Spell item) {
+    public void setItem(Item item) {
         this.item = item;
     }
 

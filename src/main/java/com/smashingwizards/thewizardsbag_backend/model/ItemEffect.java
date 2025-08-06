@@ -14,17 +14,16 @@ public class ItemEffect {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "items_item_id", nullable = false)
-    private Spell item;
+    private Item item;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "effects_effect_id", nullable = false)
-    private Tag effect;
+    private Effect effect;
 
     // CONs
     public ItemEffect() {
     }
-
-    public ItemEffect(Spell item, Tag effect) {
+    public ItemEffect(Item item, Effect effect) {
         this.item = item;
         this.effect = effect;
     }
@@ -37,17 +36,17 @@ public class ItemEffect {
         this.id = id;
     }
 
-    public Spell getItem() {
+    public Item getItem() {
         return item;
     }
-    public void setItem(Spell item) {
+    public void setItem(Item item) {
         this.item = item;
     }
 
-    public Tag getEffect() {
+    public Effect getEffect() {
         return effect;
     }
-    public void setEffect(Tag effect) {
+    public void setEffect(Effect effect) {
         this.effect = effect;
     }
 
