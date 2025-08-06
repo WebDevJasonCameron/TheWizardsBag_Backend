@@ -13,19 +13,18 @@ public class ItemNote {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "items_item_id", nullable = false)
-    private Spell item;
+    private Item item;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "notes_note_id", nullable = false)
-    private Tag note;
+    private Note note;
 
     // CONs
     public ItemNote() {
     }
-
-    public ItemNote(Spell item, Tag effect) {
+    public ItemNote(Item item, Note note) {
         this.item = item;
-        this.note = effect;
+        this.note = note;
     }
 
     // GETs & SETs
@@ -36,21 +35,21 @@ public class ItemNote {
         this.id = id;
     }
 
-    public Spell getItem() {
+    public Item getItem() {
         return item;
     }
-    public void setItem(Spell item) {
+    public void setItem(Item item) {
         this.item = item;
     }
 
-    public Tag getEffect() {
+    public Note getNote() {
         return note;
     }
-    public void setEffect(Tag effect) {
-        this.note = effect;
+    public void setNote(Note note) {
+        this.note = note;
     }
 
-    // OVRs
+// OVRs
 
     @Override
     public String toString() {

@@ -13,12 +13,12 @@ public class ImageUrl {
     @Column(name = "image_url")
     private String url;
 
-
-
     // CONs
     public ImageUrl() {
     }
-
+    public ImageUrl(String url) {
+        this.url = url;
+    }
 
     // GETs & SETs
     public Long getId() {
@@ -28,7 +28,19 @@ public class ImageUrl {
         this.id = id;
     }
 
+    public String getUrl() {
+        return url;
+    }
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
     // OVRs
-
+    @Override
+    public String toString() {
+        return "ImageUrl{" +
+                "id=" + id +
+                ", url='" + url + '\'' +
+                '}';
+    }
 }

@@ -4,14 +4,12 @@ public class ImageUrlDTO {
 
     // ATTs
     private Long id;
-    private Long productId;
     private String imageUrl;
 
     // CONs
     public ImageUrlDTO() {
     }
-    public ImageUrlDTO(Long productId, String imageUrl) {
-        this.productId = productId;
+    public ImageUrlDTO(String imageUrl) {
         this.imageUrl = imageUrl;
     }
 
@@ -21,13 +19,6 @@ public class ImageUrlDTO {
     }
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Long getProductId() {
-        return productId;
-    }
-    public void setProductId(Long productId) {
-        this.productId = productId;
     }
 
     public String getImageUrl() {
