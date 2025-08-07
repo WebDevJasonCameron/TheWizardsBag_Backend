@@ -1,6 +1,6 @@
 package com.smashingwizards.thewizardsbag_backend.repository;
+import com.smashingwizards.thewizardsbag_backend.model.User;
 
-import org.apache.catalina.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

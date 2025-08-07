@@ -1,7 +1,7 @@
 package com.smashingwizards.thewizardsbag_backend.mapper;
 
 import com.smashingwizards.thewizardsbag_backend.dto.UserDTO;
-import org.apache.catalina.User;
+import com.smashingwizards.thewizardsbag_backend.model.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
