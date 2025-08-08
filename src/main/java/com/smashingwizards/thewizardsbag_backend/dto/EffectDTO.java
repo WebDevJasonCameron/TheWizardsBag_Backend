@@ -1,6 +1,6 @@
 package com.smashingwizards.thewizardsbag_backend.dto;
 
-public class EffectsDTO {
+public class EffectDTO {
 
     // ATTs
     private Long id;
@@ -8,9 +8,9 @@ public class EffectsDTO {
     private String subEffect;
 
     // CONs
-    public EffectsDTO() {
+    public EffectDTO() {
     }
-    public EffectsDTO(String name, String subEffect) {
+    public EffectDTO(String name, String subEffect) {
         this.name = name;
         this.subEffect = subEffect;
     }
