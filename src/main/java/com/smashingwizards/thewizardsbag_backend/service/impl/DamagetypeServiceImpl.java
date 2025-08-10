@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class DamagetypeServiceImpl implements DamagetypeService {
@@ -28,7 +29,7 @@ public class DamagetypeServiceImpl implements DamagetypeService {
     public List<DamagetypeDTO> getDamagetypes() {
         return damagetypeRepository.findAll().stream()
                 .map(damagetypeMapper::damagetypeToDamagetypeDTO)
-                .collect(java.util.stream.Collectors.toList());
+                .collect(Collectors.toList());
     }
 
     @Override
@@ -40,7 +41,8 @@ public class DamagetypeServiceImpl implements DamagetypeService {
 
     @Override
     public DamagetypeDTO createDamagetype(DamagetypeDTO damagetypeDTO) {
-        return damagetypeMapper.damagetypeToDamagetypeDTO(damagetypeRepository.save(damagetypeMapper.damagetypeDTOToDamagetype(damagetypeDTO)));
+        return damagetypeMapper.damagetypeToDamagetypeDTO(damagetypeRepository
+                .save(damagetypeMapper.damagetypeDTOToDamagetype(damagetypeDTO)));
     }
 
     @Override

@@ -5,12 +5,12 @@ public class ProductImageDTO {
     // ATTs
     private Long id;
     private Long productId;
-    private String imageUrlId;
+    private Long imageUrlId;
 
     // CONs
     public ProductImageDTO() {
     }
-    public ProductImageDTO(Long productId, String imageUrlId) {
+    public ProductImageDTO(Long productId, Long imageUrlId) {
         this.productId = productId;
         this.imageUrlId = imageUrlId;
     }
@@ -30,10 +30,10 @@ public class ProductImageDTO {
         this.productId = productId;
     }
 
-    public String getImageUrlId() {
+    public Long getImageUrlId() {
         return imageUrlId;
     }
-    public void setImageUrlId(String imageUrlId) {
+    public void setImageUrlId(Long imageUrlId) {
         this.imageUrlId = imageUrlId;
     }
 }

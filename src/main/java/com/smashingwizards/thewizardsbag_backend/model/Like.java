@@ -10,11 +10,13 @@ public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "users_user_id")
+    @JoinColumn(name = "users_user_id", nullable = false)
     private User User;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "products_product_id")
+
+    @ManyToOne(fetch = FetchType.LAZY,)
+    @JoinColumn(name = "products_product_id", nullable = false)
     private Product Product;
 
     // CONs

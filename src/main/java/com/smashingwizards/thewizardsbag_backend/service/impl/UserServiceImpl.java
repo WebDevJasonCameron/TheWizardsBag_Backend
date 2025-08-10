@@ -16,15 +16,18 @@ import java.util.stream.Collectors;
 @Service
 public class UserServiceImpl implements UserService {
 
+    // ATTs
     private final UserRepository userRepository;
     private final UserMapper userMapper;
 
+    // CONs
     @Autowired
     public UserServiceImpl(UserRepository userRepository, UserMapper userMapper) {
         this.userRepository = userRepository;
         this.userMapper = userMapper;
     }
 
+    // CRUDs
     @Override
     public List<UserDTO> getAllUsers() {
         return userRepository.findAll().stream()

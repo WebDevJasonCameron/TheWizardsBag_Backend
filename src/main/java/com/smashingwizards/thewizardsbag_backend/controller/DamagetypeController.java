@@ -30,7 +30,7 @@ public class DamagetypeController {
     }
 
     @PostMapping
-    public DamagetypeDTO createDamagetype(@org.springframework.web.bind.annotation.RequestBody DamagetypeDTO damagetypeDTO) {
+    public DamagetypeDTO createDamagetype(@RequestBody DamagetypeDTO damagetypeDTO) {
         return damagetypeService.createDamagetype(damagetypeDTO);
     }
 

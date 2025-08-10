@@ -7,15 +7,15 @@ public class SpellConditionDTO {
 
     // ATTs
     private Long id;
-    private Spell spell;
-    private Condition condition;
+    private Long spellId;
+    private Long conditionId;
 
     // CONs
     public SpellConditionDTO() {
     }
-    public SpellConditionDTO(Spell spell, Condition condition) {
-        this.spell = spell;
-        this.condition = condition;
+    public SpellConditionDTO(Long spellId, Long conditionId) {
+        this.spellId = spellId;
+        this.conditionId = conditionId;
     }
 
     // GETs & SETs
@@ -26,17 +26,17 @@ public class SpellConditionDTO {
         this.id = id;
     }
 
-    public Spell getSpell() {
-        return spell;
+    public Long getSpellId() {
+        return spellId;
     }
-    public void setSpell(Spell spell) {
-        this.spell = spell;
+    public void setSpellId(Long spellId) {
+        this.spellId = spellId;
     }
 
-    public Condition getCondition() {
-        return condition;
+    public Long getConditionId() {
+        return conditionId;
     }
-    public void setCondition(Condition condition) {
-        this.condition = condition;
+    public void setConditionId(Long conditionId) {
+        this.conditionId = conditionId;
     }
 }

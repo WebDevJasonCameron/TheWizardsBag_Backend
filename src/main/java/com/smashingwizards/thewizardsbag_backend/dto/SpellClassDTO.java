@@ -7,14 +7,14 @@ public class SpellClassDTO {
 
     // ATTs
     private Long id;
-    private Spell spell;
-    private RpgClass rpgClass;
+    private Long spellId;
+    private Long rpgClass;
 
     // CONs
     public SpellClassDTO() {
     }
-    public SpellClassDTO(Spell spell, RpgClass rpgClass) {
-        this.spell = spell;
+    public SpellClassDTO(Long spellId, Long rpgClass) {
+        this.spellId = spellId;
         this.rpgClass = rpgClass;
     }
 
@@ -26,17 +26,17 @@ public class SpellClassDTO {
         this.id = id;
     }
 
-    public Spell getSpell() {
-        return spell;
+    public Long getSpellId() {
+        return spellId;
     }
-    public void setSpell(Spell spell) {
-        this.spell = spell;
+    public void setSpellId(Long spellId) {
+        this.spellId = spellId;
     }
 
-    public RpgClass getRpgClass() {
+    public Long getRpgClass() {
         return rpgClass;
     }
-    public void setRpgClass(RpgClass rpgClass) {
+    public void setRpgClass(Long rpgClass) {
         this.rpgClass = rpgClass;
     }
 }

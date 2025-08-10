@@ -24,10 +24,22 @@ public class ItemDTO {
     private boolean hasCharges;
     private int numberOfCharges;
 
+    private String weaponRange;
+    private String weaponDamageCalc;
+    private String weaponProperties;
+    private String weaponType;
+    private String weaponNotes;
+
+    private String armorClass;
+    private String armorNotes;
+
+    private Long sourceId;
+
+
     // CONs
     public ItemDTO() {
     }
-    public ItemDTO(String name, String ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, boolean magical, boolean requiresAttunement, boolean cursed, boolean magicBonusPlusOne, boolean magicBonusPlusTwo, boolean magicBonusPlusThree, boolean hasCharges, int numberOfCharges) {
+    public ItemDTO(String name, String ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, boolean magical, boolean requiresAttunement, boolean cursed, boolean magicBonusPlusOne, boolean magicBonusPlusTwo, boolean magicBonusPlusThree, boolean hasCharges, int numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
         this.name = name;
         this.ttrpg = ttrpg;
         this.weight = weight;
@@ -45,6 +57,14 @@ public class ItemDTO {
         this.magicBonusPlusThree = magicBonusPlusThree;
         this.hasCharges = hasCharges;
         this.numberOfCharges = numberOfCharges;
+        this.weaponRange = weaponRange;
+        this.weaponDamageCalc = weaponDamageCalc;
+        this.weaponProperties = weaponProperties;
+        this.weaponType = weaponType;
+        this.weaponNotes = weaponNotes;
+        this.armorClass = armorClass;
+        this.armorNotes = armorNotes;
+        this.sourceId = sourceId;
     }
 
     // GETs & SETs
@@ -172,5 +192,61 @@ public class ItemDTO {
     }
     public void setNumberOfCharges(int numberOfCharges) {
         this.numberOfCharges = numberOfCharges;
+    }
+
+    public String getWeaponRange() {
+        return weaponRange;
+    }
+    public void setWeaponRange(String weaponRange) {
+        this.weaponRange = weaponRange;
+    }
+
+    public String getWeaponDamageCalc() {
+        return weaponDamageCalc;
+    }
+    public void setWeaponDamageCalc(String weaponDamageCalc) {
+        this.weaponDamageCalc = weaponDamageCalc;
+    }
+
+    public String getWeaponProperties() {
+        return weaponProperties;
+    }
+    public void setWeaponProperties(String weaponProperties) {
+        this.weaponProperties = weaponProperties;
+    }
+
+    public String getWeaponType() {
+        return weaponType;
+    }
+    public void setWeaponType(String weaponType) {
+        this.weaponType = weaponType;
+    }
+
+    public String getWeaponNotes() {
+        return weaponNotes;
+    }
+    public void setWeaponNotes(String weaponNotes) {
+        this.weaponNotes = weaponNotes;
+    }
+
+    public String getArmorClass() {
+        return armorClass;
+    }
+    public void setArmorClass(String armorClass) {
+        this.armorClass = armorClass;
+    }
+
+    public String getArmorNotes() {
+        return armorNotes;
+    }
+    public void setArmorNotes(String armorNotes) {
+        this.armorNotes = armorNotes;
+    }
+
+    public Long getSourceId() {
+        return sourceId;
+    }
+    public void setSourceId(Long sourceId) {
+        this.sourceId = sourceId;
     }
 }

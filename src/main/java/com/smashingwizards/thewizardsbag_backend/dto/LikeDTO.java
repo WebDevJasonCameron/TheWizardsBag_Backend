@@ -1,5 +1,7 @@
 package com.smashingwizards.thewizardsbag_backend.dto;
 
+import com.smashingwizards.thewizardsbag_backend.model.User;
+
 public class LikeDTO {
 
     // ATTs

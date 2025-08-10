@@ -8,6 +8,7 @@ public interface EffectService {
     List<EffectDTO> getEffects();
     EffectDTO getEffectById(Long id);
     EffectDTO createEffect(EffectDTO dto);
-    EffectDTO UpdateEffect(Long id, EffectDTO dto);
+    EffectDTO updateEffect(Long id, EffectDTO effectDTO);
+
     void deleteEffect(Long id);
 }
