@@ -10,5 +10,5 @@ public interface RpgClassService {
     RpgClassDTO getRpgClassById(Long id);
     RpgClassDTO createRpgClass(RpgClassDTO rpgClassDto);
     RpgClassDTO updateRpgClass(Long id, RpgClassDTO rpgClassDto);
-    void deleteImageUrl(Long id);
+    void deleteRpgClass(Long id);
 }

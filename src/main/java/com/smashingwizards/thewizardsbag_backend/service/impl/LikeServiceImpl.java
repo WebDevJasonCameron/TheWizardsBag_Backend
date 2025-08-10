@@ -3,6 +3,8 @@ package com.smashingwizards.thewizardsbag_backend.service.impl;
 import com.smashingwizards.thewizardsbag_backend.dto.LikeDTO;
 import com.smashingwizards.thewizardsbag_backend.mapper.LikeMapper;
 import com.smashingwizards.thewizardsbag_backend.model.Like;
+import com.smashingwizards.thewizardsbag_backend.model.Product;
+import com.smashingwizards.thewizardsbag_backend.model.User;
 import com.smashingwizards.thewizardsbag_backend.repository.LikeRepository;
 import com.smashingwizards.thewizardsbag_backend.repository.ProductRepository;
 import com.smashingwizards.thewizardsbag_backend.repository.UserRepository;
@@ -47,21 +49,25 @@ public class LikeServiceImpl implements LikeService {
 
     @Override
     public LikeDTO createLike(LikeDTO likeDTO) {
-        return likeMapper.likeToLikeDTO(likeRepository
-                .save(likeMapper.likeDTOToLike(likeDTO)));
+        User userRef = userRepository.getReferenceById(likeDTO.getUserId());
+        Product productRef = productRepository.getReferenceById(likeDTO.getProductId());
+
+        Like like = new Like(userRef, productRef);
+        return likeMapper.likeToLikeDTO(likeRepository.save(like));
     }
 
     @Override
     public LikeDTO updateLike(Long id, LikeDTO likeDTO) {
-        Optional<Like> optionalLike = likeRepository.findById(id);
-        if (!optionalLike.isPresent()) {
-            throw new RuntimeException("Like not found");
-        }
-        Like existingLike = optionalLike.get();
-        existingLike.setUser(likeDTO.getUserId());
-        existingLike.setProduct(likeDTO.getProductId());
+        Like exisitingLike = likeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Like not found"));
 
-        return likeMapper.likeToLikeDTO(likeRepository.save(existingLike));
+        User userRef = userRepository.getReferenceById(likeDTO.getUserId());
+        Product productRef = productRepository.getReferenceById(likeDTO.getProductId());
+
+        exisitingLike.setUser(userRef);
+        exisitingLike.setProduct(productRef);
+
+        return likeMapper.likeToLikeDTO(likeRepository.save(exisitingLike));
     }
 
     @Override

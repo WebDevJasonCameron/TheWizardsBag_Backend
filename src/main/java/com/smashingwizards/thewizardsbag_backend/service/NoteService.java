@@ -6,8 +6,10 @@ import java.util.List;
 
 public interface NoteService {
     List<NoteDTO> getNotes();
-    NoteDTO getById(Long id);
-    NoteDTO create(NoteDTO noteDto);
-    NoteDTO update(Long id, NoteDTO noteDto);
+    NoteDTO getNoteById(Long id);
+    NoteDTO createNote(NoteDTO noteDTO);
+    NoteDTO updateNote(Long id, NoteDTO noteDTO);
+
+    void deleteNote(Long id);
 
 }

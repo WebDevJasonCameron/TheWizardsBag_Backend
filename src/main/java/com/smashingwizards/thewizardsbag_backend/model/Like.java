@@ -13,18 +13,18 @@ public class Like {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "users_user_id", nullable = false)
-    private User User;
+    private User user;
 
-    @ManyToOne(fetch = FetchType.LAZY,)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "products_product_id", nullable = false)
-    private Product Product;
+    private Product product;
 
     // CONs
     public Like() {
     }
     public Like(User user, Product product) {
-        User = user;
-        Product = product;
+        user = user;
+        product = product;
     }
 
     // GETs & SETs
@@ -36,17 +36,17 @@ public class Like {
     }
 
     public User getUser() {
-        return User;
+        return user;
     }
     public void setUser(User user) {
-        User = user;
+        this.user = user;
     }
 
     public Product getProduct() {
-        return Product;
+        return product;
     }
     public void setProduct(Product product) {
-        Product = product;
+        product = product;
     }
 
     // OVRs
@@ -54,8 +54,8 @@ public class Like {
     public String toString() {
         return "Like{" +
                 "id=" + id +
-                ", User=" + User +
-                ", Product=" + Product +
+                ", user=" + user +
+                ", Product=" + product +
                 '}';
     }
 }

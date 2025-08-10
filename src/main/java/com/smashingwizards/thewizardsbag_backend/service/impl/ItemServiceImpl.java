@@ -53,6 +53,7 @@ public class ItemServiceImpl implements ItemService {
             throw new RuntimeException("Item not found");
         }
         Item existingItem = optionalItem.get();
+
         existingItem.setName(itemDTO.getName());
         existingItem.setTtrpg(itemDTO.getTtrpg());
         existingItem.setWeight(itemDTO.getWeight());

@@ -3,13 +3,14 @@ package com.smashingwizards.thewizardsbag_backend.mapper;
 import com.smashingwizards.thewizardsbag_backend.dto.LikeDTO;
 import com.smashingwizards.thewizardsbag_backend.model.Like;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface LikeMapper {
-    LikeMapper INSTANCE = Mappers.getMapper(LikeMapper.class);
 
+    @Mapping(source = "user.id", target = "userId")
+    @Mapping(source = "product.id", target = "productId")
     LikeDTO likeToLikeDTO(Like like);
-    Like likeDTOToLike(LikeDTO likeDTO);
-
+    // no DTO->Entity here; resolve IDs in the service
 }
