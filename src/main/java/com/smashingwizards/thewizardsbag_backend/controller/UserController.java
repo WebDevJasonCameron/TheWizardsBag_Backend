@@ -11,15 +11,18 @@ import java.util.List;
 @RequestMapping("/api/users")
 public class UserController {
 
+    // ATTs
     private final UserService userService;
 
+    // CONs
     @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
     }
 
+    // CRUds
     @GetMapping
-    public List<UserDTO> getAllUsers() {
+    public List<UserDTO> getUsers() {
         return userService.getAllUsers();
     }
 

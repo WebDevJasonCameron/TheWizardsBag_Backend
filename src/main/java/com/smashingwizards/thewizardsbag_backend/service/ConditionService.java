@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ConditionService {
     List<ConditionDTO> getConditions();
-    ConditionDTO getCondition(Long id);
+    ConditionDTO getConditionById(Long id);
     ConditionDTO createCondition(ConditionDTO conditionDTO);
     ConditionDTO updateCondition(Long id, ConditionDTO conditionDTO);
     void deleteCondition(Long id);

@@ -9,6 +9,6 @@ import org.mapstruct.factory.Mappers;
 public interface AccountMapper {
     AccountMapper INSTANCE = Mappers.getMapper(AccountMapper.class);
 
-    AccountDTO AccountToAccountDTO(Account account);
+    AccountDTO accountToAccountDTO(Account account);
     Account accountDTOToAccount(AccountDTO accountDTO);
 }

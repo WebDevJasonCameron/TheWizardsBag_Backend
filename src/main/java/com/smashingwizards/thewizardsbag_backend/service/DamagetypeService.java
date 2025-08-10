@@ -8,6 +8,7 @@ public interface DamagetypeService {
     List<DamagetypeDTO> getDamagetypes();
     DamagetypeDTO getDamagetypeById(Long id);
     DamagetypeDTO createDamagetype(DamagetypeDTO dto);
-    DamagetypeDTO UpdateDamagetype(Long id, DamagetypeDTO dto);
+    DamagetypeDTO updateDamagetype(Long id, DamagetypeDTO dto);
+
     void deleteDamagetype(Long id);
 }
