@@ -11,6 +11,6 @@ import org.mapstruct.factory.Mappers;
 public interface TagMapper {
     TagMapper INSTANCE = Mappers.getMapper(TagMapper.class);
 
-    TagDTO rpgClassToTagDTO(RpgClass rpgClass);
-    Tag rpgClassDTOToTag(RpgClassDTO rpgClassDTO);
+    TagDTO tagToTagDTO(Tag tag);
+    Tag tagDTOToTag(TagDTO tagDTO);
 }
