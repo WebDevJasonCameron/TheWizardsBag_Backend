@@ -7,8 +7,9 @@ import java.util.List;
 public interface TypeService {
     List<TypeDTO> getTypes();
     TypeDTO getTypeById(Long id);
-    TypeDTO createType(TypeDTO type);
-    TypeDTO updateType(TypeDTO type);
+    TypeDTO createType(TypeDTO typeDTO);
+    TypeDTO updateType(Long id, TypeDTO typeDTO);
+
     void deleteType(Long id);
 
 }

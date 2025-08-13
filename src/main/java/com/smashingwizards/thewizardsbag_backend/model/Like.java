@@ -23,8 +23,8 @@ public class Like {
     public Like() {
     }
     public Like(User user, Product product) {
-        user = user;
-        product = product;
+        this.user = user;
+        this.product = product;
     }
 
     // GETs & SETs

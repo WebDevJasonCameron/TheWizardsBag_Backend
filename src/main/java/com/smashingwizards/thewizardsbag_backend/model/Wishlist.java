@@ -10,17 +10,21 @@ public class Wishlist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "users_user_id")
-    private Long userId;
-    @Column(name = "items_item_id")
-    private Long itemId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "users_user_id", nullable = false)
+    private User user;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "items_item_id", nullable = false)
+    private Item item;
 
     // CONs
     public Wishlist() {
     }
-    public Wishlist(Long userId, Long spellId) {
-        this.userId = userId;
-        this.itemId = spellId;
+    public Wishlist(Item item, User user) {
+        this.item = item;
+        this.user = user;
     }
 
     // GETs & SETs
@@ -31,18 +35,18 @@ public class Wishlist {
         this.id = id;
     }
 
-    public Long getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public Long getSpellId() {
-        return itemId;
+    public Item getItem() {
+        return item;
     }
-    public void setSpellId(Long spellId) {
-        this.itemId = spellId;
+    public void setItem(Item item) {
+        this.item = item;
     }
 
     // OVRs
@@ -50,8 +54,8 @@ public class Wishlist {
     public String toString() {
         return "Wishlist{" +
                 "id=" + id +
-                ", userId=" + userId +
-                ", spellId=" + itemId +
+                ", user=" + user +
+                ", item=" + item +
                 '}';
     }
 }
