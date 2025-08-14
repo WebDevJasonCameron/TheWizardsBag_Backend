@@ -12,7 +12,7 @@ import com.smashingwizards.thewizardsbag_backend.service.LikeService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class LikeServiceImpl implements LikeService {
@@ -37,7 +37,7 @@ public class LikeServiceImpl implements LikeService {
         return likeRepository.findAll()
                 .stream()
                 .map(likeMapper::likeToLikeDTO)
-                .collect(java.util.stream.Collectors.toList());
+                .collect(Collectors.toList());
     }
 
     @Override
