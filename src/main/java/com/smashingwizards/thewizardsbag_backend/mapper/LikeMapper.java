@@ -4,7 +4,6 @@ import com.smashingwizards.thewizardsbag_backend.dto.LikeDTO;
 import com.smashingwizards.thewizardsbag_backend.model.Like;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface LikeMapper {
