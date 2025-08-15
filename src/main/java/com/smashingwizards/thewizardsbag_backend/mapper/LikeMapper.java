@@ -12,4 +12,5 @@ public interface LikeMapper {
     @Mapping(source = "product.id", target = "productId")
     LikeDTO likeToLikeDTO(Like like);
     // no DTO->Entity here; resolve IDs in the service
+
 }

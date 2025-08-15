@@ -4,14 +4,14 @@ public class ItemEffectDTO {
 
     // ATTs
     private Long id;
-    private Long spellId;
+    private Long itemId;
     private Long effectId;
 
     // CONs
     public ItemEffectDTO() {
     }
-    public ItemEffectDTO(Long spellId, Long effectId) {
-        this.spellId = spellId;
+    public ItemEffectDTO(Long itemId, Long effectId) {
+        this.itemId = itemId;
         this.effectId = effectId;
     }
 
@@ -24,10 +24,10 @@ public class ItemEffectDTO {
     }
 
     public Long getSpellId() {
-        return spellId;
+        return itemId;
     }
-    public void setSpellId(Long spellId) {
-        this.spellId = spellId;
+    public void setSpellId(Long itemId) {
+        this.itemId = itemId;
     }
 
     public Long getEffectId() {
