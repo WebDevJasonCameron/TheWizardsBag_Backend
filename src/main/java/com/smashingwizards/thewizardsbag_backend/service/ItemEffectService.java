@@ -10,5 +10,4 @@ public interface ItemEffectService {
     ItemEffectDTO createItemEffect(ItemEffectDTO itemEffectDTO);
     ItemEffectDTO updateItemEffect(Long id, ItemEffectDTO itemEffectDTO);
     void deleteItemEffect(Long id);
-
 }

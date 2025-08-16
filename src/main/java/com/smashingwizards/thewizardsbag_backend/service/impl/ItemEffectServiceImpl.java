@@ -2,6 +2,9 @@ package com.smashingwizards.thewizardsbag_backend.service.impl;
 
 import com.smashingwizards.thewizardsbag_backend.dto.ItemEffectDTO;
 import com.smashingwizards.thewizardsbag_backend.mapper.ItemEffectMapper;
+import com.smashingwizards.thewizardsbag_backend.model.Effect;
+import com.smashingwizards.thewizardsbag_backend.model.Item;
+import com.smashingwizards.thewizardsbag_backend.model.ItemEffect;
 import com.smashingwizards.thewizardsbag_backend.repository.EffectRepository;
 import com.smashingwizards.thewizardsbag_backend.repository.ItemEffectRepository;
 import com.smashingwizards.thewizardsbag_backend.repository.ItemRepository;
@@ -35,5 +38,39 @@ public class ItemEffectServiceImpl implements ItemEffectService {
                 .stream()
                 .map(itemEffectMapper::itemEffectToItemEffectDTO)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public ItemEffectDTO getItemEffectById(Long id) {
+        return itemEffectRepository.findById(id)
+                .map(itemEffectMapper::itemEffectToItemEffectDTO)
+                .orElseThrow(() -> new RuntimeException("ItemEffect not found"));
+    }
+
+    @Override
+    public ItemEffectDTO createItemEffect(ItemEffectDTO itemEffectDTO) {
+        Item itemRef = itemRepository.getReferenceById(itemEffectDTO.getEffectId());
+        Effect effectRef = effectRepository.getReferenceById(itemEffectDTO.getEffectId());
+
+        ItemEffect itemEffect = new ItemEffect(itemRef, effectRef);
+        return itemEffectMapper.itemEffectToItemEffectDTO(itemEffectRepository.save(itemEffect));
+    }
+
+    @Override
+    public ItemEffectDTO updateItemEffect(Long id, ItemEffectDTO itemEffectDTO) {
+        ItemEffect existingItemEffect = itemEffectRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("ItemEffect not found"));
+        Item itemRef = itemRepository.getReferenceById(itemEffectDTO.getEffectId());
+        Effect effectRef = effectRepository.getReferenceById(itemEffectDTO.getEffectId());
+
+        existingItemEffect.setItem(itemRef);
+        existingItemEffect.setEffect(effectRef);
+
+        return itemEffectMapper.itemEffectToItemEffectDTO(itemEffectRepository.save(existingItemEffect));
+    }
+
+    @Override
+    public void deleteItemEffect(Long id) {
+        itemEffectRepository.deleteById(id);
     }
 }
