@@ -10,24 +10,29 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name = "account_password")
-    private String password;
-    @Column(name = "account_verified")
-    private Boolean verified;
-    @Column(name = "account_start_date")
-    private String startDate;
-    @Column(name = "account_status")
-    private String status;
+    @Column(name = "account_password_hash")
+    private String passwordHash;
+    @Column(name = "account_verification_code")
+    private String verificationCode;
+    @Column(name = "account_verified_status")
+    private String verifiedStatus;
+    @Column(name = "account_false_attempts")
+    private Integer falseAttempts;
+    @Column(name = "account_type")
+    private String type;
+    @Column(name = "account_create_at")
+    private String createAt;
 
     // CONs
     public Account() {
     }
-
-    public Account(String password, Boolean verified, String startDate, String status) {
-        this.password = password;
-        this.verified = verified;
-        this.startDate = startDate;
-        this.status = status;
+    public Account(String passwordHash, String verificationCode, String verifiedStatus, Integer falseAttempts, String type, String createAt) {
+        this.passwordHash = passwordHash;
+        this.verificationCode = verificationCode;
+        this.verifiedStatus = verifiedStatus;
+        this.falseAttempts = falseAttempts;
+        this.type = type;
+        this.createAt = createAt;
     }
 
     // GETs & SETs
@@ -38,32 +43,46 @@ public class Account {
         this.id = id;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPasswordHash() {
+        return passwordHash;
     }
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Boolean getVerified() {
-        return verified;
-    }
-    public void setVerified(Boolean verified) {
-        this.verified = verified;
+    public void setPasswordHash(String passwordHash) {
+        this.passwordHash = passwordHash;
     }
 
-    public String getStartDate() {
-        return startDate;
+    public String getVerificationCode() {
+        return verificationCode;
     }
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
+    public void setVerificationCode(String verificationCode) {
+        this.verificationCode = verificationCode;
     }
 
-    public String getStatus() {
-        return status;
+    public String getVerifiedStatus() {
+        return verifiedStatus;
     }
-    public void setStatus(String status) {
-        this.status = status;
+    public void setVerifiedStatus(String verifiedStatus) {
+        this.verifiedStatus = verifiedStatus;
+    }
+
+    public Integer getFalseAttempts() {
+        return falseAttempts;
+    }
+    public void setFalseAttempts(Integer falseAttempts) {
+        this.falseAttempts = falseAttempts;
+    }
+
+    public String getType() {
+        return type;
+    }
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getCreateAt() {
+        return createAt;
+    }
+    public void setCreateAt(String createAt) {
+        this.createAt = createAt;
     }
 
     // OVRs
@@ -71,10 +90,12 @@ public class Account {
     public String toString() {
         return "Account{" +
                 "id=" + id +
-                ", password='" + password + '\'' +
-                ", verified=" + verified +
-                ", startDate='" + startDate + '\'' +
-                ", status='" + status + '\'' +
+                ", passwordHash='" + passwordHash + '\'' +
+                ", verificationCode='" + verificationCode + '\'' +
+                ", verifiedStatus='" + verifiedStatus + '\'' +
+                ", falseAttempts=" + falseAttempts +
+                ", type='" + type + '\'' +
+                ", createAt='" + createAt + '\'' +
                 '}';
     }
 }

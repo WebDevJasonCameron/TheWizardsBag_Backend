@@ -56,8 +56,10 @@ public class ProductServiceImpl implements ProductService {
         existingProduct.setName(productDTO.getName());
         existingProduct.setPrice(productDTO.getPrice());
         existingProduct.setBackground(productDTO.getBackground());
-        existingProduct.setSaleStartDate(productDTO.getSaleStartDate());
-        existingProduct.setSaleEndDate(productDTO.getSaleEndDate());
+        existingProduct.setCreatedAt(productDTO.getCreatedAt());
+        existingProduct.setEndAt(productDTO.getEndAt());
+        existingProduct.setSaleStatus(productDTO.getSaleStatus());
+        existingProduct.setItemId(productDTO.getItemId());
 
         return productMapper.productToProductDTO(productRepository.save(existingProduct));
     }

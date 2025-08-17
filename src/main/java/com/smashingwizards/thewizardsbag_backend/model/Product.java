@@ -16,20 +16,27 @@ public class Product {
     private String price;
     @Column(name = "product_background")
     private String background;
-    @Column(name = "product_sale_start_date")
-    private String saleStartDate;
-    @Column(name = "product_sale_end_date")
-    private String saleEndDate;
+    @Column(name = "product_created_at")
+    private String createdAt;
+    @Column(name = "product_end_at")
+    private String endAt;
+    @Column(name = "product_sale_status")
+    private String saleStatus;
+    @Column(name = "items_item_id")
+    private Long itemId;
 
     // CONs
     public Product() {
     }
-    public Product(String name, String price, String background, String saleStartDate, String saleEndDate) {
-        this.name = name;
-        this.price = price;
+
+    public Product(Long itemId, String saleStatus, String endAt, String createdAt, String background, String price, String name) {
+        this.itemId = itemId;
+        this.saleStatus = saleStatus;
+        this.endAt = endAt;
+        this.createdAt = createdAt;
         this.background = background;
-        this.saleStartDate = saleStartDate;
-        this.saleEndDate = saleEndDate;
+        this.price = price;
+        this.name = name;
     }
 
     // GETs & SETs
@@ -61,18 +68,32 @@ public class Product {
         this.background = background;
     }
 
-    public String getSaleStartDate() {
-        return saleStartDate;
+    public String getCreatedAt() {
+        return createdAt;
     }
-    public void setSaleStartDate(String saleStartDate) {
-        this.saleStartDate = saleStartDate;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
-    public String getSaleEndDate() {
-        return saleEndDate;
+    public String getEndAt() {
+        return endAt;
     }
-    public void setSaleEndDate(String saleEndDate) {
-        this.saleEndDate = saleEndDate;
+    public void setEndAt(String endAt) {
+        this.endAt = endAt;
+    }
+
+    public String getSaleStatus() {
+        return saleStatus;
+    }
+    public void setSaleStatus(String saleStatus) {
+        this.saleStatus = saleStatus;
+    }
+
+    public Long getItemId() {
+        return itemId;
+    }
+    public void setItemId(Long itemId) {
+        this.itemId = itemId;
     }
 
     // OVRs
@@ -83,8 +104,10 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", price='" + price + '\'' +
                 ", background='" + background + '\'' +
-                ", saleStartDate='" + saleStartDate + '\'' +
-                ", saleEndDate='" + saleEndDate + '\'' +
+                ", createdAt='" + createdAt + '\'' +
+                ", endAt='" + endAt + '\'' +
+                ", saleStatus='" + saleStatus + '\'' +
+                ", itemId=" + itemId +
                 '}';
     }
 }

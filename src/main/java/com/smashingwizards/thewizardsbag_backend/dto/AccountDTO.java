@@ -6,19 +6,25 @@ public class AccountDTO {
 
     // ATTs
     private Long id;
-    private String password;
-    private Boolean verified;
-    private String startDate;
-    private String status;
+    private String accountPasswordHash;
+    private String verificationCode;
+    private String accountVerifiedStatus;
+    private int accountFalseAttempts;
+    private String accountStatus;
+    private String accountType;
+    private String accountCreatedAt;
 
     // CONs
     public AccountDTO() {
     }
-    public AccountDTO(Long id, String password, Boolean verified, String startDate, String status) {
-        this.password = password;
-        this.verified = verified;
-        this.startDate = startDate;
-        this.status = status;
+    public AccountDTO(String accountPasswordHash, String verificationCode, String accountVerifiedStatus, int accountFalseAttempts, String accountStatus, String accountType, String accountCreatedAt) {
+        this.accountPasswordHash = accountPasswordHash;
+        this.verificationCode = verificationCode;
+        this.accountVerifiedStatus = accountVerifiedStatus;
+        this.accountFalseAttempts = accountFalseAttempts;
+        this.accountStatus = accountStatus;
+        this.accountType = accountType;
+        this.accountCreatedAt = accountCreatedAt;
     }
 
     // GETs & SETs
@@ -29,31 +35,52 @@ public class AccountDTO {
         this.id = id;
     }
 
-    public String getPassword() {
-        return password;
+    public String getAccountPasswordHash() {
+        return accountPasswordHash;
     }
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Boolean getVerified() {
-        return verified;
-    }
-    public void setVerified(Boolean verified) {
-        this.verified = verified;
+    public void setAccountPasswordHash(String accountPasswordHash) {
+        this.accountPasswordHash = accountPasswordHash;
     }
 
-    public String getStartDate() {
-        return startDate;
+    public String getVerificationCode() {
+        return verificationCode;
     }
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
+    public void setVerificationCode(String verificationCode) {
+        this.verificationCode = verificationCode;
     }
 
-    public String getStatus() {
-        return status;
+    public String getAccountVerifiedStatus() {
+        return accountVerifiedStatus;
     }
-    public void setStatus(String status) {
-        this.status = status;
+    public void setAccountVerifiedStatus(String accountVerifiedStatus) {
+        this.accountVerifiedStatus = accountVerifiedStatus;
+    }
+
+    public int getAccountFalseAttempts() {
+        return accountFalseAttempts;
+    }
+    public void setAccountFalseAttempts(int accountFalseAttempts) {
+        this.accountFalseAttempts = accountFalseAttempts;
+    }
+
+    public String getAccountStatus() {
+        return accountStatus;
+    }
+    public void setAccountStatus(String accountStatus) {
+        this.accountStatus = accountStatus;
+    }
+
+    public String getAccountType() {
+        return accountType;
+    }
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
+    }
+
+    public String getAccountCreatedAt() {
+        return accountCreatedAt;
+    }
+    public void setAccountCreatedAt(String accountCreatedAt) {
+        this.accountCreatedAt = accountCreatedAt;
     }
 }

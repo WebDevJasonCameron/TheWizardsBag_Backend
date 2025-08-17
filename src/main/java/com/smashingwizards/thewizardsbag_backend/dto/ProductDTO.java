@@ -5,18 +5,24 @@ public class ProductDTO {
     private String name;
     private String price;
     private String background;
-    private String saleStartDate;
-    private String saleEndDate;
+    private String createdAt;
+    private String endAt;
+    private String saleStatus;
+    private Long itemId;
+
 
     // CONs
     public ProductDTO() {
     }
-    public ProductDTO(String name, String price, String background, String saleStartDate, String saleEndDate) {
+
+    public ProductDTO(String name, String price, String background, String createdAt, String endAt, String saleStatus, Long itemId) {
         this.name = name;
         this.price = price;
         this.background = background;
-        this.saleStartDate = saleStartDate;
-        this.saleEndDate = saleEndDate;
+        this.createdAt = createdAt;
+        this.endAt = endAt;
+        this.saleStatus = saleStatus;
+        this.itemId = itemId;
     }
 
     // GETs & SETs
@@ -48,17 +54,32 @@ public class ProductDTO {
         this.background = background;
     }
 
-    public String getSaleStartDate() {
-        return saleStartDate;
+    public String getCreatedAt() {
+        return createdAt;
     }
-    public void setSaleStartDate(String saleStartDate) {
-        this.saleStartDate = saleStartDate;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
-    public String getSaleEndDate() {
-        return saleEndDate;
+    public String getEndAt() {
+        return endAt;
     }
-    public void setSaleEndDate(String saleEndDate) {
-        this.saleEndDate = saleEndDate;
+    public void setEndAt(String endAt) {
+        this.endAt = endAt;
     }
+
+    public String getSaleStatus() {
+        return saleStatus;
+    }
+    public Long getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(Long itemId) {
+        this.itemId = itemId;
+    }
+    public void setSaleStatus(String saleStatus) {
+        this.saleStatus = saleStatus;
+    }
+
 }

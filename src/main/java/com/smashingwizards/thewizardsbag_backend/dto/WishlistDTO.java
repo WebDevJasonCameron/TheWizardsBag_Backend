@@ -1,11 +1,15 @@
 package com.smashingwizards.thewizardsbag_backend.dto;
 
+import java.util.Date;
+
 public class WishlistDTO {
 
     // ATTs
     private Long id;
     private Long userId;
     private Long itemId;
+    private Date createdAt;
+    private Date updatedAt;
 
     // CONs
     public WishlistDTO() {
@@ -35,5 +39,19 @@ public class WishlistDTO {
     }
     public void setItemId(Long itemId) {
         this.itemId = itemId;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
+    }
+    public void setUpdatedAt(Date updatedAt) {
+        this.updatedAt = updatedAt;
     }
 }

@@ -14,19 +14,17 @@ public class User {
     private Long id;
     @Column(name = "username")
     private String username;
-    @Column(name = "email")
+    @Column(name = "user_email")
     private String email;
-    @Column(name = "verification_code")
-    private String verificationCode;
-    @Column(name = "race")
+    @Column(name = "user_species")
     private String race;
-    @Column(name = "class")
+    @Column(name = "user_class")
     private String rpgClass;
-    @Column(name = "background")
+    @Column(name = "user_background")
     private String background;
-    @Column(name = "avatar_rul")
-    private String avatarUrl;
-    @Column(name = "start_date")
+    @Column(name = "user_image_url")
+    private Long imageUrl;
+    @Column(name = "user_start_date")
     private String startDate;
 
     @Column(name = "account_id")
@@ -41,23 +39,20 @@ public class User {
 
     // CONs
     public User() {}
-
-    public User(String username, String email, String verificationCode, String race, String rpgClass, String background, String avatarUrl, String startDate, String accountId, List<Like> likes, List<Wishlist> wishlists, List<Product> products) {
+    public User(String username, String email, String race, String rpgClass, String background, Long imageUrl, String startDate, String accountId, List<Like> likes, List<Wishlist> wishlists, List<Product> products) {
         this.username = username;
         this.email = email;
-        this.verificationCode = verificationCode;
         this.race = race;
         this.rpgClass = rpgClass;
         this.background = background;
-        this.avatarUrl = avatarUrl;
+        this.imageUrl = imageUrl;
         this.startDate = startDate;
         this.accountId = accountId;
         this.likes = likes;
         this.wishlists = wishlists;
         this.products = products;
     }
-
-    // GETs & SETs
+// GETs & SETs
 
     public Long getId() {
         return id;
@@ -80,11 +75,11 @@ public class User {
         this.email = email;
     }
 
-    public String getVerificationCode() {
-        return verificationCode;
+    public Long getImageUrl() {
+        return imageUrl;
     }
-    public void setVerificationCode(String verificationCode) {
-        this.verificationCode = verificationCode;
+    public void setImageUrl(Long imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getRace() {
@@ -106,13 +101,6 @@ public class User {
     }
     public void setBackground(String background) {
         this.background = background;
-    }
-
-    public String getAvatarUrl() {
-        return avatarUrl;
-    }
-    public void setAvatarUrl(String avatarUrl) {
-        this.avatarUrl = avatarUrl;
     }
 
     public String getStartDate() {

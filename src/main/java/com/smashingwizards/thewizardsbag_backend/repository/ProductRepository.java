@@ -8,9 +8,7 @@ import java.util.List;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
-
-    Product findByName(String name);
-    Product findByProductId(Long productId);
-    List<Product> findAllBySellerId(Long sellerId);
+    // You can add custom queries here, like:
+    // Optional<User> findByEmail(String email);
 
 }

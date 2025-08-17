@@ -2,6 +2,8 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.Date;
+
 @Entity
 @Table(name = "wishlist")
 public class Wishlist {
@@ -22,10 +24,11 @@ public class Wishlist {
     // CONs
     public Wishlist() {
     }
-    public Wishlist(Item item, User user) {
-        this.item = item;
+    public Wishlist(User user, Item item, Date createdAt, Date updatedAt) {
         this.user = user;
+        this.item = item;
     }
+
 
     // GETs & SETs
     public Long getId() {
@@ -50,6 +53,7 @@ public class Wishlist {
     }
 
     // OVRs
+
     @Override
     public String toString() {
         return "Wishlist{" +

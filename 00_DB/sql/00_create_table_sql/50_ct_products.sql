@@ -5,8 +5,9 @@ CREATE TABLE products (
                           product_name VARCHAR(255) NOT NULL,
                           product_price VARCHAR(255) NOT NULL ,
                           product_background TEXT,
-                          product_sale_start_date DATE,
-                          product_sale_end_date DATE,
+                          product_created_at DATE,
+                          product_end_at DATE,
+                          product_sale_status VARCHAR(25),
                           users_user_id bigint,
                           items_item_id bigint,
 
