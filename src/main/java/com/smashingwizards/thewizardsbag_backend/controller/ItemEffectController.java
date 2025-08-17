@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 
 @RestController
-@RequestMapping("/api/itemeffects")
+@RequestMapping("/api/itemEffects")
 public class ItemEffectController {
 
     // ATTs
@@ -35,7 +35,7 @@ public class ItemEffectController {
         ItemEffectDTO createdItemEffect = itemEffectService.createItemEffect(itemEffectDTO);
         // If your ItemEffectDTO carries 'id', build a location header
         return ResponseEntity
-                .created(URI.create("/api/createitems" + createdItemEffect.getId()))
+                .created(URI.create("/api/createItems" + createdItemEffect.getId()))
                 .body(createdItemEffect);
     }
 

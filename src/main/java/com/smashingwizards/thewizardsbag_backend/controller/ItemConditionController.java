@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 
 @RestController
-@RequestMapping("/api/itemconditions")
+@RequestMapping("/api/itemConditions")
 public class ItemConditionController {
 
     // ATTs
@@ -35,7 +35,7 @@ public class ItemConditionController {
         ItemConditionDTO createdItemCondition = itemConditionService.createItemCondition(itemConditionDTO);
 
         return ResponseEntity
-                .created(URI.create("/api/itemconditions/" + createdItemCondition.getId()))
+                .created(URI.create("/api/itemConditions/" + createdItemCondition.getId()))
                 .body(createdItemCondition);
     }
 

@@ -35,6 +35,7 @@ public class LikeController {
     public ResponseEntity<LikeDTO> createLike(@RequestBody LikeDTO likeDTO) {
         LikeDTO createdLike = likeService.createLike(likeDTO);
         // If your LikeDTO carries 'id', build a location header
+
         return ResponseEntity
                 .created(URI.create("/api/likes" + createdLike.getId()))
                 .body(createdLike);

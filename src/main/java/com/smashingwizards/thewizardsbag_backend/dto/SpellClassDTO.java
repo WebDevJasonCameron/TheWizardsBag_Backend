@@ -1,21 +1,18 @@
 package com.smashingwizards.thewizardsbag_backend.dto;
 
-import com.smashingwizards.thewizardsbag_backend.model.RpgClass;
-import com.smashingwizards.thewizardsbag_backend.model.Spell;
-
 public class SpellClassDTO {
 
     // ATTs
     private Long id;
     private Long spellId;
-    private Long rpgClass;
+    private Long rpgClassId;
 
     // CONs
     public SpellClassDTO() {
     }
-    public SpellClassDTO(Long spellId, Long rpgClass) {
+    public SpellClassDTO(Long spellId, Long rpgClassId) {
         this.spellId = spellId;
-        this.rpgClass = rpgClass;
+        this.rpgClassId = rpgClassId;
     }
 
     // GETs & SETs
@@ -34,9 +31,9 @@ public class SpellClassDTO {
     }
 
     public Long getRpgClass() {
-        return rpgClass;
+        return rpgClassId;
     }
-    public void setRpgClass(Long rpgClass) {
-        this.rpgClass = rpgClass;
+    public void setRpgClass(Long rpgClassId) {
+        this.rpgClassId = rpgClassId;
     }
 }

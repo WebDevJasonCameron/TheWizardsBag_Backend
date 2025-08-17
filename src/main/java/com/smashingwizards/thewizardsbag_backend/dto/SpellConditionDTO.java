@@ -1,8 +1,5 @@
 package com.smashingwizards.thewizardsbag_backend.dto;
 
-import com.smashingwizards.thewizardsbag_backend.model.Condition;
-import com.smashingwizards.thewizardsbag_backend.model.Spell;
-
 public class SpellConditionDTO {
 
     // ATTs

@@ -9,7 +9,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/itemnotes")
+@RequestMapping("/api/itemNotes")
 public class ItemNoteController {
 
     // ATTs
@@ -36,7 +36,7 @@ public class ItemNoteController {
         ItemNoteDTO createdItemNote = itemNoteService.createItemNote(itemNoteDTO);
         // If your LikeDTO carries 'id', build a location header
         return ResponseEntity
-                .created(URI.create("/api/itemnotes/" + createdItemNote.getId()))
+                .created(URI.create("/api/itemNotes/" + createdItemNote.getId()))
                 .body(createdItemNote);
     }
 
