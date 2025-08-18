@@ -54,12 +54,14 @@ public class AccountServiceImpl implements AccountService {
             throw new RuntimeException("Account not found");
         }
         Account existingAccount = optionalAccount.get();
-        existingAccount.setPasswordHash(accountDTO.getAccountPasswordHash());
+
+        existingAccount.setPasswordHash(accountDTO.getPasswordHash());
         existingAccount.setVerificationCode(accountDTO.getVerificationCode());
-        existingAccount.setVerifiedStatus(accountDTO.getAccountVerifiedStatus());
-        existingAccount.setFalseAttempts(accountDTO.getAccountFalseAttempts());
-        existingAccount.setType(accountDTO.getAccountType());
-        existingAccount.setCreateAt(accountDTO.getAccountCreatedAt());
+        existingAccount.setVerifiedStatus(accountDTO.getVerifiedStatus());
+        existingAccount.setFalseAttempts(accountDTO.getFalseAttempts());
+        existingAccount.setStatus(accountDTO.getStatus());
+        existingAccount.setType(accountDTO.getType());
+        existingAccount.setCreateAt(accountDTO.getCreatedAt());
 
         return accountMapper.accountToAccountDTO(accountRepository.save(existingAccount));
     }

@@ -2,6 +2,8 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.time.Instant;
+
 @Entity
 @Table(name = "accounts")
 public class Account {
@@ -18,19 +20,22 @@ public class Account {
     private String verifiedStatus;
     @Column(name = "account_false_attempts")
     private Integer falseAttempts;
+    @Column(name = "account_status")
+    private String status;
     @Column(name = "account_type")
     private String type;
     @Column(name = "account_create_at")
-    private String createAt;
+    private Instant createAt;
 
     // CONs
     public Account() {
     }
-    public Account(String passwordHash, String verificationCode, String verifiedStatus, Integer falseAttempts, String type, String createAt) {
+    public Account(String passwordHash, String verificationCode, String verifiedStatus, Integer falseAttempts, String status, String type, Instant createAt) {
         this.passwordHash = passwordHash;
         this.verificationCode = verificationCode;
         this.verifiedStatus = verifiedStatus;
         this.falseAttempts = falseAttempts;
+        this.status = status;
         this.type = type;
         this.createAt = createAt;
     }
@@ -78,10 +83,17 @@ public class Account {
         this.type = type;
     }
 
-    public String getCreateAt() {
+    public String getStatus() {
+        return status;
+    }
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Instant getCreateAt() {
         return createAt;
     }
-    public void setCreateAt(String createAt) {
+    public void setCreateAt(Instant createAt) {
         this.createAt = createAt;
     }
 
@@ -94,8 +106,9 @@ public class Account {
                 ", verificationCode='" + verificationCode + '\'' +
                 ", verifiedStatus='" + verifiedStatus + '\'' +
                 ", falseAttempts=" + falseAttempts +
+                ", status='" + status + '\'' +
                 ", type='" + type + '\'' +
-                ", createAt='" + createAt + '\'' +
+                ", createAt=" + createAt +
                 '}';
     }
 }

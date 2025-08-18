@@ -4,8 +4,9 @@ CREATE TABLE wishlists (
                        id bigint NOT NULL DEFAULT nextval('wishlist_seq'),
                        users_user_id bigint NOT NULL,
                        items_item_id bigint NOT NULL,
-                       wishlisted_created_at VARCHAR(50),
-                       wishlist_updated_at VARCHAR(50),
+                       wishlist_created_at timestamptz DEFAULT now(),
+                       wishlist_updated_at timestamptz,
+                       wishlist_group VARCHAR(155),
 
                        PRIMARY KEY (id),
                        FOREIGN KEY (users_user_id) REFERENCES users(id),

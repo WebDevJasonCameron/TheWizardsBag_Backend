@@ -1,12 +1,14 @@
 package com.smashingwizards.thewizardsbag_backend.dto;
 
+import java.time.Instant;
+
 public class ProductDTO {
     private Long id;
     private String name;
     private String price;
     private String background;
-    private String createdAt;
-    private String endAt;
+    private Instant createdAt;
+    private Instant endAt;
     private String saleStatus;
     private Long itemId;
 
@@ -14,8 +16,7 @@ public class ProductDTO {
     // CONs
     public ProductDTO() {
     }
-
-    public ProductDTO(String name, String price, String background, String createdAt, String endAt, String saleStatus, Long itemId) {
+    public ProductDTO(String name, String price, String background, Instant createdAt, Instant endAt, String saleStatus, Long itemId) {
         this.name = name;
         this.price = price;
         this.background = background;
@@ -54,17 +55,17 @@ public class ProductDTO {
         this.background = background;
     }
 
-    public String getCreatedAt() {
+    public Instant getCreatedAt() {
         return createdAt;
     }
-    public void setCreatedAt(String createdAt) {
+    public void setCreatedAt(Instant createdAt) {
         this.createdAt = createdAt;
     }
 
-    public String getEndAt() {
+    public Instant getEndAt() {
         return endAt;
     }
-    public void setEndAt(String endAt) {
+    public void setEndAt(Instant endAt) {
         this.endAt = endAt;
     }
 

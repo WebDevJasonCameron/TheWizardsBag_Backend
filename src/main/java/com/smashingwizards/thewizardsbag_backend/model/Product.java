@@ -2,6 +2,8 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.time.Instant;
+
 @Entity
 @Table(name = "products")
 public class Product {
@@ -16,10 +18,10 @@ public class Product {
     private String price;
     @Column(name = "product_background")
     private String background;
-    @Column(name = "product_created_at")
-    private String createdAt;
+    @Column(name = "product_created_at", updatable = false)
+    private Instant createdAt;
     @Column(name = "product_end_at")
-    private String endAt;
+    private Instant endAt;
     @Column(name = "product_sale_status")
     private String saleStatus;
     @Column(name = "items_item_id")
@@ -28,15 +30,14 @@ public class Product {
     // CONs
     public Product() {
     }
-
-    public Product(Long itemId, String saleStatus, String endAt, String createdAt, String background, String price, String name) {
-        this.itemId = itemId;
-        this.saleStatus = saleStatus;
-        this.endAt = endAt;
-        this.createdAt = createdAt;
-        this.background = background;
-        this.price = price;
+    public Product(String name, String price, String background, Instant createdAt, Instant endAt, String saleStatus, Long itemId) {
         this.name = name;
+        this.price = price;
+        this.background = background;
+        this.createdAt = createdAt;
+        this.endAt = endAt;
+        this.saleStatus = saleStatus;
+        this.itemId = itemId;
     }
 
     // GETs & SETs
@@ -68,17 +69,17 @@ public class Product {
         this.background = background;
     }
 
-    public String getCreatedAt() {
+    public Instant getCreatedAt() {
         return createdAt;
     }
-    public void setCreatedAt(String createdAt) {
+    public void setCreatedAt(Instant createdAt) {
         this.createdAt = createdAt;
     }
 
-    public String getEndAt() {
+    public Instant getEndAt() {
         return endAt;
     }
-    public void setEndAt(String endAt) {
+    public void setEndAt(Instant endAt) {
         this.endAt = endAt;
     }
 

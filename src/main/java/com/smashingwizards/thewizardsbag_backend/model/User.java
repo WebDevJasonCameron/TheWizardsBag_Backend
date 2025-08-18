@@ -2,6 +2,7 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.time.Instant;
 import java.util.List;
 
 @Entity
@@ -17,43 +18,72 @@ public class User {
     @Column(name = "user_email")
     private String email;
     @Column(name = "user_species")
-    private String race;
+    private String species;
     @Column(name = "user_class")
     private String rpgClass;
     @Column(name = "user_background")
     private String background;
     @Column(name = "user_image_url")
-    private Long imageUrl;
-    @Column(name = "user_start_date")
-    private String startDate;
+    private String imageUrl;
+    @Column(name = "user_created_at", insertable = false, updatable = false)
+    private Instant createdAt;
 
-    @Column(name = "account_id")
-    private String accountId;
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "account_id", nullable = false, unique = true)
+    private Account account;
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Like> likes;
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Wishlist> wishlists;
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY) // products might not be orphans of user—adjust cascade thoughtfully
     private List<Product> products;
+
+    // PREs
+    @PrePersist
+    protected void onCreate() {
+        if (this.createdAt == null) {
+            this.createdAt = Instant.now();
+        }
+    }
+
+    // convenience helpers keep both sides in sync
+    public void addLike(Like like) {
+        likes.add(like);
+        like.setUser(this);
+    }
+    public void removeLike(Like like) {
+        likes.remove(like);
+        like.setUser(null);
+    }
 
     // CONs
     public User() {}
-    public User(String username, String email, String race, String rpgClass, String background, Long imageUrl, String startDate, String accountId, List<Like> likes, List<Wishlist> wishlists, List<Product> products) {
+    public User(String username, String email, String species, String rpgClass, String background, String imageUrl, Instant createdAt, Account account) {
         this.username = username;
         this.email = email;
-        this.race = race;
+        this.species = species;
         this.rpgClass = rpgClass;
         this.background = background;
         this.imageUrl = imageUrl;
-        this.startDate = startDate;
-        this.accountId = accountId;
+        this.createdAt = createdAt;
+        this.account = account;
+    }
+    public User(String username, String email, String species, String rpgClass, String background, String imageUrl, Instant createdAt, Account account, List<Like> likes, List<Wishlist> wishlists, List<Product> products) {
+        this.username = username;
+        this.email = email;
+        this.species = species;
+        this.rpgClass = rpgClass;
+        this.background = background;
+        this.imageUrl = imageUrl;
+        this.createdAt = createdAt;
+        this.account = account;
         this.likes = likes;
         this.wishlists = wishlists;
         this.products = products;
     }
-// GETs & SETs
 
+    // GETs & SETs
     public Long getId() {
         return id;
     }
@@ -75,18 +105,11 @@ public class User {
         this.email = email;
     }
 
-    public Long getImageUrl() {
-        return imageUrl;
+    public String getSpecies() {
+        return species;
     }
-    public void setImageUrl(Long imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    public String getRace() {
-        return race;
-    }
-    public void setRace(String race) {
-        this.race = race;
+    public void setSpecies(String species) {
+        this.species = species;
     }
 
     public String getRpgClass() {
@@ -103,18 +126,25 @@ public class User {
         this.background = background;
     }
 
-    public String getStartDate() {
-        return startDate;
+    public String getImageUrl() {
+        return imageUrl;
     }
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
-    public String getAccountId() {
-        return accountId;
+    public Instant getCreatedAt() {
+        return createdAt;
     }
-    public void setAccountId(String accountId) {
-        this.accountId = accountId;
+    public void setCreatedAt(Instant createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     public List<Like> getLikes() {
@@ -136,5 +166,24 @@ public class User {
     }
     public void setProducts(List<Product> products) {
         this.products = products;
+    }
+
+    // OVRs
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", species='" + species + '\'' +
+                ", rpgClass='" + rpgClass + '\'' +
+                ", background='" + background + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", createdAt=" + createdAt +
+                ", account=" + account +
+                ", likes=" + likes +
+                ", wishlists=" + wishlists +
+                ", products=" + products +
+                '}';
     }
 }

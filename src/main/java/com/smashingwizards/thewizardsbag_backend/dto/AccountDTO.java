@@ -2,29 +2,31 @@ package com.smashingwizards.thewizardsbag_backend.dto;
 
 import jakarta.persistence.Column;
 
+import java.time.Instant;
+
 public class AccountDTO {
 
     // ATTs
     private Long id;
-    private String accountPasswordHash;
+    private String passwordHash;
     private String verificationCode;
-    private String accountVerifiedStatus;
-    private int accountFalseAttempts;
-    private String accountStatus;
-    private String accountType;
-    private String accountCreatedAt;
+    private String verifiedStatus;
+    private int falseAttempts;
+    private String status;
+    private String type;
+    private Instant createdAt;
 
     // CONs
     public AccountDTO() {
     }
-    public AccountDTO(String accountPasswordHash, String verificationCode, String accountVerifiedStatus, int accountFalseAttempts, String accountStatus, String accountType, String accountCreatedAt) {
-        this.accountPasswordHash = accountPasswordHash;
+    public AccountDTO(String passwordHash, String verificationCode, String verifiedStatus, int falseAttempts, String status, String type, Instant createdAt) {
+        this.passwordHash = passwordHash;
         this.verificationCode = verificationCode;
-        this.accountVerifiedStatus = accountVerifiedStatus;
-        this.accountFalseAttempts = accountFalseAttempts;
-        this.accountStatus = accountStatus;
-        this.accountType = accountType;
-        this.accountCreatedAt = accountCreatedAt;
+        this.verifiedStatus = verifiedStatus;
+        this.falseAttempts = falseAttempts;
+        this.status = status;
+        this.type = type;
+        this.createdAt = createdAt;
     }
 
     // GETs & SETs
@@ -35,11 +37,11 @@ public class AccountDTO {
         this.id = id;
     }
 
-    public String getAccountPasswordHash() {
-        return accountPasswordHash;
+    public String getPasswordHash() {
+        return passwordHash;
     }
-    public void setAccountPasswordHash(String accountPasswordHash) {
-        this.accountPasswordHash = accountPasswordHash;
+    public void setPasswordHash(String passwordHash) {
+        this.passwordHash = passwordHash;
     }
 
     public String getVerificationCode() {
@@ -49,38 +51,38 @@ public class AccountDTO {
         this.verificationCode = verificationCode;
     }
 
-    public String getAccountVerifiedStatus() {
-        return accountVerifiedStatus;
+    public String getVerifiedStatus() {
+        return verifiedStatus;
     }
-    public void setAccountVerifiedStatus(String accountVerifiedStatus) {
-        this.accountVerifiedStatus = accountVerifiedStatus;
-    }
-
-    public int getAccountFalseAttempts() {
-        return accountFalseAttempts;
-    }
-    public void setAccountFalseAttempts(int accountFalseAttempts) {
-        this.accountFalseAttempts = accountFalseAttempts;
+    public void setVerifiedStatus(String verifiedStatus) {
+        this.verifiedStatus = verifiedStatus;
     }
 
-    public String getAccountStatus() {
-        return accountStatus;
+    public int getFalseAttempts() {
+        return falseAttempts;
     }
-    public void setAccountStatus(String accountStatus) {
-        this.accountStatus = accountStatus;
-    }
-
-    public String getAccountType() {
-        return accountType;
-    }
-    public void setAccountType(String accountType) {
-        this.accountType = accountType;
+    public void setFalseAttempts(int falseAttempts) {
+        this.falseAttempts = falseAttempts;
     }
 
-    public String getAccountCreatedAt() {
-        return accountCreatedAt;
+    public String getStatus() {
+        return status;
     }
-    public void setAccountCreatedAt(String accountCreatedAt) {
-        this.accountCreatedAt = accountCreatedAt;
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getType() {
+        return type;
+    }
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Instant getCreatedAt() {
+        return createdAt;
+    }
+    public void setCreatedAt(Instant createdAt) {
+        this.createdAt = createdAt;
     }
 }

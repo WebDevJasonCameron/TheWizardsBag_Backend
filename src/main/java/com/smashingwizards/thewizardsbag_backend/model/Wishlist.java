@@ -2,10 +2,11 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.time.Instant;
 import java.util.Date;
 
 @Entity
-@Table(name = "wishlist")
+@Table(name = "wishlists")
 public class Wishlist {
 
     // ATTs
@@ -21,12 +22,38 @@ public class Wishlist {
     @JoinColumn(name = "items_item_id", nullable = false)
     private Item item;
 
+    @Column(name = "wishlist_created_at")
+    private Instant createdAt;
+
+    @Column(name = "wishlist_updated_at",  updatable = false)
+    private Instant updatedAt;
+
+    @Column(name = "wishlist_group")
+    private String group;
+
     // CONs
     public Wishlist() {
     }
-    public Wishlist(User user, Item item, Date createdAt, Date updatedAt) {
+    public Wishlist(User user, Item item) {
         this.user = user;
         this.item = item;
+    }
+    public Wishlist(User user, Item item, String group) {
+        this.user = user;
+        this.item = item;
+        this.group = group;
+    }
+
+    // PREs
+    @PrePersist
+    protected void onCreate() {
+        Instant now = Instant.now();
+        this.createdAt = Instant.now();
+        this.updatedAt = Instant.now();
+    }
+    @PreUpdate
+    protected void onUpdate() {
+        this.updatedAt = Instant.now();
     }
 
 
@@ -52,14 +79,37 @@ public class Wishlist {
         this.item = item;
     }
 
-    // OVRs
+    public Instant getCreatedAt() {
+        return createdAt;
+    }
+    public void setCreatedAt(Instant createdAt) {
+        this.createdAt = createdAt;
+    }
 
+    public Instant getUpdatedAt() {
+        return updatedAt;
+    }
+    public void setUpdatedAt(Instant updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
+    // OVRs
     @Override
     public String toString() {
         return "Wishlist{" +
                 "id=" + id +
                 ", user=" + user +
                 ", item=" + item +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", group='" + group + '\'' +
                 '}';
     }
 }

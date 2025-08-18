@@ -1,5 +1,6 @@
 package com.smashingwizards.thewizardsbag_backend.dto;
 
+import java.time.Instant;
 import java.util.Date;
 
 public class WishlistDTO {
@@ -8,8 +9,9 @@ public class WishlistDTO {
     private Long id;
     private Long userId;
     private Long itemId;
-    private Date createdAt;
-    private Date updatedAt;
+    private Instant createdAt;
+    private Instant updatedAt;
+    private String group;
 
     // CONs
     public WishlistDTO() {
@@ -17,6 +19,13 @@ public class WishlistDTO {
     public WishlistDTO(Long userId, Long itemId) {
         this.userId = userId;
         this.itemId = itemId;
+    }
+    public WishlistDTO(Long userId, Long itemId, Instant createdAt, Instant updatedAt, String group) {
+        this.userId = userId;
+        this.itemId = itemId;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+        this.group = group;
     }
 
     // GETs & SETs
@@ -41,17 +50,24 @@ public class WishlistDTO {
         this.itemId = itemId;
     }
 
-    public Date getCreatedAt() {
+    public Instant getCreatedAt() {
         return createdAt;
     }
-    public void setCreatedAt(Date createdAt) {
+    public void setCreatedAt(Instant createdAt) {
         this.createdAt = createdAt;
     }
 
-    public Date getUpdatedAt() {
+    public Instant getUpdatedAt() {
         return updatedAt;
     }
-    public void setUpdatedAt(Date updatedAt) {
+    public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+    public void setGroup(String group) {
+        this.group = group;
     }
 }

@@ -57,11 +57,11 @@ public class UserServiceImpl implements UserService {
         User existingUser = optionalUser.get();
         existingUser.setUsername(userDTO.getUsername());
         existingUser.setEmail(userDTO.getEmail());
-        existingUser.setRace(userDTO.getRace());
+        existingUser.setSpecies(userDTO.getSpecies());
         existingUser.setRpgClass(userDTO.getRpgClass());
         existingUser.setBackground(userDTO.getBackground());
-        existingUser.setAvatarUrl(userDTO.getAvatarUrl());
-        existingUser.setStartDate(userDTO.getStartDate());
+        existingUser.setCreatedAt(userDTO.getCreatedAt());
+        existingUser.setAccount(userDTO.getAccountId());
 
         return userMapper.userToUserDTO(userRepository.save(existingUser));
     }

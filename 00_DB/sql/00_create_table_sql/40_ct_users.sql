@@ -2,15 +2,14 @@ CREATE SEQUENCE IF NOT EXISTS user_seq start 1;
 
 CREATE TABLE users (
                id SERIAL PRIMARY KEY,
-               user_name VARCHAR(255) NOT NULL,
+               username VARCHAR(255) NOT NULL,
                user_email VARCHAR(255),
-               user_verification_code VARCHAR(20),
-               user_race VARCHAR(20),
+               user_species VARCHAR(20),
                user_class VARCHAR(20),
                user_background VARCHAR(20),
-               user_avatar_url VARCHAR(20),
-               user_date DATE,
-               account_id bigint NOT NULL,
+               user_image_url VARCHAR(555),
+               user_created_at timestamptz NOT NULL DEFAULT now(),
+               account_id BIGINT UNIQUE NOT NULL,
 
                FOREIGN KEY (account_id) REFERENCES accounts(id)
 );

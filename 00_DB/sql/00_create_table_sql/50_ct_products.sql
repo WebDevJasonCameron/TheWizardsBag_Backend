@@ -2,13 +2,13 @@ CREATE SEQUENCE IF NOT EXISTS product_seq start 1;
 
 CREATE TABLE products (
                           id SERIAL PRIMARY KEY,
-                          product_name VARCHAR(255) NOT NULL,
-                          product_price VARCHAR(255) NOT NULL ,
-                          product_background TEXT,
-                          product_created_at DATE,
-                          product_end_at DATE,
-                          product_sale_status VARCHAR(25),
                           users_user_id bigint,
+                          product_name VARCHAR(255) NOT NULL,
+                          product_price VARCHAR(255) NOT NULL,
+                          product_background TEXT,
+                          product_created_at timestamptz NOT NULL DEFAULT now(),
+                          product_end_at timestamptz,
+                          product_sale_status VARCHAR(25),
                           items_item_id bigint,
 
                           FOREIGN KEY (users_user_id) REFERENCES users(id),

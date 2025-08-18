@@ -51,22 +51,32 @@ public class WishlistServiceImpl implements WishlistService {
         User userRef = userRepository.getReferenceById(wishlistDTO.getUserId());
         Item itemRef = itemRepository.getReferenceById(wishlistDTO.getItemId());
 
-        Wishlist wishlist = new Wishlist(itemRef, userRef);
+        Wishlist wishlist = new Wishlist(userRef, itemRef);
+
+        if (wishlistDTO.getGroup() != null) {
+            wishlist.setGroup(wishlistDTO.getGroup());
+        }
+        // createdAt/updatedAt handled by @PrePersist
         return wishlistMapper.wishlistToWishlistDTO(wishlistRepository.save(wishlist));
     }
 
+
     @Override
     public WishlistDTO updateWishlist(Long id, WishlistDTO wishlistDTO) {
-        Wishlist existingWishlist = wishlistRepository.findById(id)
+        Wishlist existing = wishlistRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Wishlist not found"));
 
-        User userRef = userRepository.getReferenceById(wishlistDTO.getUserId());
-        Item itemRef = itemRepository.getReferenceById(wishlistDTO.getItemId());
-
-        existingWishlist.setUser(userRef);
-        existingWishlist.setItem(itemRef);
-
-        return wishlistMapper.wishlistToWishlistDTO(wishlistRepository.save(existingWishlist));
+        if (wishlistDTO.getUserId() != null) {
+            existing.setUser(userRepository.getReferenceById(wishlistDTO.getUserId()));
+        }
+        if (wishlistDTO.getItemId() != null) {
+            existing.setItem(itemRepository.getReferenceById(wishlistDTO.getItemId()));
+        }
+        if (wishlistDTO.getGroup() != null) {
+            existing.setGroup(wishlistDTO.getGroup());
+        }
+        // updatedAt handled by @PreUpdate
+        return wishlistMapper.wishlistToWishlistDTO(wishlistRepository.save(existing));
     }
 
     @Override
