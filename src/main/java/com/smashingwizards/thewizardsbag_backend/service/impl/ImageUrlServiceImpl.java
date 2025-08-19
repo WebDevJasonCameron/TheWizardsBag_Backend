@@ -53,7 +53,12 @@ public class ImageUrlServiceImpl implements ImageUrlService {
             throw new RuntimeException("Image not found");
         }
         ImageUrl existingImageUrl = optionalImageUrl.get();
-        existingImageUrl.setUrl(imageUrlDTO.getImageUrl());
+
+        existingImageUrl.setUrl(imageUrlDTO.getUrl());
+        existingImageUrl.setType(imageUrlDTO.getType());
+        existingImageUrl.setHash(imageUrlDTO.getHash());
+        existingImageUrl.setCreatedAt(imageUrlDTO.getCreatedAt());
+
 
         return imageUrlMapper.imageUrlToImageUrlDTO(imageUrlRepository.save(existingImageUrl));
     }

@@ -47,7 +47,7 @@ public class User {
         }
     }
 
-    // convenience helpers keep both sides in sync
+    // HLPs
     public void addLike(Like like) {
         likes.add(like);
         like.setUser(this);
