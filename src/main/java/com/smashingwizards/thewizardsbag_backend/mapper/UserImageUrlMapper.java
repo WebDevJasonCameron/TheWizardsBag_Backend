@@ -5,8 +5,6 @@ import com.smashingwizards.thewizardsbag_backend.model.UserImageUrl;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-import javax.crypto.spec.PSource;
-
 @Mapper(componentModel = "spring")
 public interface UserImageUrlMapper {
 

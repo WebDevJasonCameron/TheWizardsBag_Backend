@@ -17,14 +17,14 @@ import java.util.List;
 public class UserImageUrlServiceImpl implements UserImageUrlService {
 
     // ATTs
-    private final UserImageUrlRepository UserImageUrlRepository;
+    private final UserImageUrlRepository userImageUrlRepository;
     private final UserRepository userRepository;
     private final ImageUrlRepository imageUrlRepository;
     private final UserImageUrlMapper userImageUrlMapper;
 
     // CONs
     public UserImageUrlServiceImpl(UserImageUrlRepository userImageUrlRepository, UserRepository userRepository, ImageUrlRepository imageUrlRepository, UserImageUrlMapper userImageUrlMapper) {
-        UserImageUrlRepository = userImageUrlRepository;
+        this.userImageUrlRepository = userImageUrlRepository;
         this.userRepository = userRepository;
         this.imageUrlRepository = imageUrlRepository;
         this.userImageUrlMapper = userImageUrlMapper;
@@ -33,7 +33,7 @@ public class UserImageUrlServiceImpl implements UserImageUrlService {
     // CRUDs
     @Override
     public List<UserImageUrlDTO> getUserImageUrls() {
-        return UserImageUrlRepository.findAll()
+        return userImageUrlRepository.findAll()
                 .stream()
                 .map(userImageUrlMapper::userImageUrlToUserImageUrlDTO)
                 .toList();
@@ -41,7 +41,7 @@ public class UserImageUrlServiceImpl implements UserImageUrlService {
 
     @Override
     public UserImageUrlDTO getUserImageUrlById(Long id) {
-        return UserImageUrlRepository.findById(id)
+        return userImageUrlRepository.findById(id)
                 .map(userImageUrlMapper::userImageUrlToUserImageUrlDTO)
                 .orElseThrow(() -> new RuntimeException("UserImageUrl not found"));
     }
@@ -52,22 +52,22 @@ public class UserImageUrlServiceImpl implements UserImageUrlService {
         ImageUrl imageUrlRef = imageUrlRepository.getReferenceById(userImageUrlDTO.getImageUrlId());
 
         UserImageUrl userImageUrl = new UserImageUrl(userRef, imageUrlRef);
-        return userImageUrlMapper.userImageUrlToUserImageUrlDTO(UserImageUrlRepository.save(userImageUrl));
+        return userImageUrlMapper.userImageUrlToUserImageUrlDTO(userImageUrlRepository.save(userImageUrl));
     }
 
     @Override
     public UserImageUrlDTO updateUserImageUrl(Long id, UserImageUrlDTO userImageUrlDTO) {
-        UserImageUrl existingUserImageUrl = UserImageUrlRepository.findById(id)
+        UserImageUrl existingUserImageUrl = userImageUrlRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("UserImageUrl not found"));
 
         existingUserImageUrl.setUser(userRepository.getReferenceById(userImageUrlDTO.getUserId()));
         existingUserImageUrl.setImageUrl(imageUrlRepository.getReferenceById(userImageUrlDTO.getImageUrlId()));
 
-        return userImageUrlMapper.userImageUrlToUserImageUrlDTO(UserImageUrlRepository.save(existingUserImageUrl));
+        return userImageUrlMapper.userImageUrlToUserImageUrlDTO(userImageUrlRepository.save(existingUserImageUrl));
     }
 
     @Override
     public void deleteUserImageUrl(Long id) {
-        UserImageUrlRepository.deleteById(id);
+        userImageUrlRepository.deleteById(id);
     }
 }

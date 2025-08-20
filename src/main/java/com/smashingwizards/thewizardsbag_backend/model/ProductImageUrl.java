@@ -52,7 +52,7 @@ public class ProductImageUrl {
     // OVRs
     @Override
     public String toString() {
-        return "ProductImageUrl{" +
+        return "ProductImageUrlRepository{" +
                 "id=" + id +
                 ", product=" + product +
                 ", imageUrl=" + imageUrl +
