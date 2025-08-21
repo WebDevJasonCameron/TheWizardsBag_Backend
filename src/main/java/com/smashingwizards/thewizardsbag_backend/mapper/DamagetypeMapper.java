@@ -7,7 +7,6 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface DamagetypeMapper {
-    DamagetypeMapper INSTANCE = Mappers.getMapper(DamagetypeMapper.class);
 
     DamagetypeDTO damagetypeToDamagetypeDTO(Damagetype damagetype);
     Damagetype damagetypeDTOToDamagetype(DamagetypeDTO damagetypeDTO);

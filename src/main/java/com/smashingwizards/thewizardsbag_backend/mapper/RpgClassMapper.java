@@ -7,7 +7,6 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface RpgClassMapper {
-    RpgClassMapper INSTANCE = Mappers.getMapper(RpgClassMapper.class);
 
     RpgClassDTO rpgClassToRpgClassDTO(RpgClass rpgClass);
     RpgClass rpgClassDTOToRpgClass(RpgClassDTO rpgClassDTO);

@@ -7,7 +7,6 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface ImageUrlMapper {
-    ImageUrlMapper INSTANCE = Mappers.getMapper(ImageUrlMapper.class);
 
     ImageUrlDTO imageUrlToImageUrlDTO(ImageUrl imageUrl);
     ImageUrl imageUrlDTOToImage(ImageUrlDTO imageUrlDTO);

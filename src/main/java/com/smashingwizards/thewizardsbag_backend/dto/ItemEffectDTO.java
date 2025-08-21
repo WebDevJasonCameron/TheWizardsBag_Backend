@@ -23,10 +23,10 @@ public class ItemEffectDTO {
         this.id = id;
     }
 
-    public Long getSpellId() {
+    public Long getItemId() {
         return itemId;
     }
-    public void setSpellId(Long itemId) {
+    public void setItemId(Long itemId) {
         this.itemId = itemId;
     }
 

@@ -7,7 +7,6 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface ConditionMapper {
-    ConditionMapper INSTANCE = Mappers.getMapper(ConditionMapper.class);
 
     ConditionDTO conditionToConditionDTO(Condition condition);
     Condition conditionDTOToCondition(ConditionDTO conditionDTO);

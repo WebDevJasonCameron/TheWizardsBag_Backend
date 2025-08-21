@@ -7,7 +7,6 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface ItemMapper {
-    ItemMapper INSTANCE = Mappers.getMapper(ItemMapper.class);
 
     ItemDTO itemToItemDTO(Item item);
     Item itemDTOToItem(ItemDTO itemDTO);

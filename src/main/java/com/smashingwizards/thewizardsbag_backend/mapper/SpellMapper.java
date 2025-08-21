@@ -7,7 +7,6 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface SpellMapper {
-    SpellMapper INSTANCE = Mappers.getMapper(SpellMapper.class);
 
     SpellDTO spellToSpellDTO(Spell spell);
     Spell spellDTOToSpell(SpellDTO spellDTO);

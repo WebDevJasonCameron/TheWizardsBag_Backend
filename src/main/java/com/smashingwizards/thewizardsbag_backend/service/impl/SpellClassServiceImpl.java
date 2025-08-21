@@ -50,7 +50,7 @@ public class SpellClassServiceImpl implements SpellClassService {
     @Override
     public SpellClassDTO createSpellClass(SpellClassDTO spellClassDTO) {
         Spell spellRef = spellRepository.getReferenceById(spellClassDTO.getSpellId());
-        RpgClass rpgClassRef = rpgClassRepository.getReferenceById(spellClassDTO.getRpgClass());
+        RpgClass rpgClassRef = rpgClassRepository.getReferenceById(spellClassDTO.getRpgClassId());
 
         SpellClass spellClass = new SpellClass(spellRef, rpgClassRef);
         return spellClassMapper.spellClassToSpellClassDTO(spellClassRepository.save(spellClass));
@@ -62,7 +62,7 @@ public class SpellClassServiceImpl implements SpellClassService {
                 .orElseThrow(() -> new RuntimeException("SpellClass not found"));
 
         Spell spellRef = spellRepository.getReferenceById(spellClassDTO.getSpellId());
-        RpgClass rpgClassRef = rpgClassRepository.getReferenceById(spellClassDTO.getRpgClass());
+        RpgClass rpgClassRef = rpgClassRepository.getReferenceById(spellClassDTO.getRpgClassId());
 
         existingSpellClass.setSpell(spellRef);
         existingSpellClass.setRpgClass(rpgClassRef);

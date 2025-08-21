@@ -36,7 +36,7 @@ public class WishlistController {
         WishlistDTO createdWishlist = wishlistService.createWishlist(wishlistDTO);
         // If you WishlistDTO carries 'id', build a location header
         return ResponseEntity
-                .created(URI.create("/api/wishlist" + createdWishlist.getId()))
+                .created(URI.create("/api/wishlist/" + createdWishlist.getId()))
                 .body(createdWishlist);
     }
 

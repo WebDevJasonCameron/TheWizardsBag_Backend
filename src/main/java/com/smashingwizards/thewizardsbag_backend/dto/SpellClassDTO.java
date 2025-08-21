@@ -30,10 +30,10 @@ public class SpellClassDTO {
         this.spellId = spellId;
     }
 
-    public Long getRpgClass() {
+    public Long getRpgClassId() {
         return rpgClassId;
     }
-    public void setRpgClass(Long rpgClassId) {
+    public void setRpgClassId(Long rpgClassId) {
         this.rpgClassId = rpgClassId;
     }
 }

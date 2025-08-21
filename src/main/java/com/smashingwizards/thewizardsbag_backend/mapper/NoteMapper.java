@@ -7,7 +7,6 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface NoteMapper {
-    NoteMapper INSTANCE = Mappers.getMapper(NoteMapper.class);
 
     NoteDTO noteToNoteDTO(Note note);
     Note noteDTOToNote(NoteDTO noteDTO);

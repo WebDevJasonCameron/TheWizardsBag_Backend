@@ -7,7 +7,6 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface SourceMapper {
-    SourceMapper INSTANCE = Mappers.getMapper(SourceMapper.class);
 
     SourceDTO sourceToSourceDTO(Source source);
     Source sourceDTOToSource(SourceDTO sourceDTO);
