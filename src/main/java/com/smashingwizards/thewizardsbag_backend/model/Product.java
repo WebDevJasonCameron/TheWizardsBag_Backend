@@ -27,6 +27,10 @@ public class Product {
     @Column(name = "items_item_id")
     private Long itemId;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
     // CONs
     public Product() {
     }
@@ -38,6 +42,16 @@ public class Product {
         this.endAt = endAt;
         this.saleStatus = saleStatus;
         this.itemId = itemId;
+    }
+    public Product(String name, String price, String background, Instant createdAt, Instant endAt, String saleStatus, Long itemId, User user) {
+        this.name = name;
+        this.price = price;
+        this.background = background;
+        this.createdAt = createdAt;
+        this.endAt = endAt;
+        this.saleStatus = saleStatus;
+        this.itemId = itemId;
+        this.user = user;
     }
 
     // GETs & SETs
@@ -95,6 +109,13 @@ public class Product {
     }
     public void setItemId(Long itemId) {
         this.itemId = itemId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+    public void setUser(User user) {
+        this.user = user;
     }
 
     // OVRs

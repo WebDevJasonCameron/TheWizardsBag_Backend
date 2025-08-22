@@ -66,13 +66,41 @@ public class Item {
     @Column(name = "item_source_id")
     private Long sourceId;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "item_spells",
+            joinColumns = @JoinColumn(name = "items_itemid"),
+            inverseJoinColumns = @JoinColumn(name = "spells_spell_id"))
     List<Spell> spells;
-    List<Type> types;
-    List<Tag> tags;
-    List<Note> notes;
-    List<Condition> conditions;
-    List<Effect> effects;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "item_types",
+            joinColumns = @JoinColumn(name = "items_itemid"),
+            inverseJoinColumns = @JoinColumn(name = "types_type_id"))
+    List<Type> types;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "item_tags",
+            joinColumns = @JoinColumn(name = "items_itemid"),
+            inverseJoinColumns = @JoinColumn(name = "tags_tag_id"))
+    List<Tag> tags;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "item_notes",
+            joinColumns = @JoinColumn(name = "items_itemid"),
+            inverseJoinColumns = @JoinColumn(name = "notes_note_id"))
+    List<Note> notes;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "item_conditions",
+            joinColumns = @JoinColumn(name = "items_itemid"),
+            inverseJoinColumns = @JoinColumn(name = "conditions_condition_id"))
+    List<Condition> conditions;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "item_effects",
+            joinColumns = @JoinColumn(name = "items_itemid"),
+            inverseJoinColumns = @JoinColumn(name = "effects_effect_id"))
+    List<Effect> effects;
 
     // CONs
     public Item() {
