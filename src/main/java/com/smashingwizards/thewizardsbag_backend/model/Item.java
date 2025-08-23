@@ -2,6 +2,7 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -90,17 +91,11 @@ public class Item {
             inverseJoinColumns = @JoinColumn(name = "notes_note_id"))
     List<Note> notes;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "item_conditions",
-            joinColumns = @JoinColumn(name = "items_itemid"),
-            inverseJoinColumns = @JoinColumn(name = "conditions_condition_id"))
-    List<Condition> conditions;
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<ItemCondition> itemConditions = new ArrayList<>();
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "item_effects",
-            joinColumns = @JoinColumn(name = "items_itemid"),
-            inverseJoinColumns = @JoinColumn(name = "effects_effect_id"))
-    List<Effect> effects;
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<ItemEffect> itemEffects = new ArrayList<>();
 
     // CONs
     public Item() {
@@ -318,46 +313,15 @@ public class Item {
         this.sourceId = sourceId;
     }
 
-    public List<Spell> getSpells() {
-        return spells;
-    }
-    public void setSpells(List<Spell> spells) {
-        this.spells = spells;
-    }
-
-    public List<Type> getTypes() {
-        return types;
-    }
-    public void setTypes(List<Type> types) {
-        this.types = types;
-    }
-
-    public List<Tag> getTags() {
-        return tags;
-    }
-    public void setTags(List<Tag> tags) {
-        this.tags = tags;
-    }
-
-    public List<Note> getNotes() {
-        return notes;
-    }
-    public void setNotes(List<Note> notes) {
-        this.notes = notes;
-    }
-
+    // TRNs
+    @Transient
     public List<Condition> getConditions() {
-        return conditions;
-    }
-    public void setConditions(List<Condition> conditions) {
-        this.conditions = conditions;
+        return itemConditions.stream().map(ItemCondition::getCondition).toList();
     }
 
-    public List<Effect> getEffects() {
-        return effects;
-    }
-    public void setEffects(List<Effect> effects) {
-        this.effects = effects;
+    @Transient
+    public List<Effect> getEffect() {
+        return itemEffects.stream().map(ItemEffect::getEffect).toList();
     }
 
     // OVRs

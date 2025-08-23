@@ -2,6 +2,9 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "effects")
 public class Effect {
@@ -15,6 +18,8 @@ public class Effect {
     @Column(name = "effect_sub_effect")
     private String subEffect;
 
+    @OneToMany(mappedBy = "effect", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ItemEffect> itemEffects = new ArrayList<>();
 
     // CONs
     public Effect() {

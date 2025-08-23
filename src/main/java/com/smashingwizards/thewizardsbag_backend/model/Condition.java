@@ -2,6 +2,9 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "conditions")
 public class Condition {
@@ -14,6 +17,9 @@ public class Condition {
     private String name;
     @Column(name = "condition_description")
     private String description;
+
+    @OneToMany(mappedBy = "condition", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ItemCondition> itemConditions = new ArrayList<>();
 
     // CONs
     public Condition() {
