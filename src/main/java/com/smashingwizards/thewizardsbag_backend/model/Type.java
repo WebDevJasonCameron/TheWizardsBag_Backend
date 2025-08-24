@@ -2,6 +2,9 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "types")
 public class Type {
@@ -14,6 +17,9 @@ public class Type {
     private String name;
     @Column(name = "type sub_type")
     private String subType;
+
+    @OneToMany(mappedBy = "type", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ItemType> itemTypes = new ArrayList<>();
 
     // CONs
     public Type() {

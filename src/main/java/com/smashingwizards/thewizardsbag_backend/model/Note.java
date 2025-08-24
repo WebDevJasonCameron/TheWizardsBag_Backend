@@ -2,6 +2,9 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "notes")
 public class Note {
@@ -18,6 +21,9 @@ public class Note {
     private String content;
     @Column(name = "note_author")
     private String author;
+
+    @OneToMany(mappedBy = "note", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ItemNote> itemNotes = new ArrayList<>();
 
     // CONs
     public Note() {

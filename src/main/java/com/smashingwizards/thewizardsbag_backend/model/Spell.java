@@ -2,6 +2,7 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -43,11 +44,13 @@ public class Spell {
     @Column(name = "spell_source_id")
     private Long sourceId;
 
+    @OneToMany(mappedBy = "spell", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ItemSpell> itemSpells = new ArrayList<>();
+
     List<Tag> tags;
     List<Condition> conditions;
     List<RpgClass> rpgClasses;
     List<Damagetype> damagetypes;
-
 
     // CONs
     public Spell() {

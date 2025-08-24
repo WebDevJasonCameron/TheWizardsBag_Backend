@@ -67,29 +67,17 @@ public class Item {
     @Column(name = "item_source_id")
     private Long sourceId;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "item_spells",
-            joinColumns = @JoinColumn(name = "items_itemid"),
-            inverseJoinColumns = @JoinColumn(name = "spells_spell_id"))
-    List<Spell> spells;
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<ItemSpell> itemSpells = new ArrayList<>();
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "item_types",
-            joinColumns = @JoinColumn(name = "items_itemid"),
-            inverseJoinColumns = @JoinColumn(name = "types_type_id"))
-    List<Type> types;
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<ItemType> itemTypes = new ArrayList<>();
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "item_tags",
-            joinColumns = @JoinColumn(name = "items_itemid"),
-            inverseJoinColumns = @JoinColumn(name = "tags_tag_id"))
-    List<Tag> tags;
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<ItemTag> itemTags = new ArrayList<>();
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "item_notes",
-            joinColumns = @JoinColumn(name = "items_itemid"),
-            inverseJoinColumns = @JoinColumn(name = "notes_note_id"))
-    List<Note> notes;
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<ItemNote> itemNotes = new ArrayList<>();
 
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
     List<ItemCondition> itemConditions = new ArrayList<>();
@@ -314,6 +302,26 @@ public class Item {
     }
 
     // TRNs
+    @Transient
+    public List<Spell> getSpells() {
+        return itemSpells.stream().map(ItemSpell::getSpell).toList();
+    }
+
+    @Transient
+    public List<Type> getTypes(){
+        return itemTypes.stream().map(ItemType::getType).toList();
+    }
+
+    @Transient
+    public List<Tag> getTags() {
+        return itemTags.stream().map(ItemTag::getTag).toList();
+    }
+
+    @Transient
+    public List<Note> getNotes() {
+        return itemNotes.stream().map(ItemNote::getNote).toList();
+    }
+
     @Transient
     public List<Condition> getConditions() {
         return itemConditions.stream().map(ItemCondition::getCondition).toList();
