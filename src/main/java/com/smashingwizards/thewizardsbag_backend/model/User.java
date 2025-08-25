@@ -36,7 +36,7 @@ public class User {
     private List<Like> likes;
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Wishlist> wishlists;
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY) // products might not be orphans of user—adjust cascade thoughtfully
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Product> products;
 
     // PREs
@@ -166,6 +166,20 @@ public class User {
     }
     public void setProducts(List<Product> products) {
         this.products = products;
+    }
+
+    // TRNs
+    @Transient
+    public List<Like> getLikesByProduct(Product product) {
+        return likes.stream().filter(like -> like.getProduct().equals(product)).toList();
+    }
+    @Transient
+    public List<Wishlist> getWishlistsByItem(Item item) {
+        return wishlists.stream().filter(wishlist -> wishlist.getItem().equals(item)).toList();
+    }
+    @Transient
+    public List<Product> getProductsById(Long id) {
+        return products.stream().filter(product -> product.getId().equals(id)).toList();
     }
 
     // OVRs

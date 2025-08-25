@@ -3,6 +3,8 @@ package com.smashingwizards.thewizardsbag_backend.model;
 import jakarta.persistence.*;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "products")
@@ -30,6 +32,10 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    // BACKs
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Like> likes = new ArrayList<>();
 
     // CONs
     public Product() {
@@ -117,6 +123,15 @@ public class Product {
     public void setUser(User user) {
         this.user = user;
     }
+
+    public List<Like> getLikes() {
+        return likes;
+    }
+    public void setLikes(List<Like> likes) {
+        this.likes = likes;
+    }
+
+
 
     // OVRs
     @Override

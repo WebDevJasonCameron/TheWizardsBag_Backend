@@ -69,26 +69,24 @@ public class Item {
 
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
     List<ItemSpell> itemSpells = new ArrayList<>();
-
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
     List<ItemType> itemTypes = new ArrayList<>();
-
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
     List<ItemTag> itemTags = new ArrayList<>();
-
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
     List<ItemNote> itemNotes = new ArrayList<>();
-
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
     List<ItemCondition> itemConditions = new ArrayList<>();
-
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
     List<ItemEffect> itemEffects = new ArrayList<>();
+
+    // BACKs
+    @OneToMany(mappedBy = "item" , cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Wishlist> wishlists = new ArrayList<>();
 
     // CONs
     public Item() {
     }
-
     public Item(String name, String ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, boolean magical, boolean requiresAttunement, boolean cursed, boolean magicBonusPlusOne, boolean magicBonusPlusTwo, boolean magicBonusPlusThree, boolean hasCharges, int numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
         this.name = name;
         this.ttrpg = ttrpg;
@@ -116,7 +114,6 @@ public class Item {
         this.armorNotes = armorNotes;
         this.sourceId = sourceId;
     }
-
 
     // GETs & SETs
     public Long getId() {
@@ -300,6 +297,8 @@ public class Item {
     public void setSourceId(Long sourceId) {
         this.sourceId = sourceId;
     }
+
+
 
     // TRNs
     @Transient
