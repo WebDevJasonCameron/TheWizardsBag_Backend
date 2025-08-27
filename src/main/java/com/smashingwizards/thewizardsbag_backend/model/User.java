@@ -177,10 +177,6 @@ public class User {
     public List<Wishlist> getWishlistsByItem(Item item) {
         return wishlists.stream().filter(wishlist -> wishlist.getItem().equals(item)).toList();
     }
-    @Transient
-    public List<Product> getProductsById(Long id) {
-        return products.stream().filter(product -> product.getId().equals(id)).toList();
-    }
 
     // OVRs
     @Override

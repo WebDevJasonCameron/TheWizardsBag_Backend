@@ -131,8 +131,6 @@ public class Product {
         this.likes = likes;
     }
 
-
-
     // OVRs
     @Override
     public String toString() {

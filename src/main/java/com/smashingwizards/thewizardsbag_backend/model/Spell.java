@@ -47,15 +47,19 @@ public class Spell {
     @OneToMany(mappedBy = "spell", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ItemSpell> itemSpells = new ArrayList<>();
 
-    List<Tag> tags;
-    List<Condition> conditions;
-    List<RpgClass> rpgClasses;
-    List<Damagetype> damagetypes;
+    @OneToMany(mappedBy = "spell", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<SpellTag> spellTags = new ArrayList<>();
+    @OneToMany(mappedBy = "spell", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<SpellCondition> spellConditions = new ArrayList<>();
+    @OneToMany(mappedBy = "spell", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<SpellClass> spellClasses = new ArrayList<>();
+    @OneToMany(mappedBy = "spell", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<SpellDamagetype> spellDamagetypes = new ArrayList<>();
 
     // CONs
     public Spell() {
     }
-    public Spell(String name, String level, String castingTime, String rangeArea, boolean componentVisual, boolean componentSemantic, boolean componentMaterial, String componentMaterials, String duration, boolean concentration, boolean ritual, String school, String description, String imageUrl, Long sourceId, List<Tag> tags, List<Condition> conditions, List<RpgClass> rpgClasses, List<Damagetype> damagetypes) {
+    public Spell(String name, String level, String castingTime, String rangeArea, boolean componentVisual, boolean componentSemantic, boolean componentMaterial, String componentMaterials, String duration, boolean concentration, boolean ritual, String school, String description, String imageUrl, Long sourceId) {
         this.name = name;
         this.level = level;
         this.castingTime = castingTime;
@@ -71,10 +75,6 @@ public class Spell {
         this.description = description;
         this.imageUrl = imageUrl;
         this.sourceId = sourceId;
-        this.tags = tags;
-        this.conditions = conditions;
-        this.rpgClasses = rpgClasses;
-        this.damagetypes = damagetypes;
     }
 
     // GETs & SETs
@@ -190,32 +190,22 @@ public class Spell {
         this.sourceId = sourceId;
     }
 
-    public List<Tag> getTags() {
-        return tags;
+    // TRNs
+    @Transient
+    public List<Tag> getTags(){
+        return spellTags.stream().map(SpellTag::getTag).toList();
     }
-    public void setTags(List<Tag> tags) {
-        this.tags = tags;
+    @Transient
+    public List<Condition> getConditions(){
+        return spellConditions.stream().map(SpellCondition::getCondition).toList();
     }
-
-    public List<Condition> getConditions() {
-        return conditions;
+    @Transient
+    public List<RpgClass> getRpgClasses(){
+        return spellClasses.stream().map(SpellClass::getRpgClass).toList();
     }
-    public void setConditions(List<Condition> conditions) {
-        this.conditions = conditions;
-    }
-
-    public List<RpgClass> getRpgClasses() {
-        return rpgClasses;
-    }
-    public void setRpgClasses(List<RpgClass> rpgClasses) {
-        this.rpgClasses = rpgClasses;
-    }
-
-    public List<Damagetype> getDamagetypes() {
-        return damagetypes;
-    }
-    public void setDamagetypes(List<Damagetype> damagetypes) {
-        this.damagetypes = damagetypes;
+    @Transient
+    public List<Damagetype> getDamagetypes(){
+        return spellDamagetypes.stream().map(SpellDamagetype::getDamagetype).toList();
     }
 
     // OVRs
