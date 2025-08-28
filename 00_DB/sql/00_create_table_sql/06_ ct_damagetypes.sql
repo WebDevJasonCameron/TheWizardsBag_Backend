@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS damagetype_seq start with 1;
 
-CREATE TABLE damagetypes (
+CREATE TABLE IF NOT EXISTS damagetypes (
                        id bigint NOT NULL DEFAULT nextval('damagetype_seq'),
                        damagetype_name varchar(50) NOT NULL,
 
@@ -8,5 +8,5 @@ CREATE TABLE damagetypes (
 );
 
 ALTER SEQUENCE damagetype_seq OWNED BY damagetypes.id;
-TER SEQUENCE damagetype_seq RESTART WITH 1;
+ALTER SEQUENCE damagetype_seq RESTART WITH 1;
 

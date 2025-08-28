@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS effect_seq start with 1;
 
-CREATE TABLE effects (
+CREATE TABLE IF NOT EXISTS effects (
                        id bigint NOT NULL DEFAULT nextval('effect_seq'),
                        effect_name varchar(255) NOT NULL,
                        effect_sub_effect varchar(255) NOT NULL,

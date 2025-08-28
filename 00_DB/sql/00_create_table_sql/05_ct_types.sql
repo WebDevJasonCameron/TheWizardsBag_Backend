@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS type_seq start with 1;
 
-CREATE TABLE types (
+CREATE TABLE IF NOT EXISTS types (
                        id bigint NOT NULL DEFAULT nextval('type_seq'),
                        type_name varchar(255) NOT NULL ,
                        type_sub_type varchar(255) NOT NULL ,

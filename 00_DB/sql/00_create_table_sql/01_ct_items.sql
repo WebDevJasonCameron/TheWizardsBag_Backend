@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS item_seq start 1;
 
-CREATE TABLE items (
+CREATE TABLE IF NOT EXISTS items (
                      id SERIAL PRIMARY KEY,
                      item_name VARCHAR(100) NOT NULL,
                      item_ttrpg VARCHAR(255),
@@ -32,11 +32,10 @@ CREATE TABLE items (
                      item_armor_notes TEXT,
 
                      item_image_url VARCHAR(500),
-                     item_source_id BIGINT
+                     item_source_id BIGINT,
 
-                     FOREIGN KEY (item_source_id) REFERENCES sources(id),
-                     PRIMARY KEY (id)
-);
+                     FOREIGN KEY (item_source_id) REFERENCES sources(id)
+                   );
 
 ALTER SEQUENCE item_seq OWNED BY items.id;
 ALTER SEQUENCE item_seq RESTART WITH 1;

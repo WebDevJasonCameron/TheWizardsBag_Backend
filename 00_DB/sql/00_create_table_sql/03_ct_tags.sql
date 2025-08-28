@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS tag_seq start with 1;
 
-CREATE TABLE tags (
+CREATE TABLE IF NOT EXISTS tags (
                              id bigint NOT NULL DEFAULT nextval('tag_seq'),
                              tag_name varchar(50) NOT NULL UNIQUE,
                              tag_type varchar(50) NOT NULL,
