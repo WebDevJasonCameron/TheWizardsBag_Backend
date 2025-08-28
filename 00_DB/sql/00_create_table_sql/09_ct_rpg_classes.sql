@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS class_seq start with 1;
 
-CREATE TABLE rpg_classes (
+CREATE TABLE IF NOT EXISTS rpg_classes (
                        id bigint NOT NULL DEFAULT nextval('class_seq'),
                        class_name varchar(255) NOT NULL ,
                        class_subclass_name varchar(255),

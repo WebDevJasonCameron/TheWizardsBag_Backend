@@ -1,9 +1,12 @@
 CREATE SEQUENCE IF NOT EXISTS like_seq start 1;
 
-CREATE TABLE likes (
-              id bigint NOT NULL DEFAULT nextval('like_seq'),
-              users_user_id bigint,
-              products_product_id bigint,
+CREATE TABLE IF NOT EXISTS likes (
+              id BIGINT NOT NULL DEFAULT nextval('like_seq'),
+              users_user_id BIGINT,
+              products_product_id BIGINT,
+              created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+
+
               FOREIGN KEY (users_user_id) REFERENCES items(id),
               FOREIGN KEY (products_product_id) REFERENCES effects(id),
 

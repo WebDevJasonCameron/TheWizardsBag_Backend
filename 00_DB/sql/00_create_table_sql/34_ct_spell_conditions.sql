@@ -1,10 +1,10 @@
 CREATE SEQUENCE IF NOT EXISTS spell_condition_seq start 1;
 
-CREATE TABLE spell_conditions (
-                            id bigint NOT NULL DEFAULT nextval('spell_condition_seq'),
-                            spells_spell_id bigint,
-                            conditions_condition_id bigint,
-F
+CREATE TABLE IF NOT EXISTS spell_conditions (
+                            id BIGINT NOT NULL DEFAULT nextval('spell_condition_seq'),
+                            spells_spell_id BIGINT,
+                            conditions_condition_id BIGINT,
+
                             FOREIGN KEY (spells_spell_id) REFERENCES spells(id),
                             FOREIGN KEY (conditions_condition_id) REFERENCES conditions(id),
                             PRIMARY KEY (id)

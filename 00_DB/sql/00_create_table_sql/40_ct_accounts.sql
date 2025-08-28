@@ -8,7 +8,7 @@ CREATE TABLE accounts (
                        account_false_attempts INT,
                        account_status VARCHAR(25),
                        account_type VARCHAR(50),
-                       account_created_at timestamptz NOT NULL DEFAULT now()
+                       account_created_at DATE NOT NULL DEFAULT now()
 );
 
 ALTER SEQUENCE account_seq OWNED BY accounts.id;

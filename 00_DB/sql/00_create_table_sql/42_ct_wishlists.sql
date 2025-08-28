@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS wishlist_seq start 1;
 
-CREATE TABLE wishlists (
+CREATE TABLE IF NOT EXISTS wishlists (
                        id bigint NOT NULL DEFAULT nextval('wishlist_seq'),
                        users_user_id bigint NOT NULL,
                        items_item_id bigint NOT NULL,

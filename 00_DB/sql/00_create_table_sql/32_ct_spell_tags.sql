@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS spell_tag_seq start 1;
 
-CREATE TABLE spell_tags (
+CREATE TABLE IF NOT EXISTS spell_tags (
                            id bigint NOT NULL DEFAULT nextval('spell_tag_seq'),
                            spells_spell_id bigint,
                            tags_tag_id bigint,
