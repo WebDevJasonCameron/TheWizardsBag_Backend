@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS spell_image_urls_seq start 1;
 
-CREATE TABLE spell_image_urls (
+CREATE TABLE IF NOT EXISTS spell_image_urls (
                                  id bigint NOT NULL DEFAULT nextval('spell_image_urls'),
                                  spell_image_id bigint NOT NULL,
                                  image_urls_image_url_id bigint NOT NULL,

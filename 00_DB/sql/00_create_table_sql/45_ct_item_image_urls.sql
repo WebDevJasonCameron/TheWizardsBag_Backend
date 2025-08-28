@@ -1,9 +1,9 @@
 CREATE SEQUENCE IF NOT EXISTS item_image_urls_seq start 1;
 
-CREATE TABLE item_image_urls (
-                                    id bigint NOT NULL DEFAULT nextval('item_image_urls'),
-                                    items_item_id bigint NOT NULL,
-                                    image_urls_image_url_id bigint NOT NULL,
+CREATE TABLE IF NOT EXISTS item_image_urls (
+                                    id BIGINT NOT NULL DEFAULT nextval('item_image_urls'),
+                                    items_item_id BIGINT NOT NULL,
+                                    image_urls_image_url_id BIGINT NOT NULL,
 
                                     PRIMARY KEY (id),
                                     FOREIGN KEY (items_item_id) REFERENCES users(id),

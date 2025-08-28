@@ -1,9 +1,9 @@
 CREATE SEQUENCE IF NOT EXISTS note_seq start with 1;
 
-CREATE TABLE notes (
-                             id bigint NOT NULL DEFAULT nextval('note_seq'),
+CREATE TABLE IF NOT EXISTS notes (
+                             id BIGINT NOT NULL DEFAULT nextval('note_seq'),
                              note_name VARCHAR(50) NOT NULL,
-                             note_content text,
+                             note_content TEXT NOT NULL,
                              note_author BIGINT NOT NULL,
                              note_type VARCHAR(50) NOT NULL,
 

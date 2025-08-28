@@ -1,9 +1,9 @@
 CREATE SEQUENCE IF NOT EXISTS item_spell_seq start 1;
 
-CREATE TABLE item_spells (
-                              id bigint NOT NULL DEFAULT nextval('item_spell_seq'),
-                              items_item_id bigint,
-                              spells_spell_id bigint,
+CREATE TABLE IF NOT EXISTS item_spells (
+                              id BIGINT NOT NULL DEFAULT nextval('item_spell_seq'),
+                              items_item_id BIGINT,
+                              spells_spell_id BIGINT,
 
                               FOREIGN KEY (items_item_id) REFERENCES items(id),
                               FOREIGN KEY (spells_spell_id) REFERENCES spells(id),

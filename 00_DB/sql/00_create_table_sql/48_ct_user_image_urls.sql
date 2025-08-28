@@ -1,6 +1,6 @@
 CREATE SEQUENCE IF NOT EXISTS user_image_url_seq start 1;
 
-CREATE TABLE user_image_urls (
+CREATE TABLE IF NOT EXISTS user_image_urls (
                            id bigint NOT NULL DEFAULT nextval('user_image_url_seq'),
                            users_user_id bigint NOT NULL,
                            image_urls_image_url_id bigint NOT NULL,
