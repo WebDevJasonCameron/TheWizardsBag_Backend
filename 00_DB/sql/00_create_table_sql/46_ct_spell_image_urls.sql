@@ -6,8 +6,8 @@ CREATE TABLE IF NOT EXISTS spell_image_urls (
                                  image_urls_image_url_id bigint NOT NULL,
 
                                  PRIMARY KEY (id),
-                                 FOREIGN KEY (spell_image_id) REFERENCES users(id),
-                                 FOREIGN KEY (image_urls_image_url_id) REFERENCES items(id)
+                                 FOREIGN KEY (spell_image_id) REFERENCES spells(id),
+                                 FOREIGN KEY (image_urls_image_url_id) REFERENCES image_urls(id)
 );
 
 ALTER SEQUENCE spell_image_urls_seq OWNED BY spell_image_urls.id;

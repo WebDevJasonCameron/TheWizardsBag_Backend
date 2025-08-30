@@ -7,8 +7,8 @@ CREATE TABLE IF NOT EXISTS likes (
               created_at TIMESTAMP NOT NULL DEFAULT NOW(),
 
 
-              FOREIGN KEY (users_user_id) REFERENCES items(id),
-              FOREIGN KEY (products_product_id) REFERENCES effects(id),
+              FOREIGN KEY (users_user_id) REFERENCES users(id),
+              FOREIGN KEY (products_product_id) REFERENCES products(id),
 
               PRIMARY KEY (id)
 );

@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS spells(
                         spell_component_visual BOOL,
                         spell_component_semantic BOOL,
                         spell_component_material BOOL,
-                        spell_component_materials VARCHAR(999),
+                        spell_component_materials TEXT,
                         spell_duration VARCHAR(255),
                         spell_concentration BOOL,
                         spell_ritual BOOL,

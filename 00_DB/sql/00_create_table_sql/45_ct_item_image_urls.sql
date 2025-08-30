@@ -6,8 +6,8 @@ CREATE TABLE IF NOT EXISTS item_image_urls (
                                     image_urls_image_url_id BIGINT NOT NULL,
 
                                     PRIMARY KEY (id),
-                                    FOREIGN KEY (items_item_id) REFERENCES users(id),
-                                    FOREIGN KEY (image_urls_image_url_id) REFERENCES items(id)
+                                    FOREIGN KEY (items_item_id) REFERENCES items(id),
+                                    FOREIGN KEY (image_urls_image_url_id) REFERENCES items_urls(id)
 );
 
 ALTER SEQUENCE item_image_urls_seq OWNED BY item_image_urls.id;
