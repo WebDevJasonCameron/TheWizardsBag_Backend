@@ -1,11 +1,11 @@
 package com.smashingwizards.thewizardsbag_backend.repository;
 
-import com.smashingwizards.thewizardsbag_backend.model.Note;
+import com.smashingwizards.thewizardsbag_backend.model.Notes;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface NoteRepository extends JpaRepository<Note, Long> {
+public interface NoteRepository extends JpaRepository<Notes, Long> {
     // You can add custom queries here, like:
     // Optional<User> findByEmail(String email);
 

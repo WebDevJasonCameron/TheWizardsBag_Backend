@@ -90,7 +90,7 @@ VALUES(
     'bonus: magic, bonus: spell attacks, druid, creation, control, communication, detection, warding',
     'Dungeon Master’s Guide, pg. 311',
     'rare',
-    6,
+    null,
 
     true,
     true,
@@ -9439,7 +9439,7 @@ VALUES(
        'spellcaster, control',
        'Dungeon Master’s Guide, pg. 322',
        'uncommon',
-       'yes',
+       null,
 
        true,
        true,
@@ -9903,7 +9903,7 @@ VALUES(
        'Petrified, Spellcaster, Damage, Control, Utility, Combat, Deception',
        'Dungeon Master’s Guide, pg. 322',
        'rare',
-       false,
+       null,
 
        true,
        true,

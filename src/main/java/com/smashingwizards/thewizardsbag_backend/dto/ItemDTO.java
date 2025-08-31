@@ -18,9 +18,7 @@ public class ItemDTO {
     private boolean magical;
     private boolean requiresAttunement;
     private boolean cursed;
-    private boolean magicBonusPlusOne;
-    private boolean magicBonusPlusTwo;
-    private boolean magicBonusPlusThree;
+    private int itemMagicBonusNumber;
     private boolean hasCharges;
     private int numberOfCharges;
 
@@ -39,7 +37,7 @@ public class ItemDTO {
     // CONs
     public ItemDTO() {
     }
-    public ItemDTO(String name, String ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, boolean magical, boolean requiresAttunement, boolean cursed, boolean magicBonusPlusOne, boolean magicBonusPlusTwo, boolean magicBonusPlusThree, boolean hasCharges, int numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
+    public ItemDTO(String name, String ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, boolean magical, boolean requiresAttunement, boolean cursed, int itemMagicBonusNumber, boolean hasCharges, int numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
         this.name = name;
         this.ttrpg = ttrpg;
         this.weight = weight;
@@ -52,9 +50,7 @@ public class ItemDTO {
         this.magical = magical;
         this.requiresAttunement = requiresAttunement;
         this.cursed = cursed;
-        this.magicBonusPlusOne = magicBonusPlusOne;
-        this.magicBonusPlusTwo = magicBonusPlusTwo;
-        this.magicBonusPlusThree = magicBonusPlusThree;
+        this.itemMagicBonusNumber = itemMagicBonusNumber;
         this.hasCharges = hasCharges;
         this.numberOfCharges = numberOfCharges;
         this.weaponRange = weaponRange;
@@ -159,25 +155,11 @@ public class ItemDTO {
         this.cursed = cursed;
     }
 
-    public boolean isMagicBonusPlusOne() {
-        return magicBonusPlusOne;
+    public int getItemMagicBonusNumber() {
+        return itemMagicBonusNumber;
     }
-    public void setMagicBonusPlusOne(boolean magicBonusPlusOne) {
-        this.magicBonusPlusOne = magicBonusPlusOne;
-    }
-
-    public boolean isMagicBonusPlusTwo() {
-        return magicBonusPlusTwo;
-    }
-    public void setMagicBonusPlusTwo(boolean magicBonusPlusTwo) {
-        this.magicBonusPlusTwo = magicBonusPlusTwo;
-    }
-
-    public boolean isMagicBonusPlusThree() {
-        return magicBonusPlusThree;
-    }
-    public void setMagicBonusPlusThree(boolean magicBonusPlusThree) {
-        this.magicBonusPlusThree = magicBonusPlusThree;
+    public void setItemMagicBonusNumber(int itemMagicBonusNumber) {
+        this.itemMagicBonusNumber = itemMagicBonusNumber;
     }
 
     public boolean isHasCharges() {

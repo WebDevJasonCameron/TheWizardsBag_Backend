@@ -15,9 +15,7 @@ CREATE TABLE IF NOT EXISTS items (
                      item_magical BOOLEAN,
                      item_requires_attunement BOOLEAN,
                      item_is_cursed BOOLEAN,
-                     item_magic_bonus_plus_1 BOOLEAN,
-                     item_magic_bonus_plus_2 BOOLEAN,
-                     item_magic_bonus_plus_3 BOOLEAN,
+                     item_magic_bonus_number INT,
                      item_has_charges BOOLEAN,
                      item_number_of_charges BIGINT,
 

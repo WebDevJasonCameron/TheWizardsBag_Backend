@@ -18,7 +18,7 @@ public class Product {
     private String name;
     @Column(name = "product_price")
     private String price;
-    @Column(name = "product_background")
+    @Column(name = "product_background", columnDefinition = "TEXT")
     private String background;
     @Column(name = "product_created_at", updatable = false)
     private Instant createdAt;

@@ -29,7 +29,7 @@ public class Spell {
     private boolean componentMaterial;
     @Column(name = "spell_component_materials")
     private String componentMaterials;
-    @Column(name = "spell_duration")
+    @Column(name = "spell_duration", columnDefinition = "TEXT")
     private String duration;
     @Column(name = "spell_concentration")
     private boolean concentration;

@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "notes")
-public class Note {
+public class Notes {
 
     // ATTs
     @Id
@@ -17,7 +17,7 @@ public class Note {
     private String name;
     @Column(name = "note_date")
     private String date;
-    @Column(name = "note_content")
+    @Column(name = "note_content", columnDefinition = "TEXT")
     private String content;
     @Column(name = "note_author")
     private String author;
@@ -26,10 +26,10 @@ public class Note {
     private List<ItemNote> itemNotes = new ArrayList<>();
 
     // CONs
-    public Note() {
+    public Notes() {
     }
 
-    public Note(String name, String date, String content, String author) {
+    public Notes(String name, String date, String content, String author) {
         this.name = name;
         this.date = date;
         this.content = content;
@@ -75,7 +75,7 @@ public class Note {
     // OVRs
     @Override
     public String toString() {
-        return "Note{" +
+        return "Notes{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", date='" + date + '\'' +

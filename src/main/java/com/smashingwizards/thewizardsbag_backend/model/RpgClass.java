@@ -14,7 +14,7 @@ public class RpgClass {
     private String name;
     @Column(name = "class_subclass_name")
     private String subClassName;
-    @Column(name = "class_description")
+    @Column(name = "class_description", columnDefinition = "TEXT")
     private String description;
 
     // CONs

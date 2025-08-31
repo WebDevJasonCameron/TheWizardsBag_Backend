@@ -17,12 +17,12 @@ public class ItemNote {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "notes_note_id", nullable = false)
-    private Note note;
+    private Notes note;
 
     // CONs
     public ItemNote() {
     }
-    public ItemNote(Item item, Note note) {
+    public ItemNote(Item item, Notes note) {
         this.item = item;
         this.note = note;
     }
@@ -42,10 +42,10 @@ public class ItemNote {
         this.item = item;
     }
 
-    public Note getNote() {
+    public Notes getNote() {
         return note;
     }
-    public void setNote(Note note) {
+    public void setNote(Notes note) {
         this.note = note;
     }
 

@@ -2,7 +2,7 @@ package com.smashingwizards.thewizardsbag_backend.service.impl;
 
 import com.smashingwizards.thewizardsbag_backend.dto.NoteDTO;
 import com.smashingwizards.thewizardsbag_backend.mapper.NoteMapper;
-import com.smashingwizards.thewizardsbag_backend.model.Note;
+import com.smashingwizards.thewizardsbag_backend.model.Notes;
 import com.smashingwizards.thewizardsbag_backend.repository.NoteRepository;
 import com.smashingwizards.thewizardsbag_backend.service.NoteService;
 import org.springframework.stereotype.Service;
@@ -36,7 +36,7 @@ public class NoteServiceImpl implements NoteService {
     public NoteDTO getNoteById(Long id) {
         return noteRepository.findById(id)
                 .map(noteMapper::noteToNoteDTO)
-                .orElseThrow(() -> new RuntimeException("Note not found"));
+                .orElseThrow(() -> new RuntimeException("Notes not found"));
     }
 
     @Override
@@ -47,11 +47,11 @@ public class NoteServiceImpl implements NoteService {
 
     @Override
     public NoteDTO updateNote(Long id, NoteDTO noteDTO) {
-        Optional<Note> optionalNote = noteRepository.findById(id);
+        Optional<Notes> optionalNote = noteRepository.findById(id);
         if (!optionalNote.isPresent()) {
-            throw new RuntimeException("Note not found");
+            throw new RuntimeException("Notes not found");
         }
-        Note existingNote = optionalNote.get();
+        Notes existingNote = optionalNote.get();
 
         existingNote.setName(noteDTO.getName());
         existingNote.setDate(noteDTO.getDate());

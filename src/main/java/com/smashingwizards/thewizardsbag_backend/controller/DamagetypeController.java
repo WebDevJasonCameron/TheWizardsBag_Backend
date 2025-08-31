@@ -39,7 +39,7 @@ public class DamagetypeController {
         return damagetypeService.updateDamagetype(id, damagetypeDTO);
     }
 
-    @DeleteMapping("/{id")
+    @DeleteMapping("/{id}")
     public void deleteDamagetype(@PathVariable Long id) {
         damagetypeService.deleteDamagetype(id);
     }

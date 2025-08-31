@@ -15,7 +15,7 @@ public class Condition {
     private Long id;
     @Column(name = "condition_name")
     private String name;
-    @Column(name = "condition_description")
+    @Column(name = "condition_description", columnDefinition = "TEXT")
     private String description;
 
     @OneToMany(mappedBy = "condition", cascade = CascadeType.ALL, orphanRemoval = true)

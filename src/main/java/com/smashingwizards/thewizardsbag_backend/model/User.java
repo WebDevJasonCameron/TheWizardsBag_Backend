@@ -21,7 +21,7 @@ public class User {
     private String species;
     @Column(name = "user_class")
     private String rpgClass;
-    @Column(name = "user_background")
+    @Column(name = "user_background", columnDefinition = "TEXT")
     private String background;
     @Column(name = "user_image_url")
     private String imageUrl;

@@ -65,9 +65,8 @@ public class ItemServiceImpl implements ItemService {
         existingItem.setMagical(itemDTO.isMagical());
         existingItem.setRequiresAttunement(itemDTO.isRequiresAttunement());
         existingItem.setCursed(itemDTO.isCursed());
-        existingItem.setMagicBonusPlusOne(itemDTO.isMagicBonusPlusOne());
-        existingItem.setMagicBonusPlusTwo(itemDTO.isMagicBonusPlusTwo());
-        existingItem.setMagicBonusPlusThree(itemDTO.isMagicBonusPlusThree());
+        existingItem.setItemMagicBonusNumber(itemDTO.getItemMagicBonusNumber());
+
         existingItem.setHasCharges(itemDTO.isHasCharges());
         existingItem.setNumberOfCharges(itemDTO.getNumberOfCharges());
 

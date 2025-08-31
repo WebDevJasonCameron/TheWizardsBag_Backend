@@ -660,7 +660,4 @@ Creatures with[truesight](https://www.dndbeyond.com/compendium/rules/basic-rules
 -   Any reduction to one of the target''s ability scores
 -   One Effect reducing the target''s hit point maximum', 5),
 
-    ('Protection from Energy', '3rd', '1 action', 'touch', 'True', 'True', 'False', '', '1 hour', 'True', 'False', 'abjuration', 'none', 'For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.', 5),
-
-    ('Contagion', '5th', '1 action', 'touch', 'True', 'True', 'False', '', '7 days', 'False', 'False', 'necromancy', 'con save', 'Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, the target is[poisoned](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Poisoned).
-At the end of each of the[poisoned](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Poisoned)target’s turns, the target must make a Constitution saving throw. If the target succeeds on three of these saves, it is no longer[poisoned](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Poisoned), and the spell ends. If the target fails three of these saves, the target is no longer[poisoned](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a
+    ('Protection from Energy', '3rd', '1 action', 'touch', 'True', 'True', 'False', '', '1 hour', 'True', 'False', 'abjuration', 'none', 'For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.', 5)

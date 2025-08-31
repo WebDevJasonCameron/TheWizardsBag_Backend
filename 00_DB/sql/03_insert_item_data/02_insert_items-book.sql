@@ -171,8 +171,8 @@ VALUES
           'Utility, Consumable',
           'common',
           null,
+          null,
 
-          true,
           false,
           false,
           false,
@@ -241,7 +241,7 @@ VALUES
           'Utility, Consumable',
           null,
           'rare',
-          true,
+          null,
 
           false,
           false,
