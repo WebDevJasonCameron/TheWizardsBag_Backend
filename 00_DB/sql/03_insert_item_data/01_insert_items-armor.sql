@@ -43,7 +43,7 @@ VALUES (
         false,
         false,
         null,
-        null,
+        false,
 
         null,
         null,
@@ -75,7 +75,7 @@ VALUES (
         false,
         null,
         null,
-        null,
+        false,
 
         null,
         null,
@@ -105,7 +105,7 @@ VALUES (
         false,
         false,
         null,
-        null,
+        false,
         null,
 
         null,
@@ -137,7 +137,7 @@ VALUES (
         false,
         null,
         null,
-        null,
+        false,
 
         null,
         null,
@@ -167,7 +167,7 @@ VALUES (
         false,
         false,
         null,
-        null,
+        false,
 
         null,
         null,
@@ -199,7 +199,7 @@ VALUES (
         false,
         null,
         null,
-        null,
+        false,
 
         null,
         null,
@@ -230,7 +230,7 @@ VALUES (
         false,
         null,
         null,
-        null,
+        false,
 
         null,
         null,
@@ -261,7 +261,7 @@ VALUES (
         false,
         null,
         null,
-        null,
+        false,
 
         null,
         null,
@@ -280,7 +280,7 @@ VALUES (
         'DND5E',
         null,
         null,
-        'While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you cannullt use them again for 1d12 hours.',
+        'While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can''t use them again for 1d12 hours.',
         'set: innate speed (flying), movement, outerwear',
         'Dungeon Master’s Guide, pg. 324',
         'rare',
@@ -291,7 +291,7 @@ VALUES (
         false,
         null,
         null,
-        null,
+        false,
 
         null,
         null,
@@ -2959,7 +2959,7 @@ VALUES (
         false,
         false,
         null,
-        null,
+        false,
 
         null,
         null,
@@ -2970,6 +2970,7 @@ VALUES (
         null,
         null,
 
+        null,
         null,
         5
        ),
@@ -3355,8 +3356,8 @@ VALUES (
            true,
            false,
            true,
-           false,
            null,
+           false,
            null,
 
            null,
