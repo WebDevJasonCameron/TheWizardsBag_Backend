@@ -62,7 +62,7 @@ VALUES(
           'DND5E',
           '20 lbs',
           '2 gp',
-          null,
+          'A simple and portable canvas shelter, a tent sleeps two.',
           null,
           null,
           null,
