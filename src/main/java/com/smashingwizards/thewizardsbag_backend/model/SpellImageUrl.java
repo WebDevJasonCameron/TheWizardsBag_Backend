@@ -3,7 +3,7 @@ package com.smashingwizards.thewizardsbag_backend.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "spell_image_url")
+@Table(name = "spell_image_urls")
 public class SpellImageUrl {
 
     // ATTs

@@ -1,13 +1,11 @@
 package com.smashingwizards.thewizardsbag_backend.dto;
 
-import jakarta.persistence.Column;
-
 public class ItemDTO {
 
     // ATTs
     private Long id;
     private String name;
-    private Long ttrpg;
+    private String ttrpg;
     private String weight;
     private String cost;
     private String description;
@@ -37,7 +35,8 @@ public class ItemDTO {
     // CONs
     public ItemDTO() {
     }
-    public ItemDTO(String name, Long ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
+    public ItemDTO(Long id, String name, String ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
+        this.id = id;
         this.name = name;
         this.ttrpg = ttrpg;
         this.weight = weight;
@@ -78,10 +77,10 @@ public class ItemDTO {
         this.name = name;
     }
 
-    public Long getTtrpg() {
+    public String getTtrpg() {
         return ttrpg;
     }
-    public void setTtrpg(Long ttrpg) {
+    public void setTtrpg(String ttrpg) {
         this.ttrpg = ttrpg;
     }
 

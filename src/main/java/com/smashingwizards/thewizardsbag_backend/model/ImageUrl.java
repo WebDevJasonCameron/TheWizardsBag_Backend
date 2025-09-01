@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.time.Instant;
 
 @Entity
-@Table(name = "image_url")
+@Table(name = "image_urls")
 public class ImageUrl {
 
     // ATTs

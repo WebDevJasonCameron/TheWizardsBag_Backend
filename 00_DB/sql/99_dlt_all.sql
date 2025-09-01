@@ -38,9 +38,3 @@ DROP TABLE IF EXISTS users CASCADE;
 DROP TABLE IF EXISTS spells CASCADE;
 DROP TABLE IF EXISTS items CASCADE;
 DROP TABLE IF EXISTS products CASCADE;
-
-
-
--- Drop DB Last
--- Unable in Laravel because it depends on other migrated tables
--- DROP DATABASE IF EXISTS character_archive_db;
