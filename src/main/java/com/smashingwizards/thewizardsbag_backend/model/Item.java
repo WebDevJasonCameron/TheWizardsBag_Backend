@@ -16,7 +16,7 @@ public class Item {
     @Column(name = "item_name")
     private String name;
     @Column(name = "item_ttrpg")
-    private String ttrpg;
+    private Long ttrpg;
     @Column(name = "item_weight")
     private String weight;
     @Column(name = "item_cost")
@@ -31,18 +31,18 @@ public class Item {
     private String rarity;
     @Column(name = "item_renowned_quality")
     private String renownedQuality;
-    @Column(name = "item_magical")
-    private boolean magical;
-    @Column(name = "item_requires_attunement")
-    private boolean requiresAttunement;
-    @Column(name = "item_cursed")
-    private boolean cursed;
+    @Column(name = "item_magical", nullable = false)
+    private Boolean magical;
+    @Column(name = "item_requires_attunement", nullable = false)
+    private Boolean requiresAttunement;
+    @Column(name = "item_cursed", nullable = false)
+    private Boolean cursed;
     @Column(name = "item_magic_bonus_number")
-    private int itemMagicBonusNumber;
-    @Column(name = "item_has_charges")
-    private boolean hasCharges;
+    private Integer itemMagicBonusNumber;
+    @Column(name = "item_has_charges", nullable = false)
+    private Boolean hasCharges;
     @Column(name = "item_number_of_charges")
-    private int numberOfCharges;
+    private Integer numberOfCharges;
 
     @Column(name = "item_weapon_range")
     private String weaponRange;
@@ -83,7 +83,7 @@ public class Item {
     // CONs
     public Item() {
     }
-    public Item(String name, String ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, boolean magical, boolean requiresAttunement, boolean cursed, int itemMagicBonusNumber, boolean hasCharges, int numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId, List<ItemSpell> itemSpells, List<ItemType> itemTypes, List<ItemTag> itemTags, List<ItemNote> itemNotes, List<ItemCondition> itemConditions, List<ItemEffect> itemEffects, List<Wishlist> wishlists) {
+    public Item(String name, Long ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId, List<Wishlist> wishlists) {
         this.name = name;
         this.ttrpg = ttrpg;
         this.weight = weight;
@@ -107,16 +107,17 @@ public class Item {
         this.armorClass = armorClass;
         this.armorNotes = armorNotes;
         this.sourceId = sourceId;
-        this.itemSpells = itemSpells;
-        this.itemTypes = itemTypes;
-        this.itemTags = itemTags;
-        this.itemNotes = itemNotes;
-        this.itemConditions = itemConditions;
-        this.itemEffects = itemEffects;
         this.wishlists = wishlists;
     }
 
     // GETs & SETs
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -124,10 +125,10 @@ public class Item {
         this.name = name;
     }
 
-    public String getTtrpg() {
+    public Long getTtrpg() {
         return ttrpg;
     }
-    public void setTtrpg(String ttrpg) {
+    public void setTtrpg(Long ttrpg) {
         this.ttrpg = ttrpg;
     }
 
@@ -180,45 +181,45 @@ public class Item {
         this.renownedQuality = renownedQuality;
     }
 
-    public boolean isMagical() {
+    public Boolean getMagical() {
         return magical;
     }
-    public void setMagical(boolean magical) {
+    public void setMagical(Boolean magical) {
         this.magical = magical;
     }
 
-    public boolean isRequiresAttunement() {
+    public Boolean getRequiresAttunement() {
         return requiresAttunement;
     }
-    public void setRequiresAttunement(boolean requiresAttunement) {
+    public void setRequiresAttunement(Boolean requiresAttunement) {
         this.requiresAttunement = requiresAttunement;
     }
 
-    public boolean isCursed() {
+    public Boolean getCursed() {
         return cursed;
     }
-    public void setCursed(boolean cursed) {
+    public void setCursed(Boolean cursed) {
         this.cursed = cursed;
     }
 
-    public int getItemMagicBonusNumber() {
+    public Integer getItemMagicBonusNumber() {
         return itemMagicBonusNumber;
     }
-    public void setItemMagicBonusNumber(int itemMagicBonusNumber) {
+    public void setItemMagicBonusNumber(Integer itemMagicBonusNumber) {
         this.itemMagicBonusNumber = itemMagicBonusNumber;
     }
 
-    public boolean isHasCharges() {
+    public Boolean getHasCharges() {
         return hasCharges;
     }
-    public void setHasCharges(boolean hasCharges) {
+    public void setHasCharges(Boolean hasCharges) {
         this.hasCharges = hasCharges;
     }
 
-    public int getNumberOfCharges() {
+    public Integer getNumberOfCharges() {
         return numberOfCharges;
     }
-    public void setNumberOfCharges(int numberOfCharges) {
+    public void setNumberOfCharges(Integer numberOfCharges) {
         this.numberOfCharges = numberOfCharges;
     }
 
@@ -278,6 +279,7 @@ public class Item {
         this.sourceId = sourceId;
     }
 
+    // GETs & SETs LISTs
     public List<ItemSpell> getItemSpells() {
         return itemSpells;
     }
@@ -364,7 +366,7 @@ public class Item {
         return "Item{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", ttrpg='" + ttrpg + '\'' +
+                ", ttrpg=" + ttrpg +
                 ", weight='" + weight + '\'' +
                 ", cost='" + cost + '\'' +
                 ", description='" + description + '\'' +

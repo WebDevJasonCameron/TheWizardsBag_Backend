@@ -17,13 +17,12 @@ public class Source {
     @Column(name = "source_publisher")
     private String publisher;
     @Column(name = "source_ttrpg")
-    private boolean ttrpg;
+    private Long ttrpg;
 
     // CONs
     public Source() {
     }
-
-    public Source(String name, String publishDate, String publisher, boolean ttrpg) {
+    public Source(String name, String publishDate, String publisher, Long ttrpg) {
         this.name = name;
         this.publishDate = publishDate;
         this.publisher = publisher;
@@ -59,10 +58,10 @@ public class Source {
         this.publisher = publisher;
     }
 
-    public boolean isTtrpg() {
+    public Long getTtrpg() {
         return ttrpg;
     }
-    public void setTtrpg(boolean ttrpg) {
+    public void setTtrpg(Long ttrpg) {
         this.ttrpg = ttrpg;
     }
 

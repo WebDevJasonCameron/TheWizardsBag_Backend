@@ -7,12 +7,12 @@ public class SourceDTO {
     private String name;
     private String publishDate;
     private String publisher;
-    private boolean ttrpg;
+    private Long ttrpg;
 
     // CONs
     public SourceDTO() {
     }
-    public SourceDTO(String name, String publishDate, String publisher, boolean ttrpg) {
+    public SourceDTO(String name, String publishDate, String publisher, Long ttrpg) {
         this.name = name;
         this.publishDate = publishDate;
         this.publisher = publisher;
@@ -48,10 +48,10 @@ public class SourceDTO {
         this.publisher = publisher;
     }
 
-    public boolean isTtrpg() {
+    public Long getTtrpg() {
         return ttrpg;
     }
-    public void setTtrpg(boolean ttrpg) {
+    public void setTtrpg(Long ttrpg) {
         this.ttrpg = ttrpg;
     }
 }

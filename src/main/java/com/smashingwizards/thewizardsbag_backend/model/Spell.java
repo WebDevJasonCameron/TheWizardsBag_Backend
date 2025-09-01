@@ -21,20 +21,20 @@ public class Spell {
     private String castingTime;
     @Column(name = "spell_range_area")
     private String rangeArea;
-    @Column(name = "spell_component_visual")
-    private boolean componentVisual;
-    @Column(name = "spell_component_semantic")
-    private boolean componentSemantic;
-    @Column(name = "spell_component_material")
-    private boolean componentMaterial;
+    @Column(name = "spell_component_visual", nullable = false)
+    private Boolean componentVisual;
+    @Column(name = "spell_component_semantic", nullable = false)
+    private Boolean componentSemantic;
+    @Column(name = "spell_component_material", nullable = false)
+    private Boolean componentMaterial;
     @Column(name = "spell_component_materials")
     private String componentMaterials;
     @Column(name = "spell_duration", columnDefinition = "TEXT")
     private String duration;
-    @Column(name = "spell_concentration")
-    private boolean concentration;
-    @Column(name = "spell_ritual")
-    private boolean ritual;
+    @Column(name = "spell_concentration", nullable = false)
+    private Boolean concentration;
+    @Column(name = "spell_ritual", nullable = false)
+    private Boolean ritual;
     @Column(name = "spell_school")
     private String school;
     @Column(name = "spell_description")
@@ -59,7 +59,7 @@ public class Spell {
     // CONs
     public Spell() {
     }
-    public Spell(String name, String level, String castingTime, String rangeArea, boolean componentVisual, boolean componentSemantic, boolean componentMaterial, String componentMaterials, String duration, boolean concentration, boolean ritual, String school, String description, String imageUrl, Long sourceId) {
+    public Spell(String name, String level, String castingTime, String rangeArea, Boolean componentVisual, Boolean componentSemantic, Boolean componentMaterial, String componentMaterials, String duration, Boolean concentration, Boolean ritual, String school, String description, String imageUrl, Long sourceId, List<ItemSpell> itemSpells) {
         this.name = name;
         this.level = level;
         this.castingTime = castingTime;
@@ -75,6 +75,7 @@ public class Spell {
         this.description = description;
         this.imageUrl = imageUrl;
         this.sourceId = sourceId;
+        this.itemSpells = itemSpells;
     }
 
     // GETs & SETs
@@ -188,6 +189,77 @@ public class Spell {
     }
     public void setSourceId(Long sourceId) {
         this.sourceId = sourceId;
+    }
+
+    public Boolean getComponentVisual() {
+        return componentVisual;
+    }
+    public void setComponentVisual(Boolean componentVisual) {
+        this.componentVisual = componentVisual;
+    }
+
+    public Boolean getComponentSemantic() {
+        return componentSemantic;
+    }
+    public void setComponentSemantic(Boolean componentSemantic) {
+        this.componentSemantic = componentSemantic;
+    }
+
+    public Boolean getComponentMaterial() {
+        return componentMaterial;
+    }
+    public void setComponentMaterial(Boolean componentMaterial) {
+        this.componentMaterial = componentMaterial;
+    }
+
+    public Boolean getConcentration() {
+        return concentration;
+    }
+    public void setConcentration(Boolean concentration) {
+        this.concentration = concentration;
+    }
+
+    public Boolean getRitual() {
+        return ritual;
+    }
+    public void setRitual(Boolean ritual) {
+        this.ritual = ritual;
+    }
+
+    public List<ItemSpell> getItemSpells() {
+        return itemSpells;
+    }
+    public void setItemSpells(List<ItemSpell> itemSpells) {
+        this.itemSpells = itemSpells;
+    }
+
+    // GETs & SETs LISTs
+    public List<SpellTag> getSpellTags() {
+        return spellTags;
+    }
+    public void setSpellTags(List<SpellTag> spellTags) {
+        this.spellTags = spellTags;
+    }
+
+    public List<SpellCondition> getSpellConditions() {
+        return spellConditions;
+    }
+    public void setSpellConditions(List<SpellCondition> spellConditions) {
+        this.spellConditions = spellConditions;
+    }
+
+    public List<SpellClass> getSpellClasses() {
+        return spellClasses;
+    }
+    public void setSpellClasses(List<SpellClass> spellClasses) {
+        this.spellClasses = spellClasses;
+    }
+
+    public List<SpellDamagetype> getSpellDamagetypes() {
+        return spellDamagetypes;
+    }
+    public void setSpellDamagetypes(List<SpellDamagetype> spellDamagetypes) {
+        this.spellDamagetypes = spellDamagetypes;
     }
 
     // TRNs
