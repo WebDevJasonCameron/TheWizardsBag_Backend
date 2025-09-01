@@ -751,36 +751,6 @@ VALUES(
           5
       ),
       (
-       'Ring of Poison Resistance',
-       'DND5E',
-       null,
-       null,
-       'You have resistance to poison damage while wearing this amethyst ring.',
-       'Resistance: Poison, Warding, Jewelry',
-       null,
-       'rare',
-       null,
-
-       null,
-       false,
-       true,
-       null,
-       false,
-       null,
-
-       null,
-       null,
-       null,
-       null,
-       null,
-
-       null,
-       null,
-
-       null,
-       5
-      ),
-      (
 
        'Necklace of Prayer Beads',
        'DND5E',

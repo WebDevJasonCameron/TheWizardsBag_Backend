@@ -12,9 +12,7 @@ INSERT INTO items (
     item_magical,
     item_requires_attunement,
     item_is_cursed,
-    item_magic_bonus_plus_1,
-    item_magic_bonus_plus_2,
-    item_magic_bonus_plus_3,
+    item_magic_bonus_number,
     item_has_charges,
     item_number_of_charges,
 
@@ -58,9 +56,7 @@ VALUES (
         false,
         false,
         false,
-        false,
-        false,
-        false,
+        null,
         false,
         null,
 

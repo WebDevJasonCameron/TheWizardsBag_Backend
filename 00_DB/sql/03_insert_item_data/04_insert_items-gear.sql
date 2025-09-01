@@ -393,7 +393,7 @@ VALUES(
           'DND5E',
           null,
           null,
-          null,
+          'A basket can hold 2 cubic feet/40 pounds of gear.',
           null,
           null,
           null,
@@ -1841,7 +1841,7 @@ VALUES(
        null,
        null,
 
-       null,
+       false,
        false,
        false,
        null,
