@@ -4364,13 +4364,12 @@ VALUES(
           'DND5E',
           '2 lb',
           null,
-          '
-                You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
-                When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon’s type and must succeed on a DC 15 Strength saving throw or have the Prone condition.
-                Proficiency with a Javelin allows you to add your proficiency bonus to the attack roll for any attack you make with it.
-                ---
-                This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
-                Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed 10 feet.',
+          'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
+           When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon’s type and must succeed on a DC 15 Strength saving throw or have the Prone condition.
+           Proficiency with a Javelin allows you to add your proficiency bonus to the attack roll for any attack you make with it.
+           ---
+           This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
+           Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed 10 feet.',
           'Bonus: Magic, Damage: Additional, Damage, Combat, Thrown, Slow',
           'Dungeon Master’s Guide, pg. 264',
           'rare',
@@ -6903,13 +6902,12 @@ VALUES(
           'DND5E',
           '3 lb',
           null,
-          '
-                You gain a +2 bonus to attack and damage rolls made with this magic weapon.
-                The sword has 1d8 + 1 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property.
-                Proficiency with a Longsword allows you to add your proficiency bonus to the attack roll for any attack you make with it.
-                ---
-                This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
-                Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.',
+          'You gain a +2 bonus to attack and damage rolls made with this magic weapon.
+           The sword has 1d8 + 1 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property.
+           Proficiency with a Longsword allows you to add your proficiency bonus to the attack roll for any attack you make with it.
+           ---
+           This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
+           Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.',
           'Bonus: Magic, Damage, Combat, Versatile, Sap',
           null,
           'very rare',
@@ -7149,13 +7147,12 @@ VALUES(
           'DND5E',
           '4 lb',
           null,
-          '
-                You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
-                Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property.
-                Proficiency with a Trident allows you to add your proficiency bonus to the attack roll for any attack you make with it.
-                ---
-                This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
-                Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.',
+          'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
+           Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property.
+            Proficiency with a Trident allows you to add your proficiency bonus to the attack roll for any attack you make with it.
+            ---
+            This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
+            Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.',
           'Bonus: Magic, Damage, Combat, Thrown, Versatile, Topple',
           'Dungeon Master’s Guide, pg. 281',
           'very rare',
@@ -7535,13 +7532,12 @@ VALUES(
           'DND5E',
           '8 lb',
           null,
-          '
-                You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
-                Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property.
-                It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use.
-                ---
-                This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
-                Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed 10 feet.',
+          'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
+           Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property.
+            It’s up to you to decide whether a character has proficiency with a firearm. Characters in most D&D worlds wouldn’t have such proficiency. During their downtime, characters can use the training rules in the Player’s Handbook to acquire proficiency, assuming that they have enough ammunition to keep the weapons working while mastering their use.
+            ---
+            This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
+            Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed 10 feet.',
           'Bonus: Magic, Damage, Combat, Range, Two-Handed, Ammunition (Firearms), Reload, Slow',
           'Dungeon Master’s Guide, pg. 281',
           'very rare',
@@ -7663,36 +7659,6 @@ VALUES(
           '2d8',
           'piercing',
           'Ammunition (Firearms), Range, Reload, Two-Handed, Push',
-          null,
-
-          null,
-          null,
-
-          null,
-          17
-      ),
-      (
-          'Nine Lives Stealer ---',
-          'DND5E',
-          '',
-          null,
-          '',
-          '',
-          null,
-          'very rare',
-          null,
-
-          true,
-          true,
-          false,
-          null,
-          false,
-          null,
-
-          '5 ft',
-          '',
-          '',
-          '',
           null,
 
           null,

@@ -1263,7 +1263,7 @@ VALUES(
        'DND5E',
        null,
        null,
-       null,
+       'You gain a +1 bonus to Armor Class and saving throws while wearing this ring.',
        'Bonus: Armor Class, Bonus: Saving Throws, Warding, Jewelry',
        'Dungeon Master’s Guide, pg. 191',
        'rare',
