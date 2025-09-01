@@ -62,12 +62,12 @@ public class ItemServiceImpl implements ItemService {
         existingItem.setDescriptionNote(itemDTO.getDescriptionNote());
         existingItem.setRarity(itemDTO.getRarity());
         existingItem.setRenownedQuality(itemDTO.getRenownedQuality());
-        existingItem.setMagical(itemDTO.isMagical());
-        existingItem.setRequiresAttunement(itemDTO.isRequiresAttunement());
-        existingItem.setCursed(itemDTO.isCursed());
+        existingItem.setMagical(itemDTO.getMagical());
+        existingItem.setRequiresAttunement(itemDTO.getRequiresAttunement());
+        existingItem.setCursed(itemDTO.getCursed());
         existingItem.setItemMagicBonusNumber(itemDTO.getItemMagicBonusNumber());
 
-        existingItem.setHasCharges(itemDTO.isHasCharges());
+        existingItem.setHasCharges(itemDTO.getHasCharges());
         existingItem.setNumberOfCharges(itemDTO.getNumberOfCharges());
 
         existingItem.setWeaponRange(itemDTO.getWeaponRange());

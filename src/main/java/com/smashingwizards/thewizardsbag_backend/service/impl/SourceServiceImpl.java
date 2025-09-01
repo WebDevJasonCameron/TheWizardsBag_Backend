@@ -57,7 +57,7 @@ public class SourceServiceImpl implements SourceService {
         existingSource.setName(sourceDTO.getName());
         existingSource.setPublisher(sourceDTO.getPublisher());
         existingSource.setPublisher(sourceDTO.getPublisher());
-        existingSource.setTtrpg(sourceDTO.isTtrpg());
+        existingSource.setTtrpg(sourceDTO.getTtrpg());
 
         return sourceMapper.sourceToSourceDTO(sourceRepository.save(existingSource));
     }

@@ -7,7 +7,7 @@ public class ItemDTO {
     // ATTs
     private Long id;
     private String name;
-    private String ttrpg;
+    private Long ttrpg;
     private String weight;
     private String cost;
     private String description;
@@ -15,12 +15,12 @@ public class ItemDTO {
     private String sourceDetails;
     private String rarity;
     private String renownedQuality;
-    private boolean magical;
-    private boolean requiresAttunement;
-    private boolean cursed;
-    private int itemMagicBonusNumber;
-    private boolean hasCharges;
-    private int numberOfCharges;
+    private Boolean magical;
+    private Boolean requiresAttunement;
+    private Boolean cursed;
+    private Integer itemMagicBonusNumber;
+    private Boolean hasCharges;
+    private Integer numberOfCharges;
 
     private String weaponRange;
     private String weaponDamageCalc;
@@ -37,7 +37,7 @@ public class ItemDTO {
     // CONs
     public ItemDTO() {
     }
-    public ItemDTO(String name, String ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, boolean magical, boolean requiresAttunement, boolean cursed, int itemMagicBonusNumber, boolean hasCharges, int numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
+    public ItemDTO(String name, Long ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
         this.name = name;
         this.ttrpg = ttrpg;
         this.weight = weight;
@@ -78,10 +78,10 @@ public class ItemDTO {
         this.name = name;
     }
 
-    public String getTtrpg() {
+    public Long getTtrpg() {
         return ttrpg;
     }
-    public void setTtrpg(String ttrpg) {
+    public void setTtrpg(Long ttrpg) {
         this.ttrpg = ttrpg;
     }
 
@@ -134,45 +134,45 @@ public class ItemDTO {
         this.renownedQuality = renownedQuality;
     }
 
-    public boolean isMagical() {
+    public Boolean getMagical() {
         return magical;
     }
-    public void setMagical(boolean magical) {
+    public void setMagical(Boolean magical) {
         this.magical = magical;
     }
 
-    public boolean isRequiresAttunement() {
+    public Boolean getRequiresAttunement() {
         return requiresAttunement;
     }
-    public void setRequiresAttunement(boolean requiresAttunement) {
+    public void setRequiresAttunement(Boolean requiresAttunement) {
         this.requiresAttunement = requiresAttunement;
     }
 
-    public boolean isCursed() {
+    public Boolean getCursed() {
         return cursed;
     }
-    public void setCursed(boolean cursed) {
+    public void setCursed(Boolean cursed) {
         this.cursed = cursed;
     }
 
-    public int getItemMagicBonusNumber() {
+    public Integer getItemMagicBonusNumber() {
         return itemMagicBonusNumber;
     }
-    public void setItemMagicBonusNumber(int itemMagicBonusNumber) {
+    public void setItemMagicBonusNumber(Integer itemMagicBonusNumber) {
         this.itemMagicBonusNumber = itemMagicBonusNumber;
     }
 
-    public boolean isHasCharges() {
+    public Boolean getHasCharges() {
         return hasCharges;
     }
-    public void setHasCharges(boolean hasCharges) {
+    public void setHasCharges(Boolean hasCharges) {
         this.hasCharges = hasCharges;
     }
 
-    public int getNumberOfCharges() {
+    public Integer getNumberOfCharges() {
         return numberOfCharges;
     }
-    public void setNumberOfCharges(int numberOfCharges) {
+    public void setNumberOfCharges(Integer numberOfCharges) {
         this.numberOfCharges = numberOfCharges;
     }
 
