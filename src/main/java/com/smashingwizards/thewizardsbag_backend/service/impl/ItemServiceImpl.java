@@ -89,5 +89,13 @@ public class ItemServiceImpl implements ItemService {
         itemRepository.deleteById(id);
     }
 
-
+    // ADDs
+    public List<ItemDTO> getItemsByItemName(String itemName) {
+        String query = itemName == null ? "" : itemName.trim();
+        if (query.isEmpty()) return List.of();
+        return itemRepository.findByNameContainingIgnoreCase(query)
+                .stream()
+                .map(itemMapper::itemToItemDTO)
+                .collect(Collectors.toList());
+    }
 }

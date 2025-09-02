@@ -9,6 +9,5 @@ public interface DamagetypeService {
     DamagetypeDTO getDamagetypeById(Long id);
     DamagetypeDTO createDamagetype(DamagetypeDTO dto);
     DamagetypeDTO updateDamagetype(Long id, DamagetypeDTO dto);
-
     void deleteDamagetype(Long id);
 }

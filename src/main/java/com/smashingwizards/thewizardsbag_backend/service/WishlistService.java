@@ -9,6 +9,6 @@ public interface WishlistService {
     WishlistDTO getWishlistById(Long id);
     WishlistDTO createWishlist(WishlistDTO wishlistDto);
     WishlistDTO updateWishlist(Long id, WishlistDTO wishlistDTO);
-
     void deleteWishlist(Long id);
+
 }

@@ -9,7 +9,6 @@ public interface TypeService {
     TypeDTO getTypeById(Long id);
     TypeDTO createType(TypeDTO typeDTO);
     TypeDTO updateType(Long id, TypeDTO typeDTO);
-
     void deleteType(Long id);
 
 }
