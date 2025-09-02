@@ -29,7 +29,7 @@ INSERT INTO items (
     item_source_id)
 VALUES(
           'Ring of Fire Elemental Command',
-          'DND5E',
+          1,
           null,
           null,
           'This ring is linked to the Elemental Plane of Fire.
@@ -64,7 +64,7 @@ VALUES(
       ),
       (
           'Ring of Animal Influence',
-          'DND5E',
+          1,
           null,
           null,
           'This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can expend 1 charge to cast one of the following spells (save DC 13) from it:
@@ -97,7 +97,7 @@ VALUES(
       ),
       (
           'Rings of Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type, which the DM chooses or determines randomly.
@@ -138,7 +138,7 @@ VALUES(
       ),
       (
           'Ring of Acid Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to acid damage while wearing this pearl ring.',
@@ -168,7 +168,7 @@ VALUES(
       ),
       (
           'Ring of Cold Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to cold damage while wearing this tourmaline ring.',
@@ -199,7 +199,7 @@ VALUES(
 
       (
           'Ring of Fire Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to fire damage while wearing this garnet ring.',
@@ -229,7 +229,7 @@ VALUES(
       ),
       (
           'Ring of Force Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to force damage while wearing this sapphire ring.',
@@ -259,7 +259,7 @@ VALUES(
       ),
       (
           'Ring of Lightning Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to lightning damage while wearing this citrine ring.',
@@ -289,7 +289,7 @@ VALUES(
       ),
       (
           'Ring of Necrotic Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to necrotic damage while wearing this jet ring.',
@@ -319,7 +319,7 @@ VALUES(
       ),
       (
           'Ring of Poison Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to poison damage while wearing this amethyst ring.',
@@ -349,7 +349,7 @@ VALUES(
       ),
       (
           'Ring of Psychic Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to psychic damage while wearing this jade ring.',
@@ -379,7 +379,7 @@ VALUES(
       ),
       (
           'Ring of Radiant Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to radiant damage while wearing this topaz ring.',
@@ -409,7 +409,7 @@ VALUES(
       ),
       (
           'Ring of Thunder Resistance',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to thunder damage while wearing this spinel ring.',
@@ -439,7 +439,7 @@ VALUES(
       ),
       (
            'Ring of Swimming',
-           'DND5E',
+           1,
            null,
            null,
            'You have a swimming speed of 40 feet while wearing this ring.',
@@ -469,7 +469,7 @@ VALUES(
       ),
       (
            'Ring of Earth Elemental Command',
-           'DND5E',
+           1,
            null,
            null,
            'This ring is linked to the Elemental Plane of Earth.
@@ -506,7 +506,7 @@ VALUES(
       ),
       (
        'Signet Ring',
-       'DND5E',
+       1,
        null,
        '5 gp',
        'Each signet ring has a distinctive design carved into it. When you press this ring into warm sealing wax, you leave an identifying mark.',
@@ -536,7 +536,7 @@ VALUES(
       ),
       (
        'Ring of Telekinesis',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you can cast the telekinesis spell at will, but you can target only objects that aren''t being worn or carried.',
@@ -566,7 +566,7 @@ VALUES(
       ),
       (
        'Talisman of the Sphere',
-       'DND5E',
+       1,
        null,
        null,
        'When you make an Intelligence (Arcana) check to control a sphere of annihilation while you are holding this talisman, you double your proficiency bonus on the check. In addition, when you start your turn with control over a sphere of annihilation, you can use an action to levitate it 10 feet plus a number of additional feet equal to 10 × your Intelligence modifier.',
@@ -596,7 +596,7 @@ VALUES(
       ),
       (
        'Elemental Gems',
-       'DND5E',
+       1,
        null,
        null,
        'This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure elemental spell, and the gem''s magic is lost. The type of gem determines the elemental summoned by the spell.
@@ -632,7 +632,7 @@ VALUES(
       ),
       (
           'Elemental Gem (Blue Sapphire)',
-          'DND5E',
+          1,
           null,
           null,
           'This blue sapphire contains a mote of elemental energy. When you use an action to break the gem, an air elemental is summoned as if you had cast the conjure elemental spell, and the gem''s magic is lost.',
@@ -662,7 +662,7 @@ VALUES(
       ),
       (
           'Elemental Gem (Yellow Diamond)',
-          'DND5E',
+          1,
           null,
           null,
           'This yellow diamond contains a mote of elemental energy. When you use an action to break the gem, an earth elemental is summoned as if you had cast the conjure elemental spell, and the gem''s magic is lost.',
@@ -692,7 +692,7 @@ VALUES(
       ),
       (
           'Elemental Gem (Red Corundum)',
-          'DND5E',
+          1,
           null,
           null,
           'This red corundum contains a mote of elemental energy. When you use an action to break the gem, a fire elemental is summoned as if you had cast the conjure elemental spell, and the gem''s magic is lost.',
@@ -722,7 +722,7 @@ VALUES(
       ),
       (
           'Elemental Gem (Emerald)',
-          'DND5E',
+          1,
           null,
           null,
           'This emerald contains a mote of elemental energy. When you use an action to break the gem, a water elemental is summoned as if you had cast the conjure elemental spell, and the gem’s magic is lost.',
@@ -753,7 +753,7 @@ VALUES(
       (
 
        'Necklace of Prayer Beads',
-       'DND5E',
+       1,
        null,
        null,
        'This necklace has 1d4 + 2 magic beads made from aquamarine, black pearl, or topaz. It also has many nonmagical beads made from stones such as amber, bloodstone, citrine, coral, jade, pearl, or quartz. If a magic bead is removed from the necklace, that bead loses its magic.
@@ -793,7 +793,7 @@ VALUES(
       ),
       (
        'Amulet of Proof against Detection and Location',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this amulet, you are hidden from divination magic. You cannullt be targeted by such magic or perceived through magical scrying sensors.',
@@ -823,7 +823,7 @@ VALUES(
       ),
       (
        'Gem of Seeing',
-       'DND5E',
+       1,
        null,
        null,
        'This gem has 3 charges. As a Magic action, you can expend 1 charge. For the next 10 minutes, you have Truesight out to 120 feet when you peer through the gem.
@@ -854,7 +854,7 @@ VALUES(
       ),
       (
        'Ring of Invisibility',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again.',
@@ -884,7 +884,7 @@ VALUES(
       ),
       (
        'Ring of Mind Shielding',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.
@@ -916,7 +916,7 @@ VALUES(
       ),
       (
        'Ring of the Ram',
-       'DND5E',
+       1,
        null,
        null,
        'This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 to 3 of its charges to make a ranged spell attack against one creature you can see within 60 feet of you. The ring produces a spectral ram''s head and makes its attack roll with a +7 bonus. On a hit, for each charge you spend, the target takes 2d10 force damage and is pushed 5 feet away from you.
@@ -947,7 +947,7 @@ VALUES(
       ),
       (
        'Circlet of Blasting',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this circlet, you can cast Scorching Ray with it (+5 to hit). The circlet can’t cast this spell again until the next dawn.',
@@ -977,7 +977,7 @@ VALUES(
       ),
       (
        'Ring of Spell Storing',
-       'DND5E',
+       1,
        null,
        null,
        'This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. When found, it contains 1d6 − 1 levels of stored spells chosen by the DM.
@@ -1009,7 +1009,7 @@ VALUES(
       ),
       (
        'Amulet of Health',
-       'DND5E',
+       1,
        null,
        null,
        'Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is already 19 or higher without it.',
@@ -1039,7 +1039,7 @@ VALUES(
       ),
       (
        'Periapt of Wound Closure',
-       'DND5E',
+       1,
        null,
        null,
        'While you wear this pendant, you stabilize whenever you are dying at the start of your turn. In addition, whenever you roll a Hit Die to regain hit points, double the number of hit points it restores.',
@@ -1069,7 +1069,7 @@ VALUES(
       ),
       (
        'Periapt of Health',
-       'DND5E',
+       1,
        null,
        null,
        'You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed while you wear the pendant.',
@@ -1099,7 +1099,7 @@ VALUES(
       ),
       (
        'Ring of Psychic Resistance',
-       'DND5E',
+       1,
        null,
        null,
        'You have resistance to psychic damage while wearing this jade ring.',
@@ -1129,7 +1129,7 @@ VALUES(
       ),
       (
        'Scarab of Protection',
-       'DND5E',
+       1,
        null,
        null,
        'If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person:
@@ -1161,7 +1161,7 @@ VALUES(
       ),
       (
        'Ring of Air Elemental Command',
-       'DND5E',
+       1,
        null,
        null,
        'This ring is linked to the Elemental Plane of Air.
@@ -1198,7 +1198,7 @@ VALUES(
       ),
       (
        'Talisman of Pure Good',
-       'DND5E',
+       1,
        null,
        null,
        'This talisman is a mighty symbol of goodness. A creature that is neither good nor evil in alignment takes 6d6 radiant damage upon touching the talisman. An evil creature takes 8d6 radiant damage upon touching the talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman.
@@ -1230,7 +1230,7 @@ VALUES(
       ),
       (
        'Ring of Warmth',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as −50 degrees Fahrenheit.',
@@ -1260,7 +1260,7 @@ VALUES(
       ),
       (
        'Ring of Protection',
-       'DND5E',
+       1,
        null,
        null,
        'You gain a +1 bonus to Armor Class and saving throws while wearing this ring.',
@@ -1290,7 +1290,7 @@ VALUES(
       ),
       (
        'Ring of Djinni Summoning',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you can take a Magic action to summon a particular Djinni from the Elemental Plane of Air. The djinni appears in an unoccupied space you choose within 120 feet of yourself. It remains as long as you maintain Concentration, to a maximum of 1 hour, or until it drops to 0 Hit Points.
@@ -1323,7 +1323,7 @@ VALUES(
       ),
       (
        'Gem of Brightness',
-       'DND5E',
+       1,
        null,
        null,
        'This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:
@@ -1357,7 +1357,7 @@ VALUES(
       ),
       (
        'Ring of Evasion',
-       'DND5E',
+       1,
        null,
        null,
        'This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When you fail a Dexterity saving throw while wearing the ring, you can take a Reaction to expend 1 charge to succeed on that save instead.',
@@ -1387,7 +1387,7 @@ VALUES(
       ),
       (
        'Medallion of Thoughts',
-       'DND5E',
+       1,
        null,
        null,
        'The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.',
@@ -1417,7 +1417,7 @@ VALUES(
       ),
       (
        'Ring of Shooting Stars',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring in dim light or darkness, you can cast dancing lights and light from the ring at will. Casting either spell from the ring requires an action.
@@ -1460,7 +1460,7 @@ VALUES(
       ),
       (
        'Ring of X-ray Vision',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you can take a Magic action to gain X-ray vision with a range of 30 feet for 1 minute. To you, solid objects within that radius appear transparent and don’t prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances or a thin sheet of lead block the vision.
@@ -1491,7 +1491,7 @@ VALUES(
       ),
       (
        'Necklace of Adaptation',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this necklace, you can breathe normally in any environment, and you have Advantage on saving throws made to avoid or end the Poisoned condition.',
@@ -1521,7 +1521,7 @@ VALUES(
       ),
       (
        'Ring of Feather Falling',
-       'DND5E',
+       1,
        null,
        null,
        'When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.',
@@ -1551,7 +1551,7 @@ VALUES(
       ),
       (
        'Talisman of Ultimate Evil',
-       'DND5E',
+       1,
        null,
        null,
        'This item symbolizes unrepentant evil. A creature that is neither good nor evil in alignment takes 6d6 necrotic damage upon touching the talisman. A good creature takes 8d6 necrotic damage upon touching the talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman.
@@ -1583,7 +1583,7 @@ VALUES(
       ),
       (
        'Ring of Spell Turning',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.',
@@ -1613,7 +1613,7 @@ VALUES(
       ),
       (
        'Necklace of Fireballs',
-       'DND5E',
+       1,
        null,
        null,
        'This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-levelfireballspell (save DC 15).
@@ -1641,7 +1641,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Cold Resistance',
-       'DND5E',
+       1,
        null,
        null,
        'You have resistance to cold damage while wearing this tourmaline ring.',
@@ -1671,7 +1671,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Three Wishes',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you can expend 1 of its 3 charges to cast Wish from it. The ring becomes nonmagical when you use the last charge.',
@@ -1701,7 +1701,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Free Action',
-       'DND5E',
+       1,
        null,
        null,
        'While you wear this ring, Difficult Terrain doesn’t cost you extra movement. In addition, magic can neither reduce any of your Speeds nor cause you to have the Paralyzed or Restrained condition.',
@@ -1731,7 +1731,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Amulet',
-       'DND5E',
+       1,
        '1 lb',
        '5 gp',
        'A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in the Spellcasting section. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.',
@@ -1761,7 +1761,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Pearl of Power',
-       'DND5E',
+       1,
        null,
        null,
        'While this pearl is on your person, you can use an action to speak its command word and regain one expended spell slot. If the expended slot was of 4th level or higher, the new slot is 3rd level. Once you use the pearl, it can''t be used again until the next dawn.',
@@ -1791,7 +1791,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Necrotic Resistance',
-       'DND5E',
+       1,
        null,
        null,
        'You have resistance to necrotic damage while wearing this jet ring.',
@@ -1821,7 +1821,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Brooch of Shielding',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this brooch, you have Resistance to Force damage, and you have Immunity to damage from the Magic Missile spell.',
@@ -1851,7 +1851,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Stone of Good Luck (Luckstone)',
-       'DND5E',
+       1,
        null,
        null,
        'While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws.',
@@ -1881,7 +1881,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Force Resistance',
-       'DND5E',
+       1,
        null,
        null,
        'You have resistance to force damage while wearing this sapphire ring.',
@@ -1911,7 +1911,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Thunder Resistance',
-       'DND5E',
+       1,
        null,
        null,
        'You have resistance to thunder damage while wearing this spinel ring.',
@@ -1941,7 +1941,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Regeneration',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you regain 1d6 Hit Points every 10 minutes if you have at least 1 Hit Point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 Hit Point the whole time.',
@@ -1971,7 +1971,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Jumping',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so.',
@@ -2001,7 +2001,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Water Elemental Command',
-       'DND5E',
+       1,
        null,
        null,
        'This ring is linked to the Elemental Plane of Water.
@@ -2037,7 +2037,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Periapt of Proof against Poison',
-       'DND5E',
+       1,
        null,
        null,
        'This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, poisons have no effect on you. You are immune to the poisoned condition and have immunity to poison damage.',
@@ -2067,7 +2067,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Water Walking',
-       'DND5E',
+       1,
        null,
        null,
        'While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground.',
@@ -2097,7 +2097,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Elemental Command',
-       'DND5E',
+       1,
        null,
        null,
        'This ring is linked to one of the four Elemental Planes. The DM chooses or randomly determines the linked plane.
@@ -2147,7 +2147,7 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
       ),
       (
        'Ring of Acid Resistance',
-       'DND5E',
+       1,
        null,
        null,
        'You have resistance to acid damage while wearing this pearl ring.',

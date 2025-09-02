@@ -5,6 +5,7 @@ public class SpellDTO {
     // ATTs
     private Long id;
     private String name;
+    private Long ttrpg;
     private String level;
     private String castingTime;
     private String rangeArea;
@@ -23,8 +24,9 @@ public class SpellDTO {
     // CONs
     public SpellDTO() {
     }
-    public SpellDTO(String name, String level, String castingTime, String rangeArea, boolean componentVisual, boolean componentSemantic, boolean componentMaterial, String componentMaterials, String duration, boolean concentration, boolean ritual, String school, String description, String imageUrl, Long sourceId) {
+    public SpellDTO(String name, Long ttrpg, String level, String castingTime, String rangeArea, boolean componentVisual, boolean componentSemantic, boolean componentMaterial, String componentMaterials, String duration, boolean concentration, boolean ritual, String school, String description, String imageUrl, Long sourceId) {
         this.name = name;
+        this.ttrpg = ttrpg;
         this.level = level;
         this.castingTime = castingTime;
         this.rangeArea = rangeArea;
@@ -54,6 +56,13 @@ public class SpellDTO {
     }
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Long getTtrpg() {
+        return ttrpg;
+    }
+    public void setTtrpg(Long ttrpg) {
+        this.ttrpg = ttrpg;
     }
 
     public String getLevel() {

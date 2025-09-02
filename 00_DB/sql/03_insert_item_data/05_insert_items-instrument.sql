@@ -29,7 +29,7 @@ INSERT INTO items (
     item_source_id)
 VALUES(
           'Horns of Valhalla',
-          'DND5E',
+          1,
           null,
           null,
           'You can use an action to blow this horn. In response, warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can''t be used again until 7 days have passed.
@@ -68,7 +68,7 @@ VALUES(
       ),
       (
           'Horn of Valhalla (Silver)',
-          'DND5E',
+          1,
           null,
           null,
           'You can use an action to blow this horn. In response, 2d4+2 warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can''t be used again until 7 days have passed.',
@@ -98,7 +98,7 @@ VALUES(
       ),
       (
           'Horn of Valhalla (Brass)',
-          'DND5E',
+          1,
           null,
           null,
           'You can use an action to blow this horn. In response, 3d4+3 warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can''t be used again until 7 days have passed.
@@ -129,7 +129,7 @@ VALUES(
       ),
       (
           'Horn of Valhalla (Bronze)',
-          'DND5E',
+          1,
           null,
           null,
           'You can use an action to blow this horn. In response, 4d4+4 warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can''t be used again until 7 days have passed.
@@ -160,7 +160,7 @@ VALUES(
       ),
       (
           'Horn of Valhalla (Iron)',
-          'DND5E',
+          1,
           null,
           null,
           'You can use an action to blow this horn. In response, 5d4+5 warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can''t be used again until 7 days have passed.
@@ -191,7 +191,7 @@ VALUES(
       ),
       (
           'Viol',
-          'DND5E',
+          1,
           '1 lb',
           '30 gp',
           '*Ability:* Charisma
@@ -222,7 +222,7 @@ VALUES(
       ),
       (
           'Pan Flute',
-          'DND5E',
+          1,
           '2 lbs',
           '12 gp',
           '*Ability:* Charisma
@@ -255,7 +255,7 @@ VALUES(
       ),
       (
           'Instrument of the Bards',
-          'DND5E',
+          1,
           null,
           null,
           'An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. The following table lists the spells common to all instruments, as well as the spells specific to each one and its rarity. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 psychic damage.
@@ -297,7 +297,7 @@ VALUES(
       ),
       (
           'Ollamh Harp',
-          'DND5E',
+          1,
           null,
           null,
           'An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 psychic damage.
@@ -339,7 +339,7 @@ VALUES(
 
       (
           'Anstruth Harp',
-          'DND5E',
+          1,
           null,
           null,
           'An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 psychic damage.
@@ -381,7 +381,7 @@ VALUES(
 
       (
           'Canaith Mandolin',
-          'DND5E',
+          1,
           null,
           null,
           'An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 psychic damage.
@@ -422,7 +422,7 @@ VALUES(
       ),
       (
           'Cli Lyre',
-          'DND5E',
+          1,
           null,
           null,
           'An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 psychic damage.
@@ -464,7 +464,7 @@ VALUES(
 
       (
           'Doss Lute',
-          'DND5E',
+          1,
           null,
           null,
           'An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 psychic damage.
@@ -506,7 +506,7 @@ VALUES(
 
       (
           'Fochlucan Bandore',
-          'DND5E',
+          1,
           null,
           null,
           'An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 psychic damage.
@@ -548,7 +548,7 @@ VALUES(
       ),
       (
        'Mac-Fuirmidh Cittern',
-       'DND5E',
+       1,
        null,
        null,
        'An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 psychic damage.
@@ -589,7 +589,7 @@ VALUES(
       ),
       (
        'Horn',
-       'DND5E',
+       1,
        '2 lb',
        '3 gp',
        'If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.',
@@ -619,7 +619,7 @@ VALUES(
       ),
       (
        'Pipes of Haunting',
-       'DND5E',
+       1,
        null,
        null,
        'You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. If you wish, all creatures in the area that aren''t hostile toward you automatically succeed on the saving throw. A creature that fails the saving throw can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its saving throw is immune to the effect of these pipes for 24 hours. The pipes regain 1d3 expended charges daily at dawn.',
@@ -649,7 +649,7 @@ VALUES(
       ),
       (
        'Lyre',
-       'DND5E',
+       1,
        '2 lb',
        '30 gp',
        '*Ability:* Charisma
@@ -677,7 +677,7 @@ VALUES(
       ),
       (
        'Drum',
-       'DND5E',
+       1,
        '3 lb',
        '6 gp',
        '*Ability:* Charisma
@@ -705,7 +705,7 @@ VALUES(
       ),
       (
        'Chime of Opening',
-       'DND5E',
+       1,
        null,
        null,
        'This hollow metal tube measures about 1 foot long and weighs 1 pound. You can strike it as an action, pointing it at an object within 120 feet of you that can be opened, such as a door, lid, or lock. The chime issues a clear tone, and one lock or latch on the object opens unless the sound can''t reach the object. If no locks or latches remain, the object itself opens.
@@ -736,7 +736,7 @@ VALUES(
       ),
       (
        'Pipes of the Sewers',
-       'DND5E',
+       1,
        null,
        null,
        'You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them.
@@ -768,7 +768,7 @@ VALUES(
       ),
       (
           'Shawm',
-          'DND5E',
+          1,
           '1 lb',
           '2 gp',
           'If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.',
@@ -798,7 +798,7 @@ VALUES(
       ),
       (
        'Signal Whistle',
-       'DND5E',
+       1,
        null,
        '5 cp',
        'A small whistle used for signaling.',
@@ -828,7 +828,7 @@ VALUES(
       ),
       (
        'Flute',
-       'DND5E',
+       1,
        '1 lb',
        '2 gp',
        'If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.',
@@ -858,7 +858,7 @@ VALUES(
       ),
       (
        'Lute',
-       'DND5E',
+       1,
        '2 lb',
        '35 gp',
        'If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.',
@@ -888,7 +888,7 @@ VALUES(
       ),
       (
        'Dulcimer',
-       'DND5E',
+       1,
        '10 lb',
        '25 gp',
        'If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.',
@@ -918,7 +918,7 @@ VALUES(
       ),
       (
        'Bagpipes',
-       'DND5E',
+       1,
        '6 lb',
        '30 gp',
        'If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use bagpipes as a spellcasting focus.',
@@ -948,7 +948,7 @@ VALUES(
       ),
       (
        'Herbalism Kit',
-       'DND5E',
+       1,
        null,
        null,
        'You can use an action to speak the horn''s command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn''t deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.
@@ -979,7 +979,7 @@ VALUES(
       ),
       (
        'Horn of Blasting',
-       'DND5E',
+       1,
        null,
        null,
        'You can use an action to speak the horn''s command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn''t deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.

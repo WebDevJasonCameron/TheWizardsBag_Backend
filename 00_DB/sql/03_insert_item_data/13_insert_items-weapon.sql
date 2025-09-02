@@ -29,7 +29,7 @@ INSERT INTO items (
     item_source_id)
 VALUES(
     'Staff of Swarming Insects',
-    'DND5E',
+    1,
     '4 lb',
     null,
     'This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, a swarm of insects consumes and destroys the staff, then disperses.
@@ -66,7 +66,7 @@ VALUES(
     ),
     (
     'Staff of the Woodlands',
-    'DND5E',
+    1,
     null,
     null,
     'This staff has 6 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.
@@ -109,7 +109,7 @@ VALUES(
     ),
     (
     'Sword of Life Stealing',
-    'DND5E',
+    1,
     null,
     null,
     'Weapon (glaive, greatsword, longsword, rapier, scimitar, or shortsword), rare (requires attunement)
@@ -150,7 +150,7 @@ VALUES(
     ),
     (
     'Greatsword of Life Stealing',
-    'DND5E',
+    1,
     null,
     null,
     'When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn''t a construct or an undead. You also gain 10 temporary hit points.
@@ -184,7 +184,7 @@ VALUES(
     ),
     (
     'Longsword of Life Stealing',
-    'DND5E',
+    1,
     null,
     null,
     'When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn''t a construct or an undead. You also gain 10 temporary hit points.
@@ -218,7 +218,7 @@ VALUES(
     ),
     (
     'Rapier of Life Stealing',
-    'DND5E',
+    1,
     null,
     null,
     'When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn''t a construct or an undead. You also gain 10 temporary hit points. Proficiency with a Rapier allows you to add your proficiency bonus to the attack roll for any attack you make with it.
@@ -251,7 +251,7 @@ VALUES(
     ),
     (
     'Scimitar of Life Stealing',
-    'DND5E',
+    1,
     null,
     null,
     'When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn''t a construct or an undead. You also gain 10 temporary hit points.
@@ -285,7 +285,7 @@ VALUES(
     ),
     (
     'Shortsword of Life Stealing',
-    'DND5E',
+    1,
     null,
     null,
     'When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn''t a construct or an undead. You also gain 10 temporary hit points.
@@ -319,7 +319,7 @@ VALUES(
     ),
     (
     'Blowgun Needles',
-    'DND5E',
+    1,
     '1 lb',
     '1 gp',
     'Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.',
@@ -349,7 +349,7 @@ VALUES(
     ),
     (
     'Blowgun Needles, +1',
-    'DND5E',
+    1,
     null,
     null,
     'You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.',
@@ -379,7 +379,7 @@ VALUES(
     ),
     (
     'Blowgun Needles, +2',
-    'DND5E',
+    1,
     null,
     null,
     'You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.',
@@ -409,7 +409,7 @@ VALUES(
     ),
     (
     'Blowgun Needles, +3',
-    'DND5E',
+    1,
     null,
     null,
     'You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.',
@@ -439,7 +439,7 @@ VALUES(
     ),
     (
     'Berserker Axe',
-    'DND5E',
+    1,
     null,
     null,
     'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your Hit Point maximum increases by 1 for each level you have attained.
@@ -479,7 +479,7 @@ VALUES(
     ),
     (
     'Berserker Handaxe',
-    'DND5E',
+    1,
     null,
     null,
     'You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.
@@ -514,7 +514,7 @@ VALUES(
     17
     ),(
     'Berserker Battleaxe',
-    'DND5E',
+    1,
     null,
     null,
     'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your Hit Point maximum increases by 1 for each level you have attained.
@@ -550,7 +550,7 @@ VALUES(
     17
     ),(
     'Berserker Greataxe',
-    'DND5E',
+    1,
     null,
     null,
     'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your Hit Point maximum increases by 1 for each level you have attained.
@@ -586,7 +586,7 @@ VALUES(
     17
     ),(
     'Berserker Halberd',
-    'DND5E',
+    1,
     null,
     null,
     'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your Hit Point maximum increases by 1 for each level you have attained.
@@ -619,7 +619,7 @@ VALUES(
     ),
     (
     'Luck Blades',
-    'DND5E',
+    1,
     null,
     null,
     'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. While the weapon is on your person, you also gain a +1 bonus to saving throws.
@@ -660,7 +660,7 @@ VALUES(
     ),
     (
     'Luck Blade Greatsword',
-    'DND5E',
+    1,
     '6 lb',
     null,
     'You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.
@@ -696,7 +696,7 @@ VALUES(
     ),
     (
     'Luck Blade Longsword',
-    'DND5E',
+    1,
     '3 lb',
     null,
     'You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.
@@ -732,7 +732,7 @@ VALUES(
     ),
     (
     'Luck Blade Rapier',
-    'DND5E',
+    1,
     '2 lb',
     null,
     'You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.
@@ -768,7 +768,7 @@ VALUES(
     ),
     (
     'Luck Blade Scimitar',
-    'DND5E',
+    1,
     '3 lb',
     null,
     'You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.
@@ -804,7 +804,7 @@ VALUES(
     ),
     (
     'Luck Blade Shortsword',
-    'DND5E',
+    1,
     '2 lb',
     null,
     'You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.
@@ -840,7 +840,7 @@ VALUES(
     ),
     (
     'Wand of Magic Missiles',
-    'DND5E',
+    1,
     null,
     null,
     'This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.
@@ -871,7 +871,7 @@ VALUES(
     ),
     (
     'Vicious Revolver',
-    'DND5E',
+    1,
     '3 lb',
     null,
     'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -905,7 +905,7 @@ VALUES(
     ),
     (
     'Oathbow Longbow',
-    'DND5E',
+    1,
     '2 lb',
     null,
     'When you nock an arrow on this bow, it whispers in Elvish, "Swift defeat to my enemies." When you use this weapon to make a ranged attack, you can, as a command phrase, say, "Swift death to you who have wronged me." The target of your attack becomes your sworn enemy until it dies or until dawn seven days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.
@@ -941,7 +941,7 @@ VALUES(
     ),
     (
     'Oathbow Shortbow',
-    'DND5E',
+    1,
     '2 lb',
     null,
     'When you nock an arrow on this bow, it whispers in Elvish, "Swift defeat to my enemies." When you use this weapon to make a ranged attack, you can, as a command phrase, say, "Swift death to you who have wronged me." The target of your attack becomes your sworn enemy until it dies or until dawn seven days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.
@@ -973,7 +973,7 @@ VALUES(
     ),
     (
     'Efficient Quiver',
-    'DND5E',
+    1,
     '2 lb',
     null,
     'Each of the quiver''s three compartments connects to an extradimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to sixty arrows, bolts, or similar objects. The midsize compartment holds up to eighteen javelins or similar objects. The longest compartment holds up to six long objects, such as bows, quarterstaffs, or spears.
@@ -1004,7 +1004,7 @@ VALUES(
     ),
     (
     'Vicious Trident',
-    'DND5E',
+    1,
     null,
     null,
     'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -1038,7 +1038,7 @@ VALUES(
     ),
     (
     'Wands of the War Mage',
-    'DND5E',
+    1,
     null,
     null,
     'While holding this wand, you gain a bonus to spell attack rolls determined by the wand’s rarity. In addition, you ignore Half Cover when making a spell attack roll.
@@ -1074,7 +1074,7 @@ VALUES(
     ),
     (
     'Wand of the War Mage, +1',
-    'DND5E',
+    1,
     null,
     null,
     'While holding this wand, you gain a bonus to spell attack rolls determined by the wand’s rarity. In addition, you ignore Half Cover when making a spell attack roll.',
@@ -1104,7 +1104,7 @@ VALUES(
     ),
     (
     'Wand of the War Mage, +2',
-    'DND5E',
+    1,
     null,
     null,
     'While holding this wand, you gain a bonus to spell attack rolls determined by the wand’s rarity. In addition, you ignore Half Cover when making a spell attack roll.',
@@ -1134,7 +1134,7 @@ VALUES(
     ),
     (
     'Wand of the War Mage, +3',
-    'DND5E',
+    1,
     null,
     null,
     'While holding this wand, you gain a bonus to spell attack rolls determined by the wand’s rarity. In addition, you ignore Half Cover when making a spell attack roll.',
@@ -1164,7 +1164,7 @@ VALUES(
     ),
     (
     'Trident of Fish Command',
-    'DND5E',
+    1,
     '4 lb',
     null,
     'This magic weapon has 3 charges, and it regains 1d3 expended charges daily at dawn. While you carry it, you can expend 1 charge to cast Dominate Beast (save DC 15) from it on a Beast that has a Swim Speed.
@@ -1198,7 +1198,7 @@ VALUES(
     ),
     (
     'Swords of Wounding',
-    'DND5E',
+    1,
     null,
     null,
     'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -1238,7 +1238,7 @@ VALUES(
     ),
     (
     'Greatsword of Wounding',
-    'DND5E',
+    1,
     '6 lb',
     null,
     'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -1274,7 +1274,7 @@ VALUES(
     ),
     (
     'Longsword of Wounding',
-    'DND5E',
+    1,
     '3 lb',
     null,
     'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -1310,7 +1310,7 @@ VALUES(
     ),
     (
     'Rapier of Wounding',
-    'DND5E',
+    1,
     '2 lb',
     null,
     'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -1345,7 +1345,7 @@ VALUES(
     ),
     (
     'Scimitar of Wounding',
-    'DND5E',
+    1,
     '3 lb',
     null,
     'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -1380,7 +1380,7 @@ VALUES(
     ),
     (
     'Shortsword of Wounding',
-    'DND5E',
+    1,
     '2 lb',
     null,
     'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -1415,7 +1415,7 @@ VALUES(
     ),
     (
     'Vorpal Swords',
-    'DND5E',
+    1,
     null,
     null,
     'You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage.
@@ -1452,7 +1452,7 @@ VALUES(
     ),
     (
     'Vorpal Greatsword',
-    'DND5E',
+    1,
     '6 lb',
     null,
     'You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage.
@@ -1487,7 +1487,7 @@ VALUES(
     ),
     (
     'Vorpal Longsword',
-    'DND5E',
+    1,
     '3 lb',
     null,
     'You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage.
@@ -1522,7 +1522,7 @@ VALUES(
     ),
     (
     'Vorpal Scimitar',
-    'DND5E',
+    1,
     '3 lb',
     null,
     'You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage.
@@ -1557,7 +1557,7 @@ VALUES(
     ),
     (
     'Vicious Dagger',
-    'DND5E',
+    1,
     '1 lb',
     null,
     'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -1591,7 +1591,7 @@ VALUES(
     ),
     (
       'Scimitar of Speed',
-    'DND5E',
+    1,
     '3 lb',
     null,
     'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. In addition, you can make one attack with it as a Bonus Action on each of your turns.
@@ -1625,7 +1625,7 @@ VALUES(
     ),
     (
     'Dwarven Thrower',
-    'DND5E',
+    1,
     '5 lb',
     null,
     'You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. It has the Thrown property with a normal range of 20 feet and a long range of 60 feet. When you hit with a ranged attack using this weapon, it deals an extra 1d8 Force damage, or an extra 2d8 Force damage if the target is a Giant. Immediately after hitting or missing, the weapon flies back to your hand.
@@ -1659,7 +1659,7 @@ VALUES(
     ),
     (
     'Yew Wand',
-    'DND5E',
+    1,
     '1 lb',
     '10 gp',
     'A druid can use a Yew Wand as a spellcasting focus, as described in the Spellcasting section.',
@@ -1689,7 +1689,7 @@ VALUES(
     ),
     (
     'Vicious Greatclub',
-     'DND5E',
+     1,
      '10 lb',
      null,
      'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -1723,7 +1723,7 @@ VALUES(
       ),
       (
           'Staff of Frost',
-          'DND5E',
+          1,
           null,
           null,
           'You have resistance to cold damage while you hold this staff.
@@ -1766,7 +1766,7 @@ VALUES(
       ),
       (
           'Flame Tongues',
-          'DND5E',
+          1,
           null,
           null,
           'You can use a bonus action to speak this magic sword''s command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.
@@ -1805,7 +1805,7 @@ VALUES(
       ),
       (
        'Flame Tongue Greatsword',
-       'DND5E',
+       1,
        '6 lb',
        null,
        'While holding this magic weapon, you can take a Bonus Action and use a command word to cause flames to engulf the damage-dealing part of the weapon. These flames shed Bright Light in a 40-foot radius and Dim Light for an additional 40 feet. While the weapon is ablaze, it deals an extra 2d6 Fire damage on a hit. The flames last until you take a Bonus Action to issue the command again or until you drop, stow, or sheathe the weapon.
@@ -1840,7 +1840,7 @@ VALUES(
       ),
     (
      'Flame Tongue Longsword',
-     'DND5E',
+     1,
      '3 lb',
      null,
      'While holding this magic weapon, you can take a Bonus Action and use a command word to cause flames to engulf the damage-dealing part of the weapon. These flames shed Bright Light in a 40-foot radius and Dim Light for an additional 40 feet. While the weapon is ablaze, it deals an extra 2d6 Fire damage on a hit. The flames last until you take a Bonus Action to issue the command again or until you drop, stow, or sheathe the weapon.
@@ -1874,7 +1874,7 @@ VALUES(
       ),
       (
        'Flame Tongue Rapier',
-       'DND5E',
+       1,
        '2 ft',
        null,
        'While holding this magic weapon, you can take a Bonus Action and use a command word to cause flames to engulf the damage-dealing part of the weapon. These flames shed Bright Light in a 40-foot radius and Dim Light for an additional 40 feet. While the weapon is ablaze, it deals an extra 2d6 Fire damage on a hit. The flames last until you take a Bonus Action to issue the command again or until you drop, stow, or sheathe the weapon.
@@ -1909,7 +1909,7 @@ VALUES(
       ),
       (
           'Flame Tongue Scimitar',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'While holding this magic weapon, you can take a Bonus Action and use a command word to cause flames to engulf the damage-dealing part of the weapon. These flames shed Bright Light in a 40-foot radius and Dim Light for an additional 40 feet. While the weapon is ablaze, it deals an extra 2d6 Fire damage on a hit. The flames last until you take a Bonus Action to issue the command again or until you drop, stow, or sheathe the weapon.
@@ -1943,7 +1943,7 @@ VALUES(
       ),
       (
            'Flame Tongue Shortsword',
-           'DND5E',
+           1,
            '2 lb',
            null,
            'While holding this magic weapon, you can take a Bonus Action and use a command word to cause flames to engulf the damage-dealing part of the weapon. These flames shed Bright Light in a 40-foot radius and Dim Light for an additional 40 feet. While the weapon is ablaze, it deals an extra 2d6 Fire damage on a hit. The flames last until you take a Bonus Action to issue the command again or until you drop, stow, or sheathe the weapon.
@@ -1977,7 +1977,7 @@ VALUES(
       ),
       (
        'Holy Avenger',
-       'DND5E',
+       1,
        null,
        null,
        'You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
@@ -2016,7 +2016,7 @@ VALUES(
       ),
       (
           'Holy Avenger Greatsword',
-          'DND5E',
+          1,
           '6 ft',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
@@ -2052,7 +2052,7 @@ VALUES(
 
       (
           'Holy Avenger Longsword',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
@@ -2088,7 +2088,7 @@ VALUES(
 
       (
           'Holy Avenger Rapier',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
@@ -2124,7 +2124,7 @@ VALUES(
 
       (
           'Holy Avenger Scimitar',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
@@ -2160,7 +2160,7 @@ VALUES(
 
       (
           'Holy Avenger Shortsword',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
@@ -2195,7 +2195,7 @@ VALUES(
       ),
       (
        'Wand of Binding',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand''s last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
@@ -2226,7 +2226,7 @@ VALUES(
       ),
       (
           'Vicious Weapons',
-          'DND5E',
+          1,
           null,
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2327,7 +2327,7 @@ VALUES(
       ),
       (
           'Vicious Club',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2361,7 +2361,7 @@ VALUES(
       ),
       (
           'Vicious Dagger',
-          'DND5E',
+          1,
           '1 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2395,7 +2395,7 @@ VALUES(
       ),
       (
           'Vicious Greatclub',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2429,7 +2429,7 @@ VALUES(
       ),
       (
           'Vicious Handaxe',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2463,7 +2463,7 @@ VALUES(
       ),
       (
           'Vicious Javelin',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2497,7 +2497,7 @@ VALUES(
       ),
       (
           'Vicious Light Hammer',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2531,7 +2531,7 @@ VALUES(
       ),
       (
           'Vicious Mace',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2565,7 +2565,7 @@ VALUES(
       ),
       (
           'Vicious Quarterstaff',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2599,7 +2599,7 @@ VALUES(
       ),
       (
           'Vicious Sickle',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2633,7 +2633,7 @@ VALUES(
       ),
       (
           'Vicious Spear',
-          'DND5E',
+          1,
           null,
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2667,7 +2667,7 @@ VALUES(
       ),
       (
           'Vicious Yklwa',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2698,7 +2698,7 @@ VALUES(
       ),
       (
           'Vicious Crossbow, Light',
-          'DND5E',
+          1,
           '5 ft',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2732,7 +2732,7 @@ VALUES(
       ),
       (
           'Vicious Dart',
-          'DND5E',
+          1,
           '0.25 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2766,7 +2766,7 @@ VALUES(
       ),
       (
           'Vicious Shortbow',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2800,7 +2800,7 @@ VALUES(
       ),
       (
           'Vicious Sling',
-          'DND5E',
+          1,
           null,
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2834,7 +2834,7 @@ VALUES(
       ),
       (
           'Vicious Battleaxe',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2868,7 +2868,7 @@ VALUES(
       ),
       (
           'Vicious Flail',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2902,7 +2902,7 @@ VALUES(
       ),
       (
           'Vicious Glaive',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2936,7 +2936,7 @@ VALUES(
       ),
       (
           'Vicious Greataxe',
-          'DND5E',
+          1,
           '7 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -2970,7 +2970,7 @@ VALUES(
       ),
       (
           'Vicious Greatsword',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3004,7 +3004,7 @@ VALUES(
       ),
       (
           'Vicious Halberd',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3038,7 +3038,7 @@ VALUES(
       ),
       (
           'Vicious Lance',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3072,7 +3072,7 @@ VALUES(
       ),
       (
           'Vicious Longsword',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3106,7 +3106,7 @@ VALUES(
       ),
       (
           'Vicious Maul',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3140,7 +3140,7 @@ VALUES(
       ),
       (
           'Vicious Morningstar',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3175,7 +3175,7 @@ VALUES(
       ),
       (
           'Vicious Pike',
-          'DND5E',
+          1,
           '18 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3209,7 +3209,7 @@ VALUES(
       ),
       (
           'Vicious Rapier',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3243,7 +3243,7 @@ VALUES(
       ),
       (
           'Vicious Scimitar',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3277,7 +3277,7 @@ VALUES(
       ),
       (
           'Vicious Shortsword',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3311,7 +3311,7 @@ VALUES(
       ),
       (
           'Vicious Trident',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3345,7 +3345,7 @@ VALUES(
       ),
       (
           'Vicious War Pick',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3379,7 +3379,7 @@ VALUES(
       ),
       (
           'Vicious Warhammer',
-          'DND5E',
+          1,
           '5 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3413,7 +3413,7 @@ VALUES(
       ),
       (
           'Vicious Whip',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3447,7 +3447,7 @@ VALUES(
       ),
       (
           'Vicious Blowgun',
-          'DND5E',
+          1,
           '1 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3481,7 +3481,7 @@ VALUES(
       ),
       (
           'Vicious Crossbow, Hand',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3515,7 +3515,7 @@ VALUES(
       ),
       (
           'Vicious Crossbow, Heavy',
-          'DND5E',
+          1,
           '18 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3549,7 +3549,7 @@ VALUES(
       ),
       (
           'Vicious Longbow',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3583,7 +3583,7 @@ VALUES(
       ),
       (
           'Vicious Net',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3617,7 +3617,7 @@ VALUES(
       ),
       (
           'Vicious Pistol',
-          'DND5E',
+          1,
           null,
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3651,7 +3651,7 @@ VALUES(
       ),
       (
           'Vicious Musket',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3685,7 +3685,7 @@ VALUES(
       ),
       (
           'Vicious Pistol, Automatic',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3716,7 +3716,7 @@ VALUES(
       ),
       (
           'Vicious Revolver',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3750,7 +3750,7 @@ VALUES(
       ),
       (
           'Vicious Rifle, Hunting',
-          'DND5E',
+          1,
           '8 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3784,7 +3784,7 @@ VALUES(
       ),
       (
           'Vicious Rifle, Automatic',
-          'DND5E',
+          1,
           '8 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3818,7 +3818,7 @@ VALUES(
       ),
       (
           'Vicious Shotgun',
-          'DND5E',
+          1,
           '7 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3852,7 +3852,7 @@ VALUES(
       ),
       (
           'Vicious Laser Pistol',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3886,7 +3886,7 @@ VALUES(
       ),
       (
           'Vicious Antimatter Rifle',
-          'DND5E',
+          1,
           null,
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3920,7 +3920,7 @@ VALUES(
       ),
       (
           'Vicious Laser Rifle',
-          'DND5E',
+          1,
           '7 lb',
           null,
           'When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon’s type.
@@ -3954,7 +3954,7 @@ VALUES(
       ),
       (
           'Swords of Sharpness',
-          'DND5E',
+          1,
           null,
           null,
           'When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target.
@@ -3992,7 +3992,7 @@ VALUES(
       ),
       (
           'Greatsword of Sharpness',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target.
@@ -4028,7 +4028,7 @@ VALUES(
       ),
       (
           'Longsword of Sharpness',
-          'DND5E',
+          1,
           '8 lb',
           null,
           'When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target.
@@ -4064,7 +4064,7 @@ VALUES(
       ),
       (
           'Scimitar of Sharpness',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target.
@@ -4100,7 +4100,7 @@ VALUES(
       ),
       (
           'Longsword, +2',
-       'DND5E',
+       1,
        null,
        null,
        'You have a +2 bonus to attack and damage rolls made with this magic weapon.
@@ -4134,7 +4134,7 @@ VALUES(
       ),
       (
           'Giant Slayers',
-          'DND5E',
+          1,
           null,
           null,
           'When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon’s type and must succeed on a DC 15 Strength saving throw or have the Prone condition.
@@ -4221,7 +4221,7 @@ VALUES(
       ),
       (
           'Giant Slayer Club',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4256,7 +4256,7 @@ VALUES(
       ),
       (
           'Giant Slayer Dagger',
-          'DND5E',
+          1,
           '1 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4291,7 +4291,7 @@ VALUES(
       ),
       (
           'Giant Slayer Greatclub',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4326,7 +4326,7 @@ VALUES(
       ),
       (
           'Giant Slayer Handaxe',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -4361,7 +4361,7 @@ VALUES(
       ),
       (
           'Giant Slayer Javelin',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4396,7 +4396,7 @@ VALUES(
       ),
       (
           'Giant Slayer Light Hammer',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4431,7 +4431,7 @@ VALUES(
       ),
       (
           'Giant Slayer Mace',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4466,7 +4466,7 @@ VALUES(
       ),
       (
           'Giant Slayer Quarterstaff',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4501,7 +4501,7 @@ VALUES(
       ),
       (
           'Giant Slayer Sickle',
-          'DND5E',
+          1,
           '',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4536,7 +4536,7 @@ VALUES(
       ),
       (
           'Giant Slayer Spear',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4571,7 +4571,7 @@ VALUES(
       ),
       (
           'Giant Slayer Dart',
-          'DND5E',
+          1,
           '0.25 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4606,7 +4606,7 @@ VALUES(
       ),
       (
           'Giant Slayer Light Crossbow',
-          'DND5E',
+          1,
           '5 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4641,7 +4641,7 @@ VALUES(
       ),
       (
           'Giant Slayer Shortbow',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4676,7 +4676,7 @@ VALUES(
       ),
       (
           'Giant Slayer Sling',
-          'DND5E',
+          1,
           null,
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4711,7 +4711,7 @@ VALUES(
       ),
       (
           'Giant Slayer Battleaxe',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -4746,7 +4746,7 @@ VALUES(
       ),
       (
           'Giant Slayer Flail',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4781,7 +4781,7 @@ VALUES(
       ),
       (
           'Giant Slayer Glaive',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4816,7 +4816,7 @@ VALUES(
       ),
       (
           'Giant Slayer Greataxe',
-          'DND5E',
+          1,
           '7 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -4851,7 +4851,7 @@ VALUES(
       ),
       (
           'Giant Slayer Greatsword',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -4886,7 +4886,7 @@ VALUES(
       ),
       (
           'Giant Slayer Halberd',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4921,7 +4921,7 @@ VALUES(
       ),
       (
           'Giant Slayer Lance',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -4956,7 +4956,7 @@ VALUES(
       ),
       (
           'Giant Slayer Longsword',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -4991,7 +4991,7 @@ VALUES(
       ),
       (
           'Giant Slayer Maul',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5026,7 +5026,7 @@ VALUES(
       ),
       (
           'Giant Slayer Morningstar',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5061,7 +5061,7 @@ VALUES(
       ),
       (
           'Giant Slayer Pike',
-          'DND5E',
+          1,
           '18 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5096,7 +5096,7 @@ VALUES(
       ),
       (
           'Giant Slayer Rapier',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -5132,7 +5132,7 @@ VALUES(
 
       (
           'Giant Slayer Scimitar',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -5167,7 +5167,7 @@ VALUES(
       ),
       (
           'Giant Slayer Shortsword',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -5202,7 +5202,7 @@ VALUES(
       ),
       (
           'Giant Slayer Trident',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5237,7 +5237,7 @@ VALUES(
       ),
       (
           'Giant Slayer Warhammer',
-          'DND5E',
+          1,
           '5 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5272,7 +5272,7 @@ VALUES(
       ),
       (
           'Giant Slayer War Pick',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5307,7 +5307,7 @@ VALUES(
       ),
       (
           'Giant Slayer Whip',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5342,7 +5342,7 @@ VALUES(
       ),
       (
           'Giant Slayer Blowgun',
-          'DND5E',
+          1,
           '1 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5377,7 +5377,7 @@ VALUES(
       ),
       (
           'Giant Slayer Hand Crossbow',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5413,7 +5413,7 @@ VALUES(
 
       (
           'Giant Slayer Heavy Crossbow',
-          'DND5E',
+          1,
           '18 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5449,7 +5449,7 @@ VALUES(
 
       (
           'Giant Slayer Longbow',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5484,7 +5484,7 @@ VALUES(
       ),
       (
           'Giant Slayer Musket',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5520,7 +5520,7 @@ VALUES(
 
       (
           'Giant Slayer Pistol',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5555,7 +5555,7 @@ VALUES(
       ),
       (
           'Giant Slayer Automatic Rifle',
-          'DND5E',
+          1,
           '8 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5590,7 +5590,7 @@ VALUES(
       ),
       (
           'Giant Slayer Hunting Rifle',
-          'DND5E',
+          1,
           '8 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5625,7 +5625,7 @@ VALUES(
       ),
       (
           'Giant Slayer Revolver',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'ou gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5660,7 +5660,7 @@ VALUES(
       ),
       (
           'Giant Slayer Semiautomatic Pistol',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5695,7 +5695,7 @@ VALUES(
       ),
       (
           'Giant Slayer Shotgun',
-          'DND5E',
+          1,
           '7 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5730,7 +5730,7 @@ VALUES(
       ),
       (
           'Giant Slayer Antimatter Rifle',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5765,7 +5765,7 @@ VALUES(
       ),
       (
           'Giant Slayer Laser Pistol ',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5799,7 +5799,7 @@ VALUES(
           17
       ),
       ('Giant Slayer Laser Rifle',
-       'DND5E',
+       1,
        '7 lb',
        null,
        'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -5831,7 +5831,7 @@ VALUES(
       ),
       (
        'Dragon Slayers',
-       'DND5E',
+       1,
        null,
        null,
        'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -5870,7 +5870,7 @@ VALUES(
       ),
       (
           'Dragon Slayer Dragon Slayer Greatsword',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -5905,7 +5905,7 @@ VALUES(
       ),
       (
           'Dragon Slayer Longsword',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -5940,7 +5940,7 @@ VALUES(
       ),
       (
           'Dragon Slayer Rapier',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -5975,7 +5975,7 @@ VALUES(
       ),
       (
           'Dragon Slayer Scimitar',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -6010,7 +6010,7 @@ VALUES(
       ),
       (
           'Dragon Slayer Shortsword',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -6045,7 +6045,7 @@ VALUES(
       ),
       (
        'Staff of Fire',
-       'DND5E',
+       1,
        null,
        null,
        'You have resistance to fire damage while you hold this staff.
@@ -6077,7 +6077,7 @@ VALUES(
       ),
       (
        'Nine Lives Stealer''s',
-       'DND5E',
+       1,
        null,
        null,
        'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6164,7 +6164,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Club',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6199,7 +6199,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Dagger',
-          'DND5E',
+          1,
           '1 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6234,7 +6234,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Greatclub',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6269,7 +6269,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Handaxe',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6304,7 +6304,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Javelin',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6339,7 +6339,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Light Hammer',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6374,7 +6374,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Mace',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6409,7 +6409,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Quarterstaff',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6444,7 +6444,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Sickle',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6479,7 +6479,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Spear',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6514,7 +6514,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Dart',
-          'DND5E',
+          1,
           '0.25 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6549,7 +6549,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Light Crossbow',
-          'DND5E',
+          1,
           '5 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6584,7 +6584,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Shortbow',
-          'DND5E',
+          1,
           '',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6619,7 +6619,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Sling',
-          'DND5E',
+          1,
           '',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6654,7 +6654,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Battleaxe',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6689,7 +6689,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Flail',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6724,7 +6724,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Glaive',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6759,7 +6759,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Greataxe',
-          'DND5E',
+          1,
           '7 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6794,7 +6794,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Greatsword',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +2 bonus to attack and damage rolls made with this magic weapon.
@@ -6829,7 +6829,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Halberd',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6864,7 +6864,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Lance',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6899,7 +6899,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Longsword',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +2 bonus to attack and damage rolls made with this magic weapon.
@@ -6934,7 +6934,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Maul',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -6969,7 +6969,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Morningstar',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7004,7 +7004,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Pike',
-          'DND5E',
+          1,
           '18 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7039,7 +7039,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Rapier',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack and damage rolls made with this magic weapon.
@@ -7074,7 +7074,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Scimitar',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +2 bonus to attack and damage rolls made with this magic weapon.
@@ -7109,7 +7109,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Shortsword',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack and damage rolls made with this magic weapon.
@@ -7144,7 +7144,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Trident',
-          'DND5E',
+          1,
           '4 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7179,7 +7179,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Warhammer',
-          'DND5E',
+          1,
           '5 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7214,7 +7214,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer War Pick',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7249,7 +7249,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Whip',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7284,7 +7284,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Blowgun',
-          'DND5E',
+          1,
           '1 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7319,7 +7319,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Hand Crossbow',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7354,7 +7354,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Heavy Crossbow',
-          'DND5E',
+          1,
           '18 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7389,7 +7389,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Longbow',
-          'DND5E',
+          1,
           '',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7424,7 +7424,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Musket',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7459,7 +7459,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Pistol',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7494,7 +7494,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Automatic Rifle',
-          'DND5E',
+          1,
           '8 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7529,7 +7529,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Hunting Rifle',
-          'DND5E',
+          1,
           '8 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7564,7 +7564,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Revolver',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7599,7 +7599,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Semiautomatic Pistol',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7634,7 +7634,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Shotgun',
-          'DND5E',
+          1,
           '7 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7669,7 +7669,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Antimatter Rifle',
-          'DND5E',
+          1,
           '10 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7704,7 +7704,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Laser Pistol',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7739,7 +7739,7 @@ VALUES(
       ),
       (
           'Nine Lives Stealer Laser Rifle',
-          'DND5E',
+          1,
           '7 lb',
           null,
           'You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon.
@@ -7774,7 +7774,7 @@ VALUES(
       ),
       (
        'Swords of Wounding',
-       'DND5E',
+       1,
        null,
        null,
        'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -7814,7 +7814,7 @@ VALUES(
       ),
       (
           'Greatsword of Wounding',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -7849,7 +7849,7 @@ VALUES(
       ),
       (
           'Longsword of Wounding',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -7884,7 +7884,7 @@ VALUES(
       ),
       (
           'Rapier of Wounding',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -7919,7 +7919,7 @@ VALUES(
       ),
       (
           'Scimitar of Wounding',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -7954,7 +7954,7 @@ VALUES(
       ),
       (
           'Shortsword of Wounding',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'Hit points lost to this weapon''s damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
@@ -7989,7 +7989,7 @@ VALUES(
       ),
       (
        'Frost Brand',
-       'DND5E',
+       1,
        null,
        null,
        'When you hit with an attack using this magic sword, the target takes an extra 1d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.
@@ -8031,7 +8031,7 @@ VALUES(
       ),
       (
           'Frost Brand Greatsword',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.
@@ -8067,7 +8067,7 @@ VALUES(
       ),
       (
           'Frost Brand Longsword',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.
@@ -8103,7 +8103,7 @@ VALUES(
       ),
       (
           'Frost Brand Rapier',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.
@@ -8139,7 +8139,7 @@ VALUES(
       ),
       (
           'Frost Brand Scimitar',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.
@@ -8175,7 +8175,7 @@ VALUES(
       ),
       (
           'Frost Brand Shortsword',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.
@@ -8211,7 +8211,7 @@ VALUES(
       ),
       (
           'Frost Brand Glaive',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.
@@ -8247,7 +8247,7 @@ VALUES(
       ),
       (
        'Wand of Enemy Detection',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges. While holding it, you can use an action and expend 1 charge to speak its command word. For the next minute, you know the direction of the nearest creature hostile to you within 60 feet, but not its distance from you. The wand can sense the presence of hostile creatures that are ethereal, invisible, disguised, or hidden, as well as those in plain sight. The effect ends if you stop holding the wand.
@@ -8278,7 +8278,7 @@ VALUES(
       ),
       (
        'Crossbow Bolts',
-       'DND5E',
+       1,
        '1.5 lb',
        '1 gp',
        'Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.',
@@ -8308,7 +8308,7 @@ VALUES(
       ),
       (
        'Staff of Thunder and Lightning',
-       'DND5E',
+       1,
        null,
        null,
        'This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. It also has the following additional properties. When one of these properties is used, it can''t be used again until the next dawn.
@@ -8343,7 +8343,7 @@ VALUES(
       ),
       (
        'Rod of Lordly Might',
-       'DND5E',
+       1,
        null,
        null,
        'This rod has a flanged head, and it functions as a magic Mace that grants a +3 bonus to attack rolls and damage rolls made with it. The rod has properties associated with six different buttons that are set in a row along the haft. It has three other properties as well, detailed below.
@@ -8383,7 +8383,7 @@ VALUES(
       ),
       (
        'Wand of Fear',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand''s last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
@@ -8415,7 +8415,7 @@ VALUES(
       ),
       (
        'Wand of Secrets',
-       'DND5E',
+       1,
        null,
        null,
        'The wand has 3 charges. While holding it, you can use an action to expend 1 of its charges, and if a secret door or trap is within 30 feet of you, the wand pulses and points at the one nearest to you. The wand regains 1d3 expended charges daily at dawn.',
@@ -8445,7 +8445,7 @@ VALUES(
       ),
       (
        'Hammer of Thunderbolts',
-       'DND5E',
+       1,
        '10 lb',
        null,
        'You gain a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -8481,7 +8481,7 @@ VALUES(
       ),
       (
        'Wooden Staff',
-       'DND5E',
+       1,
        '4 lb',
        '5 gp',
        'A druid can use a Wooden Staff as a spellcasting focus, as described in the Spellcasting section.',
@@ -8511,7 +8511,7 @@ VALUES(
       ),
       (
        'Wand of the War Mage',
-       'DND5E',
+       1,
        null,
        null,
        'While holding this wand, you gain a bonus to spell attack rolls determined by the wand’s rarity. In addition, you ignore Half Cover when making a spell attack roll.
@@ -8546,7 +8546,7 @@ VALUES(
       ),
       (
        'Wand of Fireballs',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the fireball spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.
@@ -8577,7 +8577,7 @@ VALUES(
       ),
       (
        'Staff of Withering',
-       'DND5E',
+       1,
        null,
        null,
        'This staff has 3 charges and regains 1d3 expended charges daily at dawn.
@@ -8608,7 +8608,7 @@ VALUES(
       ),
       (
        'Arrows',
-       'DND5E',
+       1,
        '1 lb',
        '1 gp',
        '*Bundle Size:* 20
@@ -8639,7 +8639,7 @@ VALUES(
       ),
       (
        'Wand of Paralysis',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cause a thin blue ray to streak from the tip toward a creature you can see within 60 feet of you. The target must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. At the end of each of the target''s turns, it can repeat the saving throw, ending the effect on itself on a success.
@@ -8670,7 +8670,7 @@ VALUES(
       ),
       (
        'Mace of Terror',
-       'DND5E',
+       1,
        '4 lb',
        null,
        'This magic weapon has 3 charges and regains 1d3 expended charges daily at dawn. While holding the weapon, you can take a Magic action and expend 1 charge to release a wave of terror from it. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can’t make Opportunity Attacks. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can take the Dodge action. At the end of each of its turns, a creature repeats the save, ending the effect on itself on a success.',
@@ -8700,7 +8700,7 @@ VALUES(
       ),
       (
        'Arrow of Slaying',
-       'DND5E',
+       1,
        null,
        null,
        'An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.
@@ -8732,7 +8732,7 @@ VALUES(
       ),
       (
        'Wand of Lightning Bolts',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the lightning bolt spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.
@@ -8763,7 +8763,7 @@ VALUES(
       ),
       (
        'Wand of Web',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the web spell (save DC 15) from it.
@@ -8794,7 +8794,7 @@ VALUES(
       ),
       (
        'Lance',
-       'DND5E',
+       1,
        '6 lb',
        '10 gp',
        'Proficiency with a Lance allows you to add your proficiency bonus to the attack roll for any attack you make with it. A Lance requires two hands to wield when you aren''t mounted.
@@ -8826,7 +8826,7 @@ VALUES(
       ),
       (
           'Lance, +1',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You have a +1 bonus to attack and damage rolls made with this magic weapon.
@@ -8859,7 +8859,7 @@ VALUES(
       ),
       (
           'Lance, +2',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You have a +2 bonus to attack and damage rolls made with this magic weapon.
@@ -8893,7 +8893,7 @@ VALUES(
 
       (
           'Lance, +3',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You have a +3 bonus to attack and damage rolls made with this magic weapon.
@@ -8926,7 +8926,7 @@ VALUES(
       ),
       (
        'Wand of Polymorph',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the polymorph spell (save DC 15) from it.
@@ -8957,7 +8957,7 @@ VALUES(
       ),
       (
        'Ram, Portable',
-       'DND5E',
+       1,
        '35 lb',
        '4 gp',
        'You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check.',
@@ -8987,7 +8987,7 @@ VALUES(
       ),
       (
        'Hammer',
-       'DND5E',
+       1,
        '3 lb',
        '1 gp',
        'This one-handed hammer with an iron head is useful for pounding pitons into a wall.',
@@ -9017,7 +9017,7 @@ VALUES(
       ),
       (
        'Hammer, Sledge',
-       'DND5E',
+       1,
        '10 lb',
        '2 gp',
        'This two-handed, iron-headed hammer is good for smashing open treasure chests.',
@@ -9047,7 +9047,7 @@ VALUES(
       ),
       (
        'Dagger of Venom',
-       'DND5E',
+       1,
        '1 lb',
        null,
        'You gain a +1 bonus to attack and damage rolls made with this magic weapon. You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can''t be used this way again until the next dawn. Proficiency with a Dagger allows you to add your proficiency bonus to the attack roll for any attack you make with it.
@@ -9079,7 +9079,7 @@ VALUES(
       ),
       (
        'Sling Bullets',
-       'DND5E',
+       1,
        '1 1/2 lb',
        '4 cp',
        'Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.',
@@ -9109,7 +9109,7 @@ VALUES(
       ),
       (
        'Quiver',
-       'DND5E',
+       1,
        '1 lb',
        '1 gp',
        'A quiver can hold up to 20 arrows.',
@@ -9139,7 +9139,7 @@ VALUES(
       ),
       (
        'Staff of Charming',
-       'DND5E',
+       1,
        null,
        null,
        'While holding this staff, you can use an action to expend 1 of its 10 charges to cast charm person, command, or comprehend languages from it using your spell save DC. The staff can also be used as a magic quarterstaff.
@@ -9171,7 +9171,7 @@ VALUES(
       ),
       (
        'Wand of Wonder',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges and choose a target within 120 feet of you. The target can be a creature, an object, or a point in space. Roll d100 and consult the following table to discover what happens.
@@ -9228,7 +9228,7 @@ VALUES(
       ),
       (
        'Mace of Smiting',
-       'DND5E',
+       1,
        null,
        null,
        'You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. The bonus increases to +3 when you use the weapon to attack a Construct.
@@ -9263,7 +9263,7 @@ VALUES(
       ),
       (
        'Staff of Healing',
-       'DND5E',
+       1,
        null,
        null,
        'This staff has 10 charges. While holding the staff, you can cast one of the spells on the following table from it, using your spellcasting ability modifier. The table indicates how many charges you must expend to cast the spell.
@@ -9300,7 +9300,7 @@ VALUES(
       ),
       (
        'Dancing Swords',
-       'DND5E',
+       1,
        null,
        null,
        'You can take a Bonus Action to toss this magic weapon into the air. When you do so, the weapon begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of itself. The weapon uses your attack roll and adds your ability modifier to damage rolls.
@@ -9342,7 +9342,7 @@ VALUES(
       ),
       (
           'Dancing Greatsword',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You can take a Bonus Action to toss this magic weapon into the air. When you do so, the weapon begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of itself. The weapon uses your attack roll and adds your ability modifier to damage rolls.
@@ -9378,7 +9378,7 @@ VALUES(
       ),
       (
           'Dancing Longsword',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You can take a Bonus Action to toss this magic weapon into the air. When you do so, the weapon begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of itself. The weapon uses your attack roll and adds your ability modifier to damage rolls.
@@ -9414,7 +9414,7 @@ VALUES(
       ),
       (
           'Dancing Rapier',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You can take a Bonus Action to toss this magic weapon into the air. When you do so, the weapon begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of itself. The weapon uses your attack roll and adds your ability modifier to damage rolls.
@@ -9450,7 +9450,7 @@ VALUES(
       ),
       (
           'Dancing Scimitar',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You can take a Bonus Action to toss this magic weapon into the air. When you do so, the weapon begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of itself. The weapon uses your attack roll and adds your ability modifier to damage rolls.
@@ -9486,7 +9486,7 @@ VALUES(
       ),
       (
           'Dancing Shortsword',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You can take a Bonus Action to toss this magic weapon into the air. When you do so, the weapon begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of itself. The weapon uses your attack roll and adds your ability modifier to damage rolls.
@@ -9522,7 +9522,7 @@ VALUES(
       ),
       (
        'Javelin of Lightning',
-       'DND5E',
+       1,
        '2 lb',
        null,
        'This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.
@@ -9557,7 +9557,7 @@ VALUES(
       ),
       (
        'Wand of the War Mage, +1',
-       'DND5E',
+       1,
        null,
        null,
        'While holding this wand, you gain a bonus to spell attack rolls determined by the wand’s rarity. In addition, you ignore Half Cover when making a spell attack roll.',
@@ -9587,7 +9587,7 @@ VALUES(
       ),
       (
           'Wand of the War Mage, +2',
-          'DND5E',
+          1,
           null,
           null,
           'While holding this wand, you gain a bonus to spell attack rolls determined by the wand’s rarity. In addition, you ignore Half Cover when making a spell attack roll.',
@@ -9617,7 +9617,7 @@ VALUES(
       ),
       (
           'Wand of the War Mage, +3',
-          'DND5E',
+          1,
           null,
           null,
           'While holding this wand, you gain a bonus to spell attack rolls determined by the wand’s rarity. In addition, you ignore Half Cover when making a spell attack roll.',
@@ -9647,7 +9647,7 @@ VALUES(
       ),
       (
        'Sun Blade',
-       'DND5E',
+       1,
        '3 lb',
        null,
        'This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with shortswords or longswords, you are proficient with the sun blade.
@@ -9683,7 +9683,7 @@ VALUES(
       ),
       (
        'Dagger',
-       'DND5E',
+       1,
        '1 lb',
        '2 gp',
        'Proficiency with a Dagger allows you to add your proficiency bonus to the attack roll for any attack you make with it.
@@ -9720,7 +9720,7 @@ VALUES(
       ),
       (
        'Longsword, +1',
-       'DND5E',
+       1,
        '3 lb',
        null,
        'You have a +1 bonus to attack and damage rolls made with this magic weapon.',
@@ -9750,7 +9750,7 @@ VALUES(
       ),
       (
           'Longsword, +2',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You have a +2 bonus to attack and damage rolls made with this magic weapon.',
@@ -9780,7 +9780,7 @@ VALUES(
       ),
       (
           'Longsword, +3',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You have a +3 bonus to attack and damage rolls made with this magic weapon.',
@@ -9810,7 +9810,7 @@ VALUES(
       ),
       (
        'Staff',
-       'DND5E',
+       1,
        '4 lb',
        '5 gp',
        'An Arcane Focus is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.',
@@ -9840,7 +9840,7 @@ VALUES(
       ),
       (
        'Staff of Power',
-       'DND5E',
+       1,
        null,
        null,
        'This staff has 20 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.
@@ -9886,7 +9886,7 @@ VALUES(
       ),
       (
        'Defender',
-       'DND5E',
+       1,
        null,
        null,
        'You gain a +3 bonus to attack and damage rolls made with this magic weapon.
@@ -9927,7 +9927,7 @@ VALUES(
       ),
       (
           'Defender Greatsword',
-          'DND5E',
+          1,
           '6 lb',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon.
@@ -9962,7 +9962,7 @@ VALUES(
       ),
       (
           'Defender Longsword',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon.
@@ -9997,7 +9997,7 @@ VALUES(
       ),
       (
           'Defender Rapier',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon.
@@ -10032,7 +10032,7 @@ VALUES(
       ),
       (
           'Defender Scimitar',
-          'DND5E',
+          1,
           '3 lb',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon.
@@ -10067,7 +10067,7 @@ VALUES(
       ),
       (
           'Defender Shortsword',
-          'DND5E',
+          1,
           '2 lb',
           null,
           'You gain a +3 bonus to attack and damage rolls made with this magic weapon.
@@ -10102,7 +10102,7 @@ VALUES(
       ),
     (
      'Staff of Striking',
-     'DND5E',
+     1,
      null,
      null,
      'This staff can be wielded as a magic Quarterstaff that grants a +3 bonus to attack rolls and damage rolls made with it.
@@ -10134,7 +10134,7 @@ VALUES(
       ),
       (
        'Wand',
-       'DND5E',
+       1,
        '1 lb',
        '10 gp',
        'An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section.',
@@ -10164,7 +10164,7 @@ VALUES(
       ),
       (
        'Staff of the Python',
-       'DND5E',
+       1,
        null,
        null,
        'You can use an action to speak this staff''s command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.
@@ -10196,7 +10196,7 @@ VALUES(
       ),
       (
        'Wand of Paralysis',
-       'DND5E',
+       1,
        null,
        null,
        'This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cause a thin blue ray to streak from the tip toward a creature you can see within 60 feet of you. The target must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. At the end of each of the target''s turns, it can repeat the saving throw, ending the effect on itself on a success.
@@ -10227,7 +10227,7 @@ VALUES(
       ),
       (
        'Mace of Disruption',
-       'DND5E',
+       1,
        '4 lb',
        null,
        'When you hit a Fiend or an Undead with this magic weapon, that creature takes an extra 2d6 Radiant damage. If the target has 25 Hit Points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature has the Frightened condition until the end of your next turn.

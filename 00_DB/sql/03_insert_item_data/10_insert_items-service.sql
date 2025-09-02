@@ -29,7 +29,7 @@ INSERT INTO items (
     item_source_id)
 VALUES (
         'Barding',
-        'DND5E',
+        1,
         null,
         null,
         'Barding is armor designed to protect an animal’s head, neck, chest, and body. Any type of armor can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.

@@ -30,7 +30,7 @@ INSERT INTO items (
 VALUES
     (
     'Potion of Clairvoyance',
-    'DND5E',
+    1,
     null,
     null,
     'When you drink this potion, you gain the Effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.',
@@ -60,7 +60,7 @@ VALUES
     ),
     (
     'Potion of Vitality',
-    'DND5E',
+    1,
     null,
     null,
     'When you drink this potion, it removes any Exhaustion levels you have and ends the Poisoned condition on you. For the next 24 hours, you regain the maximum number of Hit Points for any Hit Point Die you spend.
@@ -91,7 +91,7 @@ VALUES
     ),
     (
     'Potion of Diminution',
-    'DND5E',
+    1,
     null,
     null,
     'When you drink this potion, you gain the “reduce” effect of the Enlarge/Reduce spell for 1d4 hours (no Concentration required).
@@ -122,7 +122,7 @@ VALUES
     ),
     (
     'Potion of Force Resistance',
-    'DND5E',
+    1,
     null,
     null,
     'When you drink this potion, you gain resistance to force damage for 1 hour.',
@@ -152,7 +152,7 @@ VALUES
     ),
     (
     'Potion of Water Breathing',
-    'DND5E',
+    1,
     null,
     null,
     'You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.',
@@ -182,7 +182,7 @@ VALUES
     ),
     (
      'Potion of Invisibility',
-     'DND5E',
+     1,
      null, null,
      'This potion''s container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell.',
      'Invisible, Deception, Consumable',
@@ -211,7 +211,7 @@ VALUES
     ),
     (
      'Potion of Climbing',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain a Climb Speed equal to your Speed for 1 hour. During this time, you have Advantage on Strength (Athletics) checks to climb.
@@ -242,7 +242,7 @@ VALUES
     ),
     (
      'Potions of Resistance',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain resistance to one type of damage for 1 hour. The DM chooses the type or determines it randomly from the options below.
@@ -284,7 +284,7 @@ VALUES
     ),
     (
         'Potion of Acid Resistance',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to acid damage for 1 hour.',
@@ -315,7 +315,7 @@ VALUES
 
     (
         'Potion of Cold Resistance',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to cold damage for 1 hour.',
@@ -345,7 +345,7 @@ VALUES
     ),
     (
         'Potion of Fire Resistance',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to fire damage for 1 hour.',
@@ -376,7 +376,7 @@ VALUES
 
     (
         'Potion of Force Resistance',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to force damage for 1 hour.',
@@ -406,7 +406,7 @@ VALUES
     ),
     (
         'Potion of Lightning Resistance',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to lightning damage for 1 hour..',
@@ -436,7 +436,7 @@ VALUES
     ),
     (
         'Potion of Poison Resistance ',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to poison damage for 1 hour.',
@@ -466,7 +466,7 @@ VALUES
     ),
     (
         'Potion of Psychic Resistance ',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to psychic damage for 1 hour.',
@@ -496,7 +496,7 @@ VALUES
     ),
     (
         'Potion of Radiant Resistance',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to radiant damage for 1 hour.',
@@ -526,7 +526,7 @@ VALUES
     ),
     (
         'Potion of Poison Resistance',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to poison damage for 1 hour.',
@@ -556,7 +556,7 @@ VALUES
     ),
     (
         'Potion of Thunder Resistance ',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain resistance to thunder damage for 1 hour.',
@@ -586,7 +586,7 @@ VALUES
     ),
     (
         'Potion of Gaseous Form',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, you gain the effect of the Gaseous Form spell for 1 hour (no Concentration required) or until you end the effect as a Bonus Action.
@@ -617,7 +617,7 @@ VALUES
     ),
     (
      'Potion of Heroism',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain 10 Temporary Hit Points that last for 1 hour. For the same duration, you are under the effect of the Bless spell (no Concentration required).
@@ -648,7 +648,7 @@ VALUES
     ),
     (
      'Potion of Speed',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion''s yellow fluid is streaked with black and swirls on its own.',
@@ -678,7 +678,7 @@ VALUES
     ),
     (
      'Antitoxin',
-     'DND5E',
+     1,
      null,
      '50 gp',
      'As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour.',
@@ -708,7 +708,7 @@ VALUES
     ),
     (
      'Potion of Fire Resistance',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain resistance to fire damage for 1 hour.',
@@ -738,7 +738,7 @@ VALUES
     ),
     (
      'Potions of Healing',
-     'DND5E',
+     1,
      null,
      null,
      'You regain Hit Points when you drink this potion. The number of Hit Points depends on the potion’s rarity, as shown in the table below.
@@ -775,7 +775,7 @@ VALUES
     ),
     (
         'Potion of Healing',
-        'DND5E',
+        1,
         '0.5 lb',
         null,
         'This potion is a magic item. As a Bonus Action, you can drink it or administer it to another creature within 5 feet of yourself. The creature that drinks the magical red fluid in this vial regains 2d4 + 2 Hit Points.',
@@ -805,7 +805,7 @@ VALUES
     ),
     (
         'Potion of Healing (Greater)',
-        'DND5E',
+        1,
         '0.5 lb',
         null,
         'You regain 4d4 + 4 Hit Points when you drink this potion.
@@ -836,7 +836,7 @@ VALUES
     ),
     (
         'Potion of Healing (Superior)',
-        'DND5E',
+        1,
         '0.5 lb',
         null,
         'You regain 8d4 + 8 Hit Points when you drink this potion.
@@ -867,7 +867,7 @@ VALUES
     ),
     (
         'Potion of Healing (Supreme)',
-        'DND5E',
+        1,
         '0.5 lb',
         null,
         'You regain 10d4 + 20 Hit Points when you drink this potion.
@@ -898,7 +898,7 @@ VALUES
     ),
     (
      'Potion of Psychic Resistance',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain resistance to psychic damage for 1 hour.',
@@ -928,7 +928,7 @@ VALUES
     ),
     (
      'Potion of Giant Strength',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, your Strength score changes for 1 hour. The type of giant determines the score (see the table below). The potion has no effect on you if your Strength is equal to or greater than that score.
@@ -968,7 +968,7 @@ VALUES
     ),
     (
         'Potion of Hill Giant Strength',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, your Strength score changes to 21 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
@@ -999,7 +999,7 @@ VALUES
     ),
     (
         'Potion of Frost Giant Strength',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
@@ -1030,7 +1030,7 @@ VALUES
     ),
     (
         'Potion of Stone Giant Strength',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
@@ -1061,7 +1061,7 @@ VALUES
     ),
     (
         'Potion of Fire Giant Strength',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, your Strength score changes to 25 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
@@ -1092,7 +1092,7 @@ VALUES
     ),
     (
         'Potion of Cloud Giant Strength',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, your Strength score changes to 27 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
@@ -1123,7 +1123,7 @@ VALUES
     ),
     (
         'Potion of Storm Giant Strength',
-        'DND5E',
+        1,
         null,
         null,
         'When you drink this potion, your Strength score changes to 29 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
@@ -1154,7 +1154,7 @@ VALUES
     ),
     (
      'Potion of Cold Resistance',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain resistance to cold damage for 1 hour.',
@@ -1184,7 +1184,7 @@ VALUES
     ),
     (
      'Potion of Acid Resistance',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain resistance to acid damage for 1 hour.',
@@ -1214,7 +1214,7 @@ VALUES
     ),
     (
      'Potion of Animal Friendship',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you can cast the animal friendship spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair.',
@@ -1244,7 +1244,7 @@ VALUES
     ),
     (
      'Potion of Necrotic Resistance',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain resistance to necrotic damage for 1 hour.',
@@ -1274,7 +1274,7 @@ VALUES
     ),
     (
      'Potion of Poison',
-     'DND5E',
+     1,
      null,
      null,
      'This concoction looks, smells, and tastes like a potion of healing or other beneficial potion. However, it is actually poison masked by illusion magic. An identify spell reveals its true nature.
@@ -1305,7 +1305,7 @@ VALUES
     ),
     (
      'Potion of Mind Reading',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain the effect of the detect thoughts spell (save DC 13). The potion''s dense, purple liquid has an ovoid cloud of pink floating in it.',
@@ -1335,7 +1335,7 @@ VALUES
     ),
     (
      'Potion of Lightning Resistance',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain resistance to lightning damage for 1 hour.',
@@ -1365,7 +1365,7 @@ VALUES
     ),
     (
      'Potion of Thunder Resistance',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain resistance to lightning damage for 1 hour.',
@@ -1395,7 +1395,7 @@ VALUES
     ),
     (
      'Potion of Poison Resistance',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain resistance to poison damage for 1 hour.',
@@ -1425,7 +1425,7 @@ VALUES
     ),
     (
      'Potion of Growth',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain the “enlarge” effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion’s liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.',
@@ -1455,7 +1455,7 @@ VALUES
     ),
     (
      'Poisoner''s Kit',
-     'DND5E',
+     1,
      '2 lb',
      '50 gp',
      'A poisoner''s kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons.',
@@ -1485,7 +1485,7 @@ VALUES
     ),
     (
      'Acid (vial)',
-     'DND5E',
+     1,
      '1 lb',
      '25 gp',
      'As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.',
@@ -1515,7 +1515,7 @@ VALUES
     ),
     (
      'Potion of Flying',
-     'DND5E',
+     1,
      null,
      null,
      'When you drink this potion, you gain a Fly Speed equal to your Speed for 1 hour and can hover. If you’re in the air when the potion wears off, you fall unless you have some other means of staying aloft.
@@ -1546,7 +1546,7 @@ VALUES
     ),
     (
      'Holy Water (flask)',
-     'DND5E',
+     1,
      '1 lb',
      '25 gp',
      'As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage.

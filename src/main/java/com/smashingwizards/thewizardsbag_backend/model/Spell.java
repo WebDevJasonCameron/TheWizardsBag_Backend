@@ -15,6 +15,8 @@ public class Spell {
     private Long id;
     @Column(name = "spell_name")
     private String name;
+    @Column(name = "spell_ttrpg")
+    private Long ttrpg;
     @Column(name = "spell_level")
     private String level;
     @Column(name = "spell_casting_time")
@@ -59,8 +61,9 @@ public class Spell {
     // CONs
     public Spell() {
     }
-    public Spell(String name, String level, String castingTime, String rangeArea, Boolean componentVisual, Boolean componentSemantic, Boolean componentMaterial, String componentMaterials, String duration, Boolean concentration, Boolean ritual, String school, String description, String imageUrl, Long sourceId, List<ItemSpell> itemSpells) {
+    public Spell(String name, Long ttrpg, String level, String castingTime, String rangeArea, Boolean componentVisual, Boolean componentSemantic, Boolean componentMaterial, String componentMaterials, String duration, Boolean concentration, Boolean ritual, String school, String description, String imageUrl, Long sourceId, List<ItemSpell> itemSpells) {
         this.name = name;
+        this.ttrpg = ttrpg;
         this.level = level;
         this.castingTime = castingTime;
         this.rangeArea = rangeArea;
@@ -77,6 +80,29 @@ public class Spell {
         this.sourceId = sourceId;
         this.itemSpells = itemSpells;
     }
+    public Spell(String name, Long ttrpg, String level, String castingTime, String rangeArea, Boolean componentVisual, Boolean componentSemantic, Boolean componentMaterial, String componentMaterials, String duration, Boolean concentration, Boolean ritual, String school, String description, String imageUrl, Long sourceId, List<ItemSpell> itemSpells, List<SpellTag> spellTags, List<SpellCondition> spellConditions, List<SpellClass> spellClasses, List<SpellDamagetype> spellDamagetypes) {
+        this.name = name;
+        this.ttrpg = ttrpg;
+        this.level = level;
+        this.castingTime = castingTime;
+        this.rangeArea = rangeArea;
+        this.componentVisual = componentVisual;
+        this.componentSemantic = componentSemantic;
+        this.componentMaterial = componentMaterial;
+        this.componentMaterials = componentMaterials;
+        this.duration = duration;
+        this.concentration = concentration;
+        this.ritual = ritual;
+        this.school = school;
+        this.description = description;
+        this.imageUrl = imageUrl;
+        this.sourceId = sourceId;
+        this.itemSpells = itemSpells;
+        this.spellTags = spellTags;
+        this.spellConditions = spellConditions;
+        this.spellClasses = spellClasses;
+        this.spellDamagetypes = spellDamagetypes;
+    }
 
     // GETs & SETs
     public Long getId() {
@@ -91,6 +117,13 @@ public class Spell {
     }
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Long getTtrpg() {
+        return ttrpg;
+    }
+    public void setTtrpg(Long ttrpg) {
+        this.ttrpg = ttrpg;
     }
 
     public String getLevel() {
@@ -286,6 +319,7 @@ public class Spell {
         return "Spell{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", ttrpg=" + ttrpg +
                 ", level='" + level + '\'' +
                 ", castingTime='" + castingTime + '\'' +
                 ", rangeArea='" + rangeArea + '\'' +
@@ -300,6 +334,11 @@ public class Spell {
                 ", description='" + description + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
                 ", sourceId=" + sourceId +
+                ", itemSpells=" + itemSpells +
+                ", spellTags=" + spellTags +
+                ", spellConditions=" + spellConditions +
+                ", spellClasses=" + spellClasses +
+                ", spellDamagetypes=" + spellDamagetypes +
                 '}';
     }
 }

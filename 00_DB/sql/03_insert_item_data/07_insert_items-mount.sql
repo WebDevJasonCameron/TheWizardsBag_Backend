@@ -29,7 +29,7 @@ INSERT INTO items (
     item_source_id)
 VALUES(
        'Camel',
-       'DND5E',
+       1,
        null,
        '50 gp',
        'Camel Stat Block
@@ -64,7 +64,7 @@ VALUES(
       ),
       (
        'Elephant',
-       'DND5E',
+       1,
        null,
        '200 gp',
        'Elephant Stat Block
@@ -97,7 +97,7 @@ VALUES(
       ),
       (
        'Warhorse',
-       'DND5E',
+       1,
        null,
        '400 gp',
        'Warhorse Stat Block
@@ -130,7 +130,7 @@ VALUES(
       ),
     (
      'Draft Horse',
-     'DND5E',
+     1,
      '540 lb',
      '50 gp',
      'Draft Horse Stat Block
@@ -164,7 +164,7 @@ VALUES(
       ),
       (
        'Broom of Flying',
-       'DND5E',
+       1,
        null,
        null,
        'This wooden broom, which weighs 3 pounds, functions like a mundane broom until you stand astride it and speak its command word. It then hovers beneath you and can be ridden in the air. It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land.
@@ -195,7 +195,7 @@ VALUES(
       ),
       (
        'Donkey (or Mule)',
-       'DND5E',
+       1,
        '420 lb',
        '8 gp',
        'Mule Statistics
@@ -227,7 +227,7 @@ VALUES(
       ),
       (
        'pony',
-       'DND5E',
+       1,
        '225 lb',
        '30 gp',
        '*Pony Stat* Block
@@ -261,7 +261,7 @@ VALUES(
       ),
       (
        'Riding Horse',
-       'DND5E',
+       1,
        '480 lb',
        '75 gp',
        '*Riding Horse Stat Block*

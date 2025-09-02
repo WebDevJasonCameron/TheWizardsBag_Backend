@@ -29,7 +29,7 @@ INSERT INTO items (
                    item_source_id)
 VALUES (
         'Adamantine Breastplate',
-        'DND5E',
+        1,
         '20 lb',
         null,
         'This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you’re wearing it, any Critical Hit against you becomes a normal hit.
@@ -60,7 +60,7 @@ VALUES (
        ),
        (
         'Adamantine Chain Shirt ',
-        'DND5E',
+        1,
         '20 lb',
         null,
         'This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you’re wearing it, any Critical Hit against you becomes a normal hit.
@@ -91,7 +91,7 @@ VALUES (
        ),
        (
         'Adamantine Scale Mail',
-        'DND5E',
+        1,
         '20 lb',
         null,
         'This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you’re wearing it, any Critical Hit against you becomes a normal hit.
@@ -122,7 +122,7 @@ VALUES (
        ),
        (
         'Adamantine Half Plate',
-        'DND5E',
+        1,
         '20 lb',
         null,
         'This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you’re wearing it, any Critical Hit against you becomes a normal hit.
@@ -153,7 +153,7 @@ VALUES (
        ),
        (
         'Adamantine Ring Mail',
-        'DND5E',
+        1,
         '20 lb',
         null,
         'This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you’re wearing it, any Critical Hit against you becomes a normal hit.
@@ -184,7 +184,7 @@ VALUES (
        ),
        (
         'Adamantine Chain Mail ',
-        'DND5E',
+        1,
         '20 lb',
         null,
         'This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you’re wearing it, any Critical Hit against you becomes a normal hit.
@@ -215,7 +215,7 @@ VALUES (
        ),
        (
         'Adamantine Plate',
-        'DND5E',
+        1,
         '20 lb',
         null,
         'This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you’re wearing it, any Critical Hit against you becomes a normal hit.
@@ -246,7 +246,7 @@ VALUES (
        ),
        (
         'Adamantine Splint',
-        'DND5E',
+        1,
         '20 lb',
         null,
         'This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you’re wearing it, any Critical Hit against you becomes a normal hit.
@@ -277,7 +277,7 @@ VALUES (
        ),
        (
         'Wings of Flying',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can''t use them again for 1d12 hours.',
@@ -307,7 +307,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon Scale Mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them. Other times, hunters carefully preserve the hide of a dead dragon. In either case, Dragon Scale Mail is highly valued.
@@ -352,7 +352,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (Black)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -385,7 +385,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (Blue)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -418,7 +418,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (Brass)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -451,7 +451,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (Bronze)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -484,7 +484,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (Copper)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -517,7 +517,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (Gold)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -550,7 +550,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (Green)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -583,7 +583,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (Red)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -616,7 +616,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (Silver)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -649,7 +649,7 @@ VALUES (
        ),
        (
        'Dragon Scale Mail (White)',
-       'DND5E',
+       1,
        '45 lb',
        null,
        'Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.
@@ -682,7 +682,7 @@ VALUES (
        ),
        (
            'Mithral Armor',
-           'DND5E',
+           1,
            null,
            null,
            'Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes.
@@ -725,7 +725,7 @@ VALUES (
        ),
        (
            'Mithral Chain Shirt',
-           'DND5E',
+           1,
            '20 lb',
            null,
            'Mithral is a light, flexible metal. A mithral chain shirt can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn''t.
@@ -756,7 +756,7 @@ VALUES (
        ),
        (
            'Mithral Scale Mail',
-           'DND5E',
+           1,
            '45 lb',
            null,
            'Mithral is a light, flexible metal. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn''t.
@@ -787,7 +787,7 @@ VALUES (
        ),
        (
            'Mithral Breastplate',
-           'DND5E',
+           1,
            '20 lb',
            null,
            'Mithral is a light, flexible metal. A mithral breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn''t.
@@ -818,7 +818,7 @@ VALUES (
        ),
        (
            'Mithral Half Plate',
-           'DND5E',
+           1,
            '40 lb',
            null,
            'Mithral is a light, flexible metal. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn''t.
@@ -849,7 +849,7 @@ VALUES (
        ),
        (
            'Mithral Ring Mail',
-           'DND5E',
+           1,
            '40 lb',
            null,
            'Mithral is a light, flexible metal. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn''t.
@@ -880,7 +880,7 @@ VALUES (
        ),
        (
            'Mithral Chain Mail',
-           'DND5E',
+           1,
            '55 lb',
            null,
            'Mithral is a light, flexible metal. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn''t.
@@ -911,7 +911,7 @@ VALUES (
        ),
        (
            'Mithral Splint',
-           'DND5E',
+           1,
            '60 lb',
            null,
            'Mithral is a light, flexible metal. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn''t.
@@ -942,7 +942,7 @@ VALUES (
        ),
        (
            'Mithral Plate',
-           'DND5E',
+           1,
            '65 lb',
            null,
            'Mithral is a light, flexible metal. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn''t.
@@ -973,7 +973,7 @@ VALUES (
        ),
        (
            'Bracers of Archery',
-           'DND5E',
+           1,
            null,
            null,
            'While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.',
@@ -1003,7 +1003,7 @@ VALUES (
        ),
        (
            'Plate Armor of Etherealness',
-           'DND5E',
+           1,
            '65 lb',
            null,
            'While you''re wearing this armor, you can speak its command word as an action to gain the effect of the etherealness spell, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can''t be used again until the next dawn.
@@ -1034,7 +1034,7 @@ VALUES (
        ),
        (
            'Clothes, Costume',
-           'DND5E',
+           1,
            '4 lb',
            '5 gp',
            'This set of clothes is fashioned after a particular costume, typically meant for entertaining.',
@@ -1064,7 +1064,7 @@ VALUES (
        ),
        (
            'Helm of Teleportation',
-           'DND5E',
+           1,
            null,
            null,
            'This helm has 3 charges. While wearing it, you can expend 1 charge to cast Teleport from it. The helm regains 1d3 expended charges daily at dawn.',
@@ -1094,7 +1094,7 @@ VALUES (
        ),
        (
         'Clothes, Travelers',
-        'DND5E',
+        1,
         '4 lb',
         '2 gp',
         'This set of clothes could consist of boots, a wool skirt or breeches, a sturdy belt, a shirt (perhaps with a vest or jacket), and an ample cloak with a hood.',
@@ -1124,7 +1124,7 @@ VALUES (
        ),
        (
         'Shield of Missile Attraction',
-        'DND5E',
+        1,
         '6 lb',
         null,
         'While holding this Shield, you have Resistance to damage from attacks made with Ranged weapons.
@@ -1156,7 +1156,7 @@ VALUES (
        ),
        (
         'Gloves of Swimming and Climbing',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing these gloves, climbing and swimming don''t cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim.',
@@ -1186,7 +1186,7 @@ VALUES (
        ),
        (
         'Helm of Comprehending Languages',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this helm, you can cast Comprehend Languages from it.',
@@ -1216,7 +1216,7 @@ VALUES (
        ),
        (
         'Robe of Eyes',
-        'DND5E',
+        1,
         null,
         null,
         'This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits:
@@ -1251,7 +1251,7 @@ VALUES (
        ),
        (
         'Boots of the Winterlands',
-        'DND5E',
+        1,
         null,
         null,
         'These furred boots are snug and feel warm. While wearing them, you gain the following benefits.
@@ -1283,7 +1283,7 @@ VALUES (
        ),
        (
         'Cloak of the Manta Ray',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action.',
@@ -1314,7 +1314,7 @@ VALUES (
        ),
        (
         'Belt of Giant Strength',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this belt, your Strength score changes to a score granted by the belt. The item has no effect on you if your Strength without the belt is equal to or greater than the belt’s score.
@@ -1354,7 +1354,7 @@ VALUES (
        ),
        (
            'Belt of Hill Giant Strength',
-           'DND5E',
+           1,
            null,
            null,
            'While wearing this belt, your Strength score changes to 21. The item has no effect on you if your Strength without the belt is equal to or greater than 21.',
@@ -1384,7 +1384,7 @@ VALUES (
        ),
        (
            'Belt of Frost Giant Strength',
-           'DND5E',
+           1,
            null,
            null,
            'While wearing this belt, your Strength score changes to 23. The item has no effect on you if your Strength without the belt is equal to or greater than 23.',
@@ -1414,7 +1414,7 @@ VALUES (
        ),
        (
            'Belt of Stone Giant Strength',
-           'DND5E',
+           1,
            null,
            null,
            'While wearing this belt, your Strength score changes to 23. The item has no effect on you if your Strength without the belt is equal to or greater than 23.',
@@ -1444,7 +1444,7 @@ VALUES (
        ),
        (
            'Belt of Fire Giant Strength',
-           'DND5E',
+           1,
            'very rare',
            'Wondrous Item',
            'While wearing this belt, your Strength score changes to 25.  The item has no effect on you if your Strength without the belt is equal to or greater than 25.',
@@ -1474,7 +1474,7 @@ VALUES (
        ),
        (
            'Belt of Cloud Giant Strength',
-           'DND5E',
+           1,
            null,
            null,
            'While wearing this belt, your Strength score changes to 27. The item has no effect on you if your Strength without the belt is equal to or greater than 27.',
@@ -1504,7 +1504,7 @@ VALUES (
        ),
        (
            'Belt of Storm Giant Strength',
-           'DND5E',
+           1,
            null,
            null,
            'While wearing this belt, your Strength score changes to 29. The item has no effect on you if your Strength without the belt is equal to or greater than 29.',
@@ -1534,7 +1534,7 @@ VALUES (
        ),
        (
         'Robe of Useful Items',
-        'DND5E',
+        1,
         null,
         null,
         'This robe has cloth patches of various shapes and colors covering it. While wearing the robe, you can use an action to detach one of the patches, causing it to become the object or creature it represents. Once the last patch is removed, the robe becomes an ordinary garment.
@@ -1591,7 +1591,7 @@ VALUES (
        ),
        (
         'Robe of Stars',
-        'DND5E',
+        1,
         null,
         null,
         'This black or dark blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it.
@@ -1623,7 +1623,7 @@ VALUES (
        ),
        (
         'Animated Shield',
-        'DND5E',
+        1,
         '6 lb',
         null,
         'While holding this Shield, you can take a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The Shield remains animate for 1 minute, until you take a Bonus Action to end this effect, or until you die or have the Incapacitated condition, at which point the Shield falls to the ground or into your hand if you have one free.
@@ -1654,7 +1654,7 @@ VALUES (
        ),
        (
         'Spellguard Shield',
-        'DND5E',
+        1,
         '6 lb',
         null,
         'While holding this Shield, you have Advantage on saving throws against spells and other magical effects, and spell attack rolls have Disadvantage against you.
@@ -1685,7 +1685,7 @@ VALUES (
        ),
        (
         'Boots of Elvenkind',
-        'DND5E',
+        1,
         null,
         null,
         'While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have Advantage on Dexterity (Stealth) checks.',
@@ -1715,7 +1715,7 @@ VALUES (
        ),
        (
         'Robe of the Archmagi',
-        'DND5E',
+        1,
         null,
         null,
         'This elegant garment is made from exquisite cloth and adorned with runes.
@@ -1747,7 +1747,7 @@ VALUES (
        ),
        (
         'Boots of Speed',
-        'DND5E',
+        1,
         null,
         null,
         'While you wear these boots, you can take a Bonus Action to click the boots’ heels together. If you do, the boots double your Speed, and any creature that makes an Opportunity Attack against you has Disadvantage on the attack roll. If you click your heels together again, you end the effect.
@@ -1778,7 +1778,7 @@ VALUES (
        ),
        (
         'Cloak of Protection',
-        'DND5E',
+        1,
         null,
         null,
         'You gain a +1 bonus to AC and saving throws while you wear this cloak.',
@@ -1808,7 +1808,7 @@ VALUES (
        ),
        (
         'Glamoured Studded Leather',
-        'DND5E',
+        1,
         '13 lb',
         null,
         'While wearing this armor, you gain a +1 bonus to Armor Class. You can also take a Bonus Action to cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like—including color, style, and accessories—but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or doff the armor.
@@ -1839,7 +1839,7 @@ VALUES (
        ),
        (
         'Mantle of Spell Resistance',
-        'DND5E',
+        1,
         null,
         null,
         'You have advantage on saving throws against spells while you wear this cloak.',
@@ -1869,7 +1869,7 @@ VALUES (
        ),
        (
         'Winged Boots',
-        'DND5E',
+        1,
         null,
         null,
         'While you wear these boots, you have a flying speed equal to your walking speed. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land.
@@ -1900,7 +1900,7 @@ VALUES (
        ),
        (
         'Gauntlets of Ogre Power',
-        'DND5E',
+        1,
         null,
         null,
         'Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is 19 or higher without them.',
@@ -1930,7 +1930,7 @@ VALUES (
        ),
        (
         'Belt of Dwarvenkind',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this belt, you gain the following benefits:
@@ -1967,7 +1967,7 @@ VALUES (
        ),
        (
         'Clothes, Common',
-        'DND5E',
+        1,
         '3 lb',
         '5 sp',
         'This set of clothes could consist of a loose shirt and baggy breeches, or a loose shirt and skirt or overdress. Cloth wrappings are used for shoes.',
@@ -1997,7 +1997,7 @@ VALUES (
        ),
        (
         'Cloak of Displacement',
-        'DND5E',
+        1,
         null,
         null,
         'While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move.',
@@ -2027,7 +2027,7 @@ VALUES (
        ),
        (
         'Helm of Brilliance',
-        'DND5E',
+        1,
         null,
         null,
         'This helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic.
@@ -2063,7 +2063,7 @@ VALUES (
        ),
        (
         'Armor of Vulnerability',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this armor, you have Resistance to one of the following damage types: Bludgeoning, Piercing, or Slashing. The DM chooses the type or determines it randomly.
@@ -2110,7 +2110,7 @@ VALUES (
        ),
        (
            'Armor of Vulnerability (Bludgeoning)',
-           'DND5E',
+           1,
            '65 lb',
            null,
            'While wearing this armor, you have resistance to bludgeoning damage.
@@ -2141,7 +2141,7 @@ VALUES (
        ),
        (
            'Armor of Vulnerability (Piercing)',
-           'DND5E',
+           1,
            '65 lb',
            null,
            'While wearing this armor, you have resistance to piercing damage.
@@ -2172,7 +2172,7 @@ VALUES (
        ),
        (
            'Armor of Vulnerability (Slashing)',
-           'DND5E',
+           1,
            '65 lb',
            null,
            'While wearing this armor, you have resistance to slashing damage.
@@ -2203,7 +2203,7 @@ VALUES (
        ),
        (
            'Half Plate Armor of Vulnerability (Bludgeoning)',
-           'DND5E',
+           1,
            '40 lb',
            null,
            'While wearing this armor, you have Resistance to bludgeoning damage.
@@ -2234,7 +2234,7 @@ VALUES (
        ),
        (
            'Half Plate Armor of Vulnerability (Piercing)',
-           'DND5E',
+           1,
            '40 lb',
            null,
            'While wearing this armor, you have Resistance to piercing damage.
@@ -2265,7 +2265,7 @@ VALUES (
        ),
        (
            'Half Plate Armor of Vulnerability (Slashing)',
-           'DND5E',
+           1,
            '40 lb',
            null,
            'While wearing this armor, you have Resistance to slashing damage.
@@ -2296,7 +2296,7 @@ VALUES (
        ),
        (
            'Hide Armor of Vulnerability (Bludgeoning)',
-           'DND5E',
+           1,
            '12 lb',
            null,
            'While wearing this armor, you have Resistance to bludgeoning damage.
@@ -2327,7 +2327,7 @@ VALUES (
        ),
        (
            'Hide Armor of Vulnerability (Piercing)',
-           'DND5E',
+           1,
            '12 lb',
            null,
            'While wearing this armor, you have Resistance to piercing damage.
@@ -2358,7 +2358,7 @@ VALUES (
        ),
        (
            'Hide Armor of Vulnerability (Slashing)',
-           'DND5E',
+           1,
            '12 lb',
            null,
            'While wearing this armor, you have Resistance to slashing damage.
@@ -2389,7 +2389,7 @@ VALUES (
        ),
        (
            'Leather Armor of Vulnerability (Bludgeoning)',
-           'DND5E',
+           1,
            '10 lb',
            null,
            'While wearing this armor, you have Resistance to bludgeoning damage.
@@ -2420,7 +2420,7 @@ VALUES (
        ),
        (
            'Leather Armor of Vulnerability (Piercing)',
-           'DND5E',
+           1,
            '10 lb',
            null,
            'While wearing this armor, you have Resistance to piercing damage.
@@ -2451,7 +2451,7 @@ VALUES (
        ),
        (
            'Leather Armor of Vulnerability (Slashing)',
-           'DND5E',
+           1,
            '10 lb',
            null,
            'While wearing this armor, you have Resistance to slashing damage.
@@ -2482,7 +2482,7 @@ VALUES (
        ),
        (
            'Padded Armor of Vulnerability (Bludgeoning)',
-           'DND5E',
+           1,
            '8 lb',
            null,
            'While wearing this armor, you have Resistance to bludgeoning damage.
@@ -2513,7 +2513,7 @@ VALUES (
        ),
        (
            'Padded Armor of Vulnerability (Piercing)',
-           'DND5E',
+           1,
            '8 lb',
            null,
            'While wearing this armor, you have Resistance to piercing damage.
@@ -2544,7 +2544,7 @@ VALUES (
        ),
        (
            'Padded Armor of Vulnerability (Slashing)',
-           'DND5E',
+           1,
            '8 lb',
            null,
            'While wearing this armor, you have Resistance to slashing damage.
@@ -2575,7 +2575,7 @@ VALUES (
        ),
        (
            'Splint Armor of Vulnerability (Bludgeoning)',
-           'DND5E',
+           1,
            '60 lb',
            null,
            'While wearing this armor, you have Resistance to bludgeoning damage.
@@ -2606,7 +2606,7 @@ VALUES (
        ),
        (
            'Splint Armor of Vulnerability (Piercing)',
-           'DND5E',
+           1,
            '60 lb',
            null,
            'While wearing this armor, you have Resistance to piercing damage.
@@ -2637,7 +2637,7 @@ VALUES (
        ),
        (
            'Splint Armor of Vulnerability (Slashing)',
-           'DND5E',
+           1,
            '60 lb',
            null,
            'While wearing this armor, you have Resistance to slashing damage.
@@ -2668,7 +2668,7 @@ VALUES (
        ),
        (
            'Studded Leather Armor of Vulnerability (Bludgeoning)',
-           'DND5E',
+           1,
            '13 lb',
            null,
            'While wearing this armor, you have Resistance to bludgeoning damage.
@@ -2699,7 +2699,7 @@ VALUES (
        ),
        (
            'Studded Leather Armor of Vulnerability (Piercing)',
-           'DND5E',
+           1,
            '13 lb',
            null,
            'While wearing this armor, you have Resistance to piercing damage.
@@ -2730,7 +2730,7 @@ VALUES (
        ),
        (
            'Studded Leather Armor of Vulnerability (Slashing)',
-           'DND5E',
+           1,
            '13 lb',
            null,
            'While wearing this armor, you have Resistance to slashing damage.
@@ -2761,7 +2761,7 @@ VALUES (
        ),
        (
         'Headband of Intellect',
-        'DND5E',
+        1,
         null,
         null,
         'Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is 19 or higher without it.',
@@ -2791,7 +2791,7 @@ VALUES (
        ),
        (
         'Gauntlets of Ogre Power',
-        'DND5E',
+        1,
         null,
         null,
         'Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is 19 or higher without them.',
@@ -2821,7 +2821,7 @@ VALUES (
        ),
        (
         'Bracers of Defense',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing these bracers, you gain a +2 bonus to Armor Class if you are wearing no armor and using no Shield.',
@@ -2851,7 +2851,7 @@ VALUES (
        ),
        (
         'Cloak of Arachnida',
-        'DND5E',
+        1,
         null,
         null,
         'This fine garment is made of black silk interwoven with faint, silvery threads. While wearing it, you gain the following benefits.
@@ -2885,7 +2885,7 @@ VALUES (
        ),
        (
         'Hat of Disguise',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this hat, you can cast the Disguise Self spell. The spell ends if the hat is removed.',
@@ -2915,7 +2915,7 @@ VALUES (
        ),
        (
         'Boots of Levitation',
-        'DND5E',
+        1,
         null,
         null,
         'While you wear these boots, you can cast Levitate on yourself.',
@@ -2945,7 +2945,7 @@ VALUES (
        ),
        (
         'Dwarven Plate',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this armor, you gain a +2 bonus to AC. In addition, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 10 feet.
@@ -2976,7 +2976,7 @@ VALUES (
        ),
        (
         'Boots of Striding and Springing',
-        'DND5E',
+        1,
         null,
         null,
         'While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn''t reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can''t jump farther than your remaining movement would allow.',
@@ -3006,7 +3006,7 @@ VALUES (
        ),
        (
         'Armor of Invulnerability',
-        'DND5E',
+        1,
         '65 lb',
         null,
         'You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can''t be used again until the next dawn.
@@ -3037,7 +3037,7 @@ VALUES (
        ),
        (
         'Cloak of Elvenkind',
-        'DND5E',
+        1,
         null,
         null,
         'While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak''s color shifts to camouflage you. Pulling the hood up or down requires an action.',
@@ -3067,7 +3067,7 @@ VALUES (
        ),
        (
         'Robe of Scintillating Colors',
-        'DND5E',
+        1,
         null,
         null,
         'This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can use an action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures that can see you have disadvantage on attack rolls against you. In addition, any creature in the bright light that can see you when the robe''s power is activated must succeed on a DC 15 Wisdom saving throw or become stunned until the effect ends.',
@@ -3097,7 +3097,7 @@ VALUES (
        ),
        (
         'Elven Chain',
-        'DND5E',
+        1,
         '20 lb',
         null,
         'You gain a +1 bonus to AC while you wear this armor. You are considered proficient with this armor even if you lack proficiency with medium armor.
@@ -3128,7 +3128,7 @@ VALUES (
        ),
        (
            'Elven Mail',
-           'DND5E',
+           1,
            '55 lb',
            null,
            'You gain a +1 bonus to Armor Class while you wear this armor. You are considered trained with this armor even if you lack training with Medium or Heavy armor.
@@ -3159,7 +3159,7 @@ VALUES (
        ),
        (
            'Elven Chain Shirt',
-           'DND5E',
+           1,
            '20 lb',
            null,
            'You gain a +1 bonus to Armor Class while you wear this armor. You are considered trained with this armor even if you lack training with Medium or Heavy armor.
@@ -3190,7 +3190,7 @@ VALUES (
        ),
        (
         'Robes',
-        'DND5E',
+        1,
         '4 lb',
         '1 gp',
         'A standard set of robes.',
@@ -3220,7 +3220,7 @@ VALUES (
        ),
        (
         'Cloak of the Bat',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this cloak, you have Advantage on Dexterity (Stealth) checks. In an area of Dim Light or Darkness, you can grip the edges of the cloak and use it to gain a Fly Speed of 40 feet. If you ever fail to grip the cloak’s edges while flying in this way, or if you are no longer in Dim Light or Darkness, you lose this Fly Speed.
@@ -3251,7 +3251,7 @@ VALUES (
        ),
        (
         'Cape of the Mountebank',
-        'DND5E',
+        1,
         null,
         null,
         'This cape smells faintly of brimstone. While wearing it, you can use it to cast the dimension door spell as an action. This property of the cape can''t be used again until the next dawn.
@@ -3282,7 +3282,7 @@ VALUES (
        ),
        (
         'Clothes, Fine',
-        'DND5E',
+        1,
         '6 lb',
         '15 gp',
         'This set of clothes is designed specifically to be expensive and to show it, including fancy, tailored clothes in whatever fashion happens to be the current style in the courts of the nobles. Precious metals and gems could be worked into the clothing.',
@@ -3312,7 +3312,7 @@ VALUES (
        ),
        (
         'Demon Armor',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this armor, you gain a +1 bonus to AC, and you can understand and speak Abyssal. In addition, the armor’s clawed gauntlets turn unarmed strikes with your hands into magic weapons that deal slashing damage, with a +1 bonus to attack rolls and damage rolls and a damage die of 1d8.
@@ -3344,7 +3344,7 @@ VALUES (
        ),
        (
            'Eyes of the Eagle',
-           'DND5E',
+           1,
            null,
            null,
            'These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.',
@@ -3374,7 +3374,7 @@ VALUES (
        ),
        (
         'Slippers of Spider Climbing',
-        'DND5E',
+        1,
         null,
         null,
         'While you wear these light shoes, you can move up, down, and across vertical surfaces and along ceilings, while leaving your hands free. You have a Climb Speed equal to your Speed. However, the slippers don’t allow you to move this way on a slippery surface, such as one covered by ice or oil.',
@@ -3404,7 +3404,7 @@ VALUES (
        ),
        (
         'Gloves of Missile Snaring',
-        'DND5E',
+        1,
         null,
         null,
         'These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you''re wearing them, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand.',
@@ -3434,7 +3434,7 @@ VALUES (
        ),
        (
         'Armor of Resistance',
-        'DND5E',
+        1,
         null,
         null,
         'You have resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly from the options below.
@@ -3491,7 +3491,7 @@ VALUES (
        ),
        (
         'Helm of Telepathy',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this helm, you can use an action to cast the detect thoughts spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply--using a bonus action to do so--while your focus on it continues.
@@ -3522,7 +3522,7 @@ VALUES (
        ),
        (
         'Arrow-Catching Shield',
-        'DND5E',
+        1,
         '6 lb',
         null,
         'You gain a +2 bonus to Armor Class against ranged attack rolls while you wield this Shield. This bonus is in addition to the Shield’s normal bonus to AC.

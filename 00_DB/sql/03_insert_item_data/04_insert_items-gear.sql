@@ -29,7 +29,7 @@ INSERT INTO items (
     item_source_id)
 VALUES(
           'Scale, Merchant''s',
-          'DND5E',
+          1,
           '3 lbs',
           '5 gp',
           'A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth.',
@@ -59,7 +59,7 @@ VALUES(
       ),
       (
           'Tent, Two-Person',
-          'DND5E',
+          1,
           '20 lbs',
           '2 gp',
           'A simple and portable canvas shelter, a tent sleeps two.',
@@ -89,7 +89,7 @@ VALUES(
       ),
       (
           'Bottle, Glass',
-          'DND5E',
+          1,
           '2 lbs',
           '2 gp',
           'A bottle can hold 1 1/2 pints of liquid.',
@@ -119,7 +119,7 @@ VALUES(
       ),
       (
           'Pick, Miner''s',
-          'DND5E',
+          1,
           '10 lbs',
           '2 gp',
           'A miner''s pick is designed to concentrate the force of its blow on a small area.',
@@ -149,7 +149,7 @@ VALUES(
       ),
       (
           'Saddle, Pack',
-          'DND5E',
+          1,
           '15 lbs',
           '5 gp',
           'A standard saddle for a pack mount.',
@@ -180,7 +180,7 @@ VALUES(
       ),
       (
           'Spikes, Iron (10)',
-          'DND5E',
+          1,
           '5 lbs',
           '1 gp',
           'Standard iron spikes typically used with a hammer.',
@@ -210,7 +210,7 @@ VALUES(
       ),
       (
           'Lamp',
-          'DND5E',
+          1,
           '1 lb',
           '5 sp',
           'A Lamp burns Oil as fuel to cast Bright Light in a 15-foot radius and Dim Light for an additional 30 feet.',
@@ -240,7 +240,7 @@ VALUES(
       ),
       (
           'Ball Bearings',
-          'DND5E',
+          1,
           '2 lbs',
           '1 gp',
           'As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the Prone condition. It takes 10 minutes to recover the Ball Bearings.',
@@ -270,7 +270,7 @@ VALUES(
       ),
       (
           'Soap',
-          'DND5E',
+          1,
           null,
           '2 cp',
           'A commodity used for bathing.',
@@ -300,7 +300,7 @@ VALUES(
       ),
       (
           'Saddle, Military',
-          'DND5E',
+          1,
           '30 lbs',
           '20 gp',
           'A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted.',
@@ -330,7 +330,7 @@ VALUES(
       ),
       (
           'Flask or Tankard',
-          'DND5E',
+          1,
           '1 lb',
           '2 cp',
           'A flask or tankard can hold 1 pint of liquid.',
@@ -360,7 +360,7 @@ VALUES(
       ),
       (
           'Rope Silk (50 feet)',
-          'DND5E',
+          1,
           '5 lbs',
           '10 gp',
           'Rope, has 2 hit points and can be burst with a DC 17 Strength check.',
@@ -390,7 +390,7 @@ VALUES(
       ),
       (
           'Basket',
-          'DND5E',
+          1,
           null,
           null,
           'A basket can hold 2 cubic feet/40 pounds of gear.',
@@ -418,7 +418,7 @@ VALUES(
       ),
       (
           'Backpack',
-          'DND5E',
+          1,
           '5 lb',
           '2 gp',
           'A backpack is a leather pack carried on the back, typically with straps to secure it. A backpack can hold 1 cubic foot/ 30 pounds of gear.
@@ -449,7 +449,7 @@ VALUES(
       ),
       (
           'Pole (10-foot)',
-          'DND5E',
+          1,
           '7 lb',
           '10 sp',
           'When you suspect a trap, you can put the end of your 10-foot pole through that hole in the wall instead of reaching in with your hand.',
@@ -480,7 +480,7 @@ VALUES(
 
       (
           'Bag of Holding',
-          'DND5E',
+          1,
           '5 lb',
           null,
           'This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.
@@ -513,7 +513,7 @@ VALUES(
       ),
       (
           'Three-Dragon Ante Set',
-          'DND5E',
+          1,
           null,
           '1 gp',
           'If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set.',
@@ -543,7 +543,7 @@ VALUES(
       ),
       (
        'Mirror, Steel',
-       'DND5E',
+       1,
        '0.5 lb',
        '5 gp',
        'A steel mirror is handy when you want to look around corners, signal friends with reflected sunlight, keep an eye on a medusa, make sure that you look good enough to present yourself to the queen, or examine wounds that you’ve received on hard-to-see parts of your body.',
@@ -573,7 +573,7 @@ VALUES(
       ),
     (
          'Iron Flask',
-         'DND5E',
+         1,
          null,
          null,
          'This iron bottle has a brass stopper. You can use an action to speak the flask''s command word, targeting a creature that you can see within 60 feet of you. If the target is native to a plane of existence other than the one you''re on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask. If the target has been trapped by the flask before, it has advantage on the saving throw. Once trapped, a creature remains in the flask until released. The flask can hold only one creature at a time. A creature trapped in the flask doesn''t need to breathe, eat, or drink and doesn''t age.
@@ -621,7 +621,7 @@ VALUES(
       ),
       (
        'Vial',
-       'DND5E',
+       1,
        null,
        '1 gp',
        'A vial can hold 4 ounces of liquid.',
@@ -651,7 +651,7 @@ VALUES(
       ),
       (
        'Case, Crossbow Bolt',
-       'DND5E',
+       1,
        '1 lb',
        '1 gp',
        'This wooden case can hold up to twenty crossbow bolts.',
@@ -681,7 +681,7 @@ VALUES(
       ),
       (
        'Saddle, Riding',
-       'DND5E',
+       1,
        '25 lb',
        '10 gp',
        'A standard saddle for a riding mount.',
@@ -711,7 +711,7 @@ VALUES(
       ),
       (
        'Rod',
-       'DND5E',
+       1,
        '2 lb',
        '10 gp',
        'An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section.',
@@ -741,7 +741,7 @@ VALUES(
       ),
       (
        'Ram, Portable',
-       'DND5E',
+       1,
        '35 lb',
        '4 gp',
        'You can use a portable ram to break down doors.  When doing so, you gain a +4 bonus on the Strength check.  One other character can help you use the ram, giving you advantage on this check.',
@@ -771,7 +771,7 @@ VALUES(
       ),
       (
        'Lantern, Hooded',
-       'DND5E',
+       1,
        '2 lb',
        '5 gp',
        'A hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius.',
@@ -801,7 +801,7 @@ VALUES(
       ),
       (
        'Sack',
-       'DND5E',
+       1,
        '1/2 lb',
        '1 cp',
        'A sack can hold 1 cubic foot/ 30 pounds of gear.',
@@ -831,7 +831,7 @@ VALUES(
       ),
       (
        'Bag of Devouring',
-       'DND5E',
+       1,
        null,
        null,
        'This bag resembles a Bag of Holding but is a feeding orifice for a gigantic extradimensional creature. Turning the bag inside out closes the orifice.
@@ -863,7 +863,7 @@ VALUES(
       ),
       (
        'Fishing Tackle',
-       'DND5E',
+       1,
        '4 lb',
        '1 gp',
        'This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.',
@@ -893,7 +893,7 @@ VALUES(
       ),
       (
        'Climber''s Kit',
-       'DND5E',
+       1,
        '12 lb',
        '25 gp',
        'A climber''s kit includes special pitons, boot tips, gloves, and a harness. You can use the climber''s kit as an action to anchor yourself; when you do, you can''t fall more than 25 feet from the point where you anchored yourself, and you can''t climb more than 25 feet away from that point without undoing the anchor.',
@@ -923,7 +923,7 @@ VALUES(
       ),
       (
           'Bit and Bridle',
-          'DND5E',
+          1,
           '1 lb',
           '2 gp',
           'Standard equipment used to direct a mount.',
@@ -953,7 +953,7 @@ VALUES(
       ),
       (
        'Pot, Iron',
-       'DND5E',
+       1,
        '10 lb',
        '2 gp',
        'An iron pot can hold 1 gallon of liquid.',
@@ -983,7 +983,7 @@ VALUES(
       ),
       (
        'Ladder (10 foot)',
-       'DND5E',
+       1,
        '25 lb',
        '1 sp',
        'This item is a straight, simple wooden ladder.',
@@ -1013,7 +1013,7 @@ VALUES(
       ),
       (
           'Hourglass',
-          'DND5E',
+          1,
           '1 lb',
           '25 gp',
           'A standard hourglass used to measure the passage of time.',
@@ -1043,7 +1043,7 @@ VALUES(
       ),
       (
        'Saddlebags',
-       'DND5E',
+       1,
        '8 lb',
        '4 gp',
        'Standard saddlebags that can be attached to a mount''s saddle.',
@@ -1073,7 +1073,7 @@ VALUES(
       ),
       (
        'Ink Pen',
-       'DND5E',
+       1,
        null,
        '2 cp',
        'An ink pen is a wooden stick with a special tip on the end. The tip draws ink in when dipped in a vial and leaves an ink trail when drawn across a surface.',
@@ -1103,7 +1103,7 @@ VALUES(
       ),
       (
        'Rope, Hempen (50 feet)',
-       'DND5E',
+       1,
        '10 lb',
        '1 gp',
        'Rope, has 2 hit points and can be burst with a DC 17 Strength check.',
@@ -1133,7 +1133,7 @@ VALUES(
       ),
       (
        'Barrel',
-       'DND5E',
+       1,
        '70 lb',
        '2 gp',
        'A barrel can hold 40 gallons of liquid, or 4 cubic feet of solid material.',
@@ -1163,7 +1163,7 @@ VALUES(
       ),
       (
        'Bag of Tricks',
-       'DND5E',
+       1,
        null,
        null,
        'This ordinary bag, made from gray, rust, or tan cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
@@ -1232,7 +1232,7 @@ VALUES(
       ),
       (
        'Bedroll',
-       'DND5E',
+       1,
        '7 lb',
        '1 gp',
        'You never know where you’re going to sleep, and a bedroll helps you get better sleep in a hayloft or on the cold ground. A bedroll consists of bedding and a blanket thin enough to be rolled up and tied. In an emergency, it can double as a stretcher.',
@@ -1262,7 +1262,7 @@ VALUES(
       ),
       (
        'Chalk (1 piece)',
-       'DND5E',
+       1,
        null,
        '1 cp',
        'A piece of chalk used for writing and marking on various surfaces.',
@@ -1292,7 +1292,7 @@ VALUES(
       ),
       (
        'Saddlebags',
-       'DND5E',
+       1,
        '8 lb',
        '4 gp',
        'Standard saddlebags that can be attached to a mount''s saddle.',
@@ -1322,7 +1322,7 @@ VALUES(
       ),
       (
        'Bell',
-       'DND5E',
+       1,
        null,
        '1 cp',
        'A standard bell that rings, typically used for signaling.',
@@ -1352,7 +1352,7 @@ VALUES(
       ),
       (
        'Jug or Pitcher',
-       'DND5E',
+       1,
        '4 lb',
        '2 cp',
        'A jug or pitcher can hold 1 gallon of liquid.',
@@ -1382,7 +1382,7 @@ VALUES(
       ),
       (
        'Chain (10 feet)',
-       'DND5E',
+       1,
        '10 lb',
        '5 gp',
        'A chain has 10 hit points. It can be burst with a successful DC 20 Strength check.',
@@ -1412,7 +1412,7 @@ VALUES(
       ),
       (
        'Waterskin',
-       'DND5E',
+       1,
        '5 lb',
        '2 sp',
        'A waterskin can hold 4 pints of liquid.',
@@ -1442,7 +1442,7 @@ VALUES(
       ),
       (
        'Tinderbox',
-       'DND5E',
+       1,
        '1 lb',
        '0.5 gp',
        'A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.',
@@ -1472,7 +1472,7 @@ VALUES(
       ),
       (
        'Candle',
-       'DND5E',
+       1,
        null,
        '1 cp',
        'For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet.',
@@ -1502,7 +1502,7 @@ VALUES(
       ),
       (
        'Hunting Trap',
-       'DND5E',
+       1,
        '25 lb',
        '5 gp',
        'As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 Piercing damage to the trapped creature.',
@@ -1532,7 +1532,7 @@ VALUES(
       ),
       (
        'Rope, Hempen (50 feet)',
-       'DND5E',
+       1,
        '10 lb',
        '1 gp',
        'Rope, has 2 hit points and can be burst with a DC 17 Strength check.',
@@ -1562,7 +1562,7 @@ VALUES(
       ),
       (
        'Saddle, Exotic',
-       'DND5E',
+       1,
        '40 lb',
        '60 gp',
        'An exotic saddle is required for riding any aquatic or flying mount.',
@@ -1592,7 +1592,7 @@ VALUES(
       ),
       (
        'Bucket',
-       'DND5E',
+       1,
        '2 lb',
        '5 cp',
        'A bucket can hold 3 gallons of liquid, or 1/2 cubic foot of solid material.',
@@ -1622,7 +1622,7 @@ VALUES(
       ),
       (
        'Pole (10-foot)',
-       'DND5E',
+       1,
        '7 lb',
        '0.05 gp',
        'When you suspect a trap, you can put the end of your 10-foot pole through that hole in the wall instead of reaching in with your hand.',
@@ -1652,7 +1652,7 @@ VALUES(
       ),
       (
        'Spyglass',
-       'DND5E',
+       1,
        null,
        null,
        'When you drink this potion, you can cast the animal friendship spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair.',
@@ -1682,7 +1682,7 @@ VALUES(
       ),
       (
        'Blanket',
-       'DND5E',
+       1,
        '3 lb',
        '5 sp',
        'A thick, quilted, blanket made to keep you warm in cold weather.',
@@ -1712,7 +1712,7 @@ VALUES(
       ),
       (
        'Ladder (10 foot)',
-       'DND5E',
+       1,
        '25 lb',
        '1 sp',
        'This item is a straight, simple wooden ladder.',
@@ -1742,7 +1742,7 @@ VALUES(
       ),
       (
        'Crowbar',
-       'DND5E',
+       1,
        '5 lb',
        '2 gp',
        'Using a crowbar grants advantage to Strength checks where the crowbar''s leverage can be applied.',
@@ -1772,7 +1772,7 @@ VALUES(
       ),
       (
           'Dice Set',
-          'DND5E',
+          1,
           null,
           '1 sp',
           'If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set.',
@@ -1802,7 +1802,7 @@ VALUES(
       ),
       (
        'Parchment (one sheet)',
-       'DND5E',
+       1,
        null,
        '1 sp',
        'A sheet of parchment is a piece of goat hide or sheepskin that has been prepared for writing on.',
@@ -1832,7 +1832,7 @@ VALUES(
       ),
       (
        'Lantern, Bullseye',
-       'DND5E',
+       1,
        '2 lb',
        '10 gp',
        'TA bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.',
@@ -1862,7 +1862,7 @@ VALUES(
       ),
       (
        'Lantern of Revealing',
-       'DND5E',
+       1,
        null,
        null,
        'While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern''s bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius.',
@@ -1892,7 +1892,7 @@ VALUES(
       ),
       (
        'Piton',
-       'DND5E',
+       1,
        '1/4 lb',
        '5 cp',
        'When a wall doesn’t offer handholds and footholds, you can make your own. A piton is a steel spike with an eye through which you can loop a rope.',
@@ -1922,7 +1922,7 @@ VALUES(
       ),
       (
           'Chest',
-          'DND5E',
+          1,
           '25 lb',
           '5 gp',
           'A chest can hold 12 cubic feet/ 300 pounds of gear.',
@@ -1952,7 +1952,7 @@ VALUES(
       ),
       (
        'Rations (1 day)',
-       'DND5E',
+       1,
        '2 lb',
        '5 sp',
        'Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.',
@@ -1982,7 +1982,7 @@ VALUES(
       ),
       (
        'Caltrops (bag of 20)',
-       'DND5E',
+       1,
        '2 lb',
        '1 gp',
        'As an action, you can spread a bag of caltrops to cover a square area that is 5 feet on a side. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature''s walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn''t need to make the save.',
@@ -2012,7 +2012,7 @@ VALUES(
       ),
       (
        'Lock',
-       'DND5E',
+       1,
        '1 lb',
        '10 gp',
        'A key is provided with the lock. Without the key, a creature proficient with thieves'' tools can pick this lock with a successful DC 15 Dexterity check. Your DM may decide that better locks are available for higher prices.',
@@ -2042,7 +2042,7 @@ VALUES(
       ),
       (
        'Ink (1 ounce bottle)',
-       'DND5E',
+       1,
        null,
        '10 gp',
        'Ink is typically used with an ink pen to write.',
@@ -2072,7 +2072,7 @@ VALUES(
       ),
       (
        'Grappling Hook',
-       'DND5E',
+       1,
        '4 lb',
        '2 gp',
        'When tied to the end of a rope, a grappling hook can secure the rope to a battlement, window ledge, tree limb, or other protrusion.',
@@ -2102,7 +2102,7 @@ VALUES(
       ),
       (
        'Sack',
-       'DND5E',
+       1,
        '1/2 lb',
        '1 cp',
        'A sack can hold 1 cubic foot/ 30 pounds of gear.',
@@ -2132,7 +2132,7 @@ VALUES(
       ),
       (
        'Mirror, Steel',
-       'DND5E',
+       1,
        '1/2 lb',
        '5 gp',
        'A steel mirror is handy when you want to look around corners, signal friends with reflected sunlight, keep an eye on a medusa, make sure that you look good enough to present yourself to the queen, or examine wounds that you’ve received on hard-to-see parts of your body.',
@@ -2162,7 +2162,7 @@ VALUES(
       ),
       (
        'Torch',
-       'DND5E',
+       1,
        '1 lb',
        '1 cp',
        'A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage.',
@@ -2192,7 +2192,7 @@ VALUES(
       ),
       (
        'Pouch',
-       'DND5E',
+       1,
        '1 lb',
        '5 sp',
        'A cloth or leather pouch can hold 1/5 cubic foot/ 6 pounds of gear - or up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch.',
@@ -2222,7 +2222,7 @@ VALUES(
       ),
       (
        'Handy Haversack',
-       'DND5E',
+       1,
        '5 lb',
        null,
        '*Capacity:* 120lb
@@ -2256,7 +2256,7 @@ VALUES(
       ),
       (
        'Horseshoes of a Zephyr',
-       'DND5E',
+       1,
        null,
        null,
        'These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above the ground. This effect means the creature can cross or stand above non-solid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores difficult terrain. In addition, the creature can move at normal speed for up to 12 hours a day without suffering exhaustion from a forced march.',
@@ -2286,7 +2286,7 @@ VALUES(
       ),
       (
        'Rope of Climbing',
-       'DND5E',
+       1,
        null,
        null,
        'This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the other end to move toward a destination you choose. That end moves 10 feet on your turn when you first command it and 10 feet on each of your turns until reaching its destination, up to its maximum length away, or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying.
@@ -2318,7 +2318,7 @@ VALUES(
       ),
       (
        'Rope of Entanglement',
-       'DND5E',
+       1,
        null,
        null,
        'This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its command word, the other end darts forward to entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become restrained.

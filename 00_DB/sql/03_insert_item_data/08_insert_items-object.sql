@@ -29,7 +29,7 @@ INSERT INTO items (
     item_source_id)
 VALUES(
         'Goggles of Night',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet.',
@@ -59,7 +59,7 @@ VALUES(
         ),
         (
         'Figurines of Wondrous Power',
-        'DND5E',
+        1,
         null,
         null,
         'A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn''t enough space for the creature, the figurine doesn''t become a creature.
@@ -103,7 +103,7 @@ VALUES(
         ),
         (
         'Figurine of Wondrous Power (Golden Lions)',
-        'DND5E',
+        1,
         null,
         null,
         'A *figurine of wondrous power* is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn''t enough space for the creature, the figurine doesn''t become a creature.
@@ -136,7 +136,7 @@ VALUES(
         ),
         (
         'Figurine of Wondrous Power (Ebony Fly)',
-        'DND5E',
+        1,
         null,
         null,
             'A Figurine of Wondrous Power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn’t enough space for the creature, the figurine doesn’t become a creature.
@@ -169,7 +169,7 @@ VALUES(
         ),
         (
         'Figurine of Wondrous Power (Obsidian Steed)',
-        'DND5E',
+        1,
         null,
         null,
         'A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn''t enough space for the creature, the figurine doesn''t become a creature.
@@ -203,7 +203,7 @@ VALUES(
         ),
         (
         'Figurine of Wondrous Power (Serpentine Owl)',
-        'DND5E',
+        1,
         null,
         null,
         'A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn''t enough space for the creature, the figurine doesn''t become a creature.
@@ -236,7 +236,7 @@ VALUES(
         ),
         (
         'Figurine of Wondrous Power (Marble Elephant)',
-        'DND5E',
+        1,
         null,
         null,
         'A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn''t enough space for the creature, the figurine doesn''t become a creature.
@@ -269,7 +269,7 @@ VALUES(
         ),
         (
         'Figurine of Wondrous Power (Silver Raven)',
-        'DND5E',
+        1,
         null,
         null,
         'A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn''t enough space for the creature, the figurine doesn''t become a creature.
@@ -302,7 +302,7 @@ VALUES(
         ),
         (
         'Figurine of Wondrous Power (Bronze Griffon)',
-        'DND5E',
+        1,
         null,
         null,
         'A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn''t enough space for the creature, the figurine doesn''t become a creature.
@@ -335,7 +335,7 @@ VALUES(
         ),
         (
         'Figurine of Wondrous Power (Ivory Goats)',
-        'DND5E',
+        1,
         null,
         null,
         'A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn''t enough space for the creature, the figurine doesn''t become a creature.
@@ -371,7 +371,7 @@ VALUES(
         ),
         (
         'Figurine of Wondrous Power (Onyx Dog)',
-        'DND5E',
+        1,
         null,
         null,
         'A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn''t enough space for the creature, the figurine doesn''t become a creature.
@@ -403,7 +403,7 @@ VALUES(
         ),
         (
         'Instant Fortress',
-        'DND5E',
+        1,
         null,
         null,
         'You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty.
@@ -436,7 +436,7 @@ VALUES(
         ),
         (
         'Sprig of Mistletoe',
-        'DND5E',
+        1,
         null,
         '1 gp',
         'A Sprig of Mistletoe is a Druidic Focus that is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use this item as a Spellcasting Focus',
@@ -466,7 +466,7 @@ VALUES(
         ),
         (
         'Amulet of the Planes',
-        'DND5E',
+        1,
         null,
         null,
         'While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast theplane shiftspell. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a d100. On a 1–60, you travel to a random location on the plane you named. On a 61–100, you travel to a randomly determined plane of existence.
@@ -504,7 +504,7 @@ VALUES(
         ),
         (
         'Cubic Gate',
-        'DND5E',null,
+        1,null,
         null,
         'This cube is 3 inches across and radiates palpable magical energy. The six sides of the cube are each keyed to a different plane of existence, one of which is the Material Plane. The other sides are linked to planes determined by the DM.
             The cube has 3 charges and regains 1d3 expended charges daily at dawn. As a Magic action, you can expend 1 of the cube’s charges to cast one of the following spells using the cube.
@@ -535,7 +535,7 @@ VALUES(
         5
         ),
         ('Rod of Alertness',
-        'DND5E',
+        1,
         null,
         null,
         'This rod has a flanged head and the following properties.
@@ -569,7 +569,7 @@ VALUES(
         ),
         (
         'Deck of Illusions',
-        'DND5E',
+        1,
         null,
         null,
         'This box contains a set of parchment cards. A full deck has 34 cards. A deck found as treasure is usually missing 1d20 − 1 cards.
@@ -637,7 +637,7 @@ VALUES(
         ),
         (
         'Feather Token (Whip)',
-        'DND5E',
+        1,
         null,
         null,
         'This tiny object looks like a feather.
@@ -668,7 +668,7 @@ VALUES(
         ),
         (
         'Crystal Balls',
-        'DND5E',
+        1,
         null,
         null,
         'The typical crystal ball, a very rare item, is about 6 inches in diameter. While touching it, you can cast the Scrying spell (save DC 17) with it.
@@ -703,7 +703,7 @@ VALUES(
         ),
         (
         'Crystal Ball of Mind Reading',
-        'DND5E',
+        1,
         null,
         null,
         'While touching this crystal orb, you can cast Scrying (save DC 17) with it. In addition, you can cast Detect Thoughts (save DC 17) targeting creatures you can see within 30 feet of the spell’s sensor. You don’t need to concentrate on this Detect Thoughts spell to maintain it during its duration, but it ends if the Scrying spell ends.',
@@ -733,7 +733,7 @@ VALUES(
         ),
         (
         'Crystal Ball of Telepathy',
-        'DND5E',
+        1,
         null,
         null,
         'While touching this crystal orb, you can cast Scrying (save DC 17) with it. In addition, you can communicate telepathically with creatures you can see within 30 feet of the spell’s sensor. You can also cast Suggestion (save DC 17) through the sensor on one of those creatures. You don’t need to concentrate on this Suggestion to maintain it during its duration, but it ends if Scrying ends. You can’t cast Suggestion in this way again until the next dawn.',
@@ -763,7 +763,7 @@ VALUES(
         ),
         (
         'Crystal Ball of True Seeing',
-        'DND5E',
+        1,
         null,
         null,
         'While touching this crystal orb, you can cast Scrying (save DC 17) with it. In addition, you have Truesight with a range of 120 feet centered on the spell’s sensor.',
@@ -793,7 +793,7 @@ VALUES(
         ),
         (
         'Sphere of Annihilation',
-        'DND5E',
+        1,
         null,
         null,
         'This 2-foot-diameter black sphere is a hole in the multiverse, hovering in space and stabilized by a magical field surrounding it.
@@ -831,7 +831,7 @@ VALUES(
         ),
         (
         'Feather Tokens',
-        'DND5E',
+        1,
         null,
         null,
         'This tiny object looks like a feather. Different types of feather tokens exist, each with a different single-use Effect. The DM chooses the kind of token or determines it randomly.
@@ -875,7 +875,7 @@ VALUES(
         ),
         (
         'Feather Token (Anchor)',
-        'DND5E',
+        1,
         null,
         null,
         'This tiny object looks like a feather.
@@ -906,7 +906,7 @@ VALUES(
         ),
         (
         'Feather Token (Bird)',
-        'DND5E',
+        1,
         null,
         null,
         'This tiny object looks like a feather.
@@ -937,7 +937,7 @@ VALUES(
         ),
         (
         'Feather Token (Fan)',
-        'DND5E',
+        1,
         null,
         null,
         'This tiny object looks like a feather.
@@ -968,7 +968,7 @@ VALUES(
         ),
         (
         'Feather Token (Swan Boat)',
-        'DND5E',
+        1,
         null,
         null,
         'This tiny object looks like a feather.
@@ -999,7 +999,7 @@ VALUES(
         ),
         (
         'Feather Token (Tree)',
-        'DND5E',
+        1,
         null,
         null,
         'This tiny object looks like a feather.
@@ -1030,7 +1030,7 @@ VALUES(
         ),
         (
         'Feather Token (Whip)',
-        'DND5E',
+        1,
         null,
         null,
         'This tiny object looks like a feather.
@@ -1062,7 +1062,7 @@ VALUES(
         ),
         (
         'Feather Token (Feather Fall)',
-        'DND5E',
+        1,
         null,
         null,
         'This small metal disk is inscribed with the image of a feather. When you fall at least 20 feet while the token is on your person, you descend 60 feet per round and take no damage from falling. The token’s magic is expended after you land, whereupon the disk becomes nonmagical.',
@@ -1092,7 +1092,7 @@ VALUES(
         ),
         (
         'Reliquary',
-        'DND5E',
+        1,
         '2 lb',
         '5 gp',
         'A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in the Spellcasting section. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.',
@@ -1122,7 +1122,7 @@ VALUES(
         ),
         (
         'Abacus',
-        'DND5E',
+        1,
         '2 lb',
         '2 gp',
         'A standard tool used to make calculations.',
@@ -1152,7 +1152,7 @@ VALUES(
         ),
         (
         'Occultant Abacus',
-        'DND5E',
+        1,
         null,
         null,
         'Head office grants you the use of a unique item known as an occultant abacus (sometimes just referred to as an occultant), whose beads resemble tiny skulls.
@@ -1205,7 +1205,7 @@ VALUES(
         ),
     (
          'Rod of Security',
-           'DND5E',
+           1,
            null,
            null,
            'While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space. You choose the form that the paradise takes. It could be a tranquil garden, lovely glade, cheery tavern, immense palace, tropical island, fantastic carnival, or whatever else you can imagine. Regardless of its nature, the paradise contains enough water and food to sustain its visitors. Everything else that can be interacted with inside the extraplanar space can exist only there. For example, a flower picked from a garden in the paradise disappears if it is taken outside the extraplanar space.
@@ -1237,7 +1237,7 @@ VALUES(
       ),
       (
           'Wind Fan',
-          'DND5E',
+          1,
           null,
           null,
           'While holding this fan, you can cast Gust of Wind (save DC 13) from it. Each subsequent time the fan is used before the next dawn, it has a cumulative 20 percent chance of not working; if the fan fails to work, it tears into useless, nonmagical tatters.',
@@ -1267,7 +1267,7 @@ VALUES(
       ),
     (
      'Horseshoes of Speed',
-     'DND5E',
+     1,
      null,
      null,
      'These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature''s walking speed by 30 feet.',
@@ -1297,7 +1297,7 @@ VALUES(
       ),
     (
      'Holy Water (flask)',
-     'DND5E',
+     1,
      '1 lb',
      '25 gp',
      'As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 2d6 radiant damage.
@@ -1328,7 +1328,7 @@ VALUES(
       ),
       (
           'Bag of Beans',
-          'DND5E',
+          1,
           null,
           null,
           'Inside this heavy cloth bag are 3d4 dry beans. The bag weighs 1/2 pound plus 1/4 pound for each bean it contains.
@@ -1375,7 +1375,7 @@ VALUES(
       ),
     (
      'Portable Hole',
-     'DND5E',
+     1,
      null,
      null,
      'This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.
@@ -1409,7 +1409,7 @@ VALUES(
       ),
     (
      'Eversmoking Bottle',
-     'DND5E',
+     1,
      null,
      null,
      'Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud''s area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet.
@@ -1440,7 +1440,7 @@ VALUES(
       ),
     (
      'Totem',
-     'DND5E',
+     1,
      null,
      '1 gp',
      'A druid can use a Totem as a spellcasting focus, as described in the Spellcasting section.',
@@ -1470,7 +1470,7 @@ VALUES(
       ),
     (
      'Mirror of Life Trapping',
-     'DND5E',
+     1,
      '50 lb',
      null,
      'When this 4-foot-tall, 2-foot-wide mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds, and it has AC 11, HP 10, Immunity to Poison and Psychic damage, and Vulnerability to Bludgeoning damage. It shatters and is destroyed when reduced to 0 Hit Points.
@@ -1507,7 +1507,7 @@ VALUES(
       ),
     (
      'Decanter of Endless Water',
-     'DND5E',
+     1,
      '2 lb',
      null,
      'This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds.
@@ -1541,7 +1541,7 @@ VALUES(
       ),
     (
      'Eyes of Charming',
-     'DND5E',
+     1,
      null,
      null,
      'These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.',
@@ -1568,7 +1568,7 @@ VALUES(
       ),
     (
      'Rod of Absorption',
-     'DND5E',
+     1,
      null,
      null,
      'While holding this rod, you can take a Reaction to absorb a spell that is targeting only you and doesn’t create an area of effect. The absorbed spell’s effect is canceled, and the spell’s energy—not the spell itself— is stored in the rod. The energy has the same level as the spell when it was cast. A canceled spell dissipates with no effect, and any resources used to cast it are wasted. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy, it can’t absorb more. If you are targeted by a spell that the rod can’t store, the rod has no effect on that spell.
@@ -1601,7 +1601,7 @@ VALUES(
       ),
     (
      'Philter of Love',
-     'DND5E',
+     1,
      null,
      null,
      'The next time you see a creature within 10 minutes after drinking this philter, you become[charmed](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Charmed)by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to, you regard it as your true love while you are[charmed](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Charmed). This potionnulls rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart.',
@@ -1631,7 +1631,7 @@ VALUES(
       ),
     (
      'Orb',
-     'DND5E',
+     1,
      '3 lb',
      '20 gp',
      'An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section.',
@@ -1661,7 +1661,7 @@ VALUES(
       ),
       (
           'Orb of Direction',
-          'DND5E',
+          1,
           null,
           null,
           'While holding this orb, you can use an action to determine which way is north. This property functions only on the Material Plane.',
@@ -1691,7 +1691,7 @@ VALUES(
       ),
       (
           'Orb of Shielding (Acid and Poison)',
-          'DND5E',
+          1,
           null,
           null,
           'An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you''re a spellcaster, you can use this orb as a spellcasting focus.
@@ -1722,7 +1722,7 @@ VALUES(
       ),
       (
           'Orb of Shielding (Cold)',
-          'DND5E',
+          1,
           null,
           null,
           'An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you''re a spellcaster, you can use this orb as a spellcasting focus.
@@ -1753,7 +1753,7 @@ VALUES(
       ),
       (
           'Orb of Shielding (Fire)',
-          'DND5E',
+          1,
           null,
           null,
           'An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you''re a spellcaster, you can use this orb as a spellcasting focus.
@@ -1784,7 +1784,7 @@ VALUES(
       ),
       (
           'Orb of Shielding (Force)',
-          'DND5E',
+          1,
           null,
           null,
           'An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you''re a spellcaster, you can use this orb as a spellcasting focus.
@@ -1815,7 +1815,7 @@ VALUES(
       ),
       (
           'Orb of Shielding (Lightning and Thunder)',
-          'DND5E',
+          1,
           null,
           null,
           'An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you''re a spellcaster, you can use this orb as a spellcasting focus.
@@ -1846,7 +1846,7 @@ VALUES(
       ),
       (
           'Orb of Shielding (Necrotic)',
-          'DND5E',
+          1,
           null,
           null,
           'An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you''re a spellcaster, you can use this orb as a spellcasting focus.
@@ -1877,7 +1877,7 @@ VALUES(
       ),
       (
           'Orb of Shielding (Psychic)',
-          'DND5E',
+          1,
           null,
           null,
           'An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you''re a spellcaster, you can use this orb as a spellcasting focus.
@@ -1908,7 +1908,7 @@ VALUES(
       ),
       (
           'Orb of Shielding (Radiant)',
-          'DND5E',
+          1,
           null,
           null,
           'An orb of shielding is a polished, spherical chunk of crystal or stone aligned to one of the planes of existence. If you''re a spellcaster, you can use this orb as a spellcasting focus.
@@ -1939,7 +1939,7 @@ VALUES(
       ),
       (
           'Orb of Shielding (Thunder)',
-          'DND5E',
+          1,
           null,
           null,
           'While wielding an orb of shielding, you receive a +1 bonus to any saving throws you make against a spell that inflicts a particular type of damage.
@@ -1970,7 +1970,7 @@ VALUES(
       ),
       (
           'Orb of Time',
-          'DND5E',
+          1,
           null,
           null,
           'While holding this orb, you can use an action to determine whether it is morning, afternoon, evening, or nighttime outside. This property functions only on the Material Plane.',
@@ -2000,7 +2000,7 @@ VALUES(
       ),
       (
           'Orb of Dragonkind',
-          'DND5E',
+          1,
           null,
           null,
           'Ages past, elves and humans waged a terrible war against evil dragons. When the world seemed doomed, powerful wizards came together and worked their greatest magic, forging five Orbs of Dragonkind (or Dragon Orbs) to help them defeat the dragons. One orb was taken to each of the five wizard towers, and there they were used to speed the war toward a victorious end. The wizards used the orbs to lure dragons to them, then destroyed the dragons with powerful magic.
@@ -2047,7 +2047,7 @@ VALUES(
       ),
       (
           'Murgaxor''s Orb',
-          'DND5E',
+          1,
           null,
           null,
           'Roiling green mist fills this glass orb, which the exiled Strixhaven mage Murgaxor once used in foul magical experiments. Murgaxor’s spirit has infused the orb, which he uses to spread a terrible curse among Strixhaven’s students.
@@ -2087,7 +2087,7 @@ VALUES(
       ),
     (
      'Bowl of Commanding Water Elementals',
-     'DND5E',
+     1,
      null,
      null,
      'While this bowl is filled with water, you can use an action to speak the bowl''s command word and summon a water elemental, as if you had cast the conjure elemental spell. The bowl can''t be used this way again until the next dawn.
@@ -2118,7 +2118,7 @@ VALUES(
       ),
     (
      'Iron Bands of Binding',
-     'DND5E',
+     1,
      '1 lb',
      null,
      'This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. As the sphere moves through the air, it opens into a tangle of metal bands.
@@ -2150,7 +2150,7 @@ VALUES(
       ),
     (
      'Brazier of Commanding Fire Elementals',
-     'DND5E',
+     1,
      null,
      null,
      'While a fire burns in this brass brazier, you can use an action to speak the brazier’s command word and summon a fire elemental, as if you had cast the conjure elemental spell. The brazier can’t be used this way again until the next dawn.
@@ -2181,7 +2181,7 @@ VALUES(
       ),
     (
      'Stone of Controlling Earth Elementals',
-     'DND5E',
+     1,
      null,
      null,
      'If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the conjure elemental spell. The stone can''t be used this way again until the next dawn. The stone weighs 5 pounds.',
@@ -2211,7 +2211,7 @@ VALUES(
       ),
     (
      'Cube of Force',
-     'DND5E',
+     1,
      null,
      null,
      'This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn.
@@ -2262,7 +2262,7 @@ VALUES(
       ),
     (
      'Immovable Rod',
-     'DND5E',
+     1,
      null,
      null,
      'This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn''t move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.',
@@ -2292,7 +2292,7 @@ VALUES(
       ),
     (
      'Emblem',
-     'DND5E',
+     1,
      null,
      '5 gp',
      'A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in the Spellcasting section. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.',
@@ -2322,7 +2322,7 @@ VALUES(
       ),
     (
      'Manacles',
-     'DND5E',
+     1,
      '6 lb',
      '2 gp',
      'As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action.
@@ -2353,7 +2353,7 @@ VALUES(
       ),
     (
      'Orb of Dragonkind',
-     'DND5E',
+     1,
      null,
      null,
      'Long ago, in the Dragonlance setting, elves and humans waged a terrible war against chromatic dragons. When the world seemed doomed, the wizards of the Towers of High Sorcery came together and forged five Orbs of Dragonkind to help defeat the dragons. One orb was taken to each of the five towers, and there they were used to speed the war toward a victorious end. The wizards used the orbs to lure dragons to them, then destroyed the dragons with powerful magic.
@@ -2404,7 +2404,7 @@ VALUES(
       ),
     (
      'Whetstone',
-     'DND5E',
+     1,
      '1 lb',
      '1 cp',
      'A standard whetstone used to sharpen blades.',
@@ -2432,7 +2432,7 @@ VALUES(
       ),
     (
      'Dimensional Shackles',
-     'DND5E',
+     1,
      null,
      null,
      'You can use an action to place these shackles on an[incapacitated](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Incapacitated)creature. The shackles adjust to fit a creature of Small to Large size. In addition to serving as mundane manacles, the shackles prevent a creature bound by them from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. They donnullt prevent the creature from passing through an interdimensional portal.
@@ -2461,7 +2461,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
     (
      'Candle of Invocation',
-     'DND5E',
+     1,
      null,
      null,
      'This slender taper is dedicated to a deity and shares that deity''s alignment. The candle''s alignment can be detected with the detect evil and good spell. The GM chooses the god and associated alignment or determines the alignment randomly.
@@ -2507,7 +2507,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
     (
      'Efreeti Bottle',
-     'DND5E',
+     1,
      null,
      null,
      'This painted brass bottle weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears in an unoccupied space within 30 feet of you.
@@ -2544,7 +2544,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
     (
      'Ioun Stone of Greater Absorption',
-     'DND5E',
+     1,
      null,
      null,
      'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2578,7 +2578,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Mastery',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2611,7 +2611,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Regeneration',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2644,7 +2644,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Absorption',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2678,7 +2678,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Agility',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2711,7 +2711,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Fortitude',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2744,7 +2744,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Insigh',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2777,7 +2777,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Intellect',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2810,7 +2810,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Leadership',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2843,7 +2843,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Strength',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2876,7 +2876,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Vitality',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2909,7 +2909,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Awareness',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2942,7 +2942,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Protection',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -2975,7 +2975,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Reserve',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -3010,7 +3010,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
       (
           'Ioun Stone of Sustenance',
-          'DND5E',
+          1,
           null,
           null,
           'An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
@@ -3043,7 +3043,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
     (
      'Rod of Rulership',
-     'DND5E',
+     1,
      null,
      null,
      'You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature regards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can''t be used again until the next dawn.',
@@ -3073,7 +3073,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
     (
      'Eyes of Minute Seeing',
-     'DND5E',
+     1,
      null,
      null,
      'These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range.',
@@ -3103,7 +3103,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
     (
      'Censer of Controlling Air Elementals',
-     'DND5E',
+     1,
      null,
      null,
      'While incense is burning in this censer, you can use an action to speak the censer''s command word and summon an air elemental, as if you had cast the conjure elemental spell. The censer can''t be used this way again until the next dawn.
@@ -3134,7 +3134,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
     (
      'Playing Card Set',
-     'DND5E',
+     1,
      null,
      null,
      'If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set.',
@@ -3160,7 +3160,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
     (
      'Potter''s Tools',
-     'DND5E',
+     1,
      '3 lb',
      '10 gp',
      'These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan''s tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan''s tools requires a separate proficiency.',
@@ -3190,7 +3190,7 @@ You and any creature you designate when you use the shackles can use an action t
       ),
     (
      'Well of Many Worlds',
-     'DND5E',
+     1,
      null,
      null,
      'This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.

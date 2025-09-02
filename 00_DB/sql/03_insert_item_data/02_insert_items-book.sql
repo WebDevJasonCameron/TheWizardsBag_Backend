@@ -30,7 +30,7 @@ INSERT INTO items (
 VALUES
       (
           'Spell Scroll',
-          'DND5E',
+          1,
           null,
           null,
           'A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn’t lost.
@@ -89,7 +89,7 @@ VALUES
       ),
       (
           'Spell Scroll (0 - Cantrip)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -120,7 +120,7 @@ VALUES
       ),
       (
           'Spell Scroll (1st Level)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -153,7 +153,7 @@ VALUES
       ),
       (
           'Spell Scroll (2nd Level)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -186,7 +186,7 @@ VALUES
       ),
       (
           'Spell Scroll (3rd Leve)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -219,7 +219,7 @@ VALUES
       ),
       (
           'Spell Scroll (4th Level)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -252,7 +252,7 @@ VALUES
       ),
       (
           'Spell Scroll (5th Level)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -285,7 +285,7 @@ VALUES
       ),
       (
           'Spell Scroll (6th Level)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -318,7 +318,7 @@ VALUES
       ),
       (
           'Spell Scroll (7th Level)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -351,7 +351,7 @@ VALUES
       ),
       (
           'Spell Scroll (8th Level)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -384,7 +384,7 @@ VALUES
       ),
       (
           'Spell Scroll (9th Level)',
-          'DND5E',
+          1,
           null,
           null,
           'A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell’s normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost.
@@ -417,7 +417,7 @@ VALUES
       ),
       (
        'Manual of Bodily Health',
-       'DND5E',
+       1,
        null,
        null,
        'This book contains health and diet tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the booknulls contents and practicing its guidelines, your Constitution score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.',
@@ -447,7 +447,7 @@ VALUES
       ),
       (
        'Manual of Gainful Exercise',
-       'DND5E',
+       1,
        null,
        null,
        'This book describes fitness exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book’s contents and practicing its guidelines, your Strength increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century.',
@@ -477,7 +477,7 @@ VALUES
       ),
       (
        'Paper (one sheet)',
-       'DND5E',
+       1,
        null,
        '2 sp',
        'A sheet of standard paper is made from cloth fibers.',
@@ -507,7 +507,7 @@ VALUES
       ),
     (
      'Tome of Clear Thought',
-     'DND5E',
+     1,
      null,
      null,
      'This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book’s contents and practicing its guidelines, your Intelligence increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century.',
@@ -537,7 +537,7 @@ VALUES
       ),
     (
      'Manual of Golems',
-     'DND5E',
+     1,
      null,
      null,
      'This tome contains information and incantations necessary to make a particular type of golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can''t use a manual of golems and attempts to read it takes 6d6 psychic damage.
@@ -577,7 +577,7 @@ VALUES
       ),
       (
           'Manual of clay Golems',
-          'DND5E',
+          1,
           null,
           null,
           'This tome contains information and incantations necessary to make a clay golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can''t use a manual of golems and attempts to read it takes 6d6 psychic damage.
@@ -609,7 +609,7 @@ VALUES
       ),
       (
           'Manual of Flesh Golems',
-          'DND5E',
+          1,
           null,
           null,
           'This tome contains information and incantations necessary to make a flesh golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can''t use a manual of golems and attempts to read it takes 6d6 psychic damage.
@@ -641,7 +641,7 @@ VALUES
       ),
       (
           'Manual of Iron Golems',
-          'DND5E',
+          1,
           null,
           null,
           'This tome contains information and incantations necessary to make a iron golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can''t use a manual of golems and attempts to read it takes 6d6 psychic damage.
@@ -673,7 +673,7 @@ VALUES
       ),
       (
           'Manual of Stone Golems',
-          'DND5E',
+          1,
           null,
           null,
           'This tome contains information and incantations necessary to make a stone golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can''t use a manual of golems and attempts to read it takes 6d6 psychic damage.
@@ -705,7 +705,7 @@ VALUES
       ),
       (
        'Manual of Quickness of Action',
-       'DND5E',
+       1,
        null,
        null,
        'This book contains coordination and balance exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book’s contents and practicing its guidelines, your Dexterity increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century.',
@@ -735,7 +735,7 @@ VALUES
       ),
       (
        'Spellbook',
-       'DND5E',
+       1,
        '3 lb',
        '50 gp',
        'Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells.',
@@ -765,7 +765,7 @@ VALUES
       ),
       (
        'Book',
-       'DND5E',
+       1,
        '5 lb',
        '25 gp',
        'A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook.',
@@ -795,7 +795,7 @@ VALUES
       ),
       (
        'Tome of Leadership and Influence',
-       'DND5E',
+       1,
        null,
        null,
        'This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book’s contents and practicing its guidelines, your Charisma increases by 2, to a maximum of 30. The manual then loses its magic but regains it in a century.',
@@ -825,7 +825,7 @@ VALUES
       ),
       (
        'Case, Map or Scroll',
-       'DND5E',
+       1,
        '1 lb',
        '1 gp',
        'This cylindrical leather case can hold up to ten rolled-up sheets of paper or five rolled-up sheets of parchment.',

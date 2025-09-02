@@ -30,7 +30,7 @@ INSERT INTO items (
 VALUES
         (
         'Longship',
-        'DND5E',
+        1,
         null,
         '10000 gp',
         'Longships have the following statistics:
@@ -68,7 +68,7 @@ VALUES
         ),
         (
         'Wagon',
-        'DND5E',
+        1,
         '400 lbs',
         '35 gp',
         'If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances.',
@@ -98,7 +98,7 @@ VALUES
         ),
         (
             'Carpet of Flying',
-            'DND5E',
+            1,
             null,
             null, 'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
             Four sizes of carpet of flying exist. The DM chooses the size of a given carpet or determines it randomly.
@@ -135,7 +135,7 @@ VALUES
         ),
         (
             'Carpet of Flying (3 ft. x 5 ft.)',
-            'DND5E',
+            1,
             null,
             null,
             'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -166,7 +166,7 @@ VALUES
         ),
         (
             'Carpet of Flying (4 ft. x 6 ft.)',
-            'DND5E',
+            1,
             null,
             null,
             'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -197,7 +197,7 @@ VALUES
         ),
         (
             'Carpet of Flying (5 ft. x 7 ft.)',
-            'DND5E',
+            1,
             null,
             null,
             'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -228,7 +228,7 @@ VALUES
         ),
         (
             'Carpet of Flying (6 ft. x 9 ft.)',
-            'DND5E',
+            1,
             null,
             null,
             'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -259,7 +259,7 @@ VALUES
         ),
         (
             'Galley',
-            'DND5E',
+            1,
             null,
             '30,000 gp',
             'Galleys are long vessels that rely on sails and sizable rowing crews to move. These ships can carry siege weapons and soldiers to war or transport large amounts of cargo for merchants. No matter the ship''s purpose, the crew almost always hires extra protection, since galleys make large, cargo-rich targets for pirates.
@@ -297,7 +297,7 @@ VALUES
         ),
         (
              'Chariot',
-             'DND5E',
+             1,
              '100 lb',
              '250 gp',
              'If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances.',
@@ -327,7 +327,7 @@ VALUES
         ),
         (
          'Carpets of Flying',
-         'DND5E',
+         1,
          null,
          null,
          'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -365,7 +365,7 @@ VALUES
         ),
         (
             'Carpet of Flying (3 ft. x 5 ft.)',
-            'DND5E',
+            1,
             null,
             null,
             'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -397,7 +397,7 @@ VALUES
         ),
         (
             'Carpet of Flying (4 ft. x 6 ft.)',
-            'DND5E',
+            1,
             null,
             null,
             'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -429,7 +429,7 @@ VALUES
         ),
         (
             'Carpet of Flying (5 ft. x 7 ft.)',
-            'DND5E',
+            1,
             null,
             null,
             'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -461,7 +461,7 @@ VALUES
         ),
         (
             'Carpet of Flying (6 ft. x 9 ft.)',
-            'DND5E',
+            1,
             null,
             null,
             'You can speak the carpet''s command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.
@@ -493,7 +493,7 @@ VALUES
         ),
         (
             'Apparatus of the Crab',
-            'DND5E',
+            1,
             '500 lb',
             null,
             'This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster. The apparatus of the Crab is a Large object with the following statistics:
@@ -546,7 +546,7 @@ VALUES
         ),
         (
          'Sailing Ship',
-         'DND5E',
+         1,
          null,
          '10,000 gp',
          'Sailing Ships have the following statistics:
@@ -583,7 +583,7 @@ VALUES
         ),
         (
          'Rowboat',
-         'DND5E',
+         1,
          '100 lb',
          '50 gp',
          'If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances.
@@ -614,7 +614,7 @@ VALUES
         ),
         (
          'Carriage',
-         'DND5E',
+         1,
          '600 lb',
          '100 gp',
          'If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances.',
@@ -644,7 +644,7 @@ VALUES
         ),
         (
          'Folding Boat',
-         'DND5E',
+         1,
          '4 lb',
          null,
          'This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.
@@ -678,7 +678,7 @@ VALUES
         ),
         (
          'Sled',
-         'DND5E',
+         1,
          '300 lb',
          '20 gp',
          'If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances.',
@@ -708,7 +708,7 @@ VALUES
         ),
         (
          'Warship',
-         'DND5E',
+         1,
          null,
          '25,000 gp',
          'Warships have the following statistics:
@@ -745,7 +745,7 @@ VALUES
         ),
         (
          'Keelboat',
-         'DND5E',
+         1,
          null,
          '3,000 gp',
          'Keelboats have the following statistics:
@@ -782,7 +782,7 @@ VALUES
         ),
         (
          'Cart',
-         'DND5E',
+         1,
          '200 lb',
          '15 gp',
          'If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances.',
@@ -812,7 +812,7 @@ VALUES
         ),
         (
          'Staff of the Magi',
-         'DND5E',
+         1,
          null,
          null,
          'This staff has 50 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls.
