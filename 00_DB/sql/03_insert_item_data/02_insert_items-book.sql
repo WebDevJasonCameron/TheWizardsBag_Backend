@@ -161,8 +161,8 @@ VALUES
                 This scroll contains a 2nd level spell. The spell''s saving throw DC is 13 and attack bonus is +5.
                 A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 12. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.',
           'Utility, Consumable',
-          'common',
           null,
+          'common',
           null,
 
           false,

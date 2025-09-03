@@ -5,8 +5,13 @@ import com.smashingwizards.thewizardsbag_backend.mapper.ItemMapper;
 import com.smashingwizards.thewizardsbag_backend.model.Item;
 import com.smashingwizards.thewizardsbag_backend.repository.ItemRepository;
 import com.smashingwizards.thewizardsbag_backend.service.ItemService;
+import com.smashingwizards.thewizardsbag_backend.spec.ItemSpecifications;
+import org.springframework.data.domain.Page;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import org.springframework.data.domain.Pageable;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -90,12 +95,33 @@ public class ItemServiceImpl implements ItemService {
     }
 
     // ADDs
-    public List<ItemDTO> getItemsByItemName(String itemName) {
-        String query = itemName == null ? "" : itemName.trim();
-        if (query.isEmpty()) return List.of();
-        return itemRepository.findByNameContainingIgnoreCase(query)
-                .stream()
-                .map(itemMapper::itemToItemDTO)
-                .collect(Collectors.toList());
+    @Override
+    @Transactional(readOnly = true)
+    public Page<ItemDTO> search(String nameContains,
+                                String nameNotContains,
+                                String noteContains,
+                                Boolean magical,
+                                Long tagId,
+                                Pageable pageable) {
+        Specification<Item> spec = (root, cq, cb) -> cb.conjunction();
+
+        if (nameContains != null && !nameContains.isBlank()) {
+            spec = spec.and(ItemSpecifications.nameContains(nameContains));
+        }
+        if (nameNotContains != null && !nameNotContains.isBlank()) {
+            spec = spec.and(ItemSpecifications.nameNotContains(nameNotContains));
+        }
+        if (noteContains != null && !noteContains.isBlank()) {
+            spec = spec.and(ItemSpecifications.noteContains(noteContains));
+        }
+        if (magical != null) {
+            spec = spec.and(ItemSpecifications.magicalEquals(magical));
+        }
+        if (tagId != null) {
+            spec = spec.and(ItemSpecifications.hasTagId(tagId));
+        }
+
+        return itemRepository.findAll(spec, pageable).map(itemMapper::itemToItemDTO);
     }
+
 }

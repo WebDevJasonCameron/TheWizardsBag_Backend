@@ -158,8 +158,8 @@ VALUES
     'You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.',
     'breathe underwater, buff, utility, consumable',
     null,
-    null,
     'uncommon',
+    null,
 
     true,
     false,
@@ -811,8 +811,8 @@ VALUES
         'You regain 4d4 + 4 Hit Points when you drink this potion.
             Whatever its potency, the potion’s red liquid glimmers when agitated.',
         'Bonus: Hit Points, Healing, Consumable',
-        'uncommon',
         null,
+        'uncommon',
         null,
 
         true,

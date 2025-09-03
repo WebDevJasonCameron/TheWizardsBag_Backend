@@ -1,6 +1,8 @@
 package com.smashingwizards.thewizardsbag_backend.service;
 
 import com.smashingwizards.thewizardsbag_backend.dto.ItemDTO;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -12,13 +14,11 @@ public interface ItemService {
     void deleteItem(Long id);
 
     // ADDs
-//    List<ItemDTO> getItemsByRpgClass(Long rpgClassId);
-//    List<ItemDTO> getItemsByItemType(Long itemTypeId);
-//    List<ItemDTO> getItemsByItemCondition(Long itemConditionId);
-//    List<ItemDTO> getItemsByItemEffect(Long itemEffectId);
-//    List<ItemDTO> getItemsByItemImageUrl(Long itemImageUrlId);
-//    List<ItemDTO> getItemsByItemNote(Long itemNoteId);
-//    List<ItemDTO> getItemsByItemTag(Long itemTagId);
-    List<ItemDTO> getItemsByItemName(String itemName);
+    Page<ItemDTO> search(String nameContains,
+                         String nameNotContains,
+                         String noteContains,
+                         Boolean magical,
+                         Long tagId,
+                         Pageable pageable);
 
 }

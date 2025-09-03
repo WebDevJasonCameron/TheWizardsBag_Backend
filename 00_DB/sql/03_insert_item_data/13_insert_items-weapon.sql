@@ -261,7 +261,7 @@ VALUES(
         *Nick.* When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.',
     'Damage: Necrotic, Bonus: Temporary Hit Points, Healing, Damage, Combat, Finesse, Light, Nick',
     null,
-    'Damage: Necrotic, Bonus: Temporary Hit Points, Healing, Damage, Combat, Finesse, Light, Nick',
+    null,
     null,
 
     true,
@@ -455,8 +455,8 @@ VALUES(
         | Halberd | Martial Melee | 1d10 Slashing | Heavy, Reach, Two-Handed |',
     'bonus: magic, bonus: hit points per level, combat, cursed, versatile',
     null,
-    null,
     'rare',
+    null,
 
     true,
     true,
@@ -636,8 +636,8 @@ VALUES(
         | Shortsword | 1d6 Piercing | Finesse, Light | Vex |',
     'Bonus: Magic, Bonus: Saving Throws, Damage, Control, Buff, Combat',
     'Basic Rules (2014), pg. 179',
-    null,
     'legendary',
+    null,
 
     true,
     true,
@@ -981,7 +981,7 @@ VALUES(
     'Utility, Container',
     null,
     'uncommon',
-    'wondrous item',
+    'Wondrous Item',
 
     true,
     false,
@@ -9726,8 +9726,8 @@ VALUES(
        'You have a +1 bonus to attack and damage rolls made with this magic weapon.',
        'bonus: magic, damage, combat, versatile',
        null,
-       null,
        'uncommon',
+       null,
 
        true,
        false,
@@ -9756,8 +9756,8 @@ VALUES(
           'You have a +2 bonus to attack and damage rolls made with this magic weapon.',
           'bonus: magic, damage, combat, versatile',
           null,
-          null,
           'uncommon',
+          null,
 
           true,
           false,
@@ -9786,8 +9786,8 @@ VALUES(
           'You have a +3 bonus to attack and damage rolls made with this magic weapon.',
           'bonus: magic, damage, combat, versatile',
           null,
-          null,
           'uncommon',
+          null,
 
           true,
           false,
