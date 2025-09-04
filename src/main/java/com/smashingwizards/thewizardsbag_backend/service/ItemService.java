@@ -19,6 +19,7 @@ public interface ItemService {
                          String noteContains,
                          Boolean magical,
                          Long tagId,
+                         Long ttrpg,
                          Pageable pageable);
 
 }
