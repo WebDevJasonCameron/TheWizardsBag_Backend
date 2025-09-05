@@ -15,8 +15,6 @@ public class Item {
     private Long id;
     @Column(name = "item_name")
     private String name;
-    @Column(name = "item_ttrpg")
-    private Long ttrpg;
     @Column(name = "item_weight")
     private String weight;
     @Column(name = "item_cost")
@@ -63,6 +61,11 @@ public class Item {
     @Column(name = "item_source_id")
     private Long sourceId;
 
+    // Item.java
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "item_ttrpg", nullable = false) // uses existing FK column
+    private Ttrpg ttrpg;
+
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
     List<ItemSpell> itemSpells = new ArrayList<>();
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
@@ -83,9 +86,8 @@ public class Item {
     // CONs
     public Item() {
     }
-    public Item(String name, Long ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId, List<Wishlist> wishlists) {
+    public Item(String name, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId, Ttrpg ttrpg, List<Wishlist> wishlists) {
         this.name = name;
-        this.ttrpg = ttrpg;
         this.weight = weight;
         this.cost = cost;
         this.description = description;
@@ -107,11 +109,11 @@ public class Item {
         this.armorClass = armorClass;
         this.armorNotes = armorNotes;
         this.sourceId = sourceId;
+        this.ttrpg = ttrpg;
         this.wishlists = wishlists;
     }
-    public Item(String name, Long ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId, List<ItemSpell> itemSpells, List<ItemType> itemTypes, List<ItemTag> itemTags, List<ItemNote> itemNotes, List<ItemCondition> itemConditions, List<ItemEffect> itemEffects, List<Wishlist> wishlists) {
+    public Item(String name, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId, Ttrpg ttrpg, List<ItemSpell> itemSpells, List<ItemType> itemTypes, List<ItemTag> itemTags, List<ItemNote> itemNotes, List<ItemCondition> itemConditions, List<ItemEffect> itemEffects, List<Wishlist> wishlists) {
         this.name = name;
-        this.ttrpg = ttrpg;
         this.weight = weight;
         this.cost = cost;
         this.description = description;
@@ -133,6 +135,7 @@ public class Item {
         this.armorClass = armorClass;
         this.armorNotes = armorNotes;
         this.sourceId = sourceId;
+        this.ttrpg = ttrpg;
         this.itemSpells = itemSpells;
         this.itemTypes = itemTypes;
         this.itemTags = itemTags;
@@ -157,10 +160,10 @@ public class Item {
         this.name = name;
     }
 
-    public Long getTtrpg() {
+    public Ttrpg getTtrpg() {
         return ttrpg;
     }
-    public void setTtrpg(Long ttrpg) {
+    public void setTtrpg(Ttrpg ttrpg) {
         this.ttrpg = ttrpg;
     }
 

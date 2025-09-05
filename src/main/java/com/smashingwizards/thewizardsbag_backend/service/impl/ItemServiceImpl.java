@@ -122,7 +122,7 @@ public class ItemServiceImpl implements ItemService {
             spec = spec.and(ItemSpecifications.hasTagId(tagId));
         }
         if (ttrpg != null) {
-            spec = spec.and(ItemSpecifications.belogningToTTRPG(ttrpg));
+            spec = spec.and(ItemSpecifications.belongingToTtrpg(ttrpg));
         }
 
         return itemRepository.findAll(spec, pageable).map(itemMapper::itemToItemDTO);
