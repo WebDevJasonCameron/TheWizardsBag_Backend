@@ -15,8 +15,6 @@ public class Spell {
     private Long id;
     @Column(name = "spell_name")
     private String name;
-    @Column(name = "spell_ttrpg")
-    private Long ttrpg;
     @Column(name = "spell_level")
     private String level;
     @Column(name = "spell_casting_time")
@@ -45,6 +43,10 @@ public class Spell {
     private String imageUrl;
     @Column(name = "spell_source_id")
     private Long sourceId;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "spell_ttrpg", nullable = false)
+    private Ttrpg ttrpg;
 
     @OneToMany(mappedBy = "spell", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ItemSpell> itemSpells = new ArrayList<>();
