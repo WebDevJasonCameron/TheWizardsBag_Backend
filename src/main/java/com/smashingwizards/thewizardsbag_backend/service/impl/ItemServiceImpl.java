@@ -102,6 +102,7 @@ public class ItemServiceImpl implements ItemService {
                                 String noteContains,
                                 Boolean magical,
                                 Long tagId,
+                                Long ttrpg,
                                 Pageable pageable) {
         Specification<Item> spec = (root, cq, cb) -> cb.conjunction();
 
@@ -119,6 +120,9 @@ public class ItemServiceImpl implements ItemService {
         }
         if (tagId != null) {
             spec = spec.and(ItemSpecifications.hasTagId(tagId));
+        }
+        if (ttrpg != null) {
+            spec = spec.and(ItemSpecifications.belogningToTTRPG(ttrpg));
         }
 
         return itemRepository.findAll(spec, pageable).map(itemMapper::itemToItemDTO);

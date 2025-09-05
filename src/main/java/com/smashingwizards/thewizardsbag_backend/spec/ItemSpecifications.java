@@ -34,5 +34,7 @@ public final class ItemSpecifications {
         return (root, cq, cb) -> cb.equal(root.join("itemTags", JoinType.LEFT).get("tag").get("id"), tagId);
     }
 
-
+    public static Specification<Item> belogningToTTRPG(Long ttrpgId) {
+        return (root, cq, cb) -> cb.equal(root.join("ttrpgs", JoinType.LEFT).get("id"), ttrpgId);
+    }
 }
