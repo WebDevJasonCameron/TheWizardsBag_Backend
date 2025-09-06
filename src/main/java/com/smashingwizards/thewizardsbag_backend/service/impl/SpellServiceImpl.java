@@ -98,7 +98,6 @@ public class SpellServiceImpl implements SpellService {
     public Page<SpellDTO> search(String nameContains,
                                  String nameNotContains,
                                  String noteContains,
-                                 Boolean magical,
                                  Long tagId,
                                  Long ttrpg,
                                  Pageable pageable) {

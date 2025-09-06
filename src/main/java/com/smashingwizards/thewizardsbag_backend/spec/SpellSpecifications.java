@@ -31,7 +31,7 @@ public final class SpellSpecifications {
     }
 
     public static Specification<Spell> belongingToTtrpg(Long ttrpgId) {
-        return (root, cq, cb) -> cb.equal(root.get("ttrpg"), ttrpgId);
+        return (root, cq, cb) -> cb.equal(root.get("ttrpg").get("id"), ttrpgId);
     }
 
 }
