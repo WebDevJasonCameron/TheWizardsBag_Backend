@@ -61,7 +61,6 @@ public class Item {
     @Column(name = "item_source_id")
     private Long sourceId;
 
-    // Item.java
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "item_ttrpg", nullable = false) // uses existing FK column
     private Ttrpg ttrpg;

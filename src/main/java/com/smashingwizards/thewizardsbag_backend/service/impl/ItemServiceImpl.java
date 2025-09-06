@@ -4,6 +4,7 @@ import com.smashingwizards.thewizardsbag_backend.dto.ItemDTO;
 import com.smashingwizards.thewizardsbag_backend.mapper.ItemMapper;
 import com.smashingwizards.thewizardsbag_backend.model.Item;
 import com.smashingwizards.thewizardsbag_backend.repository.ItemRepository;
+import com.smashingwizards.thewizardsbag_backend.repository.TtrpgRepository;
 import com.smashingwizards.thewizardsbag_backend.service.ItemService;
 import com.smashingwizards.thewizardsbag_backend.spec.ItemSpecifications;
 import org.springframework.data.domain.Page;
@@ -21,11 +22,13 @@ public class ItemServiceImpl implements ItemService {
 
     // ATTs
     private final ItemRepository itemRepository;
+    private final TtrpgRepository ttrpgRepository;
     private final ItemMapper itemMapper;
 
     // CONs
-    public ItemServiceImpl(ItemRepository itemRepository, ItemMapper itemMapper) {
+    public ItemServiceImpl(ItemRepository itemRepository, TtrpgRepository ttrpgRepository, ItemMapper itemMapper) {
         this.itemRepository = itemRepository;
+        this.ttrpgRepository = ttrpgRepository;
         this.itemMapper = itemMapper;
     }
 
@@ -46,12 +49,14 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
+    @Transactional
     public ItemDTO createItem(ItemDTO itemDTO) {
         return itemMapper.itemToItemDTO(itemRepository
                 .save(itemMapper.itemDTOToItem(itemDTO)));
     }
 
     @Override
+    @Transactional
     public ItemDTO updateItem(Long id, ItemDTO itemDTO) {
         Optional<Item> optionalItem = itemRepository.findById(id);
         if (!optionalItem.isPresent()) {
@@ -60,7 +65,6 @@ public class ItemServiceImpl implements ItemService {
         Item existingItem = optionalItem.get();
 
         existingItem.setName(itemDTO.getName());
-        existingItem.setTtrpg(itemDTO.getTtrpg());
         existingItem.setWeight(itemDTO.getWeight());
         existingItem.setCost(itemDTO.getCost());
         existingItem.setDescription(itemDTO.getDescription());
@@ -85,6 +89,12 @@ public class ItemServiceImpl implements ItemService {
         existingItem.setArmorNotes(itemDTO.getArmorNotes());
 
         existingItem.setSourceId(itemDTO.getSourceId());
+
+        if (itemDTO.getTtrpgId() != null) {
+            var ttrpg = ttrpgRepository.findById(itemDTO.getTtrpgId())
+                    .orElseThrow(() -> new RuntimeException("TTRPG not found"));
+            existingItem.setTtrpg(ttrpg);
+        }
 
         return itemMapper.itemToItemDTO(itemRepository.save(existingItem));
     }

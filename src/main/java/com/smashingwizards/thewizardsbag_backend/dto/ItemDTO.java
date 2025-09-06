@@ -5,7 +5,7 @@ public class ItemDTO {
     // ATTs
     private Long id;
     private String name;
-    private Long ttrpg;
+    private Long ttrpgId;
     private String weight;
     private String cost;
     private String description;
@@ -35,9 +35,9 @@ public class ItemDTO {
     // CONs
     public ItemDTO() {
     }
-    public ItemDTO(String name, Long ttrpg, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
+    public ItemDTO(String name, Long ttrpgId, String weight, String cost, String description, String descriptionNote, String sourceDetails, String rarity, String renownedQuality, Boolean magical, Boolean requiresAttunement, Boolean cursed, Integer itemMagicBonusNumber, Boolean hasCharges, Integer numberOfCharges, String weaponRange, String weaponDamageCalc, String weaponProperties, String weaponType, String weaponNotes, String armorClass, String armorNotes, Long sourceId) {
         this.name = name;
-        this.ttrpg = ttrpg;
+        this.ttrpgId = ttrpgId;
         this.weight = weight;
         this.cost = cost;
         this.description = description;
@@ -76,11 +76,11 @@ public class ItemDTO {
         this.name = name;
     }
 
-    public Long getTtrpg() {
-        return ttrpg;
+    public Long getTtrpgId() {
+        return ttrpgId;
     }
-    public void setTtrpg(Long ttrpg) {
-        this.ttrpg = ttrpg;
+    public void setTtrpgId(Long ttrpgId) {
+        this.ttrpgId = ttrpgId;
     }
 
     public String getWeight() {

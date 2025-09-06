@@ -5,9 +5,11 @@ import jakarta.persistence.criteria.JoinType;
 import org.springframework.data.jpa.domain.Specification;
 
 public final class ItemSpecifications {
+
+    // CONs
     private ItemSpecifications() {}
 
-
+    // METHs
     private static String esc(String string) {
         // escape %, _ and \ for LIKE
         return string.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_").toLowerCase();

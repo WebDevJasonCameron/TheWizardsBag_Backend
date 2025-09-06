@@ -49,7 +49,6 @@ public class ItemController {
     }
 
     // ADDs
-
     // GET /api/items/search?name.contains=rope&magical=true&ttrpgId=1&page=0&size=20&sort=name,asc
     @GetMapping("/search")
     public Page<ItemDTO> search(

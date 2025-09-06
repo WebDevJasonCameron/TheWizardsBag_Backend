@@ -63,9 +63,8 @@ public class Spell {
     // CONs
     public Spell() {
     }
-    public Spell(String name, Long ttrpg, String level, String castingTime, String rangeArea, Boolean componentVisual, Boolean componentSemantic, Boolean componentMaterial, String componentMaterials, String duration, Boolean concentration, Boolean ritual, String school, String description, String imageUrl, Long sourceId, List<ItemSpell> itemSpells) {
+    public Spell(String name, String level, String castingTime, String rangeArea, Boolean componentVisual, Boolean componentSemantic, Boolean componentMaterial, String componentMaterials, String duration, Boolean concentration, Boolean ritual, String school, String description, String imageUrl, Long sourceId, Ttrpg ttrpg, List<ItemSpell> itemSpells) {
         this.name = name;
-        this.ttrpg = ttrpg;
         this.level = level;
         this.castingTime = castingTime;
         this.rangeArea = rangeArea;
@@ -80,11 +79,11 @@ public class Spell {
         this.description = description;
         this.imageUrl = imageUrl;
         this.sourceId = sourceId;
+        this.ttrpg = ttrpg;
         this.itemSpells = itemSpells;
     }
-    public Spell(String name, Long ttrpg, String level, String castingTime, String rangeArea, Boolean componentVisual, Boolean componentSemantic, Boolean componentMaterial, String componentMaterials, String duration, Boolean concentration, Boolean ritual, String school, String description, String imageUrl, Long sourceId, List<ItemSpell> itemSpells, List<SpellTag> spellTags, List<SpellCondition> spellConditions, List<SpellClass> spellClasses, List<SpellDamagetype> spellDamagetypes) {
+    public Spell(String name, String level, String castingTime, String rangeArea, Boolean componentVisual, Boolean componentSemantic, Boolean componentMaterial, String componentMaterials, String duration, Boolean concentration, Boolean ritual, String school, String description, String imageUrl, Long sourceId, Ttrpg ttrpg, List<ItemSpell> itemSpells, List<SpellTag> spellTags, List<SpellCondition> spellConditions, List<SpellClass> spellClasses, List<SpellDamagetype> spellDamagetypes) {
         this.name = name;
-        this.ttrpg = ttrpg;
         this.level = level;
         this.castingTime = castingTime;
         this.rangeArea = rangeArea;
@@ -99,6 +98,7 @@ public class Spell {
         this.description = description;
         this.imageUrl = imageUrl;
         this.sourceId = sourceId;
+        this.ttrpg = ttrpg;
         this.itemSpells = itemSpells;
         this.spellTags = spellTags;
         this.spellConditions = spellConditions;
@@ -121,10 +121,10 @@ public class Spell {
         this.name = name;
     }
 
-    public Long getTtrpg() {
+    public Ttrpg getTtrpg() {
         return ttrpg;
     }
-    public void setTtrpg(Long ttrpg) {
+    public void setTtrpg(Ttrpg ttrpg) {
         this.ttrpg = ttrpg;
     }
 
