@@ -62,7 +62,7 @@ public class Item {
     private Long sourceId;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "item_ttrpg", nullable = false) // uses existing FK column
+    @JoinColumn(name = "item_ttrpg") // uses existing FK column
     private Ttrpg ttrpg;
 
     @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)

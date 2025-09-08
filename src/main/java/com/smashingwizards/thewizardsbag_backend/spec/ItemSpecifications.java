@@ -37,6 +37,6 @@ public final class ItemSpecifications {
     }
 
     public static Specification<Item> belongingToTtrpg(Long ttrpgId) {
-        return (root, cq, cb) -> cb.equal(root.get("ttrpg"), ttrpgId);
+        return (root, query, cb) -> cb.equal(root.get("ttrpg").get("id"), ttrpgId);
     }
 }

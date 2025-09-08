@@ -58,6 +58,8 @@ public class Ttrpg {
         this.version = version;
     }
 
+    // ADDs
+
     public List<Item> getItems() {
         return items;
     }
