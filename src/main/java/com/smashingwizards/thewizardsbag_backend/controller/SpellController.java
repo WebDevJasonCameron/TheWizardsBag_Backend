@@ -59,6 +59,6 @@ public class SpellController {
             @RequestParam(name = "ttrpgId", required = false) Long ttrpgId,
             Pageable pageable
     ) {
-        return spellService.search(nameContains, nameNotContains, noteContains, magical, tagId, ttrpgId, pageable);
+        return spellService.search(nameContains, nameNotContains, noteContains, tagId, ttrpgId, pageable);
     }
 }
