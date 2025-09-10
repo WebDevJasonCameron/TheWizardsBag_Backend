@@ -13,7 +13,6 @@ public interface SpellRepository extends JpaRepository<Spell, Long> , JpaSpecifi
     // You can add custom queries here, like:
     // Optional<User> findByEmail(String email);
 
-    List<Spell> findByNameContainingIgnoreCase(String name);
-    List<Spell> findByDescriptionNoteContainingIgnoreCase(String description);
+    List<Spell> findByDescriptionContainingIgnoreCase(String description);
     List<Spell> findAllByTtrpg(Long ttrpg);
 }

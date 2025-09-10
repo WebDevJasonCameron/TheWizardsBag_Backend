@@ -22,6 +22,7 @@ public class ItemSpellServiceImpl implements ItemSpellService {
     private final SpellRepository spellRepository;
     private final ItemSpellMapper itemSpellMapper;
 
+
     // CONs
     public ItemSpellServiceImpl(ItemSpellRepository itemSpellRepository, ItemRepository itemRepository, SpellRepository spellRepository, ItemSpellMapper itemSpellMapper) {
         this.itemSpellRepository = itemSpellRepository;

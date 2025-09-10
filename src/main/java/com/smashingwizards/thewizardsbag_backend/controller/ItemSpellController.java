@@ -50,4 +50,7 @@ public class ItemSpellController {
         itemSpellService.deleteItemSpell(id);
     }
 
+    // ADDs
+
+
 }
