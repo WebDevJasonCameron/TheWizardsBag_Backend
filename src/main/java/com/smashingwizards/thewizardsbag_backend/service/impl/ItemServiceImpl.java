@@ -111,6 +111,8 @@ public class ItemServiceImpl implements ItemService {
                                 String nameNotContains,
                                 String noteContains,
                                 Boolean magical,
+                                Boolean attunement,
+                                Boolean cursed,
                                 Long tagId,
                                 Long ttrpg,
                                 Pageable pageable) {
@@ -127,6 +129,12 @@ public class ItemServiceImpl implements ItemService {
         }
         if (magical != null) {
             spec = spec.and(ItemSpecifications.magicalEquals(magical));
+        }
+        if (attunement != null) {
+            spec = spec.and(ItemSpecifications.requiresAttunementEquals(attunement));
+        }
+        if (cursed != null) {
+            spec = spec.and(ItemSpecifications.cursesEquals(cursed));
         }
         if (tagId != null) {
             spec = spec.and(ItemSpecifications.hasTagId(tagId));

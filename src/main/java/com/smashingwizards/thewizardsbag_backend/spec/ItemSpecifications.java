@@ -31,6 +31,14 @@ public final class ItemSpecifications {
         return (root, cq, cb) -> cb.equal(root.get("magical"), value);
     }
 
+    public static Specification<Item> requiresAttunementEquals(Boolean value) {
+        return (root, cq, cb) -> cb.equal(root.get("requiresAttunement"), value);
+    }
+
+    public static Specification<Item> cursesEquals(Boolean value) {
+        return (root, cq, cb) -> cb.equal(root.get("curses"), value);
+    }
+
     // Example join: filter by Tag ID (items → itemTags → tag)
     public static Specification<Item> hasTagId(Long tagId) {
         return (root, cq, cb) -> cb.equal(root.join("itemTags", JoinType.LEFT).get("tag").get("id"), tagId);

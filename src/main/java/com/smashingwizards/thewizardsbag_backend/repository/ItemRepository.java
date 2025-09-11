@@ -15,6 +15,9 @@ public interface ItemRepository extends JpaRepository<Item, Long>, JpaSpecificat
     // Simple list (no pagination)
     List<Item> findByNameContainingIgnoreCase(String name);
     List<Item> findByDescriptionNoteContainingIgnoreCase(String description);
+    List<Item> findAllByMagical(boolean magical);
+    List<Item> findAllByRequiresAttunement(boolean attunement);
+    List<Item> findAllByCursed(boolean cursed);
     List<Item> findAllByTtrpgId(Long ttrpgId);
 
 }

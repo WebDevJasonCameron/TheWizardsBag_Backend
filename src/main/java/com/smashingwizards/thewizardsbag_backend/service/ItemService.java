@@ -18,8 +18,9 @@ public interface ItemService {
                          String nameNotContains,
                          String noteContains,
                          Boolean magical,
+                         Boolean attunement,
+                         Boolean cursed,
                          Long tagId,
                          Long ttrpg,
                          Pageable pageable);
-
 }

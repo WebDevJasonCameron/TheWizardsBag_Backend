@@ -13,7 +13,7 @@ public interface SpellRepository extends JpaRepository<Spell, Long> , JpaSpecifi
     // Optional<User> findByEmail(String email);
 
     // Simple list (no pagination)
-//    List<Spell> findByNameContainingIgnoreCase(String name);
+    List<Spell> findByNameContainingIgnoreCase(String name);
 //    List<Spell> findByDescriptionNoteContainingIgnoreCase(String description);
     List<Spell> findAllByTtrpgId(Long ttrpgId);
 }
