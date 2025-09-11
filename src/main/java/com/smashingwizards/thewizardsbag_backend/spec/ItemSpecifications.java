@@ -27,6 +27,10 @@ public final class ItemSpecifications {
         return (root, cq, cb) -> cb.like(cb.lower(root.get("descriptionNote")), "%" + esc(term) + "%", '\\');
     }
 
+    public static Specification<Item> rarityEquals(String value) {
+        return (root, cq, cb) -> cb.equal(root.get("rarity"), value);
+    }
+
     public static Specification<Item> magicalEquals(Boolean value) {
         return (root, cq, cb) -> cb.equal(root.get("magical"), value);
     }

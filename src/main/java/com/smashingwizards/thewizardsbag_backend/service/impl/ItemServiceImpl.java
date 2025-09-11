@@ -110,6 +110,7 @@ public class ItemServiceImpl implements ItemService {
     public Page<ItemDTO> search(String nameContains,
                                 String nameNotContains,
                                 String noteContains,
+                                String rarity,
                                 Boolean magical,
                                 Boolean attunement,
                                 Boolean cursed,
@@ -126,6 +127,9 @@ public class ItemServiceImpl implements ItemService {
         }
         if (noteContains != null && !noteContains.isBlank()) {
             spec = spec.and(ItemSpecifications.noteContains(noteContains));
+        }
+        if (rarity != null) {
+            spec = spec.and(ItemSpecifications.rarityEquals(rarity));
         }
         if (magical != null) {
             spec = spec.and(ItemSpecifications.magicalEquals(magical));

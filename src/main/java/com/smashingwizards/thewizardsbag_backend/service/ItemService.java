@@ -17,6 +17,7 @@ public interface ItemService {
     Page<ItemDTO> search(String nameContains,
                          String nameNotContains,
                          String noteContains,
+                         String rarity,
                          Boolean magical,
                          Boolean attunement,
                          Boolean cursed,

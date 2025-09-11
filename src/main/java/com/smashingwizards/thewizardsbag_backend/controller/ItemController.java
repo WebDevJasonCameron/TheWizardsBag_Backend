@@ -55,6 +55,7 @@ public class ItemController {
             @RequestParam(name = "name.contains", required = false) String nameContains,
             @RequestParam(name = "name.notContains", required = false) String nameNotContains,
             @RequestParam(name = "note.contains", required = false) String noteContains,
+            @RequestParam(name = "rarity", required = false) String rarity,
             @RequestParam(name = "magical", required = false) Boolean magical,
             @RequestParam(name = "requiresAttunement", required = false) Boolean attunement,
             @RequestParam(name = "cursed", required = false) Boolean cursed,
@@ -62,7 +63,7 @@ public class ItemController {
             @RequestParam(name = "ttrpgId", required = false) Long ttrpgId,
             Pageable pageable
     ) {
-        return itemService.search(nameContains, nameNotContains, noteContains, magical, attunement, cursed, tagId, ttrpgId, pageable);
+        return itemService.search(nameContains, nameNotContains, noteContains, rarity, magical, attunement, cursed, tagId, ttrpgId, pageable);
     }
 
 }
