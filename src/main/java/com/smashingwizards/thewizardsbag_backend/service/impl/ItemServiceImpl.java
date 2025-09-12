@@ -109,7 +109,6 @@ public class ItemServiceImpl implements ItemService {
     @Transactional(readOnly = true)
     public Page<ItemDTO> search(String nameContains,
                                 String nameNotContains,
-                                String noteContains,
                                 String rarity,
                                 String renownedQuality,
                                 Boolean magical,
@@ -125,9 +124,6 @@ public class ItemServiceImpl implements ItemService {
         }
         if (nameNotContains != null && !nameNotContains.isBlank()) {
             spec = spec.and(ItemSpecifications.nameNotContains(nameNotContains));
-        }
-        if (noteContains != null && !noteContains.isBlank()) {
-            spec = spec.and(ItemSpecifications.noteContains(noteContains));
         }
         if (rarity != null) {
             spec = spec.and(ItemSpecifications.rarityEquals(rarity));

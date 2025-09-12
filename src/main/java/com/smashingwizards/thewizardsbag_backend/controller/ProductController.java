@@ -3,6 +3,8 @@ package com.smashingwizards.thewizardsbag_backend.controller;
 import com.smashingwizards.thewizardsbag_backend.dto.ProductDTO;
 import com.smashingwizards.thewizardsbag_backend.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -44,6 +46,18 @@ public class ProductController {
     @DeleteMapping("/{id}")
     public void deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
+    }
+
+    // ADDs
+    @GetMapping("/search")
+    public Page<ProductDTO> searchProducts(
+            @RequestParam(name = "name.contains", required = false) String nameContains,
+            @RequestParam(name = "userId", required = false) Long userId,
+            @RequestParam(name = "saleStatus", required = false) String saleStatus,
+            @RequestParam(name = "itemId", required = false) Long itemId,
+            Pageable pageable
+    ) {
+        return productService.search(nameContains, userId, saleStatus, itemId, pageable);
     }
 
 }

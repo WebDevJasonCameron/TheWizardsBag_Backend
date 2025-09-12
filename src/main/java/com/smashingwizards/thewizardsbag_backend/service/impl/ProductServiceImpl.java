@@ -1,11 +1,17 @@
 package com.smashingwizards.thewizardsbag_backend.service.impl;
 
 import com.smashingwizards.thewizardsbag_backend.dto.ProductDTO;
+import com.smashingwizards.thewizardsbag_backend.mapper.ItemMapper;
 import com.smashingwizards.thewizardsbag_backend.mapper.ProductMapper;
 import com.smashingwizards.thewizardsbag_backend.model.Product;
 import com.smashingwizards.thewizardsbag_backend.repository.ProductRepository;
 import com.smashingwizards.thewizardsbag_backend.service.ProductService;
+import com.smashingwizards.thewizardsbag_backend.spec.ProductSpecifications;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,11 +22,13 @@ public class ProductServiceImpl implements ProductService {
     // ATTs
     private final ProductRepository productRepository;
     private final ProductMapper productMapper;
+    private final ItemMapper itemMapper;
 
     // CONs
-    public ProductServiceImpl(ProductRepository productRepository, ProductMapper productMapper) {
+    public ProductServiceImpl(ProductRepository productRepository, ProductMapper productMapper, ItemMapper itemMapper) {
         this.productRepository = productRepository;
         this.productMapper = productMapper;
+        this.itemMapper = itemMapper;
     }
 
     // CRUDs
@@ -67,6 +75,33 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void deleteProduct(Long id) {
         productRepository.deleteById(id);
+    }
+
+    // ADDs
+    @Override
+    @Transactional(readOnly = true)
+    public Page<ProductDTO> search( String nameContains,
+                                    Long userId,
+                                    String saleStatus,
+                                    Long itemId,
+                                    Pageable pageable) {
+        Specification<Product> spec = (root, cq, cb) -> cb.conjunction();
+
+        if (nameContains != null && !nameContains.isBlank()) {
+            spec = spec.and(ProductSpecifications.nameContains(nameContains));
+        }
+        if (userId != null && userId > 0) {
+            spec = spec.and(ProductSpecifications.userIdEquals(userId));
+        }
+        if (saleStatus != null && !saleStatus.isBlank()) {
+            spec = spec.and(ProductSpecifications.saleStatusEquals(saleStatus));
+        }
+        if (itemId != null && itemId > 0) {
+            spec = spec.and(ProductSpecifications.itemIdEquals(itemId));
+        }
+
+
+        return productRepository.findAll(spec, pageable).map(productMapper::productToProductDTO);
     }
 
 }

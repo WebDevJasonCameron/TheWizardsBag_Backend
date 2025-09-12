@@ -23,10 +23,6 @@ public final class ItemSpecifications {
         return (root, cq, cb) -> cb.notLike(cb.lower(root.get("name")), "%" + esc(term) + "%", '\\');
     }
 
-    public static Specification<Item> noteContains(String term) {
-        return (root, cq, cb) -> cb.like(cb.lower(root.get("descriptionNote")), "%" + esc(term) + "%", '\\');
-    }
-
     public static Specification<Item> rarityEquals(String value) {
         return (root, cq, cb) -> cb.equal(root.get("rarity"), value);
     }

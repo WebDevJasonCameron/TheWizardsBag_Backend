@@ -51,10 +51,9 @@ public class ItemController {
     // ADDs
     // GET /api/items/search?name.contains=rope&magical=true&ttrpgId=1&page=0&size=20&sort=name,asc
     @GetMapping("/search")
-    public Page<ItemDTO> search(
+    public Page<ItemDTO> searchItem(
             @RequestParam(name = "name.contains", required = false) String nameContains,
             @RequestParam(name = "name.notContains", required = false) String nameNotContains,
-            @RequestParam(name = "note.contains", required = false) String noteContains,
             @RequestParam(name = "rarity", required = false) String rarity,
             @RequestParam(name = "renownedQuality", required = false) String renownedQuality,
             @RequestParam(name = "magical", required = false) Boolean magical,
@@ -64,7 +63,7 @@ public class ItemController {
             @RequestParam(name = "ttrpgId", required = false) Long ttrpgId,
             Pageable pageable
     ) {
-        return itemService.search(nameContains, nameNotContains, noteContains, rarity, renownedQuality, magical, attunement, cursed, tagId, ttrpgId, pageable);
+        return itemService.search(nameContains, nameNotContains, rarity, renownedQuality, magical, attunement, cursed, tagId, ttrpgId, pageable);
     }
 
 }

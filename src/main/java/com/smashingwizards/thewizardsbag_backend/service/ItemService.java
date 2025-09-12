@@ -16,7 +16,6 @@ public interface ItemService {
     // ADDs
     Page<ItemDTO> search(String nameContains,
                          String nameNotContains,
-                         String noteContains,
                          String rarity,
                          String renownedQuality,
                          Boolean magical,
