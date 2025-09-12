@@ -18,13 +18,12 @@ public class SpellDTO {
     private boolean ritual;
     private String school;
     private String description;
-    private String imageUrl;
     private Long sourceId;
 
     // CONs
     public SpellDTO() {
     }
-    public SpellDTO(String name, Long ttrpgId, String level, String castingTime, String rangeArea, boolean componentVisual, boolean componentSemantic, boolean componentMaterial, String componentMaterials, String duration, boolean concentration, boolean ritual, String school, String description, String imageUrl, Long sourceId) {
+    public SpellDTO(String name, Long ttrpgId, String level, String castingTime, String rangeArea, boolean componentVisual, boolean componentSemantic, boolean componentMaterial, String componentMaterials, String duration, boolean concentration, boolean ritual, String school, String description, Long sourceId) {
         this.name = name;
         this.ttrpgId = ttrpgId;
         this.level = level;
@@ -39,7 +38,6 @@ public class SpellDTO {
         this.ritual = ritual;
         this.school = school;
         this.description = description;
-        this.imageUrl = imageUrl;
         this.sourceId = sourceId;
     }
 
@@ -147,13 +145,6 @@ public class SpellDTO {
     }
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
     }
 
     public Long getSourceId() {

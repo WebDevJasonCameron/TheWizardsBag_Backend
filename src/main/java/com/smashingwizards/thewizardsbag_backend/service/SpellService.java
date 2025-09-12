@@ -16,8 +16,11 @@ public interface SpellService {
     // ADDs
     Page<SpellDTO> search(String nameContains,
                           String nameNotContains,
-                          String noteContains,
-                          Long tagId,
                           Long ttrpg,
+                          String level,
+                          Boolean concentration,
+                          Boolean ritual,
+                          String school,
+                          Long spellId,
                           Pageable pageable);
 }

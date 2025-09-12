@@ -18,20 +18,28 @@ public final class SpellSpecifications {
         return (root, cq, cb) -> cb.like(cb.lower(root.get("name")), "%" + esc(term) + "%", '\\');
     }
 
-    public static Specification<Spell> nameNotContains(String term) {
-        return (root, cq, cb) -> cb.notLike(cb.lower(root.get("name")), "%" + esc(term) + "%", '\\');
-    }
-
-    public static Specification<Spell> descriptionContains(String term) {
-        return (root, cq, cb) -> cb.like(cb.lower(root.get("description")), "%" + esc(term) + "%", '\\');
-    }
-
-    public static Specification<Spell> descriptionNotContains(String term) {
-        return (root, cq, cb) -> cb.notLike(cb.lower(root.get("description")), "%" + esc(term) + "%", '\\');
+    public static Specification<Spell> levelEquals(String level) {
+        return (root, cq, cb) -> cb.equal(root.get("level"), level);
     }
 
     public static Specification<Spell> belongingToTtrpg(Long ttrpgId) {
         return (root, cq, cb) -> cb.equal(root.get("ttrpg").get("id"), ttrpgId);
+    }
+
+    public static Specification<Spell> concentrationEquals(Boolean concentration) {
+        return (root, cq, cb) -> cb.equal(root.get("concentration"), concentration);
+    }
+
+    public static Specification<Spell> ritualEquals(Boolean ritual) {
+        return (root, cq, cb) -> cb.equal(root.get("ritual"), ritual);
+    }
+
+    public static Specification<Spell> schoolEquals(String school) {
+        return (root, cq, cb) -> cb.equal(root.get("school"), school);
+    }
+
+    public static Specification<Spell> spellIdEquals(Long spellId) {
+        return (root, cq, cb) -> cb.equal(root.get("id"), spellId);
     }
 
 }

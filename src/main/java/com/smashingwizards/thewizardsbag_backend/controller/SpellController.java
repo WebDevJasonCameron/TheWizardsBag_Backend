@@ -53,12 +53,14 @@ public class SpellController {
     public Page<SpellDTO> search(
             @RequestParam(name = "name.contains", required = false) String nameContains,
             @RequestParam(name = "name.notContains", required = false) String nameNotContains,
-            @RequestParam(name = "note.contains", required = false) String noteContains,
-            @RequestParam(name = "magical", required = false) Boolean magical,
-            @RequestParam(name = "tagId", required = false) Long tagId,
             @RequestParam(name = "ttrpgId", required = false) Long ttrpgId,
+            @RequestParam(name = "level", required = false) String level,
+            @RequestParam(name = "concentration", required = false) Boolean concentration,
+            @RequestParam(name = "ritual", required = false) Boolean ritual,
+            @RequestParam(name = "school", required = false) String school,
+            @RequestParam(name = "sourceId", required = false) Long sourceId,
             Pageable pageable
     ) {
-        return spellService.search(nameContains, nameNotContains, noteContains, tagId, ttrpgId, pageable);
+        return spellService.search(nameContains, nameNotContains,ttrpgId, level, concentration, ritual, school, sourceId, pageable);
     }
 }

@@ -75,7 +75,6 @@ public class SpellServiceImpl implements SpellService {
         existingSpell.setRitual(spellDTO.isRitual());
         existingSpell.setSchool(spellDTO.getSchool());
         existingSpell.setDescription(spellDTO.getDescription());
-        existingSpell.setImageUrl(spellDTO.getImageUrl());
         existingSpell.setSourceId(spellDTO.getSourceId());
 
         if (spellDTO.getTtrpgId() != null) {
@@ -97,9 +96,12 @@ public class SpellServiceImpl implements SpellService {
     @Transactional(readOnly = true)
     public Page<SpellDTO> search(String nameContains,
                                  String nameNotContains,
-                                 String noteContains,
-                                 Long tagId,
                                  Long ttrpg,
+                                 String level,
+                                 Boolean concentration,
+                                 Boolean ritual,
+                                 String school,
+                                 Long spellId,
                                  Pageable pageable) {
         Specification<Spell> spec = (root, cq, cb) -> cb.conjunction();
 
@@ -107,11 +109,23 @@ public class SpellServiceImpl implements SpellService {
         if (nameContains != null && !nameContains.isBlank()) {
             spec = spec.and(SpellSpecifications.nameContains(nameContains));
         }
-        if (nameNotContains != null && !nameNotContains.isBlank()) {
-            spec = spec.and(SpellSpecifications.nameNotContains(nameNotContains));
-        }
         if (ttrpg != null) {
             spec = spec.and(SpellSpecifications.belongingToTtrpg(ttrpg));
+        }
+        if (level != null) {
+            spec = spec.and(SpellSpecifications.levelEquals(level));
+        }
+        if (concentration != null) {
+            spec = spec.and(SpellSpecifications.concentrationEquals(concentration));
+        }
+        if (ritual != null) {
+            spec = spec.and(SpellSpecifications.ritualEquals(ritual));
+        }
+        if (school != null) {
+            spec = spec.and(SpellSpecifications.schoolEquals(school));
+        }
+        if (spellId != null) {
+            spec = spec.and(SpellSpecifications.spellIdEquals(spellId));
         }
 
         return spellRepository.findAll(spec, pageable).map(spellMapper::spellToSpellDTO);
