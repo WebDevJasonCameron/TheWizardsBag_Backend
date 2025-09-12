@@ -16,8 +16,9 @@ public interface ItemRepository extends JpaRepository<Item, Long>, JpaSpecificat
     List<Item> findByNameContainingIgnoreCase(String name);
     List<Item> findByDescriptionNoteContainingIgnoreCase(String description);
     List<Item> findAllByRarity(String rarity);
+    List<Item> findAllByRenownedQuality(String renownedQuality);
     List<Item> findAllByMagical(boolean magical);
-    List<Item> findAllByRequiresAttunement(boolean attunement);
+    List<Item> findAllByRequiresAttunement(boolean requiresAttunement);
     List<Item> findAllByCursed(boolean cursed);
     List<Item> findAllByTtrpgId(Long ttrpgId);
 

@@ -18,6 +18,7 @@ public interface ItemService {
                          String nameNotContains,
                          String noteContains,
                          String rarity,
+                         String renownedQuality,
                          Boolean magical,
                          Boolean attunement,
                          Boolean cursed,

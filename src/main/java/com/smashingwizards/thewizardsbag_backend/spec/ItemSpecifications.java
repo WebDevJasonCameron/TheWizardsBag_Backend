@@ -31,6 +31,10 @@ public final class ItemSpecifications {
         return (root, cq, cb) -> cb.equal(root.get("rarity"), value);
     }
 
+    public static Specification<Item> renownedQualityEquals(String value) {
+        return (root, cq, cb) -> cb.equal(root.get("renownedQuality"), value);
+    }
+
     public static Specification<Item> magicalEquals(Boolean value) {
         return (root, cq, cb) -> cb.equal(root.get("magical"), value);
     }

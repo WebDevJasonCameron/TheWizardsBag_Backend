@@ -111,6 +111,7 @@ public class ItemServiceImpl implements ItemService {
                                 String nameNotContains,
                                 String noteContains,
                                 String rarity,
+                                String renownedQuality,
                                 Boolean magical,
                                 Boolean attunement,
                                 Boolean cursed,
@@ -130,6 +131,9 @@ public class ItemServiceImpl implements ItemService {
         }
         if (rarity != null) {
             spec = spec.and(ItemSpecifications.rarityEquals(rarity));
+        }
+        if (renownedQuality != null) {
+            spec = spec.and(ItemSpecifications.renownedQualityEquals(renownedQuality));
         }
         if (magical != null) {
             spec = spec.and(ItemSpecifications.magicalEquals(magical));
