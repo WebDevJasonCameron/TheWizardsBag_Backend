@@ -16,10 +16,14 @@ public class Product {
     private Long id;
     @Column(name = "product_name")
     private String name;
-    @Column(name = "product_price")
-    private String price;
+    @Column(name = "product_price_number")
+    private Integer priceNumber;
+    @Column(name = "product_price_coinage")
+    private String priceCoinage;
     @Column(name = "product_background", columnDefinition = "TEXT")
     private String background;
+    @Column(name = "product_description", columnDefinition = "TEXT")
+    private String description;
     @Column(name = "product_created_at", updatable = false)
     private Instant createdAt;
     @Column(name = "product_end_at")
@@ -30,7 +34,7 @@ public class Product {
     private Long itemId;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "users_user_id")
     private User user;
 
     // BACKs
@@ -40,24 +44,18 @@ public class Product {
     // CONs
     public Product() {
     }
-    public Product(String name, String price, String background, Instant createdAt, Instant endAt, String saleStatus, Long itemId) {
+    public Product(String name, Integer priceNumber, String priceCoinage, String background, String description, Instant createdAt, Instant endAt, String saleStatus, Long itemId, User user, List<Like> likes) {
         this.name = name;
-        this.price = price;
+        this.priceNumber = priceNumber;
+        this.priceCoinage = priceCoinage;
         this.background = background;
-        this.createdAt = createdAt;
-        this.endAt = endAt;
-        this.saleStatus = saleStatus;
-        this.itemId = itemId;
-    }
-    public Product(String name, String price, String background, Instant createdAt, Instant endAt, String saleStatus, Long itemId, User user) {
-        this.name = name;
-        this.price = price;
-        this.background = background;
+        this.description = description;
         this.createdAt = createdAt;
         this.endAt = endAt;
         this.saleStatus = saleStatus;
         this.itemId = itemId;
         this.user = user;
+        this.likes = likes;
     }
 
     // GETs & SETs
@@ -75,11 +73,18 @@ public class Product {
         this.name = name;
     }
 
-    public String getPrice() {
-        return price;
+    public Integer getPriceNumber() {
+        return priceNumber;
     }
-    public void setPrice(String price) {
-        this.price = price;
+    public void setPriceNumber(Integer priceNumber) {
+        this.priceNumber = priceNumber;
+    }
+
+    public String getPriceCoinage() {
+        return priceCoinage;
+    }
+    public void setPriceCoinage(String priceCoinage) {
+        this.priceCoinage = priceCoinage;
     }
 
     public String getBackground() {
@@ -87,6 +92,13 @@ public class Product {
     }
     public void setBackground(String background) {
         this.background = background;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Instant getCreatedAt() {
@@ -137,12 +149,16 @@ public class Product {
         return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", price='" + price + '\'' +
+                ", priceNumber=" + priceNumber +
+                ", priceCoinage='" + priceCoinage + '\'' +
                 ", background='" + background + '\'' +
-                ", createdAt='" + createdAt + '\'' +
-                ", endAt='" + endAt + '\'' +
+                ", description='" + description + '\'' +
+                ", createdAt=" + createdAt +
+                ", endAt=" + endAt +
                 ", saleStatus='" + saleStatus + '\'' +
                 ", itemId=" + itemId +
+                ", user=" + user +
+                ", likes=" + likes +
                 '}';
     }
 }

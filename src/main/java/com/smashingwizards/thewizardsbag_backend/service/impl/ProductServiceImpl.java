@@ -62,8 +62,10 @@ public class ProductServiceImpl implements ProductService {
         Product existingProduct = optionalProduct.get();
 
         existingProduct.setName(productDTO.getName());
-        existingProduct.setPrice(productDTO.getPrice());
+        existingProduct.setPriceNumber(productDTO.getPriceNumber());
+        existingProduct.setPriceCoinage(productDTO.getPriceCoinage());
         existingProduct.setBackground(productDTO.getBackground());
+        existingProduct.setDescription(productDTO.getDescription());
         existingProduct.setCreatedAt(productDTO.getCreatedAt());
         existingProduct.setEndAt(productDTO.getEndAt());
         existingProduct.setSaleStatus(productDTO.getSaleStatus());
