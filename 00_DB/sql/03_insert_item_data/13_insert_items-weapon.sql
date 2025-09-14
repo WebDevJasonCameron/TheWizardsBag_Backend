@@ -1882,7 +1882,7 @@ VALUES(
             ---
             This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
             Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.
-            Notes: Damage: Fire, Damage, Combat, Finesse, Vex',
+            Note: Damage: Fire, Damage, Combat, Finesse, Vex',
        'Damage: Fire, Damage, Combat, Finesse, Vex',
        null,
        'rare',
@@ -2539,7 +2539,7 @@ VALUES(
                 ---
                 This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
                 Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.',
-          'Notes: Damage: Additional, Damage, Combat, Sap',
+          'Note: Damage: Additional, Damage, Combat, Sap',
           null,
           'rare',
           null,
@@ -5808,7 +5808,7 @@ VALUES(
                 This weapon has the following mastery property. To use this property, you must have a feature that lets you use it.
                 ---
                 Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn’t exceed 10 feet.
-                Notes: Bonus: Magic, Damage: Additional, Damage, Combat, Range, Two-Handed, Ammunition (Firearms), Reload, Slow',
+                Note: Bonus: Magic, Damage: Additional, Damage, Combat, Range, Two-Handed, Ammunition (Firearms), Reload, Slow',
        'Bonus: Magic, Damage: Additional, Damage, Combat, Range, Two-Handed, Ammunition (Firearms), Reload, Slow',
        'Dungeon Master’s Guide, pg. 264',
        'rare',
@@ -6138,7 +6138,7 @@ VALUES(
             | Antimatter Rifle | 6d8 Necrotic | Ammunition (Range 120/360; Energy Cell), Reload(2 shots), Two-Handed | Sap |
             | Laser Pistol | 3d6 Radiant | Ammunition (Range 40/120; Energy Cell), Reload (50 shots) | Vex |
             | Laser Rifle | 3d8 Radiant | Ammunition (Range 100/300; Energy Cell), Reload (30 shots), Two-Handed |',
-       'Notes: Bonus: Magic, Damage, Combat, Versatile, Sap',
+       'Note: Bonus: Magic, Damage, Combat, Versatile, Sap',
        null,
        'very rare',
        null,

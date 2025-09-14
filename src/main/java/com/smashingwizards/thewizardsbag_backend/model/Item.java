@@ -380,7 +380,7 @@ public class Item {
     }
 
     @Transient
-    public List<Notes> getNotes() {
+    public List<Note> getNotes() {
         return itemNotes.stream().map(ItemNote::getNote).toList();
     }
 

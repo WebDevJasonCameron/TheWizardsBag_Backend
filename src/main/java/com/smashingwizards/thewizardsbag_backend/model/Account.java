@@ -24,7 +24,7 @@ public class Account {
     private String status;
     @Column(name = "account_type")
     private String type;
-    @Column(name = "account_create_at")
+    @Column(name = "account_created_at")
     private Instant createAt;
 
     // CONs

@@ -7,7 +7,7 @@ public class NoteDTO {
     private String name;
     private String date;
     private String content;
-    private String author;
+    private Long authorId;
 
     // CONs
     public NoteDTO() {

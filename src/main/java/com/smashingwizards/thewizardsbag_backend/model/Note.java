@@ -2,12 +2,13 @@ package com.smashingwizards.thewizardsbag_backend.model;
 
 import jakarta.persistence.*;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "notes")
-public class Notes {
+public class Note {
 
     // ATTs
     @Id
@@ -15,21 +16,23 @@ public class Notes {
     private Long id;
     @Column(name = "note_name")
     private String name;
-    @Column(name = "note_date")
-    private String date;
+    @Column(name = "note_created_at")
+    private Timestamp createdAt;
+    @Column(name = "note_updated_at")
+    private Timestamp updatedAt;
     @Column(name = "note_content", columnDefinition = "TEXT")
     private String content;
     @Column(name = "note_author")
-    private String author;
+    private User author;
 
     @OneToMany(mappedBy = "note", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ItemNote> itemNotes = new ArrayList<>();
 
     // CONs
-    public Notes() {
+    public Note() {
     }
 
-    public Notes(String name, String date, String content, String author) {
+    public Note(String name, String date, String content, String author) {
         this.name = name;
         this.date = date;
         this.content = content;
@@ -75,7 +78,7 @@ public class Notes {
     // OVRs
     @Override
     public String toString() {
-        return "Notes{" +
+        return "Note{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", date='" + date + '\'' +

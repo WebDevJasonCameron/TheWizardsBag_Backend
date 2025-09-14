@@ -4,7 +4,7 @@ import com.smashingwizards.thewizardsbag_backend.dto.ItemNoteDTO;
 import com.smashingwizards.thewizardsbag_backend.mapper.ItemNoteMapper;
 import com.smashingwizards.thewizardsbag_backend.model.Item;
 import com.smashingwizards.thewizardsbag_backend.model.ItemNote;
-import com.smashingwizards.thewizardsbag_backend.model.Notes;
+import com.smashingwizards.thewizardsbag_backend.model.Note;
 import com.smashingwizards.thewizardsbag_backend.repository.ItemNoteRepository;
 import com.smashingwizards.thewizardsbag_backend.repository.ItemRepository;
 import com.smashingwizards.thewizardsbag_backend.repository.NoteRepository;
@@ -49,7 +49,7 @@ public class ItemNoteServiceImpl implements ItemNoteService {
     @Override
     public ItemNoteDTO createItemNote(ItemNoteDTO itemNoteDTO) {
         Item itemRef = itemRepository.getReferenceById(itemNoteDTO.getItemId());
-        Notes noteRef = noteRepository.getReferenceById(itemNoteDTO.getItemId());
+        Note noteRef = noteRepository.getReferenceById(itemNoteDTO.getItemId());
 
         ItemNote itemNote = new ItemNote(itemRef, noteRef);
         return itemNoteMapper.itemNoteToItemNoteDTO(itemNoteRepository.save(itemNote));
@@ -61,7 +61,7 @@ public class ItemNoteServiceImpl implements ItemNoteService {
                 .orElseThrow(() -> new RuntimeException("ItemNote not found"));
 
         Item itemRef = itemRepository.getReferenceById(itemNoteDTO.getItemId());
-        Notes noteRef = noteRepository.getReferenceById(itemNoteDTO.getItemId());
+        Note noteRef = noteRepository.getReferenceById(itemNoteDTO.getItemId());
 
         existingItemNote.setItem(itemRef);
         existingItemNote.setNote(noteRef);

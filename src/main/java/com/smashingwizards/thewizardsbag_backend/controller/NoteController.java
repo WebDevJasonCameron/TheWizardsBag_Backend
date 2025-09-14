@@ -3,6 +3,10 @@ package com.smashingwizards.thewizardsbag_backend.controller;
 import com.smashingwizards.thewizardsbag_backend.dto.NoteDTO;
 import com.smashingwizards.thewizardsbag_backend.service.NoteService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.actuate.health.NamedContributors;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,11 +17,13 @@ public class NoteController {
 
     // ATTs
     private final NoteService noteService;
+    private final NamedContributors namedContributors;
 
     // CONs
     @Autowired
-    public NoteController(NoteService noteService) {
+    public NoteController(NoteService noteService, NamedContributors namedContributors) {
         this.noteService = noteService;
+        this.namedContributors = namedContributors;
     }
 
     // CRUDs
@@ -44,6 +50,16 @@ public class NoteController {
     @DeleteMapping("/{id}")
     public void deleteNote(@PathVariable Long id) {
         noteService.deleteNote(id);
+    }
+
+    // ADDs
+    @GetMapping("/search")
+    public Page<NoteDTO> searchNote(
+            @RequestParam(name = "name.contains", required = false) String nameContains,
+            @RequestParam(name = "author", required = false) Long authorId,
+            Pageable pageable
+    ) {
+        return noteService.search(nameContains, authorId, pageable);
     }
 
 }

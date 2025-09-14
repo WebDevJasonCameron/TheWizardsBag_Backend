@@ -15,7 +15,7 @@ public class Type {
     private Long id;
     @Column(name = "type_name")
     private String name;
-    @Column(name = "type sub_type")
+    @Column(name = "type_sub_type")
     private String subType;
 
     @OneToMany(mappedBy = "type", cascade = CascadeType.ALL, orphanRemoval = true)

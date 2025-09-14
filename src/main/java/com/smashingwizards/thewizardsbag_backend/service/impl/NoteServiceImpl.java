@@ -2,10 +2,15 @@ package com.smashingwizards.thewizardsbag_backend.service.impl;
 
 import com.smashingwizards.thewizardsbag_backend.dto.NoteDTO;
 import com.smashingwizards.thewizardsbag_backend.mapper.NoteMapper;
-import com.smashingwizards.thewizardsbag_backend.model.Notes;
+import com.smashingwizards.thewizardsbag_backend.model.Note;
 import com.smashingwizards.thewizardsbag_backend.repository.NoteRepository;
 import com.smashingwizards.thewizardsbag_backend.service.NoteService;
+import com.smashingwizards.thewizardsbag_backend.spec.NoteSpecifications;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -36,7 +41,7 @@ public class NoteServiceImpl implements NoteService {
     public NoteDTO getNoteById(Long id) {
         return noteRepository.findById(id)
                 .map(noteMapper::noteToNoteDTO)
-                .orElseThrow(() -> new RuntimeException("Notes not found"));
+                .orElseThrow(() -> new RuntimeException("Note not found"));
     }
 
     @Override
@@ -47,11 +52,11 @@ public class NoteServiceImpl implements NoteService {
 
     @Override
     public NoteDTO updateNote(Long id, NoteDTO noteDTO) {
-        Optional<Notes> optionalNote = noteRepository.findById(id);
+        Optional<Note> optionalNote = noteRepository.findById(id);
         if (!optionalNote.isPresent()) {
-            throw new RuntimeException("Notes not found");
+            throw new RuntimeException("Note not found");
         }
-        Notes existingNote = optionalNote.get();
+        Note existingNote = optionalNote.get();
 
         existingNote.setName(noteDTO.getName());
         existingNote.setDate(noteDTO.getDate());
@@ -64,6 +69,25 @@ public class NoteServiceImpl implements NoteService {
     @Override
     public void deleteNote(Long id) {
         noteRepository.deleteById(id);
+    }
+
+    // ADDs
+    @Override
+    @Transactional(readOnly = true)
+    public Page<NoteDTO> search(String nameContains,
+                                Long author,
+                                Pageable pageable) {
+
+        Specification<Note> spec = (root, cq, cb) -> cb.conjunction();
+
+        if (nameContains != null && !nameContains.isBlank()) {
+            spec = spec.and(NoteSpecifications.nameContains(nameContains));
+        }
+        if (author != null && author > 0) {
+            spec = spec.and(NoteSpecifications.authorIdEquals(authorId));
+        }
+
+        return noteRepository.findAll(spec, pageable).map(noteMapper::noteToNoteDTO);
     }
 
 }
