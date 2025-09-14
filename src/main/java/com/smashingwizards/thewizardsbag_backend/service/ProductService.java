@@ -15,8 +15,10 @@ public interface ProductService {
 
     // ADDs
     Page<ProductDTO> search(String nameContains,
-                          Long userId,
-                          String saleStatus,
-                          Long itemId,
-                          Pageable pageable);
+                            Long userId,
+                            String saleStatus,
+                            Long itemId,
+                            Integer priceLte,
+                            String priceCoinage,
+                            Pageable pageable);
 }

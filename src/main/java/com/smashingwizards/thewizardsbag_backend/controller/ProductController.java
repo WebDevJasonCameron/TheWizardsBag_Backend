@@ -55,9 +55,13 @@ public class ProductController {
             @RequestParam(name = "userId", required = false) Long userId,
             @RequestParam(name = "saleStatus", required = false) String saleStatus,
             @RequestParam(name = "itemId", required = false) Long itemId,
+
+            @RequestParam(name = "price.lte", required = false) Integer priceLte,
+            @RequestParam(name = "price.coinage", required = false) String priceCoinage,
+
             Pageable pageable
     ) {
-        return productService.search(nameContains, userId, saleStatus, itemId, pageable);
+        return productService.search(nameContains, userId, saleStatus, itemId, priceLte, priceCoinage, pageable);
     }
 
 }

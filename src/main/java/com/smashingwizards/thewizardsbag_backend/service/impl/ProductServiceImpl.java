@@ -86,6 +86,8 @@ public class ProductServiceImpl implements ProductService {
                                     Long userId,
                                     String saleStatus,
                                     Long itemId,
+                                    Integer priceLte,
+                                    String priceCoinage,
                                     Pageable pageable) {
         Specification<Product> spec = (root, cq, cb) -> cb.conjunction();
 
@@ -100,6 +102,18 @@ public class ProductServiceImpl implements ProductService {
         }
         if (itemId != null && itemId > 0) {
             spec = spec.and(ProductSpecifications.itemIdEquals(itemId));
+        }
+
+        // NEW:
+        if (priceCoinage != null && !priceCoinage.isBlank()) {
+            spec = spec.and(ProductSpecifications.coinageEquals(priceCoinage));
+            if (priceLte != null && priceLte >= 0) {
+                spec = spec.and(ProductSpecifications.priceNumberLte(priceLte));
+            }
+        } else if (priceLte != null) {
+            // If coinage is not provided, you can choose to apply only number or ignore.
+            // Here we ignore to avoid mixing coinages unintentionally.
+            // If you prefer to apply across all coinages, remove this else.
         }
 
 

@@ -28,4 +28,12 @@ public class ProductSpecifications {
     public static Specification<Product> itemIdEquals(Long itemId) {
         return (root, cq, cb) -> cb.equal(root.get("item").get("id"), itemId);
     }
+
+    public static Specification<Product> coinageEquals(String coinage) {
+        return (root, cq, cb) -> cb.equal(cb.lower(root.get("priceCoinage")), coinage.toLowerCase());
+    }
+
+    public static Specification<Product> priceNumberLte(Integer n) {
+        return (root, cq, cb) -> cb.lessThanOrEqualTo(root.get("priceNumber"), n);
+    }
 }
