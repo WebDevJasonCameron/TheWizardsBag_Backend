@@ -23,8 +23,6 @@ public class User {
     private String rpgClass;
     @Column(name = "user_background", columnDefinition = "TEXT")
     private String background;
-    @Column(name = "user_image_url")
-    private String imageUrl;
     @Column(name = "user_created_at", insertable = false, updatable = false)
     private Instant createdAt;
 
@@ -59,23 +57,21 @@ public class User {
 
     // CONs
     public User() {}
-    public User(String username, String email, String species, String rpgClass, String background, String imageUrl, Instant createdAt, Account account) {
+    public User(String username, String email, String species, String rpgClass, String background, Instant createdAt, Account account) {
         this.username = username;
         this.email = email;
         this.species = species;
         this.rpgClass = rpgClass;
         this.background = background;
-        this.imageUrl = imageUrl;
         this.createdAt = createdAt;
         this.account = account;
     }
-    public User(String username, String email, String species, String rpgClass, String background, String imageUrl, Instant createdAt, Account account, List<Like> likes, List<Wishlist> wishlists, List<Product> products) {
+    public User(String username, String email, String species, String rpgClass, String background, Instant createdAt, Account account, List<Like> likes, List<Wishlist> wishlists, List<Product> products) {
         this.username = username;
         this.email = email;
         this.species = species;
         this.rpgClass = rpgClass;
         this.background = background;
-        this.imageUrl = imageUrl;
         this.createdAt = createdAt;
         this.account = account;
         this.likes = likes;
@@ -124,13 +120,6 @@ public class User {
     }
     public void setBackground(String background) {
         this.background = background;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
     }
 
     public Instant getCreatedAt() {
@@ -188,7 +177,6 @@ public class User {
                 ", species='" + species + '\'' +
                 ", rpgClass='" + rpgClass + '\'' +
                 ", background='" + background + '\'' +
-                ", imageUrl='" + imageUrl + '\'' +
                 ", createdAt=" + createdAt +
                 ", account=" + account +
                 ", likes=" + likes +

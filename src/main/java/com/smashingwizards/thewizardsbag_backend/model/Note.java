@@ -1,5 +1,7 @@
 package com.smashingwizards.thewizardsbag_backend.model;
 
+import com.smashingwizards.thewizardsbag_backend.model.User;
+
 import jakarta.persistence.*;
 
 import java.sql.Timestamp;
@@ -16,13 +18,17 @@ public class Note {
     private Long id;
     @Column(name = "note_name")
     private String name;
+    @Column(name = "note_content", columnDefinition = "TEXT")
+    private String content;
+    @Column(name = "note_type")
+    private String type;
     @Column(name = "note_created_at")
     private Timestamp createdAt;
     @Column(name = "note_updated_at")
     private Timestamp updatedAt;
-    @Column(name = "note_content", columnDefinition = "TEXT")
-    private String content;
-    @Column(name = "note_author")
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "note_author", nullable = false)
     private User author;
 
     @OneToMany(mappedBy = "note", cascade = CascadeType.ALL, orphanRemoval = true)
@@ -31,12 +37,20 @@ public class Note {
     // CONs
     public Note() {
     }
-
-    public Note(String name, String date, String content, String author) {
+    public Note(String name, Timestamp createdAt, Timestamp updatedAt, String content, User author) {
         this.name = name;
-        this.date = date;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
         this.content = content;
         this.author = author;
+    }
+    public Note(List<ItemNote> itemNotes, User author, String content, Timestamp updatedAt, Timestamp createdAt, String name) {
+        this.itemNotes = itemNotes;
+        this.author = author;
+        this.content = content;
+        this.updatedAt = updatedAt;
+        this.createdAt = createdAt;
+        this.name = name;
     }
 
     // GETs & SETs
@@ -54,13 +68,6 @@ public class Note {
         this.name = name;
     }
 
-    public String getDate() {
-        return date;
-    }
-    public void setDate(String date) {
-        this.date = date;
-    }
-
     public String getContent() {
         return content;
     }
@@ -68,11 +75,39 @@ public class Note {
         this.content = content;
     }
 
-    public String getAuthor() {
+    public String getType() {
+        return type;
+    }
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Timestamp getCreatedAt() {
+        return createdAt;
+    }
+    public void setCreatedAt(Timestamp createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public Timestamp getUpdatedAt() {
+        return updatedAt;
+    }
+    public void setUpdatedAt(Timestamp updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public User getAuthor() {
         return author;
     }
-    public void setAuthor(String author) {
+    public void setAuthor(User author) {
         this.author = author;
+    }
+
+    public List<ItemNote> getItemNotes() {
+        return itemNotes;
+    }
+    public void setItemNotes(List<ItemNote> itemNotes) {
+        this.itemNotes = itemNotes;
     }
 
     // OVRs
@@ -81,9 +116,12 @@ public class Note {
         return "Note{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", date='" + date + '\'' +
                 ", content='" + content + '\'' +
-                ", author='" + author + '\'' +
+                ", type='" + type + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", author=" + author +
+                ", itemNotes=" + itemNotes +
                 '}';
     }
 }

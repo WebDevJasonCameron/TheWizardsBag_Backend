@@ -59,9 +59,8 @@ public class NoteServiceImpl implements NoteService {
         Note existingNote = optionalNote.get();
 
         existingNote.setName(noteDTO.getName());
-        existingNote.setDate(noteDTO.getDate());
         existingNote.setContent(noteDTO.getContent());
-        existingNote.setAuthor(noteDTO.getAuthor());
+        existingNote.setType(noteDTO.getType());
 
         return noteMapper.noteToNoteDTO(noteRepository.save(existingNote));
     }
