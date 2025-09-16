@@ -74,7 +74,8 @@ public class NoteServiceImpl implements NoteService {
     @Override
     @Transactional(readOnly = true)
     public Page<NoteDTO> search(String nameContains,
-                                Long author,
+                                String type,
+                                Long authorId,
                                 Pageable pageable) {
 
         Specification<Note> spec = (root, cq, cb) -> cb.conjunction();
@@ -82,7 +83,12 @@ public class NoteServiceImpl implements NoteService {
         if (nameContains != null && !nameContains.isBlank()) {
             spec = spec.and(NoteSpecifications.nameContains(nameContains));
         }
-        if (author != null && author > 0) {
+
+        if (type != null && !type.isBlank()) {
+            spec = spec.and(NoteSpecifications.typeEquals(type));
+        }
+
+        if (authorId != null && authorId > 0) {
             spec = spec.and(NoteSpecifications.authorIdEquals(authorId));
         }
 

@@ -12,7 +12,4 @@ public interface NoteRepository extends JpaRepository<Note, Long>, JpaSpecificat
     // You can add custom queries here, like:
     // Optional<User> findByEmail(String email);
 
-    // Simple List
-    List<Note> findAllAuthorId(Long authorId);
-
 }

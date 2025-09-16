@@ -56,10 +56,11 @@ public class NoteController {
     @GetMapping("/search")
     public Page<NoteDTO> searchNote(
             @RequestParam(name = "name.contains", required = false) String nameContains,
-            @RequestParam(name = "author", required = false) Long authorId,
+            @RequestParam(name = "type", required = false) String type,
+            @RequestParam(name = "authorId", required = false) Long authorId,
             Pageable pageable
     ) {
-        return noteService.search(nameContains, authorId, pageable);
+        return noteService.search(nameContains, type, authorId, pageable);
     }
 
 }

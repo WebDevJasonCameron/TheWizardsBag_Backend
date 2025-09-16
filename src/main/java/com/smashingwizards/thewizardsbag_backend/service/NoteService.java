@@ -15,6 +15,7 @@ public interface NoteService {
 
     // ADDs
     Page<NoteDTO> search(String nameContains,
+                         String type,
                          Long authorId,
                          Pageable pageable
                          );
