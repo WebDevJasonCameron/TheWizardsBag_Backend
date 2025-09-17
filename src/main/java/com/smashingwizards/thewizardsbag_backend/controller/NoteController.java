@@ -61,9 +61,7 @@ public class NoteController {
             @RequestParam(name = "name.contains", required = false) String nameContains,
             @RequestParam(name = "type", required = false) String type,
             @RequestParam(name = "authorId", required = false) Long authorId,
-            Pageable pageable
 
-            // NEW time filters (all optional)
             @RequestParam(name = "createdAt", required = false)
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) Instant createdAt,
 
@@ -81,6 +79,8 @@ public class NoteController {
 
             @RequestParam(name = "createdAtOn", required = false)
             @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate createdAtOnDate,
+
+            Pageable pageable
     ) {
         return noteService.search(
                 nameContains,
@@ -92,7 +92,9 @@ public class NoteController {
                 createdAtBefore,
                 createdAtAfter,
                 createdAtOnDate,
-                pageable);
+                pageable
+        );
     }
+
 
 }
