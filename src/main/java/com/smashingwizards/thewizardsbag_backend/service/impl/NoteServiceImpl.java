@@ -12,6 +12,8 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -76,6 +78,12 @@ public class NoteServiceImpl implements NoteService {
     public Page<NoteDTO> search(String nameContains,
                                 String type,
                                 Long authorId,
+                                Instant createdAt,
+                                Instant createdAtFrom,
+                                Instant createdAtTo,
+                                Instant createdAtBefore,
+                                Instant createdAtAfter,
+                                LocalDate createdAtOnDate,
                                 Pageable pageable) {
 
         Specification<Note> spec = (root, cq, cb) -> cb.conjunction();
@@ -90,6 +98,22 @@ public class NoteServiceImpl implements NoteService {
 
         if (authorId != null && authorId > 0) {
             spec = spec.and(NoteSpecifications.authorIdEquals(authorId));
+        }
+
+        // Time filters (priority: exact > day > between > before/after)
+        if (createdAt != null) {
+            spec = spec.and(NoteSpecifications.createdAtEquals(createdAt));
+        } else if (createdAtOnDate != null) {
+            spec = spec.and(NoteSpecifications.createdAtOnDate(createdAtOnDate));
+        } else if (createdAtFrom != null && createdAtTo != null) {
+            spec = spec.and(NoteSpecifications.createdAtBetween(createdAtFrom, createdAtTo));
+        } else {
+            if (createdAtAfter != null) {
+                spec = spec.and(NoteSpecifications.createdAtAfterOrEq(createdAtAfter));
+            }
+            if (createdAtBefore != null) {
+                spec = spec.and(NoteSpecifications.createdAtBeforeOrEq(createdAtBefore));
+            }
         }
 
         return noteRepository.findAll(spec, pageable).map(noteMapper::noteToNoteDTO);

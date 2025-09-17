@@ -7,8 +7,11 @@ import org.springframework.boot.actuate.health.NamedContributors;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -59,8 +62,37 @@ public class NoteController {
             @RequestParam(name = "type", required = false) String type,
             @RequestParam(name = "authorId", required = false) Long authorId,
             Pageable pageable
+
+            // NEW time filters (all optional)
+            @RequestParam(name = "createdAt", required = false)
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) Instant createdAt,
+
+            @RequestParam(name = "createdAtFrom", required = false)
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) Instant createdAtFrom,
+
+            @RequestParam(name = "createdAtTo", required = false)
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) Instant createdAtTo,
+
+            @RequestParam(name = "createdAtBefore", required = false)
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) Instant createdAtBefore,
+
+            @RequestParam(name = "createdAtAfter", required = false)
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) Instant createdAtAfter,
+
+            @RequestParam(name = "createdAtOn", required = false)
+            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate createdAtOnDate,
     ) {
-        return noteService.search(nameContains, type, authorId, pageable);
+        return noteService.search(
+                nameContains,
+                type,
+                authorId,
+                createdAt,
+                createdAtFrom,
+                createdAtTo,
+                createdAtBefore,
+                createdAtAfter,
+                createdAtOnDate,
+                pageable);
     }
 
 }
