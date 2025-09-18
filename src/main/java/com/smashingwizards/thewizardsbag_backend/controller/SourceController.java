@@ -2,6 +2,8 @@ package com.smashingwizards.thewizardsbag_backend.controller;
 
 import com.smashingwizards.thewizardsbag_backend.dto.SourceDTO;
 import com.smashingwizards.thewizardsbag_backend.service.SourceService;
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -41,6 +43,15 @@ public class SourceController {
     @DeleteMapping("/{id}")
     public void deleteSource(@PathVariable Long id) {
         sourceService.deleteSource(id);
+    }
+
+    // ADDs
+    @GetMapping("/search")
+    public Page<SourceDTO> searchSource(
+            @RequestParam(name = "name.contains", required = false) String nameContains,
+            SpringDataWebProperties.Pageable pageable
+    ) {
+        return sourceService.search(nameContains, pageable);
     }
 
 

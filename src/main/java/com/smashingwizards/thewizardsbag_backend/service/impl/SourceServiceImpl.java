@@ -5,7 +5,12 @@ import com.smashingwizards.thewizardsbag_backend.mapper.SourceMapper;
 import com.smashingwizards.thewizardsbag_backend.model.Source;
 import com.smashingwizards.thewizardsbag_backend.repository.SourceRepository;
 import com.smashingwizards.thewizardsbag_backend.service.SourceService;
+import com.smashingwizards.thewizardsbag_backend.spec.SourceSpecifications;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -65,6 +70,21 @@ public class SourceServiceImpl implements SourceService {
     @Override
     public void deleteSource(Long id) {
         sourceRepository.deleteById(id);
+    }
+
+    // ADDs
+    @Override
+    @Transactional(readOnly = true)
+    public Page<SourceDTO> search(String nameContains,
+                                Pageable pageable) {
+        Specification<Source> spec = (root, cq, cb) -> cb.conjunction();
+
+        if (nameContains != null && !nameContains.isBlank()) {
+            spec = spec.and(SourceSpecifications.nameContains(nameContains));
+        }
+
+        return sourceRepository.findAll(spec, pageable).map(sourceMapper::sourceToSourceDTO);
+
     }
 
 
